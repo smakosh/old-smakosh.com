@@ -1,0 +1,47 @@
+import React from 'react'
+import Skill from '../Skill'
+
+import Graphic from '../../assets/images/graphic.svg'
+import UserInterface from '../../assets/images/ui.svg'
+import Webdev from '../../assets/images/webdev.svg'
+
+const Skills = () => (
+    <div
+        style={{
+        background: '#663399',
+        marginBottom: '1.45rem',
+        borderRadius: '.3rem',
+        color: 'white',
+        padding: '1rem 1rem 0 1rem'
+        }}
+    >   
+        <h2>
+            Skills
+        </h2>
+        <div
+            style={{
+                margin: '0 auto',
+                maxWidth: 960,
+                padding: '2rem 1.0875rem',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+            }}
+        >
+            <Skill
+                title="Graphic Design"
+                icon={Graphic}
+            />
+            <Skill
+                title="UI/UX Design"
+                icon={UserInterface}
+            />
+            <Skill
+                title="Full stack development"
+                icon={Webdev}
+            />
+        </div>
+    </div>
+)
+
+export default Skills

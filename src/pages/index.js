@@ -1,12 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
+
+import Intro from '../components/Intro'
+import Skills from '../components/Skills'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi everyone</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Intro />
+    <Skills />
   </div>
 )
 
