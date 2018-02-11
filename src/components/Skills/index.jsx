@@ -8,12 +8,12 @@ import Webdev from '../../assets/images/webdev.svg'
 const Skills = () => (
     <div
         style={{
-        background: '#663399',
+        background: '#00c3ff',
         marginBottom: '1.45rem',
-        borderRadius: '.3rem',
         color: 'white',
-        padding: '1rem 1rem 0 1rem'
+        padding: '6rem 1rem 2rem 1rem'
         }}
+        className="clip"
     >   
         <h2>
             Skills
@@ -22,7 +22,7 @@ const Skills = () => (
             style={{
                 margin: '0 auto',
                 maxWidth: 960,
-                padding: '2rem 1.0875rem',
+                padding: '2rem 0',
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center'

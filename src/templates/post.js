@@ -5,19 +5,27 @@ import Link from 'gatsby-link'
 export default function Template({data}) {
     const {markdownRemark: post} = data
     return (
-        <div>
+        <div className="article">
             <Helmet
                 title={post.frontmatter.title}
             />
-            <h1>{post.frontmatter.title}</h1>
-            <div dangerouslySetInnerHTML={{__html: post.html}} />
-            <i>{post.frontmatter.date}</i>
-            <div>
-                <Link
-                    to='/blog'
+            <div style={{padding: '2rem 1rem'}}>
+                <h1>{post.frontmatter.title}</h1>
+                <div dangerouslySetInnerHTML={{__html: post.html}} />
+                <i
+                    style={{
+                        color: '#212121'
+                    }}
                 >
-                    Go back
-                </Link>
+                    {post.frontmatter.date}
+                </i>
+                <div style={{marginTop: '2rem'}}>
+                    <Link
+                        to='/blog'
+                    >
+                        Go back
+                    </Link>
+                </div>
             </div>
         </div>
     )

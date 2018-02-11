@@ -2,20 +2,49 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Blog = ({data}) => (
-  <div>
-    <h1>Articles</h1>
+  <div
+    style={{
+      padding: '2rem'
+    }}
+  >
+    <h2
+      style={{
+        marginBottom: '2rem'
+      }}
+    >
+      Articles
+    </h2>
     {data.allMarkdownRemark.edges.map(post => (
-        <div className="blog-post-preview" key={post.id}>
-          <h2>
-          <Link 
-            key={post.node.id} 
-            to={post.node.frontmatter.path}>
+      <Link 
+        key={post.node.id} 
+        to={post.node.frontmatter.path}
+        style={{
+          textDecoration: 'none'
+        }}
+      >  
+        <div
+          key={post.id}
+          style={{
+            padding: '2rem 1rem',
+            marginBottom: '1.5rem'
+          }}
+          className="post"
+        >
+          <h3>
             {post.node.frontmatter.title}
-          </Link>
-          </h2>
-          <p>{post.node.excerpt}</p>
-          <i>{post.node.frontmatter.date}</i>
+          </h3>
+          <p>
+            {post.node.excerpt}
+          </p>
+          <i
+            style={{
+              fontSize: '.8rem'
+            }}
+          >
+            {post.node.frontmatter.date}
+          </i>
         </div>
+      </Link>
       ))}
   </div>
 )

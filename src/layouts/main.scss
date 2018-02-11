@@ -1,0 +1,37 @@
+.clip   {
+
+    clip-path: polygon(0% 14%, 100% 0, 100% 84%, 0 100%);
+}
+
+.post {
+
+    border-radius: .1rem;
+    transition: .5s;
+    box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
+    background: #fff;
+    h3, i    {
+        transition: .5s;
+        color: #212121;
+    }
+
+    p   {
+        transition: .5s;
+        color: #616161;
+    }
+
+    &:hover, &:focus    {
+
+        box-shadow: 0 3px 20px 0 rgba(0, 195, 255, .7);
+        background: rgb(0, 195, 255);
+        h3, p, i {
+            color: #fff;
+        }
+    }
+}
+
+.article {
+    a {
+        text-decoration: none;
+        color: rgb(0, 119, 255);
+    }
+}

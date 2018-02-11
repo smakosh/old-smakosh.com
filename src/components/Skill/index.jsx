@@ -10,7 +10,7 @@ const Skill = (props) => (
                 width: '8rem'
             }}
         />
-        <h4>
+        <h4 style={{ fontWeight: 'normal' }}>
             {props.title}
         </h4>
     </div>
