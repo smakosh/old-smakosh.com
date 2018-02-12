@@ -1,0 +1,36 @@
+nav {
+
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .logo {
+        transition: 0.5s;
+        &:hover  {
+  
+          opacity: 0.7;
+          transition: 0.5s;
+          transform: rotate(360deg);
+        }
+    }
+    .links {
+        a {
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: unset;
+            }
+        }
+        .current {
+            color: #212121;
+        }
+        @media screen and (max-width: 960px){
+            display: none;
+        }
+    }
+}

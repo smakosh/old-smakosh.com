@@ -8,38 +8,44 @@ import Webdev from '../../assets/images/webdev.svg'
 const Skills = () => (
     <div
         style={{
-        background: '#00c3ff',
-        marginBottom: '1.45rem',
-        color: 'white',
-        padding: '6rem 1rem 2rem 1rem'
+            marginBottom: '1.45rem',
+            color: 'white',
+            padding: '6rem 1rem 2rem 1rem'
         }}
-        className="clip"
+        className="clip gradient-blue"
     >   
-        <h2>
-            Skills
-        </h2>
-        <div
+        <div 
             style={{
                 margin: '0 auto',
-                maxWidth: 960,
-                padding: '2rem 0',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center'
+                maxWidth: 960
             }}
         >
-            <Skill
-                title="Graphic Design"
-                icon={Graphic}
-            />
-            <Skill
-                title="UI/UX Design"
-                icon={UserInterface}
-            />
-            <Skill
-                title="Full stack development"
-                icon={Webdev}
-            />
+            <h2>
+                Skills
+            </h2>
+            <div
+                style={{
+                    margin: '0 auto',
+                    maxWidth: 960,
+                    padding: '2rem 0',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center'
+                }}
+            >
+                <Skill
+                    title="Graphic Design"
+                    icon={Graphic}
+                />
+                <Skill
+                    title="UI/UX Design"
+                    icon={UserInterface}
+                />
+                <Skill
+                    title="Full stack development"
+                    icon={Webdev}
+                />
+            </div>
         </div>
     </div>
 )

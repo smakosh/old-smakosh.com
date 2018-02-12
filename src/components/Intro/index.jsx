@@ -1,16 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import './intro.scss'
+
 const Intro = () => (
     <div
         style={{
-        background: 'white'
+        background: 'white',
+        margin: '0 auto',
+        maxWidth: 960
         }}
     >
         <div
             style={{
-                margin: '0 auto',
-                maxWidth: 960,
                 padding: '3rem 1rem'
             }}
         >
@@ -28,14 +30,8 @@ const Intro = () => (
             </p>
             <Link
                 to="/"
-                style={{
-                color: 'white',
-                textDecoration: 'none',
-                padding: '.9rem 1.4rem',
-                background: '#00c3ff',
-                borderRadius: '.3rem',
-                boxShadow: 'rgba(0, 196, 255, 0.9) 0px 13px 19px -6px'
-                }}
+                
+                activeClassName="magical-btn"
             >
                 View resume
             </Link>

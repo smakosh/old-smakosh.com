@@ -4,7 +4,9 @@ import Link from 'gatsby-link'
 const Blog = ({data}) => (
   <div
     style={{
-      padding: '2rem'
+      padding: '2rem',
+      maxWidth: 960,
+      margin: '0 auto'
     }}
   >
     <h2

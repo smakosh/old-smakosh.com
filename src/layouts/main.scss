@@ -3,6 +3,20 @@
     clip-path: polygon(0% 14%, 100% 0, 100% 84%, 0 100%);
 }
 
+.gradient-blue {
+    background-image: linear-gradient(10deg, #0072ff 0%, #00c6ff 100%);
+}
+
+.grow {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover  {
+
+      transform: scale(1.1);
+      transition: all .2s ease-in-out;
+    }
+}
+
 .post {
 
     border-radius: .1rem;

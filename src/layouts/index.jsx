@@ -18,9 +18,8 @@ const TemplateWrapper = ({ children }) => (
     <Header />
     <div
       style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        boxShadow: '0 0 22px 0 rgba(33, 33, 33, 0.14)'
+        width: '100%',
+        paddingTop: '7rem'
       }}
     >
       {children()}

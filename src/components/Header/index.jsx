@@ -1,33 +1,79 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-const Header = () => (
-  <div
-    style={{
-      background: '#00c3ff',
-      marginBottom: '3rem'
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 0',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Smakosh
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import Logo from '../../assets/images/logo.svg'
 
-export default Header
+import './nav.scss'
+import './sidebar.scss'
+
+export default class Header extends Component {
+  state = {
+    sidebar: ''
+  }
+
+  toggle() {
+    if(this.state.sidebar == 'active') {
+      this.setState({sidebar: ''})
+    } else {
+      this.setState({sidebar: 'active'})
+    }
+  }
+
+  render() {
+    return  (
+      <div
+        style={{
+          background: '#00c3ff',
+          position: 'fixed',
+          width: '100%',
+          zIndex: 1,
+          boxShadow: '0 3px 20px 0 rgba(0, 195, 255, 0.7)'
+        }}
+      > 
+        <div className={`overlay ${this.state.sidebar}`}></div>
+        <nav>
+          <div>
+            <Link
+              to="/"
+              style={{
+                display: 'flex',
+                alignItems: 'center'
+              }}
+            >
+              <img 
+                style={{
+                    height: '2.8rem',
+                    width: '2.8rem',
+                    marginBottom: 0,
+                    marginRight: '.5rem'
+                }}
+                className="logo"
+                src={Logo} 
+                alt={Logo} 
+              /> Smakosh
+            </Link>
+          </div>
+          <div className="links">
+            <Link to="/" activeClassName="current" exact={true}>Home</Link>
+            <Link to="/about" activeClassName="current" >About</Link>
+            <Link to="/blog" activeClassName="current" >Blog</Link>
+            <Link to="/contact" activeClassName="current" >Contact</Link>
+          </div>
+        </nav>
+        <div className={`hamb ${this.state.sidebar}`} onClick={this.toggle.bind(this)}>
+          <div className="top"></div>
+          <div className="mid"></div>
+          <div className="bottom"></div>
+        </div>
+        <div className={`sidebar ${this.state.sidebar}`}>
+            <div className="items">
+              <Link to="/" activeClassName="current" exact={true} >Home</Link>
+              <Link to="/about" activeClassName="current">About</Link>
+              <Link to="/blog" activeClassName="current">Blog</Link>
+              <Link to="/contact" activeClassName="current">Contact</Link>
+            </div>
+        </div>
+      </div>
+    )
+  }
+}

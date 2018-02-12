@@ -9,6 +9,7 @@ const Skill = (props) => (
                 height: '8rem',
                 width: '8rem'
             }}
+            className="grow"
         />
         <h4 style={{ fontWeight: 'normal' }}>
             {props.title}
