@@ -5,7 +5,13 @@ import Link from 'gatsby-link'
 export default function Template({data}) {
     const {markdownRemark: post} = data
     return (
-        <div className="article">
+        <div 
+            className="article"
+            style={{
+                maxWidth: 960,
+                margin: '0 auto'
+            }}
+        >
             <Helmet
                 title={post.frontmatter.title}
             />
