@@ -6,9 +6,9 @@ import './intro.scss'
 const Intro = () => (
     <div
         style={{
-        background: 'white',
-        margin: '0 auto',
-        maxWidth: 960
+            background: 'white',
+            margin: '0 auto',
+            maxWidth: 960
         }}
     >
         <div

@@ -1,6 +1,6 @@
 ---
 path: '/never-work-for-free'
-date: "2017-02-03T17:12:33.962Z"
+date: 2017-02-03T16:45:01.889Z
 title: 'Never work for free'
 ---
 

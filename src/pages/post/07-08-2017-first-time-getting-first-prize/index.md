@@ -1,6 +1,6 @@
 ---
 path: '/first-time-first-prize'
-date: "2017-08-07T17:12:33.962Z"
+date: 2017-08-07T16:45:01.889Z
 title: 'First time getting first prize at a hackathon'
 ---
 

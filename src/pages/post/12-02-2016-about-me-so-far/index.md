@@ -1,6 +1,6 @@
 ---
 path: '/about-me-so-far'
-date: "2016-12-02T17:12:33.962Z"
+date: 2016-12-02T16:45:01.889Z
 title: 'About me so far...'
 ---
 

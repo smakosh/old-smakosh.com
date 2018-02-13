@@ -1,5 +1,5 @@
 import React from 'react'
-import Skill from '../Skill'
+import Skill from './Skill'
 
 import Graphic from '../../assets/images/graphic.svg'
 import UserInterface from '../../assets/images/ui.svg'
