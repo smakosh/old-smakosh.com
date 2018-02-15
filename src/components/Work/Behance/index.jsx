@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import SingleWork from './SingleWork'
+import SingleWork from '../SingleWork'
 
 export default class Behance extends Component {
     state = {
-        behance: [
+        projects: [
             {
                 id: 0,
                 title: 'Ubox Logo',
@@ -34,16 +34,16 @@ export default class Behance extends Component {
                     padding: '1rem 1rem 0 1rem'
                 }}
             >   
-                <h2>Behance</h2>
+                <h2>Shared on Behance.net</h2>
                 <div className="work">
                     {
-                        this.state.behance.map((be) => {
+                        this.state.projects.map((project) => {
                             return <SingleWork
-                                        key={be.id}
-                                        id={be.id}
-                                        title={be.title}
-                                        image={be.image}
-                                        link={be.link}
+                                        key={project.id}
+                                        id={project.id}
+                                        title={project.title}
+                                        image={project.image}
+                                        link={project.link}
                                     />
                         })
                     }

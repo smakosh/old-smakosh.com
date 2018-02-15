@@ -23,11 +23,11 @@ export default class Header extends Component {
     return  (
       <div
         style={{
-          background: '#00c3ff',
+          background: '#fff',
           position: 'fixed',
           width: '100%',
           zIndex: 1,
-          boxShadow: '0 3px 20px 0 rgba(0, 195, 255, 0.7)'
+          borderBottom: '.01em solid rgb(204, 204, 204)'
         }}
       > 
         <div className={`overlay ${this.state.sidebar}`}></div>
@@ -37,7 +37,8 @@ export default class Header extends Component {
               to="/"
               style={{
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
+                color: '#212121'
               }}
             >
               <img 
