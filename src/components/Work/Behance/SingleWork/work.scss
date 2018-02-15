@@ -1,18 +1,62 @@
 .card {
 
-    padding: 2rem 1rem;
+    cursor: pointer;
     border-radius: .3rem;
     background: #fff;
-/*     &:hover {
-
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    transition: .5s;
+    text-decoration: none;
+    &:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
+        transition: .5s;
     }
     .card-header {
-
+        padding: 1.5rem .5rem;
+        h3 {
+            color: #212121;
+            font-size: .9em;
+            margin: 0;
+            @media screen and (max-width: 680px) {
+                font-size: 1.2em;
+            }
+        }
     }
     .card-image {
-
+        overflow: hidden;
+        img  {
+          position: relative;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          display: block;
+        }
     }
-    .carad-footer {
+    .card-footer {
+        padding: 1.2rem 0 1.2rem .5rem;
+        h4 {
+            color: rgb(0, 119, 255);
+            margin: 0;
+            font-weight: normal;
+        }
+    }
+}
 
-    } */
+.card-0 {
+    @media screen and (max-width: 680px) {
+        grid-row: 3;
+    }
+}
+
+.card-1 {
+    @media screen and (max-width: 680px) {
+        grid-row: 2;
+    }
+}
+
+.card-2 {
+    @media screen and (max-width: 680px) {
+        grid-row: 1;
+    }
 }

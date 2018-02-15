@@ -4,26 +4,25 @@ import Link from 'gatsby-link'
 import './work.scss'
 
 const SingleWork = (props) => (
-    <div
-        className="card"
+    <a
+        className={`card card-${props.id}`}
+        target="_blank"
+        href={props.link}
     >   
         <div className="card-header">
-            <h4>
+            <h3>
                 {props.title}
-            </h4>
+            </h3>
         </div>
         <div className="card-image">
             <img src={props.image} alt={props.title} />
         </div>
         <div className="card-footer">
-            <Link
-                target="_blank"
-                to={props.link}
-            >
+            <h4>
                 Learn more
-            </Link>
+            </h4>
         </div>
-    </div>
+    </a>
 )
 
 export default SingleWork

@@ -10,7 +10,7 @@ const Projects = () => (
         style={{
             background: 'white',
             margin: '0 auto',
-            maxWidth: 960
+            maxWidth: 1200
         }}
     >   
         <Behance />
