@@ -7,7 +7,7 @@ export default class Behance extends Component {
         projects: [
             {
                 id: 0,
-                title: 'Ubox Logo',
+                title: 'Uboux Logo',
                 image: 'https://cdn.dribbble.com/users/1236180/screenshots/3301042/shot3.jpg',
                 link: 'https://www.behance.net/gallery/43074239/UBOUX-Logo-identity'
             },
@@ -34,7 +34,7 @@ export default class Behance extends Component {
                     padding: '1rem 1rem 0 1rem'
                 }}
             >   
-                <h2>Shared on Behance.net</h2>
+                <h2>Shared on Behance</h2>
                 <div className="work">
                     {
                         this.state.projects.map((project) => {
@@ -53,8 +53,7 @@ export default class Behance extends Component {
                         style={{
                             textDecoration: 'none',
                             color: 'rgb(0, 119, 255)',
-                            fontSize: '1.5em',
-                            padding: '3rem 0 0 0.5rem'
+                            fontSize: '1.5em'
                         }}
                         className="more"
                     >

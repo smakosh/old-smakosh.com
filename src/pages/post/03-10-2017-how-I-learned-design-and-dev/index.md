@@ -48,4 +48,4 @@ Currently --early 2018-- I'm still learning so much stuff like Express, Mongoose
 
 I really want to thank the people on the internet who taught me these things and the folks who open source so many great products. Also thanks to the friends who helped me through my early learning career.
 
-> "The purpose of education to help you learn by yourself"
+> "The purpose of education is to help you learn by yourself"

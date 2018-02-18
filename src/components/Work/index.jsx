@@ -3,7 +3,6 @@ import React from 'react'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
-import Youtube from './Youtube'
 
 const Projects = () => (
     <div
@@ -16,7 +15,6 @@ const Projects = () => (
         <Behance />
         <Dribbble />
         <Github />
-        <Youtube />
     </div>
 )
 

@@ -7,21 +7,21 @@ export default class Dribbble extends Component {
         shots: [
             {
                 id: 0,
-                title: 'Ubox Logo',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3301042/shot3.jpg',
-                link: 'https://www.behance.net/gallery/43074239/UBOUX-Logo-identity'
+                title: 'Planets UI',
+                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3428200/shot13.jpg',
+                link: 'https://dribbble.com/shots/3428200-Daily-UI-10'
             },
             {
                 id: 1,
-                title: 'Catch it 1.0',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3301066/shot4.jpg',
-                link: 'https://play.google.com/store/apps/details?id=com.smakosh.atchit'
+                title: 'Post UI',
+                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3344087/shot8.jpg',
+                link: 'https://dribbble.com/shots/3344087-Daily-UI-06'
             },
             {
                 id: 2,
-                title: 'Luca-steeb.com',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3300991/shot.jpg',
-                link: 'https://luca-steeb.com'
+                title: 'Futuristic Todo',
+                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3829349/daily_ui_22_dribbble.jpg',
+                link: 'https://dribbble.com/shots/3829349-Daily-UI-22'
             }
         ]
     }
@@ -34,7 +34,7 @@ export default class Dribbble extends Component {
                     padding: '1rem 1rem 0 1rem'
                 }}
             >   
-                <h2>Shared on Dribbble.com</h2>
+                <h2>Shared on Dribbble</h2>
                 <div className="work">
                     {
                         this.state.shots.map((shot) => {
@@ -53,8 +53,7 @@ export default class Dribbble extends Component {
                         style={{
                             textDecoration: 'none',
                             color: '#ea4c89',
-                            fontSize: '1.5em',
-                            padding: '3rem 0 0 0.5rem'
+                            fontSize: '1.5em'
                         }}
                         className="more"
                     >

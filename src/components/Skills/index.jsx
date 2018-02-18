@@ -1,9 +1,9 @@
 import React from 'react'
 import Skill from './Skill'
 
-import Graphic from '../../assets/images/graphic.svg'
-import UserInterface from '../../assets/images/ui.svg'
-import Webdev from '../../assets/images/webdev.svg'
+import Graphic from '../../assets/images/skills/graphic.svg'
+import UserInterface from '../../assets/images/skills/ui.svg'
+import Webdev from '../../assets/images/skills/webdev.svg'
 
 const Skills = () => (
     <div
