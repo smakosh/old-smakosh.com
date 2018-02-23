@@ -1,16 +1,28 @@
 import React from 'react'
-import Link from 'gatsby-link'
+
+import Details from '../components/Details'
+
+import Me from '../assets/images/me.jpg'
 
 const About = () => (
   <div
     style={{
       maxWidth: 960,
-      margin: '0 auto'
+      margin: '0 auto',
+      padding: '1rem'
     }}
   >
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h2>
+      About me
+    </h2>
+    <div className="about">
+      <Details />
+      <div className="me">
+        <a href={Me}>
+          <img src={Me} alt="just me chilling" />
+        </a>
+      </div>
+    </div>
   </div>
 )
 

@@ -30,7 +30,7 @@ export default class Header extends Component {
           borderBottom: '.01em solid rgb(204, 204, 204)'
         }}
       > 
-        <div className={`overlay ${this.state.sidebar}`}></div>
+        <div className={`overlay ${this.state.sidebar}`} onClick={this.toggle.bind(this)}></div>
         <nav>
           <div>
             <Link
