@@ -1,16 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import ContactForm from '../components/ContactForm'
+
 const Contact = () => (
   <div
     style={{
       maxWidth: 960,
-      margin: '0 auto'
+      margin: '0 auto',
+      padding: '1rem'
     }}
   >
-    <h1>Hi from the contact page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h4>Feel free to email me via ismai23l@hotmail.com</h4>
+    <p>Or fill in the contact form and submit it!</p>
+    <ContactForm />
   </div>
 )
 

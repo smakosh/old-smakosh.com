@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Details from '../components/Details'
+import Socials from '../components/Socials'
 
 import Me from '../assets/images/me.jpg'
 
@@ -23,6 +24,7 @@ const About = () => (
         </a>
       </div>
     </div>
+    <Socials />
   </div>
 )
 

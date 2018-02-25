@@ -4,6 +4,8 @@ import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
 
+import './style.scss'
+
 const Projects = () => (
     <div
         style={{

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
 import Copyrights from './Copyrights'
+import './style.scss'
 
 export default class Footer extends Component {
     state = {
@@ -11,7 +12,6 @@ export default class Footer extends Component {
                 mehs: [
                     'Home',
                     'About',
-                    'Blog',
                 ]
             },
             {
@@ -19,23 +19,13 @@ export default class Footer extends Component {
                 mehs: [
                     'Contact',
                     'Privacy',
-                    'Resume',
                 ]
             },
             {
                 id: 2,
                 mehs: [
-                    'Behance',
-                    'Dribbble',
-                    'Github',
-                ]
-            },
-            {
-                id: 3,
-                mehs: [
-                    'Twitter',
-                    'Instagram',
-                    'Telegram',
+                    'Blog',
+                    'Resume'
                 ]
             }
         ]
@@ -55,31 +45,28 @@ export default class Footer extends Component {
                         style={{
                             margin: '0 auto',
                             maxWidth: 960,
-                            padding: '2rem 0',
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            flexWrap: 'wrap'
+                            padding: '2rem 0'
                         }}
+                        className="footer"
                     >
-                            {
-                                this.state.links.map((item) => (
-                                    <ul key={item.id} style={{ listStyle: 'none' }}>
-                                        {
-                                            item.mehs.map((meh) => (
-                                                <li>
-                                                    <Link
-                                                        to={`/${meh}`}
-                                                        style={{ color: '#fff' }}
-                                                    >
-                                                        {meh}
-                                                    </Link>
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                ))
-                            }
+                        {
+                            this.state.links.map((item) => (
+                                <ul key={item.id} style={{ listStyle: 'none' }}>
+                                    {
+                                        item.mehs.map((meh) => (
+                                            <li key={meh}>
+                                                <Link
+                                                    to={`/${meh}`}
+                                                    style={{ color: '#fff' }}
+                                                >
+                                                    {meh}
+                                                </Link>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            ))
+                        }
                     </div>
                 </div>
                 <Copyrights />

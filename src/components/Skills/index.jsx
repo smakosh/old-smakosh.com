@@ -5,12 +5,14 @@ import Graphic from '../../assets/images/skills/graphic.svg'
 import UserInterface from '../../assets/images/skills/ui.svg'
 import Webdev from '../../assets/images/skills/webdev.svg'
 
+import './style.scss'
+
 const Skills = () => (
     <div
         style={{
             marginBottom: '1.45rem',
             color: 'white',
-            padding: '6rem 1rem 2rem 1rem'
+            padding: '8rem 1rem 4rem 1rem'
         }}
         className="clip gradient-blue"
     >   
@@ -27,11 +29,9 @@ const Skills = () => (
                 style={{
                     margin: '0 auto',
                     maxWidth: 960,
-                    padding: '2rem 0',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center'
+                    padding: '2rem 0'
                 }}
+                className="skill-container"
             >
                 <Skill
                     title="Graphic Design"
