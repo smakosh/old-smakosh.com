@@ -2,25 +2,29 @@ import React, { Component } from 'react'
 
 import SingleWork from '../SingleWork'
 
+import Planets from '../../../assets/images/work/dribbble/planets.jpg'
+import Post from '../../../assets/images/work/dribbble/post.jpg'
+import Todo from '../../../assets/images/work/dribbble/todo.jpg'
+
 export default class Dribbble extends Component {
     state = {
         shots: [
             {
                 id: 0,
                 title: 'Planets UI',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3428200/shot13.jpg',
+                image: `${Planets}`,
                 link: 'https://dribbble.com/shots/3428200-Daily-UI-10'
             },
             {
                 id: 1,
                 title: 'Post UI',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3344087/shot8.jpg',
+                image: `${Post}`,
                 link: 'https://dribbble.com/shots/3344087-Daily-UI-06'
             },
             {
                 id: 2,
                 title: 'Futuristic Todo',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3829349/daily_ui_22_dribbble.jpg',
+                image: `${Todo}`,
                 link: 'https://dribbble.com/shots/3829349-Daily-UI-22'
             }
         ]

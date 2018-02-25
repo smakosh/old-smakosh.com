@@ -2,25 +2,29 @@ import React, { Component } from 'react'
 
 import SingleWork from '../SingleWork'
 
+import Uboux from '../../../assets/images/work/behance/uboux.jpg'
+import Catchit from '../../../assets/images/work/behance/catchit.jpg'
+import Luca from '../../../assets/images/work/behance/luca.jpg'
+
 export default class Behance extends Component {
     state = {
         projects: [
             {
                 id: 0,
                 title: 'Uboux Logo',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3301042/shot3.jpg',
+                image: `${Uboux}`,
                 link: 'https://www.behance.net/gallery/43074239/UBOUX-Logo-identity'
             },
             {
                 id: 1,
                 title: 'Catch it 1.0',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3301066/shot4.jpg',
+                image: `${Catchit}`,
                 link: 'https://play.google.com/store/apps/details?id=com.smakosh.atchit'
             },
             {
                 id: 2,
                 title: 'Luca-steeb.com',
-                image: 'https://cdn.dribbble.com/users/1236180/screenshots/3300991/shot.jpg',
+                image: `${Luca}`,
                 link: 'https://luca-steeb.com'
             }
         ]

@@ -42,7 +42,7 @@ const Skills = () => (
                     icon={UserInterface}
                 />
                 <Skill
-                    title="Full stack development"
+                    title="Front end development"
                     icon={Webdev}
                 />
             </div>

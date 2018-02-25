@@ -26,7 +26,7 @@ const Intro = () => (
                 }}
             >
                 Also known as Smakosh, a self-taught Graphic, UI/UX Designer
-                and full stack developer.
+                and front end developer.
             </p>
             <Link
                 to="/"

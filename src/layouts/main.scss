@@ -1,5 +1,9 @@
-.clip   {
+.clip {
     clip-path: polygon(0% 14%, 100% 0, 100% 84%, 0 100%);
+}
+
+.half-clip {
+    clip-path: polygon(0% 25%, 100% 0, 100% 100%, 0 100%);
 }
 
 .gradient-blue {

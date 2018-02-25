@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 import Repo from './Repo'
 
-import Unnamed from '../../../assets/images/github/unnamed.svg'
-import Peceptron from '../../../assets/images/github/perceptron.svg'
-import Todo from '../../../assets/images/github/todo.svg'
+import Unnamed from '../../../assets/images/work/github/unnamed.svg'
+import Peceptron from '../../../assets/images/work/github/perceptron.svg'
+import Todo from '../../../assets/images/work/github/todo.svg'
 
 export default class Github extends Component {
     state = {
