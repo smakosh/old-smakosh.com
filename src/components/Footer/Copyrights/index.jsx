@@ -11,7 +11,7 @@ const Copyrights = () => (
         }}
     >
         <p style={{ margin: 0 }}>
-            © <Link to="/">Smakosh</Link> 2016-2018 
+            © <Link to="/">Smakosh</Link> 2016-{`${(new Date()).getFullYear()} `} 
             Built with <a href="https://www.gatsbyjs.org" target="_blank">GatsbyJS</a> and 
             deployed on <a href="https://www.netlify.com" target="_blank">Netlify</a>
         </p>

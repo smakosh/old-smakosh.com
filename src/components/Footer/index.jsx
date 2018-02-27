@@ -32,7 +32,7 @@ export default class Footer extends Component {
     }
     render() {
         return (
-            <div>
+            <footer>
                 <div 
                     style={{
                         width: '100%',
@@ -41,14 +41,7 @@ export default class Footer extends Component {
                     }}
                     className="half-clip gradient-blue"
                 >
-                    <div
-                        style={{
-                            margin: '0 auto',
-                            maxWidth: 960,
-                            padding: '2rem 0'
-                        }}
-                        className="footer"
-                    >
+                    <div className="footer">
                         {
                             this.state.links.map((item) => (
                                 <ul key={item.id} style={{ listStyle: 'none' }}>
@@ -70,7 +63,7 @@ export default class Footer extends Component {
                     </div>
                 </div>
                 <Copyrights />
-            </div>
+            </footer>
         )
     }
 }

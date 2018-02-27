@@ -11,7 +11,7 @@ const Contact = () => (
       padding: '1rem'
     }}
   >
-    <h4>Feel free to email me via ismai23l@hotmail.com</h4>
+    <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
     <p>Or fill in the contact form and submit it!</p>
     <ContactForm />
   </div>

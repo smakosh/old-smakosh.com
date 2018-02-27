@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-import Logo from '../../assets/images/logo.svg'
+import Navbar from './Navbar'
+import Hamburger from './Hamburger'
+import Sidebar from './Sidebar'
 
-import './nav.scss'
-import './sidebar.scss'
+import './style.scss'
 
 export default class Header extends Component {
   state = {
     sidebar: ''
   }
 
-  toggle() {
+  toggle = () => {
     if(this.state.sidebar == 'active') {
       this.setState({sidebar: ''})
     } else {
@@ -31,49 +32,9 @@ export default class Header extends Component {
         }}
       > 
         <div className={`overlay ${this.state.sidebar}`} onClick={this.toggle.bind(this)}></div>
-        <nav>
-          <div>
-            <Link
-              to="/"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                color: '#212121'
-              }}
-            >
-              <img 
-                style={{
-                    height: '2.8rem',
-                    width: '2.8rem',
-                    marginBottom: 0,
-                    marginRight: '.5rem'
-                }}
-                className="logo"
-                src={Logo} 
-                alt={Logo} 
-              /> Smakosh
-            </Link>
-          </div>
-          <div className="links">
-            <Link to="/" activeClassName="current" exact={true}>Home</Link>
-            <Link to="/about" activeClassName="current" >About</Link>
-            <Link to="/blog" activeClassName="current" >Blog</Link>
-            <Link to="/contact" activeClassName="current" >Contact</Link>
-          </div>
-        </nav>
-        <div className={`hamb ${this.state.sidebar}`} onClick={this.toggle.bind(this)}>
-          <div className="top"></div>
-          <div className="mid"></div>
-          <div className="bottom"></div>
-        </div>
-        <div className={`sidebar ${this.state.sidebar}`}>
-            <div className="items">
-              <Link to="/" activeClassName="current" exact={true} >Home</Link>
-              <Link to="/about" activeClassName="current">About</Link>
-              <Link to="/blog" activeClassName="current">Blog</Link>
-              <Link to="/contact" activeClassName="current">Contact</Link>
-            </div>
-        </div>
+        <Navbar />
+        <Hamburger sidebar={this.state.sidebar} toggle={this.toggle} />
+        <Sidebar sidebar={this.state.sidebar} />
       </div>
     )
   }
