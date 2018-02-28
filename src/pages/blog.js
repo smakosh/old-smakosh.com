@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 const Blog = ({data}) => (
   <div
@@ -9,6 +10,7 @@ const Blog = ({data}) => (
       margin: '0 auto'
     }}
   >
+    <Helmet title="Smakosh | Blog" />
     <h2
       style={{
         marginBottom: '2rem'

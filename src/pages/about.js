@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Details from '../components/Details'
 import Socials from '../components/Socials'
@@ -13,6 +14,7 @@ const About = () => (
       padding: '1rem'
     }}
   >
+    <Helmet title="Smakosh | About" />
     <h2>
       About me
     </h2>
