@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import favicon from './assets/images/favicon/logo-48.png'
-import me from './assets/images/me.jpg'
+import favicon from '../static/favicon/logo-48.png'
+import me from '../static/me.png'
 
 export default class HTML extends Component {
   render() {
@@ -28,13 +28,13 @@ export default class HTML extends Component {
             content="width=device-width, initial-scale=1.0"
           />
 
-          <meta name="description" content="A self-taught Graphic, UI/UX Designer & full stack developer, interested in neural networks." />
+          <meta name="description" content="A self-taught Graphic, UI/UX Designer and full stack developer, interested in neural networks." />
           <meta name="image" content={me} />
 
           <meta property="og:url" content="https://smakosh.com" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Smakosh" />
-          <meta property="og:description" content="A self-taught Graphic, UI/UX Designer & full stack developer, interested in neural networks." />
+          <meta property="og:description" content="A self-taught Graphic, UI/UX Designer and full stack developer, interested in neural networks." />
           <meta property="og:image" content={me} />
           <meta
             property="fb:app_id"
@@ -47,7 +47,7 @@ export default class HTML extends Component {
             content="https://twitter.com/smakosh"
           />
           <meta name="twitter:title" content="Smakosh" />
-          <meta name="twitter:description" content="A self-taught Designer & Full stack developer" />
+          <meta name="twitter:description" content="A self-taught Designer and Full stack developer" />
           <meta name="twitter:image" content={me} />
 
           <link
