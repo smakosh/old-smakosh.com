@@ -18,17 +18,17 @@ Then I started learning web development, of course I started with front end deve
 * I learned Sass, Pug (named Jade in the past) & ES6 as well.
 * I launched several versions of my personal website using different tech stacks & different looks.
 
-![alt text](https://cdn-images-1.medium.com/max/800/1*JzhXIuh7B8gFQtDp5BuAjA.jpeg "One of the designs")
+![alt text](https://cdn-images-1.medium.com/1*JzhXIuh7B8gFQtDp5BuAjA.jpeg "One of the designs")
 
 I started getting some clients but unfortunately asking for a CMS templates from scratch which is really hard to do as one single developer, anyway I took the challenge and Designed the UI, coded it & then converted it to a wordpress template, sadly I used plugins all over to let the client be able to edit stuff easily which made the website really slow, http://singaporeview.com he then paid me more to remove my copyrights but still you can find my name on the style page :D http://singaporeview.com/wp-content/themes/kgs/style.css
 
-![alt text](https://cdn-images-1.medium.com/max/800/1*Zbvj_pZDOGgu4VqaQJkYNg.jpeg "When one of your clients removes ur name on the copyrights on the footer & forgets to remove it on the style page 😂😂😂")
+![alt text](https://cdn-images-1.medium.com/1*Zbvj_pZDOGgu4VqaQJkYNg.jpeg "When one of your clients removes ur name on the copyrights on the footer & forgets to remove it on the style page 😂😂😂")
 
 I also made other Wordpress website using premium templates.
 
 I wanted to get into mobile dev too but I had no idea how to make a mobile app, so after a little research I found out that there is a software called Build Box that lets you make mobile games without any programming skills, you only need to design all the stuff & the drag n drop will do the work and your app is done, which was the tool I used to make [Catch it 1.0](https://play.google.com/store/apps/details?id=com.smakosh.atchit) https://www.behance.net/gallery/38505463/Catch-it-10-My-first-android-mobile-game.
 
-![alt text](https://cdn-images-1.medium.com/max/800/1*R4syaM9vvhYU5jOuGOi3tA.jpeg)
+![alt text](https://cdn-images-1.medium.com/1*R4syaM9vvhYU5jOuGOi3tA.jpeg)
 
 I wanted to get into the native dev world but I was too lazy to learn Java or Swift so I played with the Ionic framework which isn't native but hybrid but I wanted to get my hands dirty and I made a little portfolio app which I'm planning to delete soon.
 
@@ -36,11 +36,11 @@ I wanted to get into the native dev world but I was too lazy to learn Java or Sw
 
 So I started learning it by practicing once I understood the core language (variables, loops, statements...) then I started making some web apps like a forum, [E-commerce](https://github.com/smakosh/Smartshop), an [image resizer](https://github.com/smakosh/image-resizer) etc....
 
-![alt text](https://cdn-images-1.medium.com/max/800/1*rX69Pjp1RWjQVU55qNYh-g.jpeg)
+![alt text](https://cdn-images-1.medium.com/1*rX69Pjp1RWjQVU55qNYh-g.jpeg)
 
 While learning back-end dev, I made some works too like this [responsive website](https://luca-steeb.com) for my friend Luca Steeb  & it was my first time using Git, Github & Ubuntu since the website's back end uses Nodejs & I learned some stuff about npm & CLI commands :D
 
-![alt text](https://cdn-images-1.medium.com/max/800/1*YkrpVt0x-sp8RF8KlpmK4Q.jpeg)
+![alt text](https://cdn-images-1.medium.com/1*YkrpVt0x-sp8RF8KlpmK4Q.jpeg)
 
 But late 2017, I started learning the MEAN stack and made some apps which are open sourced on my [Github account](https://github.com/smakosh).
 

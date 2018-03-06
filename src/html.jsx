@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import favicon from '../static/favicon/logo-48.png'
-import me from '../static/me.png'
+import me from '../static/me.jpg'
 
 export default class HTML extends Component {
   render() {
