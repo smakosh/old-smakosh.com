@@ -58,8 +58,6 @@ module.exports = {
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
                 author: rssMetadata.author,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
                 custom_elements: [{ "content:encoded": edge.node.html }]
               }));
             },
