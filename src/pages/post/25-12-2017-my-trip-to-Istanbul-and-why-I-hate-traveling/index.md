@@ -1,6 +1,6 @@
 ---
 path: '/istanbul-trip'
-date: 2017-12-25T16:45:01.889Z
+date: 2017-25-12T16:45:01.889Z
 title: 'My trip to Istanbul & why I hate traveling'
 ---
 
