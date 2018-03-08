@@ -1,21 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
 import './work.scss'
 
-const SingleWork = (props) => (
+const SingleWork = ({id, link, title, image}) => (
     <a
-        className={`card card-${props.id}`}
+        className={`card card-${id}`}
         target="_blank"
-        href={props.link}
+        href={link}
     >   
         <div className="card-header">
             <h3>
-                {props.title}
+                {title}
             </h3>
         </div>
         <div className="card-image">
-            <img src={props.image} alt={props.title} />
+            <Img sizes={image} alt={title} />
         </div>
         <div className="card-footer">
             <h4>

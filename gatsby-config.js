@@ -92,6 +92,15 @@ module.exports = {
         name: 'pages',
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/assets/img/`
+      }
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
     {
       resolve: "gatsby-plugin-google-analytics",

@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 
 // social
-import twitter from '../../assets/images/social/twitter.svg'
-import facebook from '../../assets/images/social/facebook.svg'
-import instagram from '../../assets/images/social/instagram.svg'
-import linkedin from '../../assets/images/social/linkedin.svg'
+import twitter from '../../../static/social/twitter.svg'
+import facebook from '../../../static/social/facebook.svg'
+import instagram from '../../../static/social/instagram.svg'
+import linkedin from '../../../static/social/linkedin.svg'
 
 // creative
-import dribbble from '../../assets/images/creative/dribbble.svg'
-import behance from '../../assets/images/creative/behance.svg'
-import github from '../../assets/images/creative/github.svg'
-import medium from '../../assets/images/creative/medium.svg'
+import dribbble from '../../../static/creative/dribbble.svg'
+import behance from '../../../static/creative/behance.svg'
+import github from '../../../static/creative/github.svg'
+import medium from '../../../static/creative/medium.svg'
 
-import youtube from '../../assets/images/creative/youtube.svg'
-import codepen from '../../assets/images/creative/codepen.svg'
+import youtube from '../../../static/creative/youtube.svg'
+import codepen from '../../../static/creative/codepen.svg'
 
 import './style.scss'
 

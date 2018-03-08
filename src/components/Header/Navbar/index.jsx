@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Logo from '../../../assets/images/logo.svg'
+import Logo from '../../../../static/logo.svg'
+
 import './style.scss'
 
-const Navbar = () => (
+const Navbar = ({logo}) => (
     <nav>
         <div>
             <Link
@@ -24,7 +25,7 @@ const Navbar = () => (
                 }}
                 className="logo"
                 src={Logo} 
-                alt={Logo} 
+                alt="brand" 
             /> Smakosh
             </Link>
         </div>

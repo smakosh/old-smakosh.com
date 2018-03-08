@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
+import Unnamed from '../../../../static/github/unnamed.svg'
+import Perceptron from '../../../../static/github/perceptron.svg'
+import Todo from '../../../../static/github/todo.svg'
+
 import Repo from './Repo'
 
-import Unnamed from '../../../assets/images/work/github/unnamed.svg'
-import Peceptron from '../../../assets/images/work/github/perceptron.svg'
-import Todo from '../../../assets/images/work/github/todo.svg'
-
 export default class Github extends Component {
+
     state = {
         repos: [
             {
@@ -19,7 +20,7 @@ export default class Github extends Component {
             {
                 id: 1,
                 title: 'Perceptron',
-                image: `${Peceptron}`,
+                image: `${Perceptron}`,
                 link: 'https://github.com/smakosh/Perceptron-neural-net-from-scratch',
                 name: 'Perceptron-neural-net-from-scratch'
             },
@@ -32,6 +33,7 @@ export default class Github extends Component {
             }
         ]
     }
+
     render() {
         return (
             <div
@@ -44,15 +46,15 @@ export default class Github extends Component {
                 <h2>Open source on Github</h2>
                 <div className="work">
                     {
-                        this.state.repos.map((repo) => {
-                            return <Repo
-                                        key={repo.id}
-                                        title={repo.title}
-                                        image={repo.image}
-                                        link={repo.link}
-                                        repo={repo.name}
-                                    />
-                        })
+                        this.state.repos.map((repo) => (
+                            <Repo
+                                key={repo.id}
+                                title={repo.title}
+                                image={repo.image}
+                                link={repo.link}
+                                repo={repo.name}
+                            />
+                        ))
                     }
                     <a 
                         href="https://github.com/smakosh" 

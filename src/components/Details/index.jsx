@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Envelope from '../../assets/images/details/envelope.svg'
-import Phone from '../../assets/images/details/phone.svg'
-import Marker from '../../assets/images/details/marker.svg'
+import Envelope from '../../../static/about/envelope.svg'
+import Phone from '../../../static/about/phone.svg'
+import Marker from '../../../static/about/marker.svg'
 
 import './style.scss'
 
 const Details = () => (
-    <div>
+    <div className="details-container">
         <p>
         I’m Ismail Ghallou, also known as Smakosh, I’m a self-taught Graphic, 
         UI/UX Designer and front end developer. I'm really interested in Technology.
@@ -24,15 +24,15 @@ const Details = () => (
         </p>
         <div className="details">
             <p>
-              <img src={Envelope} alt="envelope icon" className="mr1" />
+              <img src={Envelope} alt="email" className="mr1" />
               ismai23l@hotmail.com
             </p>
             <p>
-                <img src={Phone} alt="phone icon" className="mr1" />
+                <img src={Phone} alt="phone" className="mr1" />
                 +212 663-532761
             </p>
             <p>
-                <img src={Marker} alt="marker icon" className="mr1" />
+                <img src={Marker} alt="address" className="mr1" />
                 Nr 23 Lot El Waha, Errachidia, Morocco
             </p>
         </div>

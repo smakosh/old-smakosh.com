@@ -1,13 +1,13 @@
 import React from 'react'
 import Skill from './Skill'
 
-import Graphic from '../../assets/images/skills/graphic.svg'
-import UserInterface from '../../assets/images/skills/ui.svg'
-import Webdev from '../../assets/images/skills/webdev.svg'
+import Graphic from '../../../static/skills/graphic.svg'
+import Uix from '../../../static/skills/ui.svg'
+import WebDev from '../../../static/skills/webdev.svg'
 
 import './style.scss'
 
-const Skills = () => (
+const Skills = ({firstImg, secondImg, thirdImg}) => (
     <div
         style={{
             marginBottom: '1.45rem',
@@ -39,11 +39,11 @@ const Skills = () => (
                 />
                 <Skill
                     title="UI/UX Design"
-                    icon={UserInterface}
+                    icon={Uix}
                 />
                 <Skill
                     title="Front end development"
-                    icon={Webdev}
+                    icon={WebDev}
                 />
             </div>
         </div>

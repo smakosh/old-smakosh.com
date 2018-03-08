@@ -6,7 +6,14 @@ import Github from './Github'
 
 import './style.scss'
 
-const Projects = () => (
+const Projects = ({
+    BehancefirstImg,
+    BehancesecondImg,
+    BehancethirdImg,
+    DribbblefirstImg,
+    DribbblesecondImg,
+    DribbblethirdImg
+}) => (
     <div
         style={{
             background: 'white',
@@ -14,8 +21,16 @@ const Projects = () => (
             maxWidth: 1200
         }}
     >   
-        <Behance />
-        <Dribbble />
+        <Behance
+            firstImg={BehancefirstImg}
+            secondImg={BehancesecondImg}
+            thirdImg={BehancethirdImg}
+        />
+        <Dribbble
+            firstImg={DribbblefirstImg}
+            secondImg={DribbblesecondImg}
+            thirdImg={DribbblethirdImg}
+        />
         <Github />
     </div>
 )

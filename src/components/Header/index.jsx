@@ -8,6 +8,7 @@ import Sidebar from './Sidebar'
 import './style.scss'
 
 export default class Header extends Component {
+
   state = {
     sidebar: ''
   }

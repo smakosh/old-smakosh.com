@@ -1,18 +1,14 @@
 import React from 'react'
 
-const Skill = (props) => (
+const Skill = ({icon, title}) => (
     <div style={{ textAlign: 'center' }}>
         <img
-            src={props.icon} 
-            alt={props.icon}
-            style={{
-                height: '8rem',
-                width: '8rem'
-            }}
+            src={icon} 
+            alt={title}
             className="grow"
         />
         <h4 style={{ fontWeight: 'normal' }}>
-            {props.title}
+            {title}
         </h4>
     </div>
 )

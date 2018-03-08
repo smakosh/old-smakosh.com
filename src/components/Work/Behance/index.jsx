@@ -2,34 +2,33 @@ import React, { Component } from 'react'
 
 import SingleWork from '../SingleWork'
 
-import Uboux from '../../../assets/images/work/behance/uboux.jpg'
-import Catchit from '../../../assets/images/work/behance/catchit.jpg'
-import Luca from '../../../assets/images/work/behance/luca.jpg'
-
 export default class Behance extends Component {
-    state = {
-        projects: [
-            {
-                id: 0,
-                title: 'Uboux Logo',
-                image: `${Uboux}`,
-                link: 'https://www.behance.net/gallery/43074239/UBOUX-Logo-identity'
-            },
-            {
-                id: 1,
-                title: 'Catch it 1.0',
-                image: `${Catchit}`,
-                link: 'https://play.google.com/store/apps/details?id=com.smakosh.atchit'
-            },
-            {
-                id: 2,
-                title: 'Luca-steeb.com',
-                image: `${Luca}`,
-                link: 'https://luca-steeb.com'
-            }
-        ]
+    constructor(props) {
+        super(props)
+        this.state = {
+            projects: [
+                {
+                    id: 0,
+                    title: 'Uboux Logo',
+                    image: this.props.firstImg,
+                    link: 'https://www.behance.net/gallery/43074239/UBOUX-Logo-identity'
+                },
+                {
+                    id: 1,
+                    title: 'Catch it 1.0',
+                    image: this.props.secondImg,
+                    link: 'https://play.google.com/store/apps/details?id=com.smakosh.atchit'
+                },
+                {
+                    id: 2,
+                    title: 'Luca-steeb.com',
+                    image: this.props.thirdImg,
+                    link: 'https://luca-steeb.com'
+                }
+            ]
+        }
     }
-    render () {
+    render() {
         return (
             <div
                 style={{
@@ -41,15 +40,15 @@ export default class Behance extends Component {
                 <h2>Shared on Behance</h2>
                 <div className="work">
                     {
-                        this.state.projects.map((project) => {
-                            return <SingleWork
-                                        key={project.id}
-                                        id={project.id}
-                                        title={project.title}
-                                        image={project.image}
-                                        link={project.link}
-                                    />
-                        })
+                        this.state.projects.map((project) => (
+                            <SingleWork
+                                key={project.id}
+                                id={project.id}
+                                title={project.title}
+                                image={project.image}
+                                link={project.link}
+                            />
+                        ))
                     }
                     <a 
                         href="https://www.behance.net/ismail16sm9991" 

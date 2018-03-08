@@ -2,32 +2,31 @@ import React, { Component } from 'react'
 
 import SingleWork from '../SingleWork'
 
-import Planets from '../../../assets/images/work/dribbble/planets.jpg'
-import Post from '../../../assets/images/work/dribbble/post.jpg'
-import Todo from '../../../assets/images/work/dribbble/todo.jpg'
-
 export default class Dribbble extends Component {
-    state = {
-        shots: [
-            {
-                id: 0,
-                title: 'Planets UI',
-                image: `${Planets}`,
-                link: 'https://dribbble.com/shots/3428200-Daily-UI-10'
-            },
-            {
-                id: 1,
-                title: 'Post UI',
-                image: `${Post}`,
-                link: 'https://dribbble.com/shots/3344087-Daily-UI-06'
-            },
-            {
-                id: 2,
-                title: 'Futuristic Todo',
-                image: `${Todo}`,
-                link: 'https://dribbble.com/shots/3829349-Daily-UI-22'
-            }
-        ]
+    constructor(props) {
+        super(props)
+        this.state = {
+            shots: [
+                {
+                    id: 0,
+                    title: 'Planets UI',
+                    image: this.props.firstImg,
+                    link: 'https://dribbble.com/shots/3428200-Daily-UI-10'
+                },
+                {
+                    id: 1,
+                    title: 'Post UI',
+                    image: this.props.secondImg,
+                    link: 'https://dribbble.com/shots/3344087-Daily-UI-06'
+                },
+                {
+                    id: 2,
+                    title: 'Futuristic Todo',
+                    image: this.props.thirdImg,
+                    link: 'https://dribbble.com/shots/3829349-Daily-UI-22'
+                }
+            ]
+        }
     }
     render () {
         return (
@@ -41,15 +40,15 @@ export default class Dribbble extends Component {
                 <h2>Shared on Dribbble</h2>
                 <div className="work">
                     {
-                        this.state.shots.map((shot) => {
-                            return <SingleWork
-                                        key={shot.id}
-                                        id={shot.id}
-                                        title={shot.title}
-                                        image={shot.image}
-                                        link={shot.link}
-                                    />
-                        })
+                        this.state.shots.map((shot) => (
+                            <SingleWork
+                                key={shot.id}
+                                id={shot.id}
+                                title={shot.title}
+                                image={shot.image}
+                                link={shot.link}
+                            />
+                        ))
                     }
                     <a 
                         href="https://www.behance.net/ismail16sm9991" 

@@ -1,12 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 
 import Details from '../components/Details'
 import Socials from '../components/Socials'
 
-import Me from '../assets/images/me.jpg'
-
-const About = () => (
+const About = ({data}) => (
   <div
     style={{
       maxWidth: 960,
@@ -21,13 +20,23 @@ const About = () => (
     <div className="about">
       <Details />
       <div className="me">
-        <a href={Me}>
-          <img src={Me} alt="just me chilling" />
+        <a href={data.AboutImage.sizes.src}>
+          <Img sizes={data.AboutImage.sizes} alt="just me chilling" />
         </a>
       </div>
     </div>
     <Socials />
   </div>
 )
+
+export const pageQuery = graphql`
+  query AboutImageQuery {
+    AboutImage: imageSharp(id: { regex: "/me.jpg/" }) {
+      sizes(maxWidth: 630 ) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`
 
 export default About
