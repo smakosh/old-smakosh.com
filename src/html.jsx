@@ -61,12 +61,6 @@ export default class HTML extends Component {
           <meta name="twitter:description" content="A self-taught Designer and Full stack developer" />
           <meta name="twitter:image" content={me} />
 
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i"
-          />
-
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
           {css}
