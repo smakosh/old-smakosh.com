@@ -35,7 +35,7 @@ export default class Header extends Component {
         <div className={`overlay ${this.state.sidebar}`} onClick={this.toggle.bind(this)}></div>
         <Navbar />
         <Hamburger sidebar={this.state.sidebar} toggle={this.toggle} />
-        <Sidebar sidebar={this.state.sidebar} />
+        <Sidebar sidebar={this.state.sidebar} toggle={this.toggle} />
       </div>
     )
   }
