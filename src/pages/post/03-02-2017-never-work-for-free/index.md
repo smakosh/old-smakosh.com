@@ -22,6 +22,6 @@ The student –who was a classmate of mine- backstabbed me and claimed that I do
 
 To conclude, if you’re good at something, never do it in free.
 
-![alt text](https://cdn-images-1.medium.com/1*C2iHIiO1lTW0y-czurg6ww.jpeg)
+![quotes UI](quotesof.jpeg)
 
-![alt text](https://cdn-images-1.medium.com/1*QlC8G-zDeMFWRrT6-THFTg.jpeg "Yep that’s the database table name, go ahead and shut it down if you’d like :D")
+![quotes php code](quotescode.jpeg "Yep that’s the database table name, go ahead and shut it down if you’d like :D")

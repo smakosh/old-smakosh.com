@@ -4,7 +4,7 @@ date: 2017-09-20T16:45:01.889Z
 title: 'Why I made Unnamed?'
 ---
 
-![alt text](https://cdn-images-1.medium.com/1*2zcdv1fJKVhmaW3iHQ5s8g.jpeg)
+![Unnamed](unnamed_blog.jpeg)
 
 I hate when I use a known css framework like Skeleton or Bulma… and specially frameworks like Bootstrap or Foundation…
 

@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import './repo.scss'
 
-const Repo = ({image, title, repo, link}) => (
+const Repo = ({image, title, link}) => (
     <a
         className='repo'
         target="_blank"
@@ -21,26 +21,7 @@ const Repo = ({image, title, repo, link}) => (
             />
         </div>
         <div className="repo-footer">
-            <iframe 
-                className="iframe" 
-                src={`https://ghbtns.com/github-btn.html?user=smakosh&repo=${repo}&type=star&count=true`}
-                frameBorder="0" 
-                scrolling="0" 
-                width="90px" 
-                height="20px"
-                title="stars"
-            >
-            </iframe>
-            <iframe 
-                className="iframe" 
-                src={`https://ghbtns.com/github-btn.html?user=smakosh&repo=${repo}&type=fork&count=true`}
-                frameBorder="0" 
-                scrolling="0" 
-                width="90px" 
-                height="20px"
-                title="forks"
-            >
-            </iframe>
+            <h4>Learn more</h4>
         </div>
     </a>
 )

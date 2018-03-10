@@ -15,7 +15,7 @@ It was nice speaking with Zakaria Braksa who’s VP of engineering at HF who ask
 
 But really thanks to Med Bouasria who kept saying good things about them and which motivated me more to join them ASAP. The first thing that surprised me during the first day is their CEO who wasn’t wearing a suit, He also offered me a free nespresso coffee the first 2 days and everyone welcomed me on Slack, they invited me into Trello boards, Invision and Github repositories. The CTO Adil Haizoune gave me an UI that I had to code from scratch using flexbox which I learnt that day, also learnt about Gulp & Yeoman thanks to Reda. Med Bouasria helped me explaining to me Vue js components then I started working on the node web app. there was some issues on the workflow, but the CEO along with the CTO managed to solve them to avoid such issues in future projects.
 
-![alt text](https://cdn-images-1.medium.com/1*0zPkl-uJIWmSfVJowVVaqw.jpeg)
+![Old HF offices](workspace.jpeg)
 
 The day before my internship ended, Adil Haizoune invited me to join them as a full time front end developer which made really happy because finally I can prove to my parents and the people I know that you can actually get a job without a degree, second thing is that everyone there get the same salary no matter what degree you do have.
 

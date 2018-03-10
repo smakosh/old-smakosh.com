@@ -6,18 +6,19 @@ title: 'HPS Hackathon'
 
 After winning the second prize at the Lydec Hackathon organized by Screendy.
 
-![alt text](https://cdn-images-1.medium.com/1*cR7DguP4_liLvlUGXFduBQ.jpeg)
-![alt text](https://cdn-images-1.medium.com/1*ypG1sepTuPggSBlzR3AScg.jpeg)
+![Team](team.jpeg)
+
+![Me holding the prize](prize.jpeg)
 
 I got invited to join the student partner program of Screendy — thanks to Mehdi Alaoui (the Founder & CEO of Screendy) — to help the participants during the international HPS hackathon hosted in Marrakesh. Two of my friends who live in my hometown got an invite to participate too, so we took the road to Marrakesh, we arrived after 12 hours of travel lol, we took some pictures of some great places there.
 
-![alt text](https://cdn-images-1.medium.com/1*eKWaf0k0QgnXkpvk64z56w.jpeg)
-![alt text](https://cdn-images-1.medium.com/1*J6rpqPtgKuJWqVi0-Ktxuw.jpeg)
+![Koutoubia Marrakech](marrakech.jpeg)
 
 We waited for others at the train station, we then got transferred to the Palmeraie resorts Hotel. I met again the SSP team who were really amazing & nice to me, we prepared everything (badges, shirts….) to welcome 80 participants from 20 countries, 20 HPS clients & partners, 30 HPS employees, After we collected more than 40 ideas from the participants, we chose 15 ideas which were interesting and the ideas’ holders made their teams of 4 to 5 members (Designer, Developer, Entrepreneur, Marketer & a HPS employee) then the hackathon started which ended after 48 hours, thanks to HPS for offering to the SSP team 3 nights at the Wazo Hotel which was really good.
 
-![alt text](https://cdn-images-1.medium.com/1*MGQD3afDupwt5p9S9nRrvA.jpeg)
-![alt text](https://cdn-images-1.medium.com/1*JuQ2fFykBpHFVRFzkl-50w.jpeg)
+![Code anytime & anywhere](code.jpeg)
+
+![Nice view from the hotel room](view.jpeg)
 
 I helped more than 2 teams on the Design part & on explaining to them how to use the Screendy Platform & I explained to my friends’ team that it’s all about the pitch & to clarify the idea to the jury is the most important part, 48 hours ended and it was time to pitch in public, the decision was made that night but privately and everyone was sent to the Wazo Hotel to have some rest until the day after on the morning when the Powercard users meeting has started is when the winners were announced & got their prizes :
 
@@ -26,7 +27,8 @@ I helped more than 2 teams on the Design part & on explaining to them how to use
 - Third prize : 3000$ won by Mybills (pay your bills instantly with one click)
 - Fourth prize : 1000$ won by EPS (my friends’ team, the Iris recognizer to confirm payment)
 
-![alt text](https://cdn-images-1.medium.com/1*_Gv13rOIl_8vX9hyiiBNgw.jpeg)
-![alt text](https://cdn-images-1.medium.com/1*NJBgdkONEc-ykCehNlu-_g.jpeg)
+![A logo I designed for that team](fillme.jpeg)
 
-In a nutshell, that was the best hackathon so far powered by Screendy in Morocco, here’s a video that shares more details :
+![Announcing the winners](awards.jpeg)
+
+In a nutshell, that was the best hackathon so far powered by Screendy in Morocco, here’s a video that shares more details:
