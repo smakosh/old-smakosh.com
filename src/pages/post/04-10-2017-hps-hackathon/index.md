@@ -31,4 +31,8 @@ I helped more than 2 teams on the Design part & on explaining to them how to use
 
 ![Announcing the winners](awards.jpeg)
 
+<div class="responsive-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AJQziXnUreI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+
 In a nutshell, that was the best hackathon so far powered by Screendy in Morocco, here’s a video that shares more details:
