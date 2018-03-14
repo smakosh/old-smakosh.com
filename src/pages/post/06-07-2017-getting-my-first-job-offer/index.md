@@ -21,8 +21,6 @@ The day before my internship ended, Adil Haizoune invited me to join them as a f
 
 During the last day, I spent most of it preparing a nice UI kit along with a 960 grid system for Ahmed — a new intern — who joined us too, I explained everything he needed while I’ll be absent for a week to pack my stuff from home and get them to this city I’ll be living in.
 
-// video later on
-
 In a nutshell, **I’ve never thought this would happen someday but it did happen, getting a full time job offer as a front end developer without any degree but for being self taught.**
 
 Days after I started working with the folks at HF, I resigned due to the low salary I got offered knowing that I get paid more than that working as a free lancer and that is the difference between getting paid per project/work and getting paid per hour.
