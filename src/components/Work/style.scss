@@ -11,6 +11,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .more {
+        color: #fff;
+        text-decoration: none;
+        padding: .9rem 1.4rem;
+        border-radius: .3rem;
+        font-size: 1.2em;
+        text-align: center;
         @media screen and (max-width: 680px) {
             grid-row: 4;
         }

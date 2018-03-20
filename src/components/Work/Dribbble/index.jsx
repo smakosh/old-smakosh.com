@@ -33,11 +33,10 @@ export default class Dribbble extends Component {
             <div
                 style={{
                     background: '#fff',
-                    marginBottom: '1.45rem',
-                    padding: '1rem 1rem 0 1rem'
+                    marginBottom: '2.5rem'
                 }}
             >   
-                <h2>Shared on Dribbble</h2>
+                <h3>Shared on Dribbble</h3>
                 <div className="work">
                     {
                         this.state.shots.map((shot) => (
@@ -54,9 +53,7 @@ export default class Dribbble extends Component {
                         href="https://www.behance.net/ismail16sm9991" 
                         target="_blank"
                         style={{
-                            textDecoration: 'none',
-                            color: '#ea4c89',
-                            fontSize: '1.5em'
+                            backgroundColor: '#ea4c89'
                         }}
                         className="more"
                     >

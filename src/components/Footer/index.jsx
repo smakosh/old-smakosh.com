@@ -9,23 +9,21 @@ export default class Footer extends Component {
         links: [
             {
                 id: 0,
-                mehs: [
+                pages: [
                     'Home',
                     'About',
                 ]
             },
             {
                 id: 1,
-                mehs: [
-                    'Contact',
-                    'Privacy',
+                pages: [
+                    'Contact'
                 ]
             },
             {
                 id: 2,
-                mehs: [
-                    'Blog',
-                    'Resume'
+                pages: [
+                    'Blog'
                 ]
             }
         ]
@@ -43,16 +41,16 @@ export default class Footer extends Component {
                 >
                     <div className="footer">
                         {
-                            this.state.links.map((item) => (
+                            this.state.links.map(item => (
                                 <ul key={item.id} style={{ listStyle: 'none' }}>
                                     {
-                                        item.mehs.map((meh) => (
-                                            <li key={meh}>
+                                        item.pages.map(page => (
+                                            <li key={page}>
                                                 <Link
-                                                    to={`/${meh}`}
+                                                    to={`/${page}`}
                                                     style={{ color: '#fff' }}
                                                 >
-                                                    {meh}
+                                                    {page}
                                                 </Link>
                                             </li>
                                         ))

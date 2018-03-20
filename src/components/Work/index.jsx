@@ -18,9 +18,10 @@ const Projects = ({
         style={{
             background: 'white',
             margin: '0 auto',
-            maxWidth: 1200
+            maxWidth: 960
         }}
     >   
+        <h2>Work</h2>
         <Behance
             firstImg={BehancefirstImg}
             secondImg={BehancesecondImg}

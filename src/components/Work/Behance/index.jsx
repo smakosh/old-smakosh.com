@@ -33,11 +33,10 @@ export default class Behance extends Component {
             <div
                 style={{
                     background: '#fff',
-                    marginBottom: '1.45rem',
-                    padding: '1rem 1rem 0 1rem'
+                    marginBottom: '2.5rem'
                 }}
             >   
-                <h2>Shared on Behance</h2>
+                <h3>Shared on Behance</h3>
                 <div className="work">
                     {
                         this.state.projects.map((project) => (
@@ -54,9 +53,7 @@ export default class Behance extends Component {
                         href="https://www.behance.net/ismail16sm9991" 
                         target="_blank"
                         style={{
-                            textDecoration: 'none',
-                            color: 'rgb(0, 119, 255)',
-                            fontSize: '1.5em'
+                            backgroundColor: 'rgb(0, 119, 255)'
                         }}
                         className="more"
                     >

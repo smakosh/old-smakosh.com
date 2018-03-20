@@ -36,11 +36,10 @@ export default class Github extends Component {
             <div
                 style={{
                 background: '#fff',
-                marginBottom: '1.45rem',
-                padding: '1rem 1rem 0 1rem'
+                marginBottom: '2.5rem'
                 }}
             >   
-                <h2>Open source on Github</h2>
+                <h3>Open sourced on Github</h3>
                 <div className="work">
                     {
                         this.state.repos.map((repo) => (
@@ -56,9 +55,7 @@ export default class Github extends Component {
                         href="https://github.com/smakosh" 
                         target="_blank"
                         style={{
-                            textDecoration: 'none',
-                            color: '#000',
-                            fontSize: '1.5em'
+                            backgroundColor: '#000'
                         }}
                         className="more"
                     >
