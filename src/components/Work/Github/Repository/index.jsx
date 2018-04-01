@@ -1,29 +1,28 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
-import './repo.scss'
+import './styles.scss'
 
-const Repo = ({image, title, link}) => (
+const Repository = ({image, title, link}) => (
     <a
-        className='repo'
+        className='repository'
         target="_blank"
         href={link}
     >   
-        <div className="repo-header">
+        <div className="repository-header">
             <h3>
                 {title}
             </h3>
         </div>
-        <div className="repo-image">
+        <div className="repository-image">
             <img 
                 src={image} 
                 alt={title}
             />
         </div>
-        <div className="repo-footer">
+        <div className="repository-footer">
             <h4>Learn more</h4>
         </div>
     </a>
 )
 
-export default Repo
+export default Repository

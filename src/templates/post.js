@@ -2,16 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
+import {Container} from '../components/common'
+
 export default function Template({data}) {
     const {markdownRemark: post} = data
     return (
-        <div 
-            className="article"
-            style={{
-                maxWidth: 960,
-                margin: '0 auto'
-            }}
-        >
+        <Container className="article">
             <Helmet
                 title={post.frontmatter.title}
             />
@@ -33,7 +29,7 @@ export default function Template({data}) {
                     </Link>
                 </div>
             </div>
-        </div>
+        </Container>
     )
 }
 

@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import {Container} from '../../common'
 import Logo from '../../../../static/logo.svg'
 
 import './style.scss'
 
 const Navbar = ({logo}) => (
-    <nav>
+    <Container className="nav">
         <div>
             <Link
             to="/"
@@ -35,7 +36,7 @@ const Navbar = ({logo}) => (
             <Link to="/blog" activeClassName="current" >Blog</Link>
             <Link to="/contact" activeClassName="current" >Contact</Link>
         </div>
-    </nav>
+    </Container>
 )
 
 export default Navbar

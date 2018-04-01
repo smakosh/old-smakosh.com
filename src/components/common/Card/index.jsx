@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
-import './work.scss'
+import './styles.scss'
 
-const SingleWork = ({id, link, title, image}) => (
+const Card = ({id, link, title, image}) => (
     <a
         className={`card card-${id}`}
         target="_blank"
@@ -26,4 +25,4 @@ const SingleWork = ({id, link, title, image}) => (
     </a>
 )
 
-export default SingleWork
+export {Card}

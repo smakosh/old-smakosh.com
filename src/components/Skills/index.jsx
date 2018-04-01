@@ -1,4 +1,6 @@
 import React from 'react'
+
+import {Container} from '../common'
 import Skill from './Skill'
 
 import Graphic from '../../../static/skills/graphic.svg'
@@ -16,12 +18,7 @@ const Skills = ({firstImg, secondImg, thirdImg}) => (
         }}
         className="clip gradient-blue"
     >   
-        <div 
-            style={{
-                margin: '0 auto',
-                maxWidth: 960
-            }}
-        >
+        <Container>
             <h2>
                 Skills
             </h2>
@@ -46,7 +43,7 @@ const Skills = ({firstImg, secondImg, thirdImg}) => (
                     icon={WebDev}
                 />
             </div>
-        </div>
+        </Container>
     </div>
 )
 

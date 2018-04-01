@@ -4,7 +4,7 @@ import Unnamed from '../../../../static/github/unnamed.svg'
 import Perceptron from '../../../../static/github/perceptron.svg'
 import Todo from '../../../../static/github/todo.svg'
 
-import Repo from './Repo'
+import Repository from './Repository'
 
 export default class Github extends Component {
 
@@ -43,7 +43,7 @@ export default class Github extends Component {
                 <div className="work">
                     {
                         this.state.repos.map((repo) => (
-                            <Repo
+                            <Repository
                                 key={repo.id}
                                 title={repo.title}
                                 image={repo.image}

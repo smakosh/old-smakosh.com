@@ -2,17 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 
+import {Container} from '../components/common'
 import Details from '../components/Details'
 import Socials from '../components/Socials'
 
 const About = ({data}) => (
-  <div
-    style={{
-      maxWidth: 960,
-      margin: '0 auto',
-      padding: '1rem'
-    }}
-  >
+  <Container>
     <Helmet title="Smakosh | About" />
     <h2>
       About me
@@ -26,7 +21,7 @@ const About = ({data}) => (
       </div>
     </div>
     <Socials />
-  </div>
+  </Container>
 )
 
 export const pageQuery = graphql`

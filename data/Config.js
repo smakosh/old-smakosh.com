@@ -6,5 +6,11 @@ module.exports = {
         label: "Smakosh"
     },
     siteRss: "/rss.xml",
-    siteRssAuthor: "Ismail Ghallou"
+    siteRssAuthor: "Ismail Ghallou",
+    url: "https://smakosh.com",
+    description: "A self-taught Graphic, UI/UX Designer and full stack developer, interested in the web, neural networks & tech in general.",
+    social: {
+        facebook: "165244147328608",
+        twitter: "https://twitter.com/smakosh"
+    }
 };

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+const config = require("../data/Config")
 import favicon from '../static/favicon/logo-48.png'
 import me from '../static/me.jpg'
 
@@ -39,26 +40,23 @@ export default class HTML extends Component {
             content="width=device-width, initial-scale=1.0"
           />
 
-          <meta name="description" content="A self-taught Graphic, UI/UX Designer and full stack developer, interested in neural networks." />
+          <meta name="description" content={config.description} />
           <meta name="image" content={me} />
 
-          <meta property="og:url" content="https://smakosh.com" />
+          <meta property="og:url" content={config.url} />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Smakosh" />
-          <meta property="og:description" content="A self-taught Graphic, UI/UX Designer and full stack developer, interested in neural networks." />
+          <meta property="og:title" content={config.copyright.label} />
+          <meta property="og:description" content={config.description} />
           <meta property="og:image" content={me} />
-          <meta
-            property="fb:app_id"
-            content="165244147328608"
-          />
+          <meta property="fb:app_id" content={config.social.facebook} />
 
-          <meta name="twitter:card" content="Looking for a front end developer? or someone to help you make a website or web app? Get in touch with me" />
+          <meta name="twitter:card" content={config.description} />
           <meta
             name="twitter:creator"
-            content="https://twitter.com/smakosh"
+            content={config.social.twitter}
           />
-          <meta name="twitter:title" content="Smakosh" />
-          <meta name="twitter:description" content="A self-taught Designer and Full stack developer" />
+          <meta name="twitter:title" content={config.copyright.label} />
+          <meta name="twitter:description" content={config.description} />
           <meta name="twitter:image" content={me} />
 
           {this.props.headComponents}

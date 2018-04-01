@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import SingleWork from '../SingleWork'
+import { Card } from '../../common'
 
 export default class Behance extends Component {
     constructor(props) {
@@ -40,7 +40,7 @@ export default class Behance extends Component {
                 <div className="work">
                     {
                         this.state.projects.map((project) => (
-                            <SingleWork
+                            <Card
                                 key={project.id}
                                 id={project.id}
                                 title={project.title}

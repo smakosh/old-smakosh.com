@@ -80,7 +80,7 @@ export default class Socials extends Component {
                 <h2 style={{ marginBottom: '3rem' }}>
                     Or somewhere else on the web
                 </h2>
-                <div className="social-creative" style={{ textAlign: 'center' }}>
+                <div className="social-creative">
                     {
                         this.state.socials.map(social => {
                             return (
@@ -100,7 +100,7 @@ export default class Socials extends Component {
                         })
                     }
                 </div>
-                <div className="social-creative" style={{ textAlign: 'center' }}>
+                <div className="social-creative">
                     {
                         this.state.creatives.map(creative => {
                             return (

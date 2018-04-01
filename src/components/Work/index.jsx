@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Container } from '../common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
@@ -14,13 +15,7 @@ const Projects = ({
     DribbblesecondImg,
     DribbblethirdImg
 }) => (
-    <div
-        style={{
-            background: 'white',
-            margin: '0 auto',
-            maxWidth: 960
-        }}
-    >   
+    <Container>   
         <h2>Work</h2>
         <Behance
             firstImg={BehancefirstImg}
@@ -33,7 +28,7 @@ const Projects = ({
             thirdImg={DribbblethirdImg}
         />
         <Github />
-    </div>
+    </Container>
 )
 
 export default Projects

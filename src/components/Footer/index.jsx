@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
+import {Container} from '../common'
 import Copyrights from './Copyrights'
 import './style.scss'
 
@@ -39,7 +40,7 @@ export default class Footer extends Component {
                     }}
                     className="half-clip gradient-blue"
                 >
-                    <div className="footer">
+                    <Container className="footer">
                         {
                             this.state.links.map(item => (
                                 <ul key={item.id} style={{ listStyle: 'none' }}>
@@ -58,7 +59,7 @@ export default class Footer extends Component {
                                 </ul>
                             ))
                         }
-                    </div>
+                    </Container>
                 </div>
                 <Copyrights />
             </footer>

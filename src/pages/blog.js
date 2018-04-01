@@ -2,14 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import {Container} from '../components/common'
+
 const Blog = ({data}) => (
-  <div
-    style={{
-      padding: '2rem',
-      maxWidth: 960,
-      margin: '0 auto'
-    }}
-  >
+  <Container>
     <Helmet title="Smakosh | Blog" />
     <h2
       style={{
@@ -50,7 +46,7 @@ const Blog = ({data}) => (
         </div>
       </Link>
       ))}
-  </div>
+  </Container>
 )
 
 export const pageQuery = graphql`

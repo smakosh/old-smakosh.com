@@ -13,10 +13,11 @@
     .more {
         color: #fff;
         text-decoration: none;
-        padding: .9rem 1.4rem;
-        border-radius: .3rem;
+        padding: .6rem 1.4rem;
+        border-radius: .2rem;
         font-size: 1.2em;
         text-align: center;
+        width: 70%;
         @media screen and (max-width: 680px) {
             grid-row: 4;
         }

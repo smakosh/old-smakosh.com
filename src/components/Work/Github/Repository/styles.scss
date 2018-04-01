@@ -1,4 +1,4 @@
-.repo {
+.repository {
 
     cursor: pointer;
     border-radius: .3rem;
@@ -10,7 +10,7 @@
         box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
         transition: .5s;
     }
-    .repo-header {
+    .repository-header {
         padding: .8rem .5rem;
         h3 {
             color: #212121;
@@ -21,7 +21,7 @@
             }
         }
     }
-    .repo-image {
+    .repository-image {
         overflow: hidden;
         padding: 4rem;
         img  {
@@ -35,7 +35,7 @@
           margin-bottom: 0;
         }
     }
-    .repo-footer {
+    .repository-footer {
         padding: 1.2rem 0 1.2rem .5rem;
         h4 {
             color: rgb(0, 119, 255);

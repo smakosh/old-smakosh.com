@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import SingleWork from '../SingleWork'
+import { Card } from '../../common'
 
 export default class Dribbble extends Component {
     constructor(props) {
@@ -40,7 +40,7 @@ export default class Dribbble extends Component {
                 <div className="work">
                     {
                         this.state.shots.map((shot) => (
-                            <SingleWork
+                            <Card
                                 key={shot.id}
                                 id={shot.id}
                                 title={shot.title}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { Container } from '../common'
 import Envelope from '../../../static/about/envelope.svg'
 import Phone from '../../../static/about/phone.svg'
 import Marker from '../../../static/about/marker.svg'
@@ -8,7 +9,7 @@ import Marker from '../../../static/about/marker.svg'
 import './style.scss'
 
 const Details = () => (
-    <div className="details-container">
+    <Container className="details-container">
         <p>
         I’m Ismail Ghallou, also known as Smakosh, I’m a self-taught Graphic, 
         UI/UX Designer and front end developer. I'm really interested in Technology.
@@ -36,7 +37,7 @@ const Details = () => (
                 Nr 23 Lot El Waha, Errachidia, Morocco
             </p>
         </div>
-    </div>
+    </Container>
 )
 
 export default Details
