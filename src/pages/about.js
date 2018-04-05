@@ -1,5 +1,4 @@
 import React from 'react'
-const config = require("../../data/Config")
 import Img from 'gatsby-image'
 
 import { Container, JsonLd } from '../components/common'
@@ -8,9 +7,7 @@ import Socials from '../components/Socials'
 
 const About = ({ data }) => (
   <Container>
-    <JsonLd
-        headline={config.description}
-    >
+    <JsonLd>
       Smakosh | About
     </JsonLd>
     <h2>About me</h2>

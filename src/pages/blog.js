@@ -1,14 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
-const config = require("../../data/Config")
 
 import { Container, JsonLd } from '../components/common'
 
 const Blog = ({data}) => (
   <Container>
-    <JsonLd
-        headline={config.description}
-    >
+    <JsonLd>
       Smakosh | Blog
     </JsonLd>
     <h2

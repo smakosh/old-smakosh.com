@@ -1,5 +1,4 @@
 import React from 'react'
-const config = require("../../data/Config")
 
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
@@ -9,9 +8,7 @@ import { JsonLd } from '../components/common';
 const IndexPage = ({data}) => {
   return (
     <React.Fragment>
-      <JsonLd
-        headline={config.description}
-      >
+      <JsonLd>
         Smakosh | Hello world!
       </JsonLd>
       <Intro />

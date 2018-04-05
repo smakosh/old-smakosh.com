@@ -1,15 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
-const config = require("../../data/Config")
 
 import { Container, JsonLd } from '../components/common'
 
-export default function Template({data}) {
+export default function Template({ data }) {
     const {markdownRemark: post} = data
     return (
         <Container className="article">
             <JsonLd
-                headline={config.description}
+                headline={post.frontmatter.title}
                 datePublished={post.frontmatter.date}
             >
                 {post.frontmatter.title}

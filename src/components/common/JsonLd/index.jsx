@@ -7,12 +7,12 @@ const JsonLd = ({ children, headline, datePublished }) => {
   const structuredData = `{
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "${headline}",
+    "headline": "${headline ? headline : 'A self-taught Graphic, UI/UX Designer and full stack developer.'}",
     "author": "Ismail Ghallou (Smakosh)",
     "datePublished": "${datePublished ? datePublished : '1-1-2018'}",
     "image": {
       "@type": "imageObject",
-      "url": "${Me}",
+      "url": "https://smakosh.com/${Me}",
       "height": "600",
       "width": "800"
     },
@@ -21,7 +21,7 @@ const JsonLd = ({ children, headline, datePublished }) => {
       "name": "Ismail Ghallou (Smakosh)",
       "logo": {
       "@type": "imageObject",
-        "url": "http://localhost:8000/favicon/logo-48.png"
+        "url": "https://smakosh.com/favicon/logo-48.png"
       }
     }
   }`
