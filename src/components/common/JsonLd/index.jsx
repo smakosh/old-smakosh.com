@@ -9,7 +9,7 @@ const JsonLd = ({ children, headline, datePublished }) => {
     "@type": "Article",
     "headline": "${headline}",
     "author": "Ismail Ghallou (Smakosh)",
-    "datePublished": "${datePublished ? datePublished : '1-1-2018'}"
+    "datePublished": "${datePublished ? datePublished : '1-1-2018'}",
     "image": {
       "@type": "imageObject",
       "url": "${Me}",
