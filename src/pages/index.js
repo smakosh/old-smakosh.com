@@ -1,14 +1,19 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+const config = require("../../data/Config")
 
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Work from '../components/Work'
+import { JsonLd } from '../components/common';
 
 const IndexPage = ({data}) => {
   return (
-    <div>
-      <Helmet title="Smakosh | Hello world!" />
+    <React.Fragment>
+      <JsonLd
+        headline={config.description}
+      >
+        Smakosh | Hello world!
+      </JsonLd>
       <Intro />
       <Skills />
       <Work
@@ -19,7 +24,7 @@ const IndexPage = ({data}) => {
         DribbblesecondImg={data.PostImage.sizes}
         DribbblethirdImg={data.TodoImage.sizes}
       />
-    </div>
+    </React.Fragment>
 )
 }
 

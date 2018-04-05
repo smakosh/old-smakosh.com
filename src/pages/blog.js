@@ -1,12 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+const config = require("../../data/Config")
 
-import {Container} from '../components/common'
+import { Container, JsonLd } from '../components/common'
 
 const Blog = ({data}) => (
   <Container>
-    <Helmet title="Smakosh | Blog" />
+    <JsonLd
+        headline={config.description}
+    >
+      Smakosh | Blog
+    </JsonLd>
     <h2
       style={{
         marginBottom: '2rem'

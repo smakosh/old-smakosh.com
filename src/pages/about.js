@@ -1,17 +1,19 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+const config = require("../../data/Config")
 import Img from 'gatsby-image'
 
-import {Container} from '../components/common'
+import { Container, JsonLd } from '../components/common'
 import Details from '../components/Details'
 import Socials from '../components/Socials'
 
-const About = ({data}) => (
+const About = ({ data }) => (
   <Container>
-    <Helmet title="Smakosh | About" />
-    <h2>
-      About me
-    </h2>
+    <JsonLd
+        headline={config.description}
+    >
+      Smakosh | About
+    </JsonLd>
+    <h2>About me</h2>
     <div className="about">
       <Details />
       <div className="me">

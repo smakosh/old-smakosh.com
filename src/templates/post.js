@@ -1,16 +1,19 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+const config = require("../../data/Config")
 
-import {Container} from '../components/common'
+import { Container, JsonLd } from '../components/common'
 
 export default function Template({data}) {
     const {markdownRemark: post} = data
     return (
         <Container className="article">
-            <Helmet
-                title={post.frontmatter.title}
-            />
+            <JsonLd
+                headline={config.description}
+                datePublished={post.frontmatter.date}
+            >
+                {post.frontmatter.title}
+            </JsonLd>
             <div style={{padding: '2rem 1rem'}}>
                 <h1>{post.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{__html: post.html}} />
