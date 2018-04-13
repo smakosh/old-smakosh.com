@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // social
 import twitter from '../../../static/social/twitter.svg'
-import facebook from '../../../static/social/facebook.svg'
+import unsplash from '../../../static/social/unsplash.svg'
 import instagram from '../../../static/social/instagram.svg'
 import linkedin from '../../../static/social/linkedin.svg'
 
@@ -27,8 +27,8 @@ export default class Socials extends Component {
             },
             {
                 id: 1,
-                name: `${facebook}`,
-                link: 'https://www.facebook.com/Ismailghallou'
+                name: `${unsplash}`,
+                link: 'http://unsplash.com/smakosh'
             },
             {
                 id: 2,
