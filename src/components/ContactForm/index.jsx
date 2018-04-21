@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { ToastContainer, toast } from 'react-toastify'
-import Recaptcha from 'react-recaptcha'
 import { navigateTo } from 'gatsby-link'
+
+import { SmallerContainer } from '../common'
 
 import './style.scss'
 
@@ -11,22 +11,11 @@ const encode = (data) => {
         .join("&")
 }
 
-const noTify = () => { 
-    toast("Your email has been successfully sent!", {
-      position: toast.POSITION.TOP_CENTER
-    })
-}
-
 class ContactForm extends Component {
     state = {
-        checked: false,
         name: '', 
         email: '', 
         message: '' 
-    }
-    
-    verifyCallback = response => {
-        this.setState({ checked: true })
     }
 
     handleSubmit = e => {
@@ -39,12 +28,8 @@ class ContactForm extends Component {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
-        })
-            .then(() => {
-                noTify() 
-                navigateTo('/thanks')
-            })
-            .catch(error => alert('Something went wrong, please try again!'))
+        }).then(() => navigateTo('/thanks'))
+        .catch(error => alert('Something went wrong, please try again!'))
 
             e.target.name.value = ''
             e.target.email.value = ''
@@ -56,7 +41,7 @@ class ContactForm extends Component {
     render() {
         const { name, email, message } = this.state
         return (
-            <div className="contact-card left-text">
+            <SmallerContainer className="contact-card left-text">
                 <form
                     onSubmit={this.handleSubmit}
                     name="contact"
@@ -84,17 +69,11 @@ class ContactForm extends Component {
                         Message: <textarea name="message" value={message} onChange={this.handleChange} />
                         </label>
                     </p>
-                    <Recaptcha
-                        sitekey="6LeFoVQUAAAAAKz240eqjZBdkaNjeueWRVJG5YzQ"
-                        render="explicit"
-                        verifyCallback={this.verifyCallback}
-                    />
                     <p className="center-text">
                         <button type="submit" className="gradient-blue">Send</button>
                     </p>
                 </form>
-                <ToastContainer />
-            </div>
+            </SmallerContainer>
         )
     }
 }
