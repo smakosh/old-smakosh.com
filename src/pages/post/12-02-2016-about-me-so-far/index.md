@@ -1,5 +1,6 @@
 ---
 path: '/about-me-so-far'
+thumbnail: './setup.jpeg'
 date: 2016-12-02T16:45:01.889Z
 title: 'About me so far...'
 ---
@@ -11,7 +12,7 @@ I’m Ismail Ghallou also known as Smakosh, a nickname which was given to me sin
 During secondary school I started exploring more hobbies like drawing, graffiti, biking & skateboarding and I was still getting good marks though, at high school I got addicted to Parkour & Free running and it was really a good experience “to not be able to do a backflip then after a long period of training (even though there were no gyms) to actually do it ” it was something really amazing, I spent like 2 years practicing and have recorded some videos right [here](https://www.instagram.com/smakosh19).
 
 <div class="responsive-video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bujbKsEKZ-4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bujbKsEKZ-4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
 During the last year of high school I got a gaming pc which my dad bought for me since I asked a lot for it, specially for gaming & it made me get addicted to gaming and so I graduated from high school with bad marks but yeah I got accepted in some sort of school which is equivalent to university & at that moment everything has changed, I started teaching myself at home, learning, practicing by doing side projects & working as a free lancer from november 2015 until now, I taught myself Graphic, UI/UX design, programming & web development (front end & back end), restudied maths — algebra linear, calculus, probabilities... — & now i’m still learning specially about machine & deep learning specially neural networks & willing to create some web & mobile apps based on Artificial intelligence to help people.

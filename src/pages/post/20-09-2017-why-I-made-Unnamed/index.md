@@ -1,5 +1,6 @@
 ---
 path: '/unnamed'
+thumbnail: './unnamed_blog.jpeg'
 date: 2017-09-20T16:45:01.889Z
 title: 'Why I made Unnamed?'
 ---
@@ -22,7 +23,7 @@ Unnamed is easy to use & to edit!, there is also a npm module
 
 There is also a CDN if you're not used to the node eco-system
 
-    <link rel="stylesheet" href="https://unpkg.com/unnamed" />
+    https://unpkg.com/unnamed
 
 I got a positive & negative feedback on Product hunt that really made me go forward and make more useful products so expect more soon!
 

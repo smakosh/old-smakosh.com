@@ -1,5 +1,6 @@
 ---
 path: '/getting-my-first-job-offer'
+thumbnail: './workspace.jpeg'
 date: 2017-07-06T16:45:01.889Z
 title: 'Getting my first job offer without a degree at a startup'
 ---

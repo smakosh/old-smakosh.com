@@ -8007,6 +8007,10 @@ react-proxy@^3.0.0-alpha.0:
   dependencies:
     lodash "^4.6.1"
 
+react-recaptcha@^2.3.7:
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/react-recaptcha/-/react-recaptcha-2.3.7.tgz#5a10ea4a7a7f59e6b602d4d385caf73a9bd15043"
+
 react-router-dom@^4.1.1:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.2.2.tgz#c8a81df3adc58bba8a76782e946cbd4eae649b8d"

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
+import Recaptcha from 'react-recaptcha'
 import { navigateTo } from 'gatsby-link'
 
 import './style.scss'
@@ -17,16 +18,21 @@ const noTify = () => {
 }
 
 class ContactForm extends Component {
-    state = { 
+    state = {
+        checked: false,
         name: '', 
         email: '', 
         message: '' 
     }
+    
+    verifyCallback = response => {
+        this.setState({ checked: true })
+    }
 
     handleSubmit = e => {
 
-        if(!e.target.name.value && !e.target.email.value && !e.target.message.value) {
-            return alert('Please fill in the required fields')
+        if(!e.target.name.value && !e.target.email.value && !e.target.message.value || !this.state.checked) {
+            return alert('Go away bot!')
         }
 
         fetch("/", {
@@ -78,6 +84,11 @@ class ContactForm extends Component {
                         Message: <textarea name="message" value={message} onChange={this.handleChange} />
                         </label>
                     </p>
+                    <Recaptcha
+                        sitekey="6LeFoVQUAAAAAKz240eqjZBdkaNjeueWRVJG5YzQ"
+                        render="explicit"
+                        verifyCallback={this.verifyCallback}
+                    />
                     <p className="center-text">
                         <button type="submit" className="gradient-blue">Send</button>
                     </p>

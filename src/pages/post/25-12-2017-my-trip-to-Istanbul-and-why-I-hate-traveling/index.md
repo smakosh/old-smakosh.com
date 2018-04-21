@@ -1,5 +1,6 @@
 ---
 path: '/istanbul-trip'
+thumbnail: './flight.jpeg'
 date: 2017-25-12T16:45:01.889Z
 title: 'My trip to Istanbul & why I hate traveling'
 ---
@@ -53,7 +54,7 @@ Day 7: I prepared my stuff and booked an Uber directly to the airport, the drive
 You can check out all the pictures I took [here](https://unsplash.com/@smakosh)
 
 <div class="responsive-video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3ixSvX5-Nsw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3ixSvX5-Nsw" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
 I learned to never go on vacation again, stay inside my room & learn to build useful products.

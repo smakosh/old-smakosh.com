@@ -13,43 +13,67 @@
 .grow {
     cursor: pointer;
     transition: all .2s ease-in-out;
-    &:hover  {
 
+    &:hover  {
       transform: scale(1.1);
       transition: all .2s ease-in-out;
     }
 }
 
 .post {
-
+    margin-bottom: 1.5rem;
     border-radius: .1rem;
-    transition: .5s;
     box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
     background: #fff;
-    h3, i    {
-        transition: .5s;
-        color: #212121;
-    }
+    cursor: pointer;
 
-    p   {
-        transition: .5s;
-        color: #616161;
-    }
+    .article-image {
+        height: 400px;
+        overflow: hidden;
 
-    &:hover, &:focus    {
+        @media screen and (max-width: 992px) {
+            height: 300px;
+        }
 
-        box-shadow: 0 3px 20px 0 rgba(0, 195, 255, .7);
-        background: rgb(0, 195, 255);
-        h3, p, i {
-            color: #fff;
+        @media screen and (max-width: 680px) {
+            height: 250px;
         }
     }
-}
 
-.article {
-    a {
-        text-decoration: none;
-        color: rgb(0, 119, 255);
+    .article-content {
+        padding: 1rem;
+
+        .article-details {
+            transition: .5s;
+
+            h3, i {
+                transition: .5s;
+                color: #212121;
+            }
+        
+            p {
+                transition: .5s;
+                color: #616161;
+            }
+        }
+    }
+
+    &:hover, &:focus {
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, .2);
+
+        .article-details {
+            background: #212121;
+            transition: .5s;
+
+            .article-content {
+                transition: .5s;
+
+                h3, i, p {
+                    color: #fff;
+                    transition: .5s;
+                }
+            }
+        }
     }
 }
 
@@ -57,11 +81,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     @media screen and (max-width: 960px) {
         flex-direction: column;
     }
+
     .details {
         padding-left: 1.5rem;
+
         p {
             display: flex;
             align-items: center;
@@ -89,6 +116,7 @@
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+
     iframe,
     object,
     embed {

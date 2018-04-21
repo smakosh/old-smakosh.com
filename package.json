@@ -27,6 +27,7 @@
     "gatsby-transformer-remark": "^1.7.30",
     "gatsby-transformer-sharp": "^1.6.22",
     "react-helmet": "^5.2.0",
+    "react-recaptcha": "^2.3.7",
     "react-toastify": "^3.3.4"
   },
   "keywords": [

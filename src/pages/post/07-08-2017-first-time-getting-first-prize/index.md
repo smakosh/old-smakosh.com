@@ -1,5 +1,6 @@
 ---
 path: '/first-time-first-prize'
+thumbnail: './winners.jpeg'
 date: 2017-07-08T16:45:01.889Z
 title: 'First time getting first prize at a hackathon'
 ---

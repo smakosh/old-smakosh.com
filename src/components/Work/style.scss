@@ -4,12 +4,15 @@
     grid-template-rows: repeat(1, 4fr);
     grid-gap: 1.2rem;
     align-items: center;
+
     @media screen and (max-width: 960px) {
         grid-template-columns: repeat(2, 1fr);
     }
+
     @media screen and (max-width: 680px) {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .more {
         color: #fff;
         text-decoration: none;
@@ -18,8 +21,15 @@
         font-size: 1.2em;
         text-align: center;
         width: 70%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1100px) {
+            padding: .6rem 1rem;
+        }
+
         @media screen and (max-width: 680px) {
             grid-row: 4;
+            padding: .6rem 1.4rem;
         }
     }
 }

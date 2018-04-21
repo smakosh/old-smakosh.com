@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Me from '../../../../static/me.jpg'
 
-const JsonLd = ({ children, headline, datePublished }) => {
+const JsonLd = ({ children, headline, datePublished, cover }) => {
   const structuredData = `{
     "@context": "http://schema.org",
     "@type": "Article",
@@ -12,7 +12,7 @@ const JsonLd = ({ children, headline, datePublished }) => {
     "datePublished": "${datePublished ? datePublished : '1-1-2018'}",
     "image": {
       "@type": "imageObject",
-      "url": "https://smakosh.com/${Me}",
+      "url": "${cover ? cover : 'https://smakosh.com/${Me}'}",
       "height": "600",
       "width": "800"
     },
