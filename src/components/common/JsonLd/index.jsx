@@ -12,7 +12,7 @@ const JsonLd = ({ children, headline, datePublished, cover }) => {
     "datePublished": "${datePublished ? datePublished : '1-1-2018'}",
     "image": {
       "@type": "imageObject",
-      "url": "${cover ? cover : `https://smakosh.com/${Me}`}",
+      "url": "${cover ? `https://smakosh.com/${cover}` : `https://smakosh.com/${Me}`}",
       "height": "600",
       "width": "800"
     },
