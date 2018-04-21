@@ -42,6 +42,8 @@ class ContactForm extends Component {
         const { name, email, message } = this.state
         return (
             <SmallerContainer className="contact-card left-text">
+                <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
+                <p>Or fill in the contact form and submit it!</p>
                 <form
                     onSubmit={this.handleSubmit}
                     name="contact"
