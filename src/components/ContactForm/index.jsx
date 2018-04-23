@@ -21,7 +21,7 @@ class ContactForm extends Component {
     }
 
     verifyCallback = res => this.setState({bot: true })
-    expiredCallback = () => location.reload()
+    expiredCallback = () => navigateTo('/contact')
 
     handleSubmit = e => {
         e.preventDefault()
