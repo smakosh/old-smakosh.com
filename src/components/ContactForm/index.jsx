@@ -14,16 +14,14 @@ const encode = (data) => {
 
 class ContactForm extends Component {
     state = {
-        mail: {
-            name: '', 
-            email: '', 
-            message: ''
-        },
+        name: '', 
+        email: '', 
+        message: '',
         bot: false
     }
 
     verifyCallback = res => this.setState({bot: true })
-    expiredCallback = () => console.log('expired')
+    expiredCallback = () => location.reload()
 
     handleSubmit = e => {
         e.preventDefault()
@@ -34,7 +32,7 @@ class ContactForm extends Component {
             fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({ "form-name": "contact", ...this.state.mail })
+                body: encode({ "form-name": "contact", name: this.state.name, email: this.state.email, message: this.state.message })
             }).then(() => navigateTo('/thanks'))
             .catch(error => alert('Something went wrong, please try again!'))
             e.target.name.value = ''
@@ -42,10 +40,10 @@ class ContactForm extends Component {
             e.target.message.value = ''
         }
     }
-
-    handleChange = e => this.setState({ [mail.e.target.name]: e.target.value })
+    
+    handleChange = e => this.setState({ [e.target.name]: e.target.value })
     render() {
-        const { name, email, message } = this.state.mail
+        const { name, email, message } = this.state
         return (
             <SmallerContainer className="contact-card left-text">
                 <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
