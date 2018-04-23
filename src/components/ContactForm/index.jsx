@@ -26,7 +26,7 @@ class ContactForm extends Component {
     handleSubmit = e => {
         e.preventDefault()
 
-        if(!e.target.name.value && !e.target.email.value && !e.target.message.value || !this.state.bot) {
+        if(!e.target.name.value && !e.target.email.value && !e.target.message.value && !this.state.bot) {
             return alert('Go away bot!')
         } else {
             fetch("/", {
