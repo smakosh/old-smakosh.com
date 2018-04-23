@@ -127,3 +127,21 @@
       height: 100%;
     }
 }
+
+$mobile-up: 601px !default;
+$tablet-up: 993px !default;
+
+$medium-and-up: "only screen and (min-width : #{$mobile-up})" !default;
+$large-and-up: "only screen and (min-width : #{$tablet-up})" !default;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    @media #{$medium-and-up} {
+         width: 90%;
+    }
+    @media #{$large-and-up} {
+        width: 80%;
+    }
+}

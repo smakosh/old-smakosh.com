@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Recaptcha from 'react-grecaptcha'
 import { navigateTo } from 'gatsby-link'
 
 import { SmallerContainer } from '../common'
@@ -13,33 +14,38 @@ const encode = (data) => {
 
 class ContactForm extends Component {
     state = {
-        name: '', 
-        email: '', 
-        message: '' 
+        mail: {
+            name: '', 
+            email: '', 
+            message: ''
+        },
+        bot: false
     }
 
+    verifyCallback = res => this.setState({bot: true })
+    expiredCallback = () => console.log('expired')
+
     handleSubmit = e => {
+        e.preventDefault()
 
-        if(!e.target.name.value && !e.target.email.value && !e.target.message.value || !this.state.checked) {
+        if(!e.target.name.value && !e.target.email.value && !e.target.message.value || !this.state.bot) {
             return alert('Go away bot!')
-        }
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
-        }).then(() => navigateTo('/thanks'))
-        .catch(error => alert('Something went wrong, please try again!'))
-
+        } else {
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...this.state.mail })
+            }).then(() => navigateTo('/thanks'))
+            .catch(error => alert('Something went wrong, please try again!'))
             e.target.name.value = ''
             e.target.email.value = ''
             e.target.message.value = ''
-        e.preventDefault()
+        }
     }
 
-    handleChange = e => this.setState({ [e.target.name]: e.target.value })
+    handleChange = e => this.setState({ [mail.e.target.name]: e.target.value })
     render() {
-        const { name, email, message } = this.state
+        const { name, email, message } = this.state.mail
         return (
             <SmallerContainer className="contact-card left-text">
                 <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
@@ -71,6 +77,12 @@ class ContactForm extends Component {
                         Message: <textarea name="message" value={message} onChange={this.handleChange} />
                         </label>
                     </p>
+                    <Recaptcha
+                        sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
+                        callback={this.verifyCallback}
+                        expiredCallback={this.expiredCallback}
+                        data-theme="dark"
+                    />
                     <p className="center-text">
                         <button type="submit" className="gradient-blue">Send</button>
                     </p>
