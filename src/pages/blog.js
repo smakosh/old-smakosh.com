@@ -8,7 +8,7 @@ const Blog = ({data}) => {
   console.log(data)
   console.log(data.allMarkdownRemark.edges)
   return (
-  <SmallerContainer>
+  <div className="small-container">
     <JsonLd>Smakosh | Blog</JsonLd>
     <h2 style={{ marginBottom: '2rem' }}>
       Articles
@@ -29,7 +29,7 @@ const Blog = ({data}) => {
         </div>
       </div>
     ))}
-  </SmallerContainer>
+  </div>
 )
 }
 

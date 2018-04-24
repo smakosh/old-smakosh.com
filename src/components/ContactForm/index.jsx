@@ -45,7 +45,7 @@ class ContactForm extends Component {
     render() {
         const { name, email, message } = this.state
         return (
-            <SmallerContainer className="contact-card left-text">
+            <div className="contact-card left-text small-container">
                 <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
                 <p>Or fill in the contact form and submit it!</p>
                 <form
@@ -85,7 +85,7 @@ class ContactForm extends Component {
                         <button type="submit" className="gradient-blue">Send</button>
                     </p>
                 </form>
-            </SmallerContainer>
+            </div>
         )
     }
 }

@@ -6,7 +6,7 @@ import Details from '../components/Details'
 import Socials from '../components/Socials'
 
 const About = ({ data }) => (
-  <Container>
+  <div className="container">
     <JsonLd>
       Smakosh | About
     </JsonLd>
@@ -20,7 +20,7 @@ const About = ({ data }) => (
       </div>
     </div>
     <Socials />
-  </Container>
+  </div>
 )
 
 export const pageQuery = graphql`
