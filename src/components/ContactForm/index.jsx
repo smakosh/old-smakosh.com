@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Recaptcha from 'react-grecaptcha'
 import { navigateTo } from 'gatsby-link'
 
+import { SmallerContainer } from '../common'
+
 import './style.scss'
 
 const encode = (data) => {
@@ -43,46 +45,48 @@ class ContactForm extends Component {
     render() {
         const { name, email, message } = this.state
         return (
-            <div className="contact-card left-text small-container">
-                <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
-                <p>Or fill in the contact form and submit it!</p>
-                <form
-                    onSubmit={this.handleSubmit}
-                    name="contact"
-                    method="post"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                    >
-                    <p hidden>
-                        <label>
-                        Don’t fill this out: <input name="bot-field" />
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                        Your full name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                        Your email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                        Message: <textarea name="message" value={message} onChange={this.handleChange} />
-                        </label>
-                    </p>
-                    <Recaptcha
-                        sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
-                        callback={this.verifyCallback}
-                        expiredCallback={this.expiredCallback}
-                        data-theme="dark"
-                    />
-                    <p className="center-text">
-                        <button type="submit" className="gradient-blue">Send</button>
-                    </p>
-                </form>
+            <div>
+                <SmallerContainer className="contact-card left-text">
+                    <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
+                    <p>Or fill in the contact form and submit it!</p>
+                    <form
+                        onSubmit={this.handleSubmit}
+                        name="contact"
+                        method="post"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        >
+                        <p hidden>
+                            <label>
+                            Don’t fill this out: <input name="bot-field" />
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                            Your full name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                            Your email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                            Message: <textarea name="message" value={message} onChange={this.handleChange} />
+                            </label>
+                        </p>
+                        <Recaptcha
+                            sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
+                            callback={this.verifyCallback}
+                            expiredCallback={this.expiredCallback}
+                            data-theme="dark"
+                        />
+                        <p className="center-text">
+                            <button type="submit" className="gradient-blue">Send</button>
+                        </p>
+                    </form>
+                </SmallerContainer>
             </div>
         )
     }

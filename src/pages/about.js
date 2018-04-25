@@ -1,25 +1,27 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
-import { JsonLd } from '../components/common'
+import { Container, JsonLd } from '../components/common'
 import Details from '../components/Details'
 import Socials from '../components/Socials'
 
 const About = ({ data }) => (
-  <div className="container">
-    <JsonLd>
-      Smakosh | About
-    </JsonLd>
-    <h2>About me</h2>
-    <div className="about">
-      <Details />
-      <div className="me">
-        <a href={data.AboutImage.sizes.src}>
-          <Img sizes={data.AboutImage.sizes} alt="just me chilling" />
-        </a>
+  <div>
+    <Container>
+      <JsonLd>
+        Smakosh | About
+      </JsonLd>
+      <h2>About me</h2>
+      <div className="about">
+        <Details />
+        <div className="me">
+          <a href={data.AboutImage.sizes.src}>
+            <Img sizes={data.AboutImage.sizes} alt="just me chilling" />
+          </a>
+        </div>
       </div>
-    </div>
-    <Socials />
+      <Socials />
+    </Container>
   </div>
 )
 
