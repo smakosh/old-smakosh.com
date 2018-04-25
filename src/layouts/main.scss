@@ -139,7 +139,7 @@ $large-and-up: "only screen and (min-width : #{$tablet-up})" !default;
     margin: 0 auto;
     width: 90%;
     @media #{$medium-and-up} {
-         width: 90%;
+        width: 90%;
     }
     @media #{$large-and-up} {
         width: 80%;

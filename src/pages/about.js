@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
-import { Container, JsonLd } from '../components/common'
+import { JsonLd } from '../components/common'
 import Details from '../components/Details'
 import Socials from '../components/Socials'
 

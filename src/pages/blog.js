@@ -2,7 +2,7 @@ import React from 'react'
 import {navigateTo} from 'gatsby-link'
 import Img from 'gatsby-image'
 
-import { SmallerContainer, JsonLd } from '../components/common'
+import { JsonLd } from '../components/common'
 
 const Blog = ({data}) => {
   console.log(data)
