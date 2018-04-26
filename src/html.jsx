@@ -1,22 +1,22 @@
 import React, {Component} from 'react'
-const config = require("../data/Config")
+const config = require('../data/Config')
 import favicon from '../static/favicon/logo-48.png'
 import me from '../static/me.jpg'
 
-let inlinedStyles = "";
-if (process.env.NODE_ENV === "production") {
+let inlinedStyles = ''
+if (process.env.NODE_ENV === 'production') {
   try {
     /* eslint import/no-webpack-loader-syntax: off */
-    inlinedStyles = require("!raw-loader!../public/styles.css");
+    inlinedStyles = require('!raw-loader!../public/styles.css')
   } catch (e) {
-    null
+    console.log(e)
   }
 }
 
 export default class HTML extends Component {
   render() {
     let css
-    if (process.env.NODE_ENV === "production") {
+    if (process.env.NODE_ENV === 'production') {
       css = (
         <style
           id="gatsby-inlined-css"
