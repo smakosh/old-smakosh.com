@@ -8,27 +8,29 @@ import './styles.scss'
 export default function Template({ data }) {
     const {markdownRemark: post} = data
     return (
-        <Container className="article">
-            <JsonLd
-                headline={post.frontmatter.title}
-                datePublished={post.frontmatter.date}
-                cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
-            >
-                {post.frontmatter.title}
-            </JsonLd>
-            <div className="article-card">
-                <h1>{post.frontmatter.title}</h1>
-                <div dangerouslySetInnerHTML={{__html: post.html}} />
-                <i>{post.frontmatter.date}</i>
-                <div className="back">
-                    <Link
-                        to='/blog'
-                    >
-                        Go back
-                    </Link>
+        <div>
+            <Container className="article">
+                <JsonLd
+                    headline={post.frontmatter.title}
+                    datePublished={post.frontmatter.date}
+                    cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
+                >
+                    {post.frontmatter.title}
+                </JsonLd>
+                <div className="article-card">
+                    <h1>{post.frontmatter.title}</h1>
+                    <div dangerouslySetInnerHTML={{__html: post.html}} />
+                    <i>{post.frontmatter.date}</i>
+                    <div className="back">
+                        <Link
+                            to='/blog'
+                        >
+                            Go back
+                        </Link>
+                    </div>
                 </div>
-            </div>
-        </Container>
+            </Container>
+        </div>
     )
 }
 
