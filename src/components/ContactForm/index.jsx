@@ -23,7 +23,7 @@ class ContactForm extends Component {
     verifyCallback = res => this.setState({bot: true })
     expiredCallback = () => navigateTo('/contact')
 
-    handleSubmit = e => {
+    /* handleSubmit = e => {
         e.preventDefault()
 
         if(!e.target.name.value || !e.target.email.value || !e.target.message.value || !this.state.bot) {
@@ -39,7 +39,7 @@ class ContactForm extends Component {
             e.target.email.value = ''
             e.target.message.value = ''
         }
-    }
+    } */
     
     handleChange = e => this.setState({ [e.target.name]: e.target.value })
     render() {
@@ -50,7 +50,7 @@ class ContactForm extends Component {
                     <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
                     <p>Or fill in the contact form and submit it!</p>
                     <form
-                        onSubmit={this.handleSubmit}
+                        // onSubmit={this.handleSubmit}
                         name="contact"
                         method="post"
                         data-netlify="true"
@@ -83,7 +83,7 @@ class ContactForm extends Component {
                             data-theme="dark"
                         />
                         <p className="center-text">
-                            <button type="submit" className="gradient-blue">Send</button>
+                            <button type="button" className="gradient-blue">Send</button>
                         </p>
                     </form>
                 </SmallerContainer>
