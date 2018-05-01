@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import { Card } from '../../common'
+import BehanceIcon from '../../../../static/creative/behance-white.svg'
+import { Card, More } from '../../common'
 
 export default class Behance extends Component {
     constructor(props) {
@@ -38,27 +39,16 @@ export default class Behance extends Component {
             >   
                 <h3>Shared on Behance</h3>
                 <div className="work">
-                    {
-                        this.state.projects.map((project) => (
-                            <Card
-                                key={project.id}
-                                id={project.id}
-                                title={project.title}
-                                image={project.image}
-                                link={project.link}
-                            />
-                        ))
-                    }
-                    <a 
-                        href="https://www.behance.net/ismail16sm9991" 
-                        target="_blank"
-                        style={{
-                            backgroundColor: 'rgb(0, 119, 255)'
-                        }}
-                        className="more"
-                    >
-                        See more
-                    </a>
+                    {this.state.projects.map(project => (
+                        <Card
+                            key={project.id}
+                            id={project.id}
+                            title={project.title}
+                            image={project.image}
+                            link={project.link}
+                        />
+                    ))}
+                    <More link="https://www.behance.net/ismail16sm9991" color="rgb(0, 119, 255)" icon={BehanceIcon} />
                 </div>
             </div>
         )

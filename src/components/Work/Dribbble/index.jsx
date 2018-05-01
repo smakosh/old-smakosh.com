@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import { Card } from '../../common'
+import DribbbleIcon from '../../../../static/creative/dribbble-white.svg'
+import { Card, More } from '../../common'
 
 export default class Dribbble extends Component {
     constructor(props) {
@@ -38,27 +39,16 @@ export default class Dribbble extends Component {
             >   
                 <h3>Shared on Dribbble</h3>
                 <div className="work">
-                    {
-                        this.state.shots.map((shot) => (
-                            <Card
-                                key={shot.id}
-                                id={shot.id}
-                                title={shot.title}
-                                image={shot.image}
-                                link={shot.link}
-                            />
-                        ))
-                    }
-                    <a 
-                        href="https://www.behance.net/ismail16sm9991" 
-                        target="_blank"
-                        style={{
-                            backgroundColor: '#ea4c89'
-                        }}
-                        className="more"
-                    >
-                        See more
-                    </a>
+                    {this.state.shots.map(shot => (
+                        <Card
+                            key={shot.id}
+                            id={shot.id}
+                            title={shot.title}
+                            image={shot.image}
+                            link={shot.link}
+                        />
+                    ))}
+                    <More link="https://dribbble.com/smakosh" color="#ea4c89" icon={DribbbleIcon} />
                 </div>
             </div>
         )

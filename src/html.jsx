@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
-const config = require('../data/Config')
+import config from '../data/Config'
+import styledStyles from '!raw-loader!../public/styles.css'
 import favicon from '../static/favicon/logo-48.png'
 import me from '../static/me.jpg'
 
 let inlinedStyles = ''
 if (process.env.NODE_ENV === 'production') {
   try {
-    /* eslint import/no-webpack-loader-syntax: off */
-    inlinedStyles = require('!raw-loader!../public/styles.css')
+    inlinedStyles = styledStyles
   } catch (e) {
     console.log(e)
   }
