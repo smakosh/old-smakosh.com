@@ -83,7 +83,7 @@ class ContactForm extends Component {
                             data-theme="dark"
                         />
                         <p className="center-text">
-                            <button type="button" className="gradient-blue">Send</button>
+                            <button type="submit" className="gradient-blue">Send</button>
                         </p>
                     </form>
                 </SmallerContainer>
