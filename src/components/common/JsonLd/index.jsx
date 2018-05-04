@@ -41,12 +41,12 @@ const JsonLd = ({ children, type, headline, datePublished, cover }) => {
     "@type" : "${type}",
     "legalName" : "Ismail Ghallou",
     "url" : "https://smakosh.com/",
+    "logo" : "https://smakosh.com/favicon/logo-48.png",
     "contactPoint" : [{
       "@type" : "ContactPoint",
       "telephone" : "+212-663-53-27-61",
       "contactType" : "customer service"
-    }]
-    "logo" : "https://smakosh.com/favicon/logo-48.png",
+    }],
     "sameAs" : [ "http://www.facebook.com/ismailghallou",
       "http://www.twitter.com/smakosh",
       "https://plus.google.com/u/0/+IsmailSmakoshGhallou",
