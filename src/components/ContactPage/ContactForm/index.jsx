@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Recaptcha from 'react-grecaptcha'
 import { navigateTo } from 'gatsby-link'
 
-import { SmallerContainer } from '../common'
+import { SmallerContainer } from '../../common'
 
 import './style.scss'
 
@@ -92,4 +92,4 @@ class ContactForm extends Component {
     }
 }
 
-export default ContactForm
+export { ContactForm }

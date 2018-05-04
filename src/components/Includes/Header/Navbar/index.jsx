@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import {Container} from '../../common'
-import Logo from '../../../../static/logo.svg'
+import { Container } from '../../../common'
+import Logo from '../../../../../static/logo.svg'
 
 import './style.scss'
 

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
-import GithubIcon from '../../../../static/creative/github-white.svg'
-import Unnamed from '../../../../static/github/unnamed.svg'
-import Perceptron from '../../../../static/github/perceptron.svg'
-import Todo from '../../../../static/github/todo.svg'
+import GithubIcon from '../../../../../static/creative/github-white.svg'
+import Unnamed from '../../../../../static/github/unnamed.svg'
+import Perceptron from '../../../../../static/github/perceptron.svg'
+import Todo from '../../../../../static/github/todo.svg'
 
-import { More } from '../../common'
+import { More } from '../../../common'
+
 import Repository from './Repository'
 
 export default class Github extends Component {

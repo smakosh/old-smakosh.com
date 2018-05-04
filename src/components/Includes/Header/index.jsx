@@ -7,7 +7,7 @@ import Sidebar from './Sidebar'
 
 import './style.scss'
 
-export default class Header extends Component {
+class Header extends Component {
 
   state = {
     sidebar: ''
@@ -40,3 +40,5 @@ export default class Header extends Component {
     )
   }
 }
+
+export { Header }

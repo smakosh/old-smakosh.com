@@ -11,6 +11,7 @@ export default function Template({ data }) {
         <div>
             <Container className="article">
                 <JsonLd
+                    type="NewsArticle"
                     headline={post.frontmatter.title}
                     datePublished={post.frontmatter.date}
                     cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}

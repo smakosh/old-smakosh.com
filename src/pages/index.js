@@ -1,14 +1,14 @@
 import React from 'react'
 
-import Intro from '../components/Intro'
-import Skills from '../components/Skills'
-import Work from '../components/Work'
+import { Intro, Skills, Work } from '../components/LandingPage'
 import { JsonLd } from '../components/common';
 
 const IndexPage = ({data}) => {
   return (
     <React.Fragment>
-      <JsonLd>
+      <JsonLd
+        type="Organization"
+      >
         Smakosh | Hello world!
       </JsonLd>
       <Intro />

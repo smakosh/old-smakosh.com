@@ -1,8 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import { JsonLd } from '../components/common'
+
 const Thanks = () => (
   <div>
+    <JsonLd
+      type="Organization"
+    >
+      Smakosh | Thanks!
+    </JsonLd>
     <div
       style={{
         maxWidth: 960,

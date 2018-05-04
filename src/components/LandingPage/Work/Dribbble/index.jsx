@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-import DribbbleIcon from '../../../../static/creative/dribbble-white.svg'
-import { Card, More } from '../../common'
+import DribbbleIcon from '../../../../../static/creative/dribbble-white.svg'
+
+import { Card, More } from '../../../common'
 
 export default class Dribbble extends Component {
     constructor(props) {

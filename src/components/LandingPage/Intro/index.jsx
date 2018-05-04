@@ -1,20 +1,10 @@
 import React from 'react'
 
-import './intro.scss'
+import './styles.scss'
 
 const Intro = () => (
-    <div
-        style={{
-            background: 'white',
-            margin: '0 auto',
-            maxWidth: 960
-        }}
-    >
-        <div
-            style={{
-                padding: '3rem 1rem'
-            }}
-        >
+    <div className="intro">
+        <div className="intro-content">
             <h1>I'm Ismail Ghallou</h1>
             <p  
                 style={{ 
@@ -30,4 +20,4 @@ const Intro = () => (
     </div>
 )
 
-export default Intro
+export { Intro }

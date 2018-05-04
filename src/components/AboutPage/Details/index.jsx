@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { Container } from '../common'
-import Envelope from '../../../static/about/envelope.svg'
-import Phone from '../../../static/about/phone.svg'
-import Marker from '../../../static/about/marker.svg'
+import { Container } from '../../common'
+import Envelope from '../../../../static/about/envelope.svg'
+import Phone from '../../../../static/about/phone.svg'
+import Marker from '../../../../static/about/marker.svg'
 
 import './style.scss'
 
@@ -40,4 +40,4 @@ const Details = () => (
     </Container>
 )
 
-export default Details
+export { Details }

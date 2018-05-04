@@ -7,7 +7,11 @@ import { SmallerContainer, JsonLd } from '../components/common'
 const Blog = ({data}) => (
   <div>
     <SmallerContainer>
-      <JsonLd>Smakosh | Blog</JsonLd>
+      <JsonLd
+        type="Organization"
+      >
+        Smakosh | Blog
+      </JsonLd>
       <h2 style={{ marginBottom: '2rem' }}>
         Articles
       </h2>

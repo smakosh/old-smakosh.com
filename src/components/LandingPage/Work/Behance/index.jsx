@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-import BehanceIcon from '../../../../static/creative/behance-white.svg'
-import { Card, More } from '../../common'
+import BehanceIcon from '../../../../../static/creative/behance-white.svg'
+
+import { Card, More } from '../../../common'
 
 export default class Behance extends Component {
     constructor(props) {

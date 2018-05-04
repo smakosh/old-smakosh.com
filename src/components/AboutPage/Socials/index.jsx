@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
 
 // social
-import twitter from '../../../static/social/twitter.svg'
-import unsplash from '../../../static/social/unsplash.svg'
-import instagram from '../../../static/social/instagram.svg'
-import linkedin from '../../../static/social/linkedin.svg'
+import twitter from '../../../../static/social/twitter.svg'
+import unsplash from '../../../../static/social/unsplash.svg'
+import instagram from '../../../../static/social/instagram.svg'
+import linkedin from '../../../../static/social/linkedin.svg'
 
 // creative
-import dribbble from '../../../static/creative/dribbble.svg'
-import behance from '../../../static/creative/behance.svg'
-import github from '../../../static/creative/github.svg'
-import medium from '../../../static/creative/medium.svg'
+import dribbble from '../../../../static/creative/dribbble.svg'
+import behance from '../../../../static/creative/behance.svg'
+import github from '../../../../static/creative/github.svg'
+import medium from '../../../../static/creative/medium.svg'
 
-import youtube from '../../../static/creative/youtube.svg'
-import codepen from '../../../static/creative/codepen.svg'
+import youtube from '../../../../static/creative/youtube.svg'
+import codepen from '../../../../static/creative/codepen.svg'
 
 import './style.scss'
 
-export default class Socials extends Component {
+class Socials extends Component {
     state = {
         socials: [
             {
@@ -124,3 +124,5 @@ export default class Socials extends Component {
         )
     }
 }
+
+export { Socials } 

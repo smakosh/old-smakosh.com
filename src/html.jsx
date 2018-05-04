@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import config from '../data/Config'
-import styledStyles from '!raw-loader!../public/styles.css'
 import favicon from '../static/favicon/logo-48.png'
 import me from '../static/me.jpg'
 
 let inlinedStyles = ''
 if (process.env.NODE_ENV === 'production') {
   try {
-    inlinedStyles = styledStyles
+    inlinedStyles = require('!raw-loader!../public/styles.css')
   } catch (e) {
     console.log(e)
   }

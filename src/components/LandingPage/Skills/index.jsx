@@ -1,11 +1,11 @@
 import React from 'react'
 
-import {Container} from '../common'
+import { Container } from '../../common'
 import Skill from './Skill'
 
-import Graphic from '../../../static/skills/graphic.svg'
-import Uix from '../../../static/skills/ui.svg'
-import WebDev from '../../../static/skills/webdev.svg'
+import Graphic from '../../../../static/skills/graphic.svg'
+import Uix from '../../../../static/skills/ui.svg'
+import WebDev from '../../../../static/skills/webdev.svg'
 
 import './style.scss'
 
@@ -47,4 +47,4 @@ const Skills = ({firstImg, secondImg, thirdImg}) => (
     </div>
 )
 
-export default Skills
+export { Skills }

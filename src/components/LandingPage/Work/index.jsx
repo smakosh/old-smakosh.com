@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { Container } from '../common'
+import { Container } from '../../common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
 
 import './style.scss'
 
-const Projects = ({
+const Work = ({
     BehancefirstImg,
     BehancesecondImg,
     BehancethirdImg,
@@ -31,4 +31,4 @@ const Projects = ({
     </Container>
 )
 
-export default Projects
+export { Work }
