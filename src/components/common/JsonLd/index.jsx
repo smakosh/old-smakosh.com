@@ -13,9 +13,12 @@ const JsonLd = ({ children, type, headline, datePublished, cover }) => {
       "@id": "https://google.com/article"
     },
     "headline": "${headline ? headline : 'A self-taught Graphic, UI/UX Designer and full stack developer.'}",
-    "image": [
-      "${cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`}",
-     ],
+    "image": {
+      "@type": "imageObject",
+      "url": "${cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`}",
+      "height": "600",
+      "width": "800"
+    },
     "datePublished": "${datePublished ? datePublished : '1-1-2018'}",
     "dateModified": "${datePublished ? datePublished : '1-1-2018'}",
     "author": {
