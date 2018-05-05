@@ -2,6 +2,7 @@
 path: '/hps-hackathon'
 thumbnail: './awards.jpeg'
 date: 2015-04-10T16:45:01.889Z
+next: '/never-work-for-free'
 title: 'HPS Hackathon'
 ---
 

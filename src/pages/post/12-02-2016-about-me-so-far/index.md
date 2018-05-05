@@ -2,6 +2,7 @@
 path: '/about-me-so-far'
 thumbnail: './setup.jpeg'
 date: 2014-12-02T16:45:01.889Z
+next: '/istanbul-trip'
 title: 'About me so far...'
 ---
 

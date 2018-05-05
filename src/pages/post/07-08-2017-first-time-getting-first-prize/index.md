@@ -2,13 +2,11 @@
 path: '/first-time-first-prize'
 thumbnail: './winners.jpeg'
 date: 2015-07-08T16:45:01.889Z
+next: '/getting-my-first-job-offer'
 title: 'First time getting first prize at a hackathon'
 ---
 
 As I always do, to arrive at time I stay awake the whole night, so I spent that night coding & designing like most of my days.
-
-![no sleep as always](nosleep.jpeg "I was using botman.io to make my first messenger bot :D")
-
 So after [I declined the job offer](/getting-my-first-job-offer), I was invited once again to participate in a great hackathon organized by [Lematin](https://lematin.ma) by partnering with Screendy, but this hackathon was a bit serious since they invited only ideas holders at the beginning to select the good ones, then they invited us : designers, developers & marketers to help them make a prototype.
 
 ![Co-working space](coworking_space.jpeg)

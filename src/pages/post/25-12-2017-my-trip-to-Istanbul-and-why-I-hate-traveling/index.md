@@ -2,6 +2,7 @@
 path: '/istanbul-trip'
 thumbnail: './flight.jpeg'
 date: 2015-25-12T16:45:01.889Z
+next: '/how-I-learned-design-and-dev'
 title: 'My trip to Istanbul & why I hate traveling'
 ---
 

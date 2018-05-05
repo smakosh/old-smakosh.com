@@ -15,7 +15,7 @@ const Blog = ({data}) => (
       <h2 style={{ marginBottom: '2rem' }}>
         Articles
       </h2>
-      {data.allMarkdownRemark.edges.map(post => ( 
+      {data.allMarkdownRemark.edges.map(post => (
         <div key={post.node.id} onClick={() => navigateTo(post.node.frontmatter.path)} className="post">
           <div className="article-image">
             <Img sizes={post.node.frontmatter.thumbnail.childImageSharp.sizes} />

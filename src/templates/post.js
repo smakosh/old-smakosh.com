@@ -22,13 +22,23 @@ export default function Template({ data }) {
                     <h1>{post.frontmatter.title}</h1>
                     <div dangerouslySetInnerHTML={{__html: post.html}} />
                     <i>{post.frontmatter.date}</i>
-                    <div className="back">
-                        <Link
-                            to='/blog'
-                        >
-                            Go back
-                        </Link>
-                    </div>
+                    {post.frontmatter.next ? (
+                        <div className="back">
+                            <Link
+                                to={post.frontmatter.next}
+                            >
+                                Read next Article
+                            </Link>
+                        </div>
+                    ) : (
+                        <div className="back">
+                            <Link
+                                to='/blog'
+                            >
+                                Go Back
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </Container>
         </div>
@@ -43,6 +53,7 @@ export const postQuery = graphql `
                 date(formatString: "MMMM DD, YYYY")
                 path
                 title
+                next
                 thumbnail {
                     childImageSharp {
                         sizes(maxWidth: 630 ) {

@@ -2,6 +2,7 @@
 path: '/getting-my-first-job-offer'
 thumbnail: './workspace.jpeg'
 date: 2015-07-06T16:45:01.889Z
+next: '/hps-hackathon'
 title: 'Getting my first job offer without a degree at a startup'
 ---
 
