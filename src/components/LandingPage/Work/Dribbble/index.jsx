@@ -13,19 +13,22 @@ export default class Dribbble extends Component {
                     id: 0,
                     title: 'Planets UI',
                     image: this.props.firstImg,
-                    link: 'https://dribbble.com/shots/3428200-Daily-UI-10'
+                    link: 'https://dribbble.com/shots/3428200-Daily-UI-10',
+                    description: 'An UI that got kind of an award on Uplabs'
                 },
                 {
                     id: 1,
                     title: 'Post UI',
                     image: this.props.secondImg,
-                    link: 'https://dribbble.com/shots/3344087-Daily-UI-06'
+                    link: 'https://dribbble.com/shots/3344087-Daily-UI-06',
+                    description: 'Part of a daily UI challenge I was having'
                 },
                 {
                     id: 2,
                     title: 'Futuristic Todo',
                     image: this.props.thirdImg,
-                    link: 'https://dribbble.com/shots/3829349-Daily-UI-22'
+                    link: 'https://dribbble.com/shots/3829349-Daily-UI-22',
+                    description: 'Testing cssGrid for the first time, so I designed this'
                 }
             ]
         }
@@ -47,6 +50,7 @@ export default class Dribbble extends Component {
                             title={shot.title}
                             image={shot.image}
                             link={shot.link}
+                            description={shot.description}
                         />
                     ))}
                     <More link="https://dribbble.com/smakosh" color="#ea4c89" icon={DribbbleIcon} />

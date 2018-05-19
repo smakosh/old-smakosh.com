@@ -5,31 +5,32 @@ import Unnamed from '../../../../../static/github/unnamed.svg'
 import Perceptron from '../../../../../static/github/perceptron.svg'
 import Todo from '../../../../../static/github/todo.svg'
 
-import { More } from '../../../common'
-
-import Repository from './Repository'
+import { More, Card } from '../../../common'
 
 export default class Github extends Component {
 
     state = {
-        repos: [
+        repositories: [
             {
                 id: 0,
                 title: 'Unnamed',
                 image: `${Unnamed}`,
-                link: 'https://github.com/smakosh/unnamed-css-framework'
+                link: 'https://github.com/smakosh/unnamed-css-framework',
+                description: 'A simple colorful css framework I made'
             },
             {
                 id: 1,
                 title: 'Perceptron',
                 image: `${Perceptron}`,
-                link: 'https://github.com/smakosh/Perceptron-neural-net-from-scratch'
+                link: 'https://github.com/smakosh/Perceptron-neural-net-from-scratch',
+                description: 'A single artificial neuron from scratch'
             },
             {
                 id: 2,
                 title: 'Todo Apps',
                 image: `${Todo}`,
-                link: 'https://github.com/smakosh/react-todolist'
+                link: 'https://github.com/smakosh/react-todolist',
+                description: 'A simple react/redux/firebase todo app'
             }
         ]
     }
@@ -44,12 +45,14 @@ export default class Github extends Component {
             >   
                 <h3>Open sourced on Github</h3>
                 <div className="work">
-                    {this.state.repos.map(repo => (
-                        <Repository
-                            key={repo.id}
-                            title={repo.title}
-                            image={repo.image}
-                            link={repo.link}
+                    {this.state.repositories.map(repository => (
+                        <Card
+                            key={repository.id}
+                            title={repository.title}
+                            image={repository.image}
+                            link={repository.link}
+                            description={repository.description}
+                            svg
                         />
                     ))}
                     <More link="https://github.com/smakosh" color="#000" icon={GithubIcon} />

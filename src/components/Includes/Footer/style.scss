@@ -1,11 +1,20 @@
-.footer {
+footer {
+    margin-top: 6rem;
+
+    .footer-full {
+        width: 100%;
+        padding: 2rem 0;
+        color: #fff;
     
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media screen and (max-width: 680px) {
-        flex-direction: column;
-        text-align: center;
+        .footer {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+    
+            @media screen and (max-width: 680px) {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     }
 }

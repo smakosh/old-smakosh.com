@@ -11,5 +11,6 @@
 
     @media screen and (max-width: 680px) {
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4rem;
     }
 }

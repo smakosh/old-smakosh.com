@@ -27,7 +27,7 @@ class ContactForm extends Component {
         e.preventDefault()
 
         if(!e.target.name.value || !e.target.email.value || !e.target.message.value || !this.state.bot) {
-            return alert('Go away bot!')
+            return alert('Please fill in all the required fields :)')
         } else {
             fetch("/", {
                 method: "POST",
@@ -80,7 +80,6 @@ class ContactForm extends Component {
                             sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
                             callback={this.verifyCallback}
                             expiredCallback={this.expiredCallback}
-                            data-theme="dark"
                         />
                         <p className="center-text">
                             <button type="submit" className="gradient-blue">Send</button>

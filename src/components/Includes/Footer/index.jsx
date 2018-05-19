@@ -32,14 +32,7 @@ class Footer extends Component {
     render() {
         return (
             <footer>
-                <div 
-                    style={{
-                        width: '100%',
-                        padding: '6rem 1rem 2rem 1rem',
-                        color: '#fff'
-                    }}
-                    className="half-clip gradient-blue"
-                >
+                <div className="footer-full gradient-blue">
                     <Container className="footer">
                         {
                             this.state.links.map(item => (
