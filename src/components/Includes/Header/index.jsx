@@ -10,7 +10,12 @@ import './style.scss'
 class Header extends Component {
 
   state = {
-    sidebar: ''
+    sidebar: '',
+    header: 'none'
+  }
+
+  componentDidMount() {
+    location.pathname === '/' && this.setState({ header: 'fixed'})
   }
 
   toggle = () => {
@@ -26,7 +31,7 @@ class Header extends Component {
       <div
         style={{
           background: '#fff',
-          position: 'fixed',
+          position: this.state.header,
           width: '100%',
           zIndex: 1,
           borderBottom: '.01em solid rgb(204, 204, 204)'

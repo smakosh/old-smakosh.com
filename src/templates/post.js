@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { Container, JsonLd } from '../components/common'
+import { SmallerContainer, JsonLd } from '../components/common'
 
 import './styles.scss'
 
@@ -9,7 +9,7 @@ export default function Template({ data }) {
     const {markdownRemark: post} = data
     return (
         <div>
-            <Container className="article">
+            <SmallerContainer className="article">
                 <JsonLd
                     type="NewsArticle"
                     headline={post.frontmatter.title}
@@ -20,7 +20,7 @@ export default function Template({ data }) {
                 </JsonLd>
                 <div className="article-card">
                     <h1>{post.frontmatter.title}</h1>
-                    <div dangerouslySetInnerHTML={{__html: post.html}} />
+                    <div className="post-content" dangerouslySetInnerHTML={{__html: post.html}} />
                     <i>{post.frontmatter.date}</i>
                     {post.frontmatter.next ? (
                         <div className="back">
@@ -40,7 +40,7 @@ export default function Template({ data }) {
                         </div>
                     )}
                 </div>
-            </Container>
+            </SmallerContainer>
         </div>
     )
 }

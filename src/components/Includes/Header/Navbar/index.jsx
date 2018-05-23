@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { Container } from '../../../common'
-import Logo from '../../../../../static/logo.svg'
+import { Container, Logo } from '../../../common'
 
 import './style.scss'
 
@@ -17,16 +16,10 @@ const Navbar = ({logo}) => (
                 color: '#212121'
             }}
             >
-            <img 
-                style={{
-                    height: '2.8rem',
-                    width: '2.8rem',
-                    marginBottom: 0,
-                    marginRight: '.5rem'
-                }}
+            <Logo
                 className="logo"
-                src={Logo} 
-                alt="brand" 
+                color="#212121" 
+                strokeWidth="2"
             /> Smakosh
             </Link>
         </div>

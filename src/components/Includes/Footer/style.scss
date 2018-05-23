@@ -9,11 +9,39 @@ footer {
         .footer {
             padding: 2rem 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+            align-items: flex-start;
     
             @media screen and (max-width: 680px) {
                 flex-direction: column;
                 text-align: center;
+            }
+
+            ul {
+                list-style: none;
+
+                .brand-footer {
+                    display: flex;
+                    align-items: center;
+
+                    .logo-footer {
+                        transition: 0.5s;
+                        height: 4rem;
+                        width: 4rem;
+                        margin-right: 1rem;
+                        margin-bottom: 0;
+    
+                        &:hover  {
+                            opacity: 0.7;
+                            transition: 0.5s;
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+
+                a {
+                    color: #fff;
+                }
             }
         }
     }

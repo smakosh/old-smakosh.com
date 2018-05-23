@@ -147,7 +147,7 @@ $large-and-up: "only screen and (min-width : #{$tablet-up})" !default;
 }
 
 .small-container {
-    max-width: 960px;
+    max-width: 850px;
     margin: 0 auto;
 
     @media screen and (max-width: 992px) {
