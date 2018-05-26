@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import Recaptcha from 'react-grecaptcha'
+import Recaptcha from "react-google-recaptcha"
 import { navigateTo } from 'gatsby-link'
 
 import { SmallerContainer } from '../../common'
 
 import './style.scss'
+
+const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY || '6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN'
 
 const encode = (data) => {
     return Object.keys(data)
@@ -13,28 +15,27 @@ const encode = (data) => {
 }
 
 class ContactForm extends Component {
-    state = {
-        name: '', 
-        email: '', 
-        message: '',
-        bot: false
-    }
+    state = {}
 
-    verifyCallback = res => this.setState({bot: true })
-    expiredCallback = () => navigateTo('/contact')
+    handleRecaptcha = value => this.setState({ "g-recaptcha-response": value })
 
     handleSubmit = e => {
         e.preventDefault()
+        const form = e.target
 
-        if(!e.target.name.value || !e.target.email.value || !e.target.message.value || !this.state.bot) {
+        if(!e.target.name.value || !e.target.email.value || !e.target.message.value) {
             return alert('Please fill in all the required fields :)')
         } else {
             fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({ "form-name": "contact", name: this.state.name, email: this.state.email, message: this.state.message })
-            }).then(() => navigateTo('/thanks'))
-            .catch(error => alert('Something went wrong, please try again!'))
+                body: encode({
+                  "form-name": form.getAttribute("name"),
+                  ...this.state
+                })
+              })
+                .then(() => navigateTo(form.getAttribute("action")))
+                .catch(error => alert('Something went wrong, please try again!'))
             e.target.name.value = ''
             e.target.email.value = ''
             e.target.message.value = ''
@@ -50,17 +51,15 @@ class ContactForm extends Component {
                     <h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
                     <p>Or fill in the contact form and submit it!</p>
                     <form
-                        onSubmit={this.handleSubmit}
+                        action="/thanks/"
                         name="contact"
-                        method="post"
+                        method="POST"
                         data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        >
-                        <p hidden>
-                            <label>
-                            Don’t fill this out: <input name="bot-field" />
-                            </label>
-                        </p>
+                        data-netlify-recaptcha="true"
+                        onSubmit={this.handleSubmit}>
+                        <noscript>
+                            <p>This form won’t work with Javascript disabled</p>
+                        </noscript>
                         <p>
                             <label>
                             Your full name: <input type="text" name="name" value={name} onChange={this.handleChange} />
@@ -77,9 +76,9 @@ class ContactForm extends Component {
                             </label>
                         </p>
                         <Recaptcha
-                            sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
-                            callback={this.verifyCallback}
-                            expiredCallback={this.expiredCallback}
+                            ref="recaptcha"
+                            sitekey={RECAPTCHA_KEY}
+                            onChange={this.handleRecaptcha}
                         />
                         <p className="center-text">
                             <button type="submit" className="gradient-blue">Send</button>
