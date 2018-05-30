@@ -1,9 +1,8 @@
 import React from 'react'
-
-const SmallerContainer = ({ children, className }) => (
-    <div className={`${className ? className : ''} small-container`}>
+import cx from 'classnames'
+const SmallerContainer = ({ children, className }) =>
+    <div className={cx('small-container', className)}>
         {children}
     </div>
-)
 
-export {SmallerContainer}
+export { SmallerContainer }

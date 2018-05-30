@@ -1,7 +1,7 @@
 ---
 path: '/build-your-perceptron'
 thumbnail: './nn.jpeg'
-date: 2015-08-12T16:45:01.889Z
+date: 2017-08-12T16:45:01.889Z
 next: '/first-time-first-prize'
 title: 'Build your perceptron neural net from scratch'
 ---

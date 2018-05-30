@@ -1,7 +1,7 @@
 ---
 path: '/never-work-for-free'
 thumbnail: './quotescode.jpeg'
-date: 2015-02-03T16:45:01.889Z
+date: 2017-03-02T16:45:01.889Z
 next: '/about-me-so-far'
 title: 'Never work for free'
 ---

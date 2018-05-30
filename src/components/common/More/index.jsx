@@ -1,7 +1,5 @@
 import React from 'react'
-
 import './styles.scss'
-
 const More = ({ link, color, icon}) => 
     <a
         href={link} 

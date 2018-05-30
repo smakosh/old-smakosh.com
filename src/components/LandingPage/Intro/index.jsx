@@ -1,8 +1,6 @@
 import React from 'react'
-
 import './styles.scss'
-
-const Intro = () => (
+const Intro = () =>
     <div className="intro">
         <div className="intro-content">
             <h1>I'm Ismail Ghallou</h1>
@@ -18,6 +16,5 @@ const Intro = () => (
             <a href="https://www.linkedin.com/in/ismail-ghallou-630149122" target="_blank" className="magical-btn">View resume</a>
         </div>
     </div>
-)
 
 export { Intro }
