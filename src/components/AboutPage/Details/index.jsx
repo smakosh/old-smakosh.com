@@ -1,14 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
 import { Container } from '../../common'
 import Envelope from '../../../../static/about/envelope.svg'
 import Phone from '../../../../static/about/phone.svg'
 import Marker from '../../../../static/about/marker.svg'
-
 import './style.scss'
 
-const Details = () => (
+const Details = () => 
     <Container className="details-container">
         <p>
         I’m Ismail Ghallou, also known as Smakosh, I’m a self-taught Graphic, 
@@ -25,8 +23,8 @@ const Details = () => (
         </p>
         <div className="details">
             <p>
-              <img src={Envelope} alt="email" className="mr1" />
-              ismai23l@hotmail.com
+                <img src={Envelope} alt="email" className="mr1" />
+                ismai23l@hotmail.com
             </p>
             <p>
                 <img src={Phone} alt="phone" className="mr1" />
@@ -38,6 +36,5 @@ const Details = () => (
             </p>
         </div>
     </Container>
-)
 
 export { Details }

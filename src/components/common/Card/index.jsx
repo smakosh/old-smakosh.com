@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import cx from 'classnames'
-
 import './styles.scss'
 
 const Card = ({ id, link, title, image, description, svg }) => (

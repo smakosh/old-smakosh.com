@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
 import Me from '../../../../static/me.jpg'
 
 const JsonLd = ({ children, type, headline, datePublished, cover }) => {
@@ -57,7 +56,7 @@ const JsonLd = ({ children, type, headline, datePublished, cover }) => {
   return (
     <Helmet>
       <script type="application/ld+json">{type === 'NewsArticle' ? structuredDataArticle : structuredDataOrganization}</script>
-      <title>{children}</title>
+      <title>{ children }</title>
     </Helmet>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 const SmallerContainer = ({ children, className }) =>
     <div className={cx('small-container', className)}>
-        {children}
+        { children }
     </div>
 
 export { SmallerContainer }

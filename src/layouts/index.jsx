@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Header ,Footer } from '../components/Includes'
+import Footer from '../components/Includes/Footer'
+import Header from '../components/Includes/Header'
 
 import './index.scss'
 import './main.scss'

@@ -35,4 +35,4 @@ const Footer = () =>
         <Copyrights />
     </footer>
 
-export { Footer }
+export default Footer
