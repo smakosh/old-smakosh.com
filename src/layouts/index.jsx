@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
 import Footer from '../components/Includes/Footer'
 import Header from '../components/Includes/Header'
 
@@ -21,9 +19,5 @@ const TemplateWrapper = ({ children }) => (
     <Footer />
   </div>
 )
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
 
 export default TemplateWrapper

@@ -1,3 +1,14 @@
+.header {
+    background: #fff;
+    width: 100%;
+    z-index: 1;
+    border-bottom: .01em solid rgb(204, 204, 204);
+}
+
+.fixed-header {
+    position: fixed;
+}
+
 .overlay {
     position: fixed;
     background: rgba(0, 0, 0, .7);

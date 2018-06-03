@@ -27,7 +27,7 @@ const Skills = ({firstImg, secondImg, thirdImg}) => {
             <Container>
                 <h2>Skills</h2>
                 <div className="skill-container">
-                    {services.map((service, index) => <Skill {...service} />)}
+                    {services.map((service, index) => <Skill key={index} {...service} />)}
                 </div>
             </Container>
         </div>

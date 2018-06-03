@@ -8,6 +8,7 @@ const Contact = () => (
   <React.Fragment>
     <JsonLd
       type="Organization"
+      location="/contact"
     >
       Smakosh | Contact
     </JsonLd>

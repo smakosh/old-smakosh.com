@@ -9,6 +9,7 @@ const Blog = ({data}) => (
     <SmallerContainer>
       <JsonLd
         type="Organization"
+        location="/blog"
       >
         Smakosh | Blog
       </JsonLd>

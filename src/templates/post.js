@@ -15,6 +15,7 @@ export default function Template({ data }) {
                     headline={post.frontmatter.title}
                     datePublished={post.frontmatter.date}
                     cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
+                    location={post.frontmatter.path}
                 >
                     {post.frontmatter.title}
                 </JsonLd>

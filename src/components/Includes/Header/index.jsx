@@ -7,16 +7,8 @@ import Hamburger from './Hamburger'
 import Sidebar from './Sidebar'
 import './style.scss'
 
-const Header = ({ sidebar, header, toggle }) => (
-    <div
-      style={{
-        background: '#fff',
-        position: header,
-        width: '100%',
-        zIndex: 1,
-        borderBottom: '.01em solid rgb(204, 204, 204)'
-      }}
-    > 
+const Header = ({ sidebar, position, toggle }) => (
+    <div className={cx('header', {'fixed-header': position})}> 
       <div className={cx('overlay', {'active': sidebar})} onClick={toggle}></div>
       <Navbar />
       <Hamburger sidebar={sidebar} toggle={toggle} />
@@ -37,7 +29,7 @@ const enhance = compose(
   ),
   lifecycle({
     componentDidMount() {
-      location.pathname === '/' && this.setState({ header: 'fixed'})
+      location.pathname === '/' && this.setState({ position: true})
     }
   })
 )

@@ -1,8 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Me from '../../../../static/me.jpg'
+import config from '../../../../data/Config'
 
-const JsonLd = ({ children, type, headline, datePublished, cover }) => {
+const JsonLd = ({ children, type, headline, datePublished, cover, location = '' }) => {
 
   let structuredDataArticle = `{
     "@context": "http://schema.org",
@@ -55,6 +56,24 @@ const JsonLd = ({ children, type, headline, datePublished, cover }) => {
 
   return (
     <Helmet>
+      <meta name="description" content={headline ? headline : config.description} />
+      <meta name="image" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
+
+      <meta property="og:url" content={`${config.url}${location}/?ref=smakosh.com`} />
+      <meta property="og:type" content={headline ? 'NewsArticle' : 'website'} />
+      <meta property="og:title" content={headline ? headline : config.copyright.label} />
+      <meta property="og:description" content={headline ? headline : config.description} />
+      <meta property="og:image" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
+      <meta property="fb:app_id" content={config.social.facebook} />
+
+      <meta name="twitter:card" content={headline ? headline : config.description} />
+      <meta
+        name="twitter:creator"
+        content={config.social.twitter}
+      />
+      <meta name="twitter:title" content={headline ? headline : config.copyright.label} />
+      <meta name="twitter:description" content={headline ? headline : config.description} />
+      <meta name="twitter:image" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
       <script type="application/ld+json">{type === 'NewsArticle' ? structuredDataArticle : structuredDataOrganization}</script>
       <title>{ children }</title>
     </Helmet>
