@@ -8,7 +8,7 @@ import WebDev from '../../../../static/skills/webdev.svg'
 import './style.scss'
 
 const Skills = ({firstImg, secondImg, thirdImg}) => {
-    const services = [
+    const skills = [
         {
             title: 'Graphic Design',
             icon: `${Graphic}`
@@ -18,7 +18,7 @@ const Skills = ({firstImg, secondImg, thirdImg}) => {
             icon: `${Uix}`
         },
         {
-            title: 'Front end development',
+            title: 'Full stack development',
             icon: `${WebDev}`
         },
     ]
@@ -27,7 +27,7 @@ const Skills = ({firstImg, secondImg, thirdImg}) => {
             <Container>
                 <h2>Skills</h2>
                 <div className="skill-container">
-                    {services.map((service, index) => <Skill key={index} {...service} />)}
+                    {skills.map((skill, index) => <Skill key={index} {...skill} />)}
                 </div>
             </Container>
         </div>

@@ -1,18 +1,14 @@
 import React from 'react'
 import Img from 'gatsby-image'
-
-import { Container, JsonLd } from '../components/common'
+import { Container, Head } from '../components/common'
 import { Details, Socials } from '../components/AboutPage'
 
 const About = ({ data }) => (
   <div>
     <Container>
-      <JsonLd
-        type="Organization"
-        location="/about"
-      >
+      <Head type="Organization" location="/about">
         Smakosh | About
-      </JsonLd>
+      </Head>
       <h2>About me</h2>
       <div className="about">
         <Details />

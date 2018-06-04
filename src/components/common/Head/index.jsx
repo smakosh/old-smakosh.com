@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Me from '../../../../static/me.jpg'
 import config from '../../../../data/Config'
 
-const JsonLd = ({ children, type, headline, datePublished, cover, location = '' }) => {
+const Head = ({ children, type, headline, datePublished, cover, location = '' }) => {
 
   let structuredDataArticle = `{
     "@context": "http://schema.org",
@@ -66,18 +66,16 @@ const JsonLd = ({ children, type, headline, datePublished, cover, location = '' 
       <meta property="og:image" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
       <meta property="fb:app_id" content={config.social.facebook} />
 
-      <meta name="twitter:card" content={headline ? headline : config.description} />
-      <meta
-        name="twitter:creator"
-        content={config.social.twitter}
-      />
+      <meta name="twitter:card" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
+      <meta name="twitter:creator" content={config.social.twitter} />
+      <meta name="twitter:site" content="@smakosh" />
       <meta name="twitter:title" content={headline ? headline : config.copyright.label} />
       <meta name="twitter:description" content={headline ? headline : config.description} />
-      <meta name="twitter:image" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
+      <meta name="twitter:image:src" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
       <script type="application/ld+json">{type === 'NewsArticle' ? structuredDataArticle : structuredDataOrganization}</script>
       <title>{ children }</title>
     </Helmet>
   )
 }
 
-export { JsonLd }
+export { Head }

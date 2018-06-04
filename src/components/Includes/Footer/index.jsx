@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
-
-import { Container, Logo } from '../../common'
+import { Container, Logo, Twitter, GithubIcon, Instagram, Unsplash, Linkedin } from '../../common'
 import Copyrights from './Copyrights'
 import './style.scss'
 
-const Footer = () =>
+const Footer = () => (
     <footer>
         <div className="footer-full gradient-blue">
             <Container className="footer">
@@ -26,13 +25,31 @@ const Footer = () =>
                         <li><Link to="/blog">Blog</Link></li>
                     </ul>
                     <ul>
-                        <li><a target="_blank" href="https://twitter.com/smakosh">Twitter</a></li>
-                        <li><a target="_blank" href="https://github.com/smakosh">Github</a></li>
-                        <li><a target="_blank" href="https://instagram.com/smakosh19">Instagram</a></li>
+                        <li>
+                            Follow me on
+                        </li>
+                        <li>
+                            <a target="_blank" className="social" href="https://twitter.com/smakosh">
+                                <Twitter className="grow" width="24" height="24" />
+                            </a>
+                            <a target="_blank" className="social" href="https://github.com/smakosh">
+                                <GithubIcon className="grow" width="24" height="24" />
+                            </a>
+                            <a target="_blank" className="social" href="https://instagram.com/smakosh19">
+                                <Instagram className="grow" width="24" height="24" />
+                            </a>
+                            <a target="_blank" className="social" href="https://unsplash.com/smakosh">
+                                <Unsplash className="grow" width="24" height="24" />
+                            </a>
+                            <a target="_blank" href="https://linkedin.com/in/ismail-ghallou-630149122">
+                                <Linkedin className="grow" width="24" height="24" />
+                            </a>
+                        </li>
                     </ul>
             </Container>
         </div>
         <Copyrights />
     </footer>
+)
 
 export default Footer

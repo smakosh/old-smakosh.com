@@ -1,18 +1,14 @@
 import React from 'react'
 import {navigateTo} from 'gatsby-link'
 import Img from 'gatsby-image'
-
-import { SmallerContainer, JsonLd } from '../components/common'
+import { SmallerContainer, Head } from '../components/common'
 
 const Blog = ({data}) => (
   <div>
     <SmallerContainer>
-      <JsonLd
-        type="Organization"
-        location="/blog"
-      >
+      <Head type="Organization" location="/blog">
         Smakosh | Blog
-      </JsonLd>
+      </Head>
       <h2 style={{ marginBottom: '2rem' }}>
         Articles
       </h2>

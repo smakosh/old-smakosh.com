@@ -1,14 +1,9 @@
 import React from 'react'
-
-import { JsonLd } from '../components/common'
+import { Head } from '../components/common'
 
 const NotFoundPage = () => (
   <div>
-    <JsonLd
-        type="Organization"
-      >
-      Smakosh | 404
-    </JsonLd>
+    <Head type="Organization">Smakosh | 404</Head>
     <div
       style={{
         maxWidth: 960,

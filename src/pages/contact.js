@@ -1,19 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
-import { JsonLd } from '../components/common'
+import { Head } from '../components/common'
 import { ContactForm } from '../components/ContactPage'
 
-const Contact = () => (
+const Contact = () =>
   <React.Fragment>
-    <JsonLd
-      type="Organization"
-      location="/contact"
-    >
+    <Head type="Organization" location="/contact">
       Smakosh | Contact
-    </JsonLd>
+    </Head>
     <ContactForm />
   </React.Fragment>
-)
 
 export default Contact

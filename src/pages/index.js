@@ -1,16 +1,13 @@
 import React from 'react'
-
 import { Intro, Skills, Work } from '../components/LandingPage'
-import { JsonLd } from '../components/common';
+import { Head } from '../components/common';
 
 const IndexPage = ({data}) => {
   return (
     <React.Fragment>
-      <JsonLd
-        type="Organization"
-      >
+      <Head type="Organization">
         Smakosh | Hello world!
-      </JsonLd>
+      </Head>
       <Intro />
       <Skills />
       <Work

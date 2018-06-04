@@ -1,16 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
-import { SmallerContainer, JsonLd } from '../components/common'
-
+import { SmallerContainer, Head, SocialShare } from '../components/common'
 import './styles.scss'
+import './highlight.scss'
 
 export default function Template({ data }) {
     const {markdownRemark: post} = data
     return (
         <div>
             <SmallerContainer className="article">
-                <JsonLd
+                <Head
                     type="NewsArticle"
                     headline={post.frontmatter.title}
                     datePublished={post.frontmatter.date}
@@ -18,28 +17,17 @@ export default function Template({ data }) {
                     location={post.frontmatter.path}
                 >
                     {post.frontmatter.title}
-                </JsonLd>
+                </Head>
                 <div className="article-card">
                     <h1>{post.frontmatter.title}</h1>
                     <div className="post-content" dangerouslySetInnerHTML={{__html: post.html}} />
+                    <SocialShare {...post.frontmatter} />
                     <i>{post.frontmatter.date}</i>
-                    {post.frontmatter.next ? (
-                        <div className="back">
-                            <Link
-                                to={post.frontmatter.next}
-                            >
-                                Read next Article
-                            </Link>
-                        </div>
-                    ) : (
-                        <div className="back">
-                            <Link
-                                to='/blog'
-                            >
-                                Go Back
-                            </Link>
-                        </div>
-                    )}
+                    <div className="back">
+                        <Link to={post.frontmatter.next}>
+                            Read next Article
+                        </Link>
+                    </div>
                 </div>
             </SmallerContainer>
         </div>

@@ -14,11 +14,13 @@ footer {
     
             @media screen and (max-width: 680px) {
                 flex-direction: column;
+                justify-content: center;
                 text-align: center;
             }
 
             ul {
                 list-style: none;
+                align-self: center;
 
                 .brand-footer {
                     display: flex;
@@ -37,6 +39,10 @@ footer {
                             transform: rotate(360deg);
                         }
                     }
+                }
+
+                .social {
+                    margin-right: 1rem;
                 }
 
                 a {
