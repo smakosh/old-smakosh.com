@@ -1,5 +1,4 @@
 .hamb {
-    position: fixed;
     z-index: 5;
     top: 1.6rem;
     right: 1.8rem;
@@ -21,6 +20,13 @@
             width: 1.6rem;
         }
     }
+}
+
+.fixed {
+    position: fixed;
+}
+.absolute {
+    position: absolute;
 }
 
 .hamb.active {

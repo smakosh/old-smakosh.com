@@ -25,7 +25,7 @@ export default function Template({ data }) {
                     <i>{post.frontmatter.date}</i>
                     <div className="back">
                         <Link to={post.frontmatter.next}>
-                            Read next Article
+                            Previous article
                         </Link>
                     </div>
                 </div>

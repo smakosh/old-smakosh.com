@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { compose, withStateHandlers, lifecycle } from 'recompose'
 import cx from 'classnames'
 import Navbar from './Navbar'
@@ -11,7 +10,7 @@ const Header = ({ sidebar, position, toggle }) => (
     <div className={cx('header', {'fixed-header': position})}> 
       <div className={cx('overlay', {'active': sidebar})} onClick={toggle}></div>
       <Navbar />
-      <Hamburger sidebar={sidebar} toggle={toggle} />
+      <Hamburger position={position} sidebar={sidebar} toggle={toggle} />
       <Sidebar sidebar={sidebar} toggle={toggle} />
     </div>
   )
