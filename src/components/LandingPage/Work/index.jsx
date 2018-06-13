@@ -1,10 +1,8 @@
 import React from 'react'
-
 import { Container } from '../../common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
-
 import './style.scss'
 
 const Work = ({

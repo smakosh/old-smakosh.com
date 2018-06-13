@@ -1,4 +1,5 @@
 import React from 'react'
+
 const Skill = ({icon, title}) =>
     <div style={{ textAlign: 'center' }}>
         <img src={icon} alt={title} className="grow" />
