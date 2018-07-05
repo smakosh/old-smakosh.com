@@ -6,27 +6,27 @@ import Github from './Github'
 import './style.scss'
 
 const Work = ({
-    BehancefirstImg,
-    BehancesecondImg,
-    BehancethirdImg,
-    DribbblefirstImg,
-    DribbblesecondImg,
-    DribbblethirdImg
+	BehancefirstImg,
+	BehancesecondImg,
+	BehancethirdImg,
+	DribbblefirstImg,
+	DribbblesecondImg,
+	DribbblethirdImg
 }) => (
-    <Container>   
-        <h2>Work</h2>
-        <Behance
-            firstImg={BehancefirstImg}
-            secondImg={BehancesecondImg}
-            thirdImg={BehancethirdImg}
-        />
-        <Dribbble
-            firstImg={DribbblefirstImg}
-            secondImg={DribbblesecondImg}
-            thirdImg={DribbblethirdImg}
-        />
-        <Github />
-    </Container>
+	<Container>   
+		<h2>Work</h2>
+		<Behance
+			firstImg={BehancefirstImg}
+			secondImg={BehancesecondImg}
+			thirdImg={BehancethirdImg}
+		/>
+		<Dribbble
+			firstImg={DribbblefirstImg}
+			secondImg={DribbblesecondImg}
+			thirdImg={DribbblethirdImg}
+		/>
+		<Github />
+	</Container>
 )
 
 export { Work }
