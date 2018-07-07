@@ -1,4 +1,5 @@
 ---
+id: 9
 path: '/the-tools-I-use'
 thumbnail: './tools.jpeg'
 date: 2018-2-27T16:45:01.889Z

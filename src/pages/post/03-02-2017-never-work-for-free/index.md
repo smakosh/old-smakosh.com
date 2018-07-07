@@ -1,4 +1,5 @@
 ---
+id: 1
 path: '/never-work-for-free'
 thumbnail: './quotescode.jpeg'
 date: 2017-03-02T16:45:01.889Z

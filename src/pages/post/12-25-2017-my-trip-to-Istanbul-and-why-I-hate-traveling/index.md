@@ -1,4 +1,5 @@
 ---
+id: 8
 path: '/istanbul-trip'
 thumbnail: './flight.jpeg'
 date: 2017-12-25T16:45:01.889Z

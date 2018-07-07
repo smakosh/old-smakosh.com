@@ -1,4 +1,5 @@
 ---
+id: 0
 path: '/about-me-so-far'
 thumbnail: './setup.jpeg'
 date: 2016-12-02T16:45:01.889Z

@@ -40,7 +40,7 @@ export const pageQuery = graphql`
   query BlogQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 10
+      limit: 20
     ) {
       edges {
         node {

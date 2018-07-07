@@ -1,4 +1,5 @@
 ---
+id: 4
 path: '/getting-my-first-job-offer'
 thumbnail: './workspace.jpeg'
 date: 2017-06-07T16:45:01.889Z

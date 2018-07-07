@@ -1,11 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Disqus from 'disqus-react'
 import { SmallerContainer, Head, SocialShare } from '../components/common'
 import './styles.scss'
 import './highlight.scss'
 
 export default function Template({ data }) {
 	const { markdownRemark: post } = data
+	const disqusShortName = 'https-smakosh-com'
+	const disqusConfig = {
+		url: `https://smakosh.com${post.frontmatter.path}`,
+		identifier: post.frontmatter.id,
+		title: post.frontmatter.title
+	}
+	console.log(`https://smakosh.com${post.frontmatter.path}`)
 	return (
 		<div>
 			<SmallerContainer className="article">
@@ -24,13 +32,19 @@ export default function Template({ data }) {
 					</h1>
 					<div className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
 					<SocialShare {...post.frontmatter} />
-					<i>
-						{post.frontmatter.date}
-					</i>
+					<div>
+						<i>{post.frontmatter.date}</i>
+					</div>
 					<div className="back">
 						<Link to={post.frontmatter.next}>
                             Previous article
 						</Link>
+					</div>
+					<div style={{ marginTop: '2rem' }}>
+						<Disqus.CommentCount shortname={disqusShortName} config={disqusConfig}>
+							Comments
+						</Disqus.CommentCount>
+						<Disqus.DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
 					</div>
 				</div>
 			</SmallerContainer>
@@ -47,6 +61,7 @@ export const postQuery = graphql`
                 path
                 title
                 next
+				id
                 thumbnail {
                     childImageSharp {
                         sizes(maxWidth: 630 ) {

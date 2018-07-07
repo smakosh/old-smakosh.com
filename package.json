@@ -5,6 +5,7 @@
   "author": "Ismail Ghallou <ismai23l@hotmail.com>",
   "dependencies": {
     "classnames": "^2.2.5",
+    "disqus-react": "^1.0.5",
     "gatsby": "^1.9.158",
     "gatsby-image": "^1.0.41",
     "gatsby-link": "^1.6.34",

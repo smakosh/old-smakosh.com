@@ -1,4 +1,5 @@
 ---
+id: 10
 path: '/we-are-truly-living-in-a-simulation'
 thumbnail: './sahara.jpg'
 date: 2018-6-29T12:06:01.889Z
