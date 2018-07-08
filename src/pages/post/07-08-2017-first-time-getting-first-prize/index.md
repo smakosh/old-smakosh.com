@@ -3,6 +3,7 @@ id: 5
 path: '/first-time-first-prize'
 thumbnail: './winners.jpeg'
 date: 2017-07-08T16:45:01.889Z
+edited:
 next: '/getting-my-first-job-offer'
 title: 'First time getting first prize at a hackathon'
 ---

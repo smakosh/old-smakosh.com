@@ -27,6 +27,7 @@ const Blog = ({ data }) => (
 							</p>
 							<i style={{ fontSize: '.8rem' }}>
 								{post.node.frontmatter.date}
+								<span style={{ marginLeft: 10 }}>{post.node.timeToRead} min</span>
 							</i>
 						</div>
 					</div>
@@ -46,9 +47,10 @@ export const pageQuery = graphql`
         node {
           excerpt(pruneLength: 250)
           id
+					timeToRead
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMM DD, YYYY")
             path
             thumbnail {
               childImageSharp {

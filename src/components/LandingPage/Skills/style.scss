@@ -15,4 +15,13 @@
             flex-direction: column;
         }
     }
+
+    .tech-used {
+        text-align: left;
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
 }

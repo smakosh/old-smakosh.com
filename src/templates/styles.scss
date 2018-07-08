@@ -4,6 +4,12 @@
         color: rgb(0, 119, 255);
     }
 
+    .article-date {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
     .article-card {
         padding: 2rem 1rem;
 

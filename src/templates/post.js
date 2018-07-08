@@ -13,7 +13,6 @@ export default function Template({ data }) {
 		identifier: post.frontmatter.id,
 		title: post.frontmatter.title
 	}
-	console.log(`https://smakosh.com${post.frontmatter.path}`)
 	return (
 		<div>
 			<SmallerContainer className="article">
@@ -27,14 +26,14 @@ export default function Template({ data }) {
 					{post.frontmatter.title}
 				</Head>
 				<div className="article-card">
-					<h1>
-						{post.frontmatter.title}
-					</h1>
+					<h1>{post.frontmatter.title}</h1>
+					<div className="article-date">
+						<i>{post.timeToRead} min read</i>
+						<i>Published on: {post.frontmatter.date}</i>
+						{post.frontmatter.edited && <i>Modified on: {post.frontmatter.edited}</i>}
+					</div>
 					<div className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
 					<SocialShare {...post.frontmatter} />
-					<div>
-						<i>{post.frontmatter.date}</i>
-					</div>
 					<div className="back">
 						<Link to={post.frontmatter.next}>
                             Previous article
@@ -56,8 +55,10 @@ export const postQuery = graphql`
     query BlogPostByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
+			timeToRead
             frontmatter {
                 date(formatString: "MMMM DD, YYYY")
+				edited(formatString: "MMMM DD, YYYY")
                 path
                 title
                 next
