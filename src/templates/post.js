@@ -20,6 +20,7 @@ export default function Template({ data }) {
 					type="NewsArticle"
 					headline={post.frontmatter.title}
 					datePublished={post.frontmatter.date}
+					dateModified={post.frontmatter.edited ? post.frontmatter.edited : post.frontmatter.date}
 					cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
 					location={post.frontmatter.path}
 				>
