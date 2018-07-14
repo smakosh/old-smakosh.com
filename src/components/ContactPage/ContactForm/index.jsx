@@ -1,46 +1,47 @@
 import React, { Component } from 'react'
-import Recaptcha from "react-google-recaptcha"
+import Recaptcha from 'react-google-recaptcha'
 import { navigateTo } from 'gatsby-link'
-import { SmallerContainer } from '../../common'
+import { SmallerContainer, CustomButton } from '../../common'
 import './style.scss'
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY || '6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN'
 
 const encode = data => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&")
+	return Object.keys(data)
+		.map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+		.join('&')
 }
 
 class ContactForm extends Component {
     state = {}
 
-    handleRecaptcha = value => this.setState({ "g-recaptcha-response": value })
+    handleRecaptcha = value => this.setState({ 'g-recaptcha-response': value })
 
-    handleSubmit = e => {
-        e.preventDefault()
-        const form = e.target
+	handleSubmit = e => {
+		e.preventDefault()
+		const form = e.target
 
-        if(!e.target.name.value || !e.target.email.value || !e.target.message.value) {
-            return alert('Please fill in all the required fields :)')
-        } else {
-            fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({
-                  "form-name": form.getAttribute("name"),
-                  ...this.state
-                })
-              })
-                .then(() => navigateTo(form.getAttribute("action")))
-                .catch(() => alert('Something went wrong, please try again!'))
-            e.target.name.value = ''
-            e.target.email.value = ''
-            e.target.message.value = ''
-        }
-    }
-    
-    handleChange = e => this.setState({ [e.target.name]: e.target.value })
+		if (!e.target.name.value || !e.target.email.value || !e.target.message.value) {
+			alert('Please fill in all the required fields :)') // eslint-disable-line no-undef
+		} else {
+			fetch('/', { // eslint-disable-line no-undef
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: encode({
+					'form-name': form.getAttribute('name'),
+					...this.state
+				})
+			})
+				.then(() => navigateTo(form.getAttribute('action')))
+				.catch(() => alert('Something went wrong, please try again!')) // eslint-disable-line no-undef
+			e.target.name.value = ''
+			e.target.email.value = ''
+			e.target.message.value = ''
+		}
+	}
+
+	handleChange = e => this.setState({ [e.target.name]: e.target.value })
+
 	render() {
 		const { name, email, message } = this.state
 		return (
@@ -54,32 +55,33 @@ class ContactForm extends Component {
 						method="POST"
 						data-netlify="true"
 						data-netlify-recaptcha="true"
-						onSubmit={this.handleSubmit}>
+						onSubmit={this.handleSubmit}
+					>
 						<noscript>
 							<p>This form won’t work with Javascript disabled</p>
 						</noscript>
 						<p>
 							<label>
-                            Your full name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+							Your full name: <input type="text" name="name" value={name} onChange={this.handleChange} />
 							</label>
 						</p>
 						<p>
 							<label>
-                            Your email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+							Your email: <input type="email" name="email" value={email} onChange={this.handleChange} />
 							</label>
 						</p>
 						<p>
 							<label>
-                            Message: <textarea name="message" value={message} onChange={this.handleChange} />
+							Message: <textarea name="message" value={message} onChange={this.handleChange} />
 							</label>
 						</p>
 						<Recaptcha
-							ref="recaptcha"
+							ref="recaptcha" // eslint-disable-line react/no-string-refs
 							sitekey={RECAPTCHA_KEY}
 							onChange={this.handleRecaptcha}
 						/>
 						<p className="center-text">
-							<button type="submit" className="gradient-blue">Send</button>
+							<CustomButton>Send</CustomButton>
 						</p>
 					</form>
 				</SmallerContainer>
