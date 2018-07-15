@@ -47,7 +47,7 @@ class Subscribe extends Component {
 							<input placeholder="youremail@example.com" type="email" onChange={this.handleEmailChange} required />
 							<CustomButton>Subscribe</CustomButton>
 						</div>
-						{!status === 'success' && (
+						{status === 'success' && (
 							<h4>Thank you! You will receive your first email shortly <span role="img" aria-label="successfully subscribed to news letter">🎉</span></h4>
 						)}
 						{status === 'error' && (
