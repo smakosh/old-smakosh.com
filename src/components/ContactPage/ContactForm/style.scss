@@ -30,29 +30,6 @@
         min-height: 8rem;
         margin: 0;
     }
-        
-    button {
-
-        cursor: pointer;
-        color: #fff;
-        border-radius: 40px;
-        margin: 0 auto;
-        padding: .8rem 4rem;
-        transition: .4s;
-        box-shadow: 0 4px 0px -4px #6a93ff;
-        border: none;
-        -webkit-appearance:none;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        &:hover {
-            box-shadow: 0 8px 27px -4px #6a93ff;
-            transition: .4s;
-        }
-    }
 }
 
 button, input, select, textarea:focus  {

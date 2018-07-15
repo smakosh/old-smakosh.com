@@ -38,7 +38,10 @@ module.exports = {
         'react/jsx-indent-props': 0,
         'import/no-extraneous-dependencies': 0,
         'object-curly-newline': 0,
-        'no-restricted-globals': 0
+        'no-restricted-globals': 0,
+        'arrow-parens': 0,
+        'import/no-useless-path-segments': 0,
+        'import/no-cycle': 0
     },
     'parser': 'babel-eslint',
     'globals': {
