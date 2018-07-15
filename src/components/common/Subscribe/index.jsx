@@ -25,6 +25,9 @@ class Subscribe extends Component {
 					this.setState({ status: 'error', msg: result.msg })
 				} else {
 					this.setState({ status: 'success', msg: result.msg })
+					setTimeout(() => {
+						this.setState({ status: '' })
+					}, 2000)
 				}
 			})
 			.catch(err => this.setState({ status: 'error', msg: err }))
@@ -37,22 +40,19 @@ class Subscribe extends Component {
 		return (
 			<Container className="subscribe-container">
 				<div className="subscribe-form">
-					{status === 'success' ? (
-						<div>
-							<h4>Thank you! You will receive your first email shortly <span role="img" aria-label="successfully subscribed to news letter">🎉</span></h4>
+					<form onSubmit={this.onSubmitForm}>
+						<h3>Subscribe to Smakosh</h3>
+						<p>Get the latest posts delivered right to your inbox</p>
+						<div className="form-fields">
+							<input placeholder="youremail@example.com" type="email" onChange={this.handleEmailChange} required />
+							<CustomButton>Subscribe</CustomButton>
 						</div>
-					) : (
-						<form onSubmit={this.onSubmitForm} noValidate>
-							<div>
-								<input type="email" onChange={this.handleEmailChange} />
-							</div>
-							<div>
-								<CustomButton>Subscribe</CustomButton>
-							</div>
-							{status === 'error' && (
-								<div style={{ marginTop: '1rem' }} dangerouslySetInnerHTML={{ __html: msg }} />)}
-						</form>
-					)}
+						{!status === 'success' && (
+							<h4>Thank you! You will receive your first email shortly <span role="img" aria-label="successfully subscribed to news letter">🎉</span></h4>
+						)}
+						{status === 'error' && (
+							<div style={{ marginTop: '1rem' }} dangerouslySetInnerHTML={{ __html: msg }} />)}
+					</form>
 				</div>
 			</Container>
 		)

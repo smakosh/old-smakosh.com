@@ -1,6 +1,6 @@
 import React from 'react'
 import { Intro, Skills, Work } from '../components/LandingPage'
-import { Head, Subscribe } from '../components/common';
+import { Head } from '../components/common';
 
 const IndexPage = ({ data }) => (
 	<React.Fragment>
@@ -15,7 +15,6 @@ const IndexPage = ({ data }) => (
 			DribbblesecondImg={data.PostImage.sizes}
 			DribbblethirdImg={data.TodoImage.sizes}
 		/>
-		<Subscribe />
 	</React.Fragment>
 )
 
