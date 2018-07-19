@@ -27,7 +27,7 @@ class Subscribe extends Component {
 					this.setState({ status: 'success', msg: result.msg })
 					setTimeout(() => {
 						this.setState({ status: '' })
-					}, 2000)
+					}, 8000)
 				}
 			})
 			.catch(err => this.setState({ status: 'error', msg: err }))
@@ -44,7 +44,7 @@ class Subscribe extends Component {
 						<h3>Subscribe to Smakosh</h3>
 						<p>Get the latest posts delivered right to your inbox</p>
 						<div className="form-fields">
-							<input placeholder="youremail@example.com" type="email" onChange={this.handleEmailChange} required />
+							<input aria-label="please insert your email" placeholder="youremail@example.com" type="email" onChange={this.handleEmailChange} required />
 							<CustomButton>Subscribe</CustomButton>
 						</div>
 						{status === 'success' && (
