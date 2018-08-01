@@ -51,7 +51,7 @@ class ContactForm extends Component {
 					<p>Or fill in the contact form and submit it!</p>
 					<form
 						action="/thanks/"
-						name="contact"
+						name="newname"
 						method="POST"
 						data-netlify="true"
 						data-netlify-recaptcha="true"
