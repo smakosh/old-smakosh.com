@@ -36,7 +36,8 @@
     "react-google-recaptcha": "^0.11.1",
     "react-helmet": "^5.2.0",
     "react-share": "^2.2.0",
-    "recompose": "^0.27.1"
+    "recompose": "^0.27.1",
+    "styled-components": "^3.4.5"
   },
   "keywords": [
     "smakosh, personal website, blog, gatsby"

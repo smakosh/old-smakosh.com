@@ -1,6 +1,6 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
-import { compose, withStateHandlers , lifecycle} from 'recompose'
+import { compose, withStateHandlers, lifecycle } from 'recompose'
 import cx from 'classnames'
 import Navbar from './Navbar'
 import Hamburger from './Hamburger'
@@ -18,8 +18,8 @@ const Header = ({ sidebar, toggle, isHomePage }) => (
 
 const enhance = compose(
 	withStateHandlers(
-		({ initialStep = false }) => ({
-			sidebar: initialStep
+		() => ({
+			sidebar: false
 		}),
 		{
 			toggle: ({ sidebar }) => () => ({ sidebar: !sidebar })
@@ -27,7 +27,7 @@ const enhance = compose(
 	),
 	lifecycle({
 		componentDidMount() {
-			if (location.pathname === withPrefix('/')) this.setState({ isHomePage: true})
+			if (location.pathname === withPrefix('/')) this.setState({ isHomePage: true })
 		}
 	})
 )
