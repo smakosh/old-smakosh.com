@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Me from '../../../../static/me.jpg'
 import config from '../../../../data/Config'
 
-const Head = ({ children, type, headline, datePublished, dateModified, cover, location = '' }) => {
+const Head = ({ children, type, headline, articleBody, datePublished, dateModified, cover, location = '' }) => {
 	const structuredDataArticle = `{
 		"@context": "http://schema.org",
 		"@type": "${type}",
@@ -22,38 +22,56 @@ const Head = ({ children, type, headline, datePublished, dateModified, cover, lo
 		"dateModified": "${dateModified}",
 		"author": {
 			"@type": "Person",
-			"name": "Ismail Ghallou (Smakosh)"
+			"name": "Ismail Ghallou 'Smakosh'"
 		},
+		"articleBody": "${articleBody}",
 		"publisher": {
-		"@type": "Organization",
-		"name": "Ismail Ghallou (Smakosh)",
-		"logo": {
-			"@type": "ImageObject",
-			"url": "https://smakosh.com/favicon/logo-48.png"
-		}
+			"@type": "Organization",
+			"name": "Ismail Ghallou (Smakosh)",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://smakosh.com/favicon/logo-48.png"
+			}
 		},
-		"description": "${headline}"
+		"description": "${headline}",
+		"url": "${config.url}${location}/?ref=smakosh.com"
 	}`
 
 	const structuredDataOrganization = `{ 
-    "@context" : "http://schema.org",
-    "@type" : "${type}",
-    "legalName" : "Ismail Ghallou",
-    "url" : "https://smakosh.com/",
-    "logo" : "https://smakosh.com/favicon/logo-48.png",
-    "contactPoint" : [{
-		"@type" : "ContactPoint",
-		"telephone" : "+212-663-53-27-61",
-		"contactType" : "customer service"
-    }],
-    "sameAs" : [ 
-		"http://www.facebook.com/ismailghallou",
-		"http://www.twitter.com/smakosh",
-		"https://plus.google.com/u/0/+IsmailSmakoshGhallou",
-		"https://www.youtube.com/user/smakoshthegamer",
-		"https://www.linkedin.com/in/ismail-ghallou-630149122"
-	]
-  }`
+		"@context": "http://schema.org",
+		"@type": "${type}",
+		"legalName": "Ismail Ghallou",
+		"url": "https://smakosh.com/",
+		"logo": "https://smakosh.com/favicon/logo-48.png",
+		"foundingDate": "2016",
+		"founders": [{
+			"@type": "Person",
+			"name": "Ismail Ghallou"
+		}],
+		"contactPoint": [{
+			"@type": "ContactPoint",
+			"email": "ismai23l@hotmail.com",
+			"telephone": "+212-663-53-27-61",
+			"contactType": "customer service"
+		}],
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Errachidia",
+			"addressRegion": "Drâa-Tafilalet",
+			"addressCountry": "Morocco",
+			"postalCode": "52000"
+		},
+		"sameAs": [ 
+			"http://www.facebook.com/ismailghallou",
+			"http://www.twitter.com/smakosh",
+			"https://plus.google.com/u/0/+IsmailSmakoshGhallou",
+			"https://www.youtube.com/user/smakoshthegamer",
+			"https://www.linkedin.com/in/ismail-ghallou-630149122",
+			"https://www.twitter.com/smakosh",
+			"https://instagram.com/smakosh19",
+			"https://github.com/smakosh"
+		]
+  	}`
 
 	return (
 		<Helmet>

@@ -69,7 +69,7 @@ const Socials = () => {
 			id: 4,
 			name: 'youtube',
 			icon: youtube,
-			link: 'youtube.com/user/smakoshthegamer'
+			link: 'https://youtube.com/user/smakoshthegamer'
 		},
 		{
 			id: 5,
@@ -93,4 +93,4 @@ const Socials = () => {
 	)
 }
 
-export { Socials } 
+export { Socials }

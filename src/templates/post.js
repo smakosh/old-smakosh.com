@@ -19,6 +19,7 @@ export default function Template({ data }) {
 				<Head
 					type="NewsArticle"
 					headline={post.frontmatter.title}
+					articleBody={post.html}
 					datePublished={post.frontmatter.date}
 					dateModified={post.frontmatter.edited ? post.frontmatter.edited : post.frontmatter.date}
 					cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
