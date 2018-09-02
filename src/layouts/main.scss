@@ -20,89 +20,6 @@
     }
 }
 
-.post {
-    margin-bottom: 1.5rem;
-    border-radius: .1rem;
-    box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
-    background: #fff;
-    cursor: pointer;
-
-    .article-image {
-        height: 400px;
-        overflow: hidden;
-
-        @media screen and (max-width: 992px) {
-            height: 300px;
-        }
-
-        @media screen and (max-width: 680px) {
-            height: 250px;
-        }
-    }
-
-    .article-content {
-        padding: 1rem;
-
-        .article-details {
-            transition: .5s;
-
-            h3, i {
-                transition: .5s;
-                color: #212121;
-            }
-        
-            p {
-                transition: .5s;
-                color: #616161;
-            }
-        }
-    }
-
-    &:hover, &:focus {
-        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, .2);
-
-        .article-details {
-            background: #212121;
-            transition: .5s;
-
-            .article-content {
-                transition: .5s;
-
-                h3, i, p {
-                    color: #fff;
-                    transition: .5s;
-                }
-            }
-        }
-    }
-}
-
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    @media screen and (max-width: 960px) {
-        flex-direction: column;
-    }
-
-    .details {
-        padding-left: 1.5rem;
-
-        p {
-            display: flex;
-            align-items: center;
-        }
-    }
-}
-
-.me {
-    position: relative;
-    flex: 1;
-    width: 100%;
-    padding-left: .5rem;
-}
-
 .left-text {
     text-align: left;
 }
@@ -128,24 +45,6 @@
     }
 }
 
-$mobile-up: 601px !default;
-$tablet-up: 993px !default;
-
-$medium-and-up: "only screen and (min-width : #{$mobile-up})" !default;
-$large-and-up: "only screen and (min-width : #{$tablet-up})" !default;
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
-    @media #{$medium-and-up} {
-        width: 90%;
-    }
-    @media #{$large-and-up} {
-        width: 80%;
-    }
-}
-
 .small-container {
     max-width: 850px;
     margin: 0 auto;
@@ -153,4 +52,9 @@ $large-and-up: "only screen and (min-width : #{$tablet-up})" !default;
     @media screen and (max-width: 992px) {
         width: 90%;
     }
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 119, 255);
 }

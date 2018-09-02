@@ -21,36 +21,32 @@ const IndexPage = ({ data }) => (
 export const pageQuery = graphql`
   query IndexImageQuery {
     UbouxImage: imageSharp(id: { regex: "/uboux.jpg/" }) {
-      sizes(maxWidth: 630 ) {
-        ...GatsbyImageSharpSizes
-      }
+        ...imageFields
     }
     CatchitImage: imageSharp(id: { regex: "/catchit.jpg/" }) {
-        sizes(maxWidth: 630 ) {
-            ...GatsbyImageSharpSizes
-        }
+        ...imageFields
     }
     LucaImage: imageSharp(id: { regex: "/luca.jpg/" }) {
-        sizes(maxWidth: 630 ) {
-            ...GatsbyImageSharpSizes
-        }
+        ...imageFields
     }
     PlanetsImage: imageSharp(id: { regex: "/planets.jpg/" }) {
-      sizes(maxWidth: 630 ) {
-        ...GatsbyImageSharpSizes
-      }
+        ...imageFields
     }
     PostImage: imageSharp(id: { regex: "/post.jpg/" }) {
-        sizes(maxWidth: 630 ) {
-            ...GatsbyImageSharpSizes
-        }
+        ...imageFields
     }
     TodoImage: imageSharp(id: { regex: "/todo.jpg/" }) {
-        sizes(maxWidth: 630 ) {
+        ...imageFields
+    }
+  }
+`
+
+export const imageFields = graphql`
+    fragment imageFields on ImageSharp {
+        sizes(maxWidth: 630) {
             ...GatsbyImageSharpSizes
         }
     }
-  }
 `
 
 export default IndexPage

@@ -1,14 +1,23 @@
 import React from 'react'
+import styled from 'styled-components'
+import Link from 'gatsby-link'
 import { Head } from '../components/common'
 
 const NotFoundPage = () => (
-	<div>
+	<React.Fragment>
 		<Head type="Organization">Smakosh | 404</Head>
-		<div style={{ maxWidth: 960, margin: '0 auto', padding: '1rem' }}>
+		<Center>
 			<h1>404 PAGE NOT FOUND</h1>
-			<p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-		</div>
-	</div>
+			<Link to="/">Go Back Home</Link>
+		</Center>
+	</React.Fragment>
 )
+
+const Center = styled.div`
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 4rem 0;
+	text-align: center;
+`
 
 export default NotFoundPage
