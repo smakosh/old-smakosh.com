@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, More, BehanceIcon } from '../../../common'
+import { BehanceIcon, Project } from '../../../common'
 
 const Behance = ({ firstImg, secondImg, thirdImg }) => {
 	const projects = [
@@ -26,15 +26,13 @@ const Behance = ({ firstImg, secondImg, thirdImg }) => {
 		}
 	]
 	return (
-		<div style={{ background: '#fff', marginBottom: '2.5rem' }}>
-			<h3>Shared on Behance</h3>
-			<div className="work">
-				{projects.map(project => <Card key={project.id} {...project} />)}
-				<More link="https://www.behance.net/ismail16sm9991" color="rgb(0, 119, 255)">
-					<BehanceIcon className="mr2" />
-				</More>
-			</div>
-		</div>
+		<Project
+			icon={BehanceIcon}
+			title="Shared on Behance"
+			projects={projects}
+			link="https://www.behance.net/ismail16sm9991"
+			color="rgb(0, 119, 255)"
+		/>
 	)
 }
 

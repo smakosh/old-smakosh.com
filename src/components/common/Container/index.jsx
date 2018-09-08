@@ -30,6 +30,10 @@ const Container = styled.div`
 			text-align: center;
 		}
 	`}
+	${({ subscribe }) => subscribe && `
+		text-align: center;
+		padding-top: 3rem;
+	`}
 `
 
 export { Container }

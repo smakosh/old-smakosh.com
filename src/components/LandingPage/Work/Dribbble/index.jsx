@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, More, DribbbleIcon } from '../../../common'
+import { Project, DribbbleIcon } from '../../../common'
 
 const Dribbble = ({ firstImg, secondImg, thirdImg }) => {
 	const shots = [
@@ -26,15 +26,13 @@ const Dribbble = ({ firstImg, secondImg, thirdImg }) => {
 		}
 	]
 	return (
-		<div style={{ background: '#fff', marginBottom: '2.5rem' }}>
-			<h3>Shared on Dribbble</h3>
-			<div className="work">
-				{shots.map(shot => <Card key={shot.id} {...shot} />)}
-				<More link="https://dribbble.com/smakosh" color="#ea4c89">
-					<DribbbleIcon className="mr2" />
-				</More>
-			</div>
-		</div>
+		<Project
+			icon={DribbbleIcon}
+			title="Shared on Dribbble"
+			projects={shots}
+			link="https://dribbble.com/smakosh"
+			color="#ea4c89"
+		/>
 	)
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import {
 	FacebookShareButton,
 	GooglePlusShareButton,
@@ -14,12 +15,11 @@ import {
 	RedditIcon
 } from 'react-share'
 import config from '../../../../data/Config'
-import './styles.scss'
 
 const SocialShare = ({ title, path }) => {
 	const iconSize = 32
 	return (
-		<div className="social-share">
+		<Wrapper>
 			<RedditShareButton url={`${config.url}${path}`} title={title}>
 				<RedditIcon round size={iconSize} />
 			</RedditShareButton>
@@ -42,8 +42,21 @@ const SocialShare = ({ title, path }) => {
 			<TelegramShareButton url={`${config.url}${path}`}>
 				<TelegramIcon round size={iconSize} />
 			</TelegramShareButton>
-		</div>
+		</Wrapper>
 	)
 }
+
+const Wrapper = styled.div`
+	display: flex;
+	align-items: center;
+	padding: 1rem 0 2rem 0;
+	.SocialMediaShareButton {
+		margin-right: 1rem;
+		cursor: pointer;
+	}
+	.SocialMediaShareButton:last-child {
+		margin-right: unset;
+	}
+`
 
 export { SocialShare }

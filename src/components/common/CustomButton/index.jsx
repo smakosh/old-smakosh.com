@@ -17,6 +17,19 @@ const CustomButton = styled.button`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    ${({ subscribe }) => subscribe && `
+        flex: 1;
+        border-radius: 6px;
+        margin-left: 1rem;
+        height: 48px;
+        @media (max-width: 800px) {
+            flex: unset;
+            margin: 0 auto;
+        }
+    `}
+    &:disabled {
+        background: gray;
+    }
 `
 
 export { CustomButton }

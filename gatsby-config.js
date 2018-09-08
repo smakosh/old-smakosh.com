@@ -20,6 +20,15 @@ module.exports = {
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-netlify',
 		{
+			resolve: 'gatsby-plugin-google-fonts',
+			options: {
+				fonts: [
+					'Roboto',
+					'Merriweather'
+				]
+			}
+		},
+		{
 			resolve: 'gatsby-plugin-mailchimp',
 			options: {
 				endpoint: 'https://smakosh.us17.list-manage.com/subscribe/post?u=1773a09d7c4e877cfe0ee5ee7&amp;id=9691d3de65',
