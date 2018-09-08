@@ -8,7 +8,7 @@ const Card = ({ id, link, title, image, description, svg }) => (
 		<div className="card-header">
 			<h3>{title}</h3>
 		</div>
-		<div className={cx('card-image', {'card-image-code': svg})}>
+		<div className={cx('card-image', { 'card-image-code': svg })}>
 			{svg ? (
 				<img src={image} alt={title} />
 			) : (

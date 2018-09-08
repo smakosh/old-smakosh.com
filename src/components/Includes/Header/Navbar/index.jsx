@@ -1,23 +1,36 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 import { Container, Logo } from '../../../common'
-import './style.scss'
+import NavbarLinks from '../NavbarLinks'
 
 const Navbar = () => (
-	<Container className="nav">
-		<div>
-			<Link to="/" style={{ display: 'flex', alignItems: 'center', color: '#212121' }}>
-				<Logo className="logo" color="#212121" strokeWidth="2"/>
-                Smakosh
-			</Link>
-		</div>
-		<div className="links">
-			<Link to="/" activeClassName="current" exact>Home</Link>
-			<Link to="/about" activeClassName="current">About</Link>
-			<Link to="/blog" activeClassName="current">Blog</Link>
-			<Link to="/contact" activeClassName="current">Contact</Link>
-		</div>
+	<Container nav>
+		<Brand to="/">
+			<BrandLogo color="#212121" strokeWidth="2" />
+			Smakosh
+		</Brand>
+		<NavbarLinks device="desktop" />
 	</Container>
 )
+
+const Brand = styled(Link)`
+	display: flex;
+	align-items: center;
+	color: #212121;
+`
+
+const BrandLogo = styled(Logo)`
+	transition: 0.5s;
+	height: 2.8rem;
+	width: 2.8rem;
+	margin-bottom: 0;
+	margin-right: .5rem;
+	&:hover  {
+		opacity: 0.7;
+		transition: 0.5s;
+		transform: rotate(360deg);
+	}
+`
 
 export default Navbar

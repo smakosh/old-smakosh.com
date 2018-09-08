@@ -1,23 +1,24 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Subscribe } from '../components/common'
 import { Header, Footer } from '../components/Includes'
 import './index.scss'
 import './main.scss'
 
 const TemplateWrapper = ({ children }) => (
-	<div>
+	<React.Fragment>
 		<Header />
-		<div
-			style={{
-				width: '100%',
-				paddingTop: '7rem'
-			}}
-		>
+		<Layout>
 			{children()}
 			<Subscribe />
-		</div>
+		</Layout>
 		<Footer />
-	</div>
+	</React.Fragment>
 )
+
+const Layout = styled.div`
+	width: 100%;
+	padding-top: 7rem;
+`
 
 export default TemplateWrapper

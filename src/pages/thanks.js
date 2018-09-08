@@ -1,17 +1,16 @@
 import React from 'react'
-import { Head } from '../components/common'
+import Link from 'gatsby-link'
+import { Head, SmallerContainer } from '../components/common'
 
 const Thanks = () => (
-	<div>
+	<React.Fragment>
 		<Head type="Organization" location="/thanks">Smakosh | Thanks!</Head>
-		<div style={{
-			maxWidth: 960, margin: '0 auto', padding: '1rem', marginBottom: '20rem'
-		}}
-		>
-			<h2>Your mail has been sent successfully</h2>
+		<SmallerContainer thanks tc>
+			<h2>Your email has been sent successfully</h2>
 			<p>I will get back to you as soon as possible!</p>
-		</div>
-	</div>
+			<Link to="/">Go Back Home</Link>
+		</SmallerContainer>
+	</React.Fragment>
 )
 
 export default Thanks

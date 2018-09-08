@@ -1,17 +1,35 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import cx from 'classnames'
-import './style.scss'
+import styled from 'styled-components'
+import NavbarLinks from '../NavbarLinks'
 
 const Sidebar = ({ sidebar, toggle }) => (
-	<div className={cx('sidebar', { active: sidebar })} onClick={toggle}>
-		<div className="items">
-			<Link to="/" activeClassName="current" exact >Home</Link>
-			<Link to="/about" activeClassName="current">About</Link>
-			<Link to="/blog" activeClassName="current">Blog</Link>
-			<Link to="/contact" activeClassName="current">Contact</Link>
-		</div>
-	</div>
+	<SidebarContainer active={sidebar} onClick={toggle}>
+		<NavbarLinks device="mobile" />
+	</SidebarContainer>
 )
+
+const SidebarContainer = styled.div`
+	position: fixed;
+	z-index: 4;
+	overflow: auto;
+	top: 0px;
+	right: -275px;
+	width: 0;
+	opacity: 0;
+	height: 100%;
+	background-color: #fff;
+	transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+	${({ active }) => active && `{
+		width: 20%;
+		right: 0px;
+		opacity: 1;
+		@media screen and (max-width: 960px) {
+			width: 40%;
+		}
+		@media screen and (max-width: 600px) {
+			width: 75%;
+		}
+	}`}
+`
 
 export default Sidebar

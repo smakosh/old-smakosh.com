@@ -13,6 +13,23 @@ const Container = styled.div`
 	${({ details }) => details && `
 		flex: 1
 	`}
+	${({ nav }) => nav && `
+		padding: .8rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	`}
+	${({ footer }) => footer && `
+		padding: 2rem 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		@media screen and (max-width: 680px) {
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+		}
+	`}
 `
 
 export { Container }

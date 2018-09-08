@@ -5,23 +5,21 @@ import { Container, Head } from '../components/common'
 import { Details, Socials } from '../components/AboutPage'
 
 const About = ({ data }) => (
-	<div>
-		<Container>
-			<Head type="Organization" location="/about">
+	<Container>
+		<Head type="Organization" location="/about">
         Smakosh | About
-			</Head>
-			<h2>About me</h2>
-			<AboutContainer>
-				<Details />
-				<Portrait>
-					<a href={data.AboutImage.sizes.src}>
-						<Img sizes={data.AboutImage.sizes} alt="just me chilling" />
-					</a>
-				</Portrait>
-			</AboutContainer>
-			<Socials />
-		</Container>
-	</div>
+		</Head>
+		<h2>About me</h2>
+		<AboutContainer>
+			<Details />
+			<Portrait>
+				<a href={data.AboutImage.sizes.src}>
+					<Img sizes={data.AboutImage.sizes} alt="just me chilling" />
+				</a>
+			</Portrait>
+		</AboutContainer>
+		<Socials />
+	</Container>
 )
 
 const AboutContainer = styled.div`

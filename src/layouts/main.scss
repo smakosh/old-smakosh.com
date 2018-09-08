@@ -23,11 +23,6 @@
 .left-text {
     text-align: left;
 }
-
-.center-text {
-    text-align: center;
-}
-  
 .responsive-video {
     position: relative;
     padding-bottom: 56.25%;
@@ -45,16 +40,11 @@
     }
 }
 
-.small-container {
-    max-width: 850px;
-    margin: 0 auto;
-
-    @media screen and (max-width: 992px) {
-        width: 90%;
-    }
-}
-
 a {
     text-decoration: none;
     color: rgb(0, 119, 255);
+}
+
+button, input, select, textarea:focus  {
+    outline: none;
 }

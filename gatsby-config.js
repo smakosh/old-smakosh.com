@@ -1,4 +1,4 @@
-const config = require('./data/Config');
+const config = require('./data/Config')
 
 module.exports = {
 	siteMetadata: {
@@ -160,16 +160,16 @@ module.exports = {
 					{
 						src: '/favicon/logo-192x192.png',
 						sizes: '192x192',
-						type: 'image/png',
+						type: 'image/png'
 					},
 					{
 						src: '/favicon/logo-512x512.png',
 						sizes: '512x512',
-						type: 'image/png',
-					},
-				],
-			},
+						type: 'image/png'
+					}
+				]
+			}
 		},
-		'gatsby-plugin-offline',
+		'gatsby-plugin-offline'
 	],
-};
+}

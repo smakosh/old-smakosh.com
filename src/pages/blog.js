@@ -6,29 +6,27 @@ import { SmallerContainer, Head } from '../components/common'
 
 
 const Blog = ({ data }) => (
-	<div>
-		<SmallerContainer>
-			<Head type="Organization" location="/blog">
+	<SmallerContainer>
+		<Head type="Organization" location="/blog">
         Smakosh | Blog
-			</Head>
-			<Title>Articles</Title>
-			{data.allMarkdownRemark.edges.map(post => (
-				<Post key={post.node.id} onClick={() => navigateTo(post.node.frontmatter.path)}>
-					<ArticleImg>
-						<Img sizes={post.node.frontmatter.thumbnail.childImageSharp.sizes} />
-					</ArticleImg>
-					<ArticleContent>
-						<ArticleTitle>{post.node.frontmatter.title}</ArticleTitle>
-						<P>{post.node.excerpt}</P>
-						<I style={{ fontSize: '.8rem' }}>
-							{post.node.frontmatter.date}
-							<Span>{post.node.timeToRead} min</Span>
-						</I>
-					</ArticleContent>
-				</Post>
-			))}
-		</SmallerContainer>
-	</div>
+		</Head>
+		<Title>Articles</Title>
+		{data.allMarkdownRemark.edges.map(post => (
+			<Post key={post.node.id} onClick={() => navigateTo(post.node.frontmatter.path)}>
+				<ArticleImg>
+					<Img sizes={post.node.frontmatter.thumbnail.childImageSharp.sizes} />
+				</ArticleImg>
+				<ArticleContent>
+					<ArticleTitle>{post.node.frontmatter.title}</ArticleTitle>
+					<P>{post.node.excerpt}</P>
+					<I style={{ fontSize: '.8rem' }}>
+						{post.node.frontmatter.date}
+						<Span>{post.node.timeToRead} min</Span>
+					</I>
+				</ArticleContent>
+			</Post>
+		))}
+	</SmallerContainer>
 )
 
 const Post = styled.div`
