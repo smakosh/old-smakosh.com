@@ -1,5 +1,5 @@
 import React from 'react'
-import { More, Card, GithubIcon } from '../../../common'
+import { Project, GithubIcon } from '../../../common'
 import Unnamed from '../../../../../static/github/unnamed.svg'
 import Perceptron from '../../../../../static/github/perceptron.svg'
 import Todo from '../../../../../static/github/todo.svg'
@@ -29,15 +29,15 @@ const Github = () => {
 		}
 	]
 	return (
-		<div style={{ background: '#fff', marginBottom: '2.5rem' }}>
-			<h3>Open sourced on Github</h3>
-			<div className="work">
-				{repositories.map(repository => <Card key={repository.id} {...repository} svg />)}
-				<More link="https://github.com/smakosh" color="#000">
-					<GithubIcon className="mr2" />
-				</More>
-			</div>
-		</div>
+		<Project
+			title="Open sourced on Github"
+			icon={GithubIcon}
+			type="Dribbble"
+			projects={repositories}
+			link="https://github.com/smakosh"
+			color="#000"
+			svg
+		/>
 	)
 }
 

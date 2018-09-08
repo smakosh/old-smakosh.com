@@ -1,10 +1,28 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Skill = ({ icon, title }) => (
-	<div style={{ textAlign: 'center' }}>
-		<img src={icon} alt={title} className="grow" />
-		<h4 style={{ fontWeight: 'normal' }}>{title}</h4>
-	</div>
+	<SingleSkill style={{ textAlign: 'center' }}>
+		<Grow src={icon} alt={title} />
+		<Title style={{ fontWeight: 'normal' }}>{title}</Title>
+	</SingleSkill>
 )
+
+const SingleSkill = styled.div`
+	text-align: center;
+`
+
+const Grow = styled.img`
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	&:hover  {
+		transform: scale(1.1);
+		transition: all .2s ease-in-out;
+	}
+`
+
+const Title = styled.h4`
+	font-weight: normal;
+`
 
 export default Skill

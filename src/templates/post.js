@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Disqus from 'disqus-react'
+import styled from 'styled-components'
 import { SmallerContainer, Head, SocialShare } from '../components/common'
-import './styles.scss'
 import './highlight.scss'
 
 export default function Template({ data }) {
@@ -14,44 +14,78 @@ export default function Template({ data }) {
 		title: post.frontmatter.title
 	}
 	return (
-		<div>
-			<SmallerContainer className="article">
-				<Head
-					type="NewsArticle"
-					headline={post.frontmatter.title}
-					articleBody={post.html}
-					datePublished={post.frontmatter.date}
-					dateModified={post.frontmatter.edited ? post.frontmatter.edited : post.frontmatter.date}
-					cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
-					location={post.frontmatter.path}
-				>
-					{post.frontmatter.title}
-				</Head>
-				<div className="article-card">
-					<h1>{post.frontmatter.title}</h1>
-					<div className="article-date">
-						<i>{post.timeToRead} min read</i>
-						<i>Published on: {post.frontmatter.date}</i>
-						{post.frontmatter.edited && <i>Modified on: {post.frontmatter.edited}</i>}
-					</div>
-					<div className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
-					<SocialShare {...post.frontmatter} />
-					<div className="back">
-						<Link to={post.frontmatter.next}>
-                            Previous article
-						</Link>
-					</div>
-					<div style={{ marginTop: '2rem' }}>
-						<Disqus.CommentCount shortname={disqusShortName} config={disqusConfig}>
-							Comments
-						</Disqus.CommentCount>
-						<Disqus.DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
-					</div>
-				</div>
-			</SmallerContainer>
-		</div>
+		<SmallerContainer>
+			<Head
+				type="NewsArticle"
+				headline={post.frontmatter.title}
+				articleBody={post.html}
+				datePublished={post.frontmatter.date}
+				dateModified={post.frontmatter.edited ? post.frontmatter.edited : post.frontmatter.date}
+				cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
+				location={post.frontmatter.path}
+			>
+				{post.frontmatter.title}
+			</Head>
+			<ArticleWrapper>
+				<h1>{post.frontmatter.title}</h1>
+				<ArticleDate>
+					<i>{post.frontmatter.date} -</i>
+					<i>{post.timeToRead} min read</i>
+				</ArticleDate>
+				<Content dangerouslySetInnerHTML={{ __html: post.html }} />
+				<SocialShare {...post.frontmatter} />
+				<Back>
+					<Link to={post.frontmatter.next}>Previous article</Link>
+				</Back>
+				<Comments>
+					<Disqus.DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
+				</Comments>
+			</ArticleWrapper>
+		</SmallerContainer>
 	)
 }
+
+const ArticleWrapper = styled.div`
+	padding: 2rem 1rem;
+	a {
+		text-decoration: none;
+		color: rgb(0, 119, 255);
+	}
+	i {
+		color: #a7a7a7;
+	}
+	h1 {
+		font-family: 'Merriweather', serif;
+		text-align: center;
+	}
+`
+
+const Back = styled.div`
+	margin-top: 2rem;
+`
+
+const Content = styled.div`
+	font-size: 1.2rem;
+	line-height: 2rem;
+`
+
+const Comments = styled.div`
+	marginTop: '2rem';
+`
+
+const ArticleDate = styled.div`
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: -1rem;
+	margin-bottom: 1rem;
+	i {
+		font-size: .9em;
+		&:first-child {
+			margin-right: .2rem;
+		}
+	}
+`
 
 export const postQuery = graphql`
     query BlogPostByPath($path: String!) {

@@ -3,7 +3,6 @@ import { Container } from '../../common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
-import './style.scss'
 
 const Work = ({
 	BehancefirstImg,
@@ -13,7 +12,7 @@ const Work = ({
 	DribbblesecondImg,
 	DribbblethirdImg
 }) => (
-	<Container>   
+	<Container>
 		<h2>Work</h2>
 		<Behance
 			firstImg={BehancefirstImg}
