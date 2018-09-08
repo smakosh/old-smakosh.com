@@ -41,7 +41,7 @@ const ContactForm = ({ name, email, message, handleChange, handleSubmit, handleR
 				Message: <InputField as="textarea" textarea name="message" value={message} onChange={handleChange} />
 				</label>
 			</p>
-			<Recaptcha sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} onChange={handleRecaptcha} />
+			<Recaptcha sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN" onChange={handleRecaptcha} />
 			<Center>
 				<CustomButton>Send</CustomButton>
 			</Center>
