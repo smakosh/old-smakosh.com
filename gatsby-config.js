@@ -2,12 +2,12 @@ const config = require('./data/Config')
 
 module.exports = {
 	siteMetadata: {
-		site_url: 'https://smakosh.com',
+		site_url: config.url,
 		rssMetadata: {
-			site_url: 'https://smakosh.com',
-			feed_url: `https://smakosh.com/${config.siteRss}`,
+			site_url: config.url,
+			feed_url: `${config.url}/${config.siteRss}`,
 			title: 'Smakosh | Hello world!',
-			description: 'A self-taught graphic, UI/UX designer & front end developer.',
+			description: config.description,
 			image_url: 'https://smakosh.com/static/favicon/logo-512.png',
 			author: config.siteRssAuthor,
 			copyright: `${config.copyright.label} © ${new Date().getFullYear()}`
@@ -37,7 +37,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-canonical-urls',
 			options: {
-				siteUrl: 'https://www.smakosh.com',
+				siteUrl: config.url,
 			},
 		},
 		'gatsby-plugin-catch-links',
@@ -70,7 +70,7 @@ module.exports = {
 				feeds: [
 					{
 						serialize(ctx) {
-							const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
+							const { rssMetadata } = ctx.query.site.siteMetadata;
 							return ctx.query.allMarkdownRemark.edges.map(edge => ({
 								date: edge.node.frontmatter.date,
 								title: edge.node.frontmatter.title,
