@@ -29,7 +29,7 @@ module.exports = {
 	},
 	contact: {
 		email: 'ismai23l@hotmail.com',
-		phoneNumber: '+212-663-53-27-61'
+		phone: '+212-663-53-27-61'
 	},
 	foundingDate: '2016'
 };
