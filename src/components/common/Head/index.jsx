@@ -1,7 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Me from '../../../../static/me.jpg'
-import config from '../../../../data/Config'
+import {
+	url,
+	description,
+	social,
+	title,
+	socialLinks,
+	address,
+	contact,
+	legalName,
+	foundingDate,
+	logo,
+	author
+} from '../../../../data/Config'
 
 const Head = ({ children, type, headline, articleBody, datePublished, dateModified, cover, location = '' }) => {
 	const structuredDataArticle = `{
@@ -22,75 +34,73 @@ const Head = ({ children, type, headline, articleBody, datePublished, dateModifi
 		"dateModified": "${dateModified}",
 		"author": {
 			"@type": "Person",
-			"name": "Ismail Ghallou 'Smakosh'"
+			"name": "${author}"
 		},
 		"articleBody": "${articleBody}",
 		"publisher": {
 			"@type": "Organization",
-			"name": "Ismail Ghallou (Smakosh)",
+			"name": "${author}",
 			"logo": {
 				"@type": "ImageObject",
-				"url": "https://smakosh.com/favicon/logo-48.png"
+				"url": "${logo}"
 			}
 		},
 		"description": "${headline}",
-		"url": "${config.url}${location}/?ref=smakosh.com"
+		"url": "${url}${location}/?ref=smakosh.com"
 	}`
 
 	const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "${type}",
-		"legalName": "Ismail Ghallou",
-		"url": "https://smakosh.com/",
-		"logo": "https://smakosh.com/favicon/logo-48.png",
-		"foundingDate": "2016",
+		"legalName": "${legalName}",
+		"url": "${url}",
+		"logo": "${logo}",
+		"foundingDate": "${foundingDate}",
 		"founders": [{
 			"@type": "Person",
-			"name": "Ismail Ghallou"
+			"name": "${legalName}"
 		}],
 		"contactPoint": [{
 			"@type": "ContactPoint",
-			"email": "ismai23l@hotmail.com",
-			"telephone": "+212-663-53-27-61",
+			"email": "${contact.email}",
+			"telephone": "${contact.phone}",
 			"contactType": "customer service"
 		}],
 		"address": {
 			"@type": "PostalAddress",
-			"addressLocality": "Errachidia",
-			"addressRegion": "Drâa-Tafilalet",
-			"addressCountry": "Morocco",
-			"postalCode": "52000"
+			"addressLocality": "${address.city}",
+			"addressRegion": "${address.region}",
+			"addressCountry": "${address.country}",
+			"postalCode": "${address.zipCode}"
 		},
-		"sameAs": [ 
-			"http://www.facebook.com/ismailghallou",
-			"http://www.twitter.com/smakosh",
-			"https://plus.google.com/u/0/+IsmailSmakoshGhallou",
-			"https://www.youtube.com/user/smakoshthegamer",
-			"https://www.linkedin.com/in/ismail-ghallou-630149122",
-			"https://www.twitter.com/smakosh",
-			"https://instagram.com/smakosh19",
-			"https://github.com/smakosh"
+		"sameAs": [
+			"${socialLinks.twitter}",
+			"${socialLinks.google}",
+			"${socialLinks.youtube}",
+			"${socialLinks.linkedin}",
+			"${socialLinks.instagram}",
+			"${socialLinks.github}"
 		]
   	}`
 
 	return (
 		<Helmet>
-			<meta name="description" content={type === 'NewsArticle' ? headline : config.description} />
-			<meta name="image" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
+			<meta name="description" content={type === 'NewsArticle' ? headline : description} />
+			<meta name="image" content={cover ? `${url}${cover}` : `${url}${Me}`} />
 
-			<meta property="og:url" content={`${config.url}${location}/?ref=smakosh.com`} />
+			<meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
 			<meta property="og:type" content={type === 'NewsArticle' ? 'NewsArticle' : 'website'} />
-			<meta property="og:title" content={type === 'NewsArticle' ? headline : config.copyright.label} />
-			<meta property="og:description" content={type === 'NewsArticle' ? headline : config.description} />
-			<meta property="og:image" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
-			<meta property="fb:app_id" content={config.social.facebook} />
+			<meta property="og:title" content={type === 'NewsArticle' ? headline : title} />
+			<meta property="og:description" content={type === 'NewsArticle' ? headline : description} />
+			<meta property="og:image" content={cover ? `${url}${cover}` : `${url}${Me}`} />
+			<meta property="fb:app_id" content={social.facebook} />
 
-			<meta name="twitter:card" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
-			<meta name="twitter:creator" content={config.social.twitter} />
+			<meta name="twitter:card" content={cover ? `${url}${cover}` : `${url}${Me}`} />
+			<meta name="twitter:creator" content={social.twitter} />
 			<meta name="twitter:site" content="@smakosh" />
-			<meta name="twitter:title" content={type === 'NewsArticle' ? headline : config.copyright.label} />
-			<meta name="twitter:description" content={type === 'NewsArticle' ? headline : config.description} />
-			<meta name="twitter:image:src" content={cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Me}`} />
+			<meta name="twitter:title" content={type === 'NewsArticle' ? headline : title} />
+			<meta name="twitter:description" content={type === 'NewsArticle' ? headline : description} />
+			<meta name="twitter:image:src" content={cover ? `${url}${cover}` : `${url}${Me}`} />
 			<script type="application/ld+json">{type === 'NewsArticle' ? structuredDataArticle : structuredDataOrganization}</script>
 			<title>{ children }</title>
 		</Helmet>

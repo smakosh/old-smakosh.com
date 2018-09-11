@@ -5,12 +5,12 @@ module.exports = {
 		site_url: config.url,
 		rssMetadata: {
 			site_url: config.url,
-			feed_url: `${config.url}/${config.siteRss}`,
+			feed_url: `${config.url}${config.siteRss}`,
 			title: 'Smakosh | Hello world!',
 			description: config.description,
 			image_url: 'https://smakosh.com/static/favicon/logo-512.png',
-			author: config.siteRssAuthor,
-			copyright: `${config.copyright.label} © ${new Date().getFullYear()}`
+			author: config.author,
+			copyright: `${config.title} © ${new Date().getFullYear()}`
 		}
 	},
 	plugins: [
