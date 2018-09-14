@@ -95,7 +95,7 @@ const Head = ({ children, type, headline, articleBody, datePublished, dateModifi
 			<meta property="og:image" content={cover ? `${url}${cover}` : `${url}${Me}`} />
 			<meta property="fb:app_id" content={social.facebook} />
 
-			<meta name="twitter:card" content={cover ? `${url}${cover}` : `${url}${Me}`} />
+			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:creator" content={social.twitter} />
 			<meta name="twitter:site" content="@smakosh" />
 			<meta name="twitter:title" content={type === 'NewsArticle' ? headline : title} />
