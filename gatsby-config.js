@@ -14,7 +14,6 @@ module.exports = {
 		}
 	},
 	plugins: [
-		'gatsby-plugin-robots-txt',
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-react-next',
 		'gatsby-plugin-sass',
@@ -38,7 +37,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-canonical-urls',
 			options: {
-				siteUrl: config.url,
+				siteUrl: 'https://smakosh.com',
 			},
 		},
 		'gatsby-plugin-catch-links',
