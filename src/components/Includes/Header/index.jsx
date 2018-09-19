@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { withPrefix } from 'gatsby-link'
+import { withPrefix } from 'gatsby'
 import { compose, withStateHandlers, lifecycle } from 'recompose'
 import Navbar from './Navbar'
 import Hamburger from './Hamburger'

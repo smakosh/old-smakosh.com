@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import Disqus from 'disqus-react'
 import styled from 'styled-components'
-import { SmallerContainer, Head, SocialShare } from '../components/common'
+import { Layout, SmallerContainer, Head, SocialShare } from '../components/common'
 import './highlight.scss'
 
 export default function Template({ data }) {
@@ -14,34 +14,36 @@ export default function Template({ data }) {
 		title: post.frontmatter.title
 	}
 	return (
-		<SmallerContainer>
-			<Head
-				type="NewsArticle"
-				headline={post.frontmatter.title}
-				articleBody={post.html}
-				datePublished={post.frontmatter.date}
-				dateModified={post.frontmatter.edited ? post.frontmatter.edited : post.frontmatter.date}
-				cover={post.frontmatter.thumbnail.childImageSharp.sizes.src}
-				location={post.frontmatter.path}
-			>
-				{post.frontmatter.title}
-			</Head>
-			<ArticleWrapper>
-				<h1>{post.frontmatter.title}</h1>
-				<ArticleDate>
-					<i>{post.frontmatter.date} -</i>
-					<i>{post.timeToRead} min read</i>
-				</ArticleDate>
-				<Content dangerouslySetInnerHTML={{ __html: post.html }} />
-				<SocialShare {...post.frontmatter} />
-				<Back>
-					<Link to={post.frontmatter.next}>Previous article</Link>
-				</Back>
-				<Comments>
-					<Disqus.DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
-				</Comments>
-			</ArticleWrapper>
-		</SmallerContainer>
+		<Layout>
+			<SmallerContainer>
+				<Head
+					type="NewsArticle"
+					headline={post.frontmatter.title}
+					articleBody={post.html}
+					datePublished={post.frontmatter.date}
+					dateModified={post.frontmatter.edited ? post.frontmatter.edited : post.frontmatter.date}
+					cover={post.frontmatter.thumbnail.childImageSharp.fluid}
+					location={post.frontmatter.path}
+				>
+					{post.frontmatter.title}
+				</Head>
+				<ArticleWrapper>
+					<h1>{post.frontmatter.title}</h1>
+					<ArticleDate>
+						<i>{post.frontmatter.date} -</i>
+						<i>{post.timeToRead} min read</i>
+					</ArticleDate>
+					<Content dangerouslySetInnerHTML={{ __html: post.html }} />
+					<SocialShare {...post.frontmatter} />
+					<Back>
+						<Link to={post.frontmatter.next}>Previous article</Link>
+					</Back>
+					<Comments>
+						<Disqus.DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
+					</Comments>
+				</ArticleWrapper>
+			</SmallerContainer>
+		</Layout>
 	)
 }
 
@@ -101,9 +103,9 @@ export const postQuery = graphql`
 				id
                 thumbnail {
                     childImageSharp {
-                        sizes(maxWidth: 630 ) {
-                            ...GatsbyImageSharpSizes
-                        }
+                        fluid(maxWidth: 700) {
+							...GatsbyImageSharpFluid_tracedSVG
+						}
                     }
                 }
             }

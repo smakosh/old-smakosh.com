@@ -1,7 +1,7 @@
 const path = require('path')
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-	const { createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+	const { createPage } = actions
 	const postTemplate = path.resolve('src/templates/post.js')
 
 	return graphql(`{
@@ -24,7 +24,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
                         id
                         thumbnail {
                             childImageSharp {
-                                sizes(maxWidth: 630 ) {
+                                fluid(maxWidth: 700 ) {
                                     originalImg
                                 }
                             }

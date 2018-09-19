@@ -2,7 +2,7 @@ import React from 'react'
 import { compose, withStateHandlers } from 'recompose'
 import styled from 'styled-components'
 import Recaptcha from 'react-google-recaptcha'
-import { navigateTo } from 'gatsby-link'
+import { navigate } from 'gatsby'
 import { SmallerContainer, CustomButton } from '../../common'
 
 const encode = data => {
@@ -112,7 +112,7 @@ const enhance = compose(
 							message
 						})
 					})
-						.then(() => navigateTo(form.getAttribute('action')))
+						.then(() => navigate(form.getAttribute('action')))
 						.catch(() => alert('Something went wrong, please try again!')) // eslint-disable-line no-undef
 					e.target.name.value = ''
 					e.target.email.value = ''
