@@ -6,7 +6,7 @@ import NavbarLinks from '../NavbarLinks'
 
 const Navbar = () => (
 	<Container nav>
-		<Brand to="/">
+		<Brand as={Link} to="/">
 			<BrandLogo as={Logo} color="#212121" strokeWidth="2" />
 			Smakosh
 		</Brand>
@@ -14,7 +14,7 @@ const Navbar = () => (
 	</Container>
 )
 
-const Brand = styled(Link)`
+const Brand = styled.div`
 	display: flex;
 	align-items: center;
 	color: #212121;

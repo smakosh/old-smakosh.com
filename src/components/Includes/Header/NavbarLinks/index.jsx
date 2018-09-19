@@ -4,14 +4,14 @@ import styled from 'styled-components'
 
 const NavbarLinks = ({ device }) => (
 	<Links device={device}>
-		<NavLink to="/" device={device} activeClassName="current">Home</NavLink>
-		<NavLink to="/about" device={device} activeClassName="current">About</NavLink>
-		<NavLink to="/blog" device={device} activeClassName="current">Blog</NavLink>
-		<NavLink to="/contact" device={device} activeClassName="current">Contact</NavLink>
+		<NavLink as={Link} to="/" device={device} activeClassName="current">Home</NavLink>
+		<NavLink as={Link} to="/about" device={device} activeClassName="current">About</NavLink>
+		<NavLink as={Link} to="/blog" device={device} activeClassName="current">Blog</NavLink>
+		<NavLink as={Link} to="/contact" device={device} activeClassName="current">Contact</NavLink>
 	</Links>
 )
 
-const NavLink = styled(Link)`
+const NavLink = styled.div`
     color: #6d6d6d;
     text-decoration: none;
     ${({ device }) => device === 'desktop' && `

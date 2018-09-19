@@ -178,6 +178,6 @@ module.exports = {
 				]
 			}
 		},
-		// 'gatsby-plugin-offline' Bugged...
+		'gatsby-plugin-offline'
 	],
 }

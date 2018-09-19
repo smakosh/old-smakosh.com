@@ -7,15 +7,15 @@ import Hamburger from './Hamburger'
 import Sidebar from './Sidebar'
 
 const Header = ({ sidebar, toggle, isHomePage }) => (
-	<HeaderContainer isHomePage={isHomePage}>
+	<StyledHeader isHomePage={isHomePage}>
 		<Overlay sidebar={sidebar} onClick={toggle} />
 		<Navbar />
 		<Hamburger isHomePage={isHomePage} sidebar={sidebar} toggle={toggle} />
 		<Sidebar sidebar={sidebar} toggle={toggle} />
-	</HeaderContainer>
+	</StyledHeader>
 )
 
-const HeaderContainer = styled.div`
+const StyledHeader = styled.div`
 	background: #fff;
 	width: 100%;
 	z-index: 1;
@@ -26,6 +26,7 @@ const HeaderContainer = styled.div`
 		margin-bottom: unset;
 	`}
 `
+
 const Overlay = styled.div`
 	position: fixed;
 	background: rgba(0, 0, 0, .7);
