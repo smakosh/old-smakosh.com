@@ -14,7 +14,7 @@ I’m Ismail Ghallou also known as Smakosh, a nickname which was given to me sin
 
 During secondary school I started exploring more hobbies like drawing, graffiti, biking & skateboarding and I was still getting good marks though, at high school I got addicted to Parkour & Free running and it was really a good experience “to not be able to do a backflip then after a long period of training (even though there were no gyms) to actually do it ” it was something really amazing, I spent like 2 years practicing and have recorded some videos right [here](https://www.instagram.com/smakosh19).
 
-<div class="responsive-video">
+<div class="responsiveVideo">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/bujbKsEKZ-4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 

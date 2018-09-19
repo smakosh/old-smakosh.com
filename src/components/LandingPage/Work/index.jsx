@@ -1,31 +1,59 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import { Container } from '../../common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
 
-const Work = ({
-	BehancefirstImg,
-	BehancesecondImg,
-	BehancethirdImg,
-	DribbblefirstImg,
-	DribbblesecondImg,
-	DribbblethirdImg
-}) => (
-	<Container>
-		<h2>Work</h2>
-		<Behance
-			firstImg={BehancefirstImg}
-			secondImg={BehancesecondImg}
-			thirdImg={BehancethirdImg}
-		/>
-		<Dribbble
-			firstImg={DribbblefirstImg}
-			secondImg={DribbblesecondImg}
-			thirdImg={DribbblethirdImg}
-		/>
-		<Github />
-	</Container>
+export const imageFields = graphql`
+    fragment imageFields on ImageSharp {
+        fluid(maxWidth: 630) {
+            ...GatsbyImageSharpFluid_tracedSVG
+        }
+    }
+`
+
+const Work = () => (
+	<StaticQuery
+		query={graphql`
+			query IndexImageQuery {
+				UbouxImage: imageSharp(fluid: {originalName: { regex: "/uboux.jpg/" }}) {
+					...imageFields
+				}
+				CatchitImage: imageSharp(fluid: {originalName: { regex: "/catchit.jpg/" }}) {
+					...imageFields
+				}
+				LucaImage: imageSharp(fluid: {originalName: { regex: "/luca.jpg/" }}) {
+					...imageFields
+				}
+				PlanetsImage: imageSharp(fluid: {originalName: { regex: "/planets.jpg/" }}) {
+					...imageFields
+				}
+				PostImage: imageSharp(fluid: {originalName: { regex: "/post.jpg/" }}) {
+					...imageFields
+				}
+				TodoImage: imageSharp(fluid: {originalName: { regex: "/todo.jpg/" }}) {
+					...imageFields
+				}
+			}
+		`}
+		render={data => (
+			<Container>
+				<h2>Work</h2>
+				<Behance
+					firstImg={data.UbouxImage.fluid}
+					secondImg={data.CatchitImage.fluid}
+					thirdImg={data.LucaImage.fluid}
+				/>
+				<Dribbble
+					firstImg={data.PlanetsImage.fluid}
+					secondImg={data.PostImage.fluid}
+					thirdImg={data.TodoImage.fluid}
+				/>
+				<Github />
+			</Container>
+		)}
+	/>
 )
 
 export { Work }

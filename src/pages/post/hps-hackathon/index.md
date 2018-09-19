@@ -35,7 +35,7 @@ I helped more than 2 teams on the Design part & on explaining to them how to use
 
 ![Announcing the winners](awards.jpeg)
 
-<div class="responsive-video">
+<div class="responsiveVideo">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/AJQziXnUreI" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 

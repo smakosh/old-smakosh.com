@@ -7,7 +7,7 @@ const CardBody = ({ svg, title, image }) => (
 		{svg ? (
 			<img src={image} alt={title} />
 		) : (
-			<Img sizes={image} alt={title} />
+			<Img fluid={image} alt={title} />
 		)}
 	</Wrapper>
 )

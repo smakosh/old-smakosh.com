@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
-import { Head } from '../components/common'
+import { Link } from 'gatsby'
+import { Layout, Head } from '../components/common'
 
 const NotFoundPage = () => (
-	<React.Fragment>
+	<Layout>
 		<Head type="Organization">Smakosh | 404</Head>
 		<Center>
 			<h1>404 PAGE NOT FOUND</h1>
 			<Link to="/">Go Back Home</Link>
 		</Center>
-	</React.Fragment>
+	</Layout>
 )
 
 const Center = styled.div`

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Head } from '../components/common'
-import { ContactForm } from '../components/ContactPage'
+import { Layout, Head } from '../components/common'
+import ContactForm from '../components/ContactPage/ContactForm'
 
 const Contact = () => (
-	<React.Fragment>
+	<Layout>
 		<Head type="Organization" location="/contact">Smakosh | Contact</Head>
 		<ContactForm />
-	</React.Fragment>
+	</Layout>
 )
 export default Contact

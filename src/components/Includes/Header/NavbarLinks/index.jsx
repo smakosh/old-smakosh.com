@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const NavbarLinks = ({ device }) => (
 	<Links device={device}>
-		<NavLink to="/" device={device} activeClassName="current" exact>Home</NavLink>
+		<NavLink to="/" device={device} activeClassName="current">Home</NavLink>
 		<NavLink to="/about" device={device} activeClassName="current">About</NavLink>
 		<NavLink to="/blog" device={device} activeClassName="current">Blog</NavLink>
 		<NavLink to="/contact" device={device} activeClassName="current">Contact</NavLink>

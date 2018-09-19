@@ -12,7 +12,8 @@ import {
 	legalName,
 	foundingDate,
 	logo,
-	author
+	author,
+	favicon
 } from '../../../../data/Config'
 
 const Head = ({ children, type, headline, articleBody, datePublished, dateModified, cover, location = '' }) => {
@@ -85,6 +86,8 @@ const Head = ({ children, type, headline, articleBody, datePublished, dateModifi
 
 	return (
 		<Helmet>
+			<link rel="shortcut icon" href={favicon} />
+
 			<meta name="description" content={type === 'NewsArticle' ? headline : description} />
 			<meta name="image" content={cover ? `${url}${cover}` : `${url}${Me}`} />
 

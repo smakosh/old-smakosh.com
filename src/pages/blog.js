@@ -1,32 +1,66 @@
 import React from 'react'
 import styled from 'styled-components'
-import { navigateTo } from 'gatsby-link'
+import { StaticQuery, graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
-import { SmallerContainer, Head } from '../components/common'
+import { Layout, SmallerContainer, Head } from '../components/common'
 
 
-const Blog = ({ data }) => (
-	<SmallerContainer>
-		<Head type="Organization" location="/blog">
-        Smakosh | Blog
-		</Head>
-		<Title>Articles</Title>
-		{data.allMarkdownRemark.edges.map(post => (
-			<Post key={post.node.id} onClick={() => navigateTo(post.node.frontmatter.path)}>
-				<ArticleImg>
-					<Img sizes={post.node.frontmatter.thumbnail.childImageSharp.sizes} />
-				</ArticleImg>
-				<ArticleContent>
-					<ArticleTitle>{post.node.frontmatter.title}</ArticleTitle>
-					<P>{post.node.excerpt}</P>
-					<I style={{ fontSize: '.8rem' }}>
-						{post.node.frontmatter.date}
-						<Span>{post.node.timeToRead} min</Span>
-					</I>
-				</ArticleContent>
-			</Post>
-		))}
-	</SmallerContainer>
+const Blog = () => (
+	<StaticQuery
+		query={graphql`
+			query BlogQuery {
+				allMarkdownRemark(
+					sort: { order: DESC, fields: [frontmatter___date] }
+					limit: 20
+				) {
+					edges {
+						node {
+							excerpt(pruneLength: 250)
+							id
+							timeToRead
+							frontmatter {
+								title
+								date(formatString: "MMM DD, YYYY")
+								path
+								thumbnail {
+									childImageSharp {
+										fluid(maxWidth: 700) {
+								        	...GatsbyImageSharpFluid_tracedSVG
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		`}
+		render={data => (
+			<Layout>
+				<SmallerContainer>
+					<Head type="Organization" location="/blog">
+					Smakosh | Blog
+					</Head>
+					<Title>Articles</Title>
+					{data.allMarkdownRemark.edges.map(post => (
+						<Post key={post.node.id} onClick={() => navigate(post.node.frontmatter.path)}>
+							<ArticleImg>
+								<Img fluid={post.node.frontmatter.thumbnail.childImageSharp.fluid} />
+							</ArticleImg>
+							<ArticleContent>
+								<ArticleTitle>{post.node.frontmatter.title}</ArticleTitle>
+								<P>{post.node.excerpt}</P>
+								<I style={{ fontSize: '.8rem' }}>
+									{post.node.frontmatter.date}
+									<Span>{post.node.timeToRead} min</Span>
+								</I>
+							</ArticleContent>
+						</Post>
+					))}
+				</SmallerContainer>
+			</Layout>
+		)}
+	/>
 )
 
 const Post = styled.div`
@@ -77,33 +111,5 @@ const I = styled.i`
 const Span = styled.span`
 	margin-left: 10px;
 `
-
-export const pageQuery = graphql`
-  query BlogQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 20
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-					timeToRead
-          frontmatter {
-            title
-            date(formatString: "MMM DD, YYYY")
-            path
-            thumbnail {
-              childImageSharp {
-                sizes(maxWidth: 630 ) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }`
 
 export default Blog

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Container, Logo } from '../../../common'
 import NavbarLinks from '../NavbarLinks'
@@ -7,7 +7,7 @@ import NavbarLinks from '../NavbarLinks'
 const Navbar = () => (
 	<Container nav>
 		<Brand to="/">
-			<BrandLogo color="#212121" strokeWidth="2" />
+			<BrandLogo as={Logo} color="#212121" strokeWidth="2" />
 			Smakosh
 		</Brand>
 		<NavbarLinks device="desktop" />
@@ -20,7 +20,7 @@ const Brand = styled(Link)`
 	color: #212121;
 `
 
-const BrandLogo = styled(Logo)`
+const BrandLogo = styled.div`
 	transition: 0.5s;
 	height: 2.8rem;
 	width: 2.8rem;
