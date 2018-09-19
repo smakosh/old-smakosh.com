@@ -4846,9 +4846,9 @@ gatsby-plugin-google-fonts@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
 
-gatsby-plugin-mailchimp@^3.3.0:
+"gatsby-plugin-mailchimp@https://github.com/smakosh/gatsby-plugin-mailchimp.git":
   version "3.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mailchimp/-/gatsby-plugin-mailchimp-3.3.0.tgz#c31da44711347c483f85159f19c3fd02abdbcb42"
+  resolved "https://github.com/smakosh/gatsby-plugin-mailchimp.git#b432c2c20cbac33d3cd4443bf6cd5dcfe806adc3"
   dependencies:
     email-validator "^2.0.3"
     jsonp "^0.2.1"
