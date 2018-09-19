@@ -37,7 +37,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-canonical-urls',
 			options: {
-				siteUrl: config.url,
+				siteUrl: 'https://smakosh.com',
 			},
 		},
 		'gatsby-plugin-catch-links',

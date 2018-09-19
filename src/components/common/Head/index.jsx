@@ -102,6 +102,7 @@ const Head = ({ children, type, headline, articleBody, datePublished, dateModifi
 			<meta name="twitter:description" content={type === 'NewsArticle' ? headline : description} />
 			<meta name="twitter:image:src" content={cover ? `${url}${cover}` : `${url}${Me}`} />
 			<script type="application/ld+json">{type === 'NewsArticle' ? structuredDataArticle : structuredDataOrganization}</script>
+			<link rel="publisher" href="https://plus.google.com/u/0/b/107741951374775538155/+IsmailSmakoshGhallou" />
 			<title>{ children }</title>
 		</Helmet>
 	)
