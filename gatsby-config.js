@@ -2,11 +2,11 @@ const config = require('./data/Config')
 
 module.exports = {
 	siteMetadata: {
-		site_url: config.url,
+		site_url: 'https://smakosh.com/blog',
 		rssMetadata: {
-			site_url: config.url,
+			site_url: 'https://smakosh.com/blog',
 			feed_url: `${config.url}${config.siteRss}`,
-			title: 'Smakosh | Hello world!',
+			title: 'Smakosh | Blog',
 			description: config.description,
 			image_url: 'https://smakosh.com/static/favicon/logo-512.png',
 			author: config.author,
@@ -50,22 +50,22 @@ module.exports = {
 					return ret;
 				},
 				query: `
-        {
-          site {
-            siteMetadata {
-              rssMetadata {
-                site_url
-                feed_url
-                title
-                description
-                image_url
-                author
-                copyright
-              }
-            }
-          }
-        }
-      `,
+					{
+						site {
+							siteMetadata {
+								rssMetadata {
+									site_url
+									feed_url
+									title
+									description
+									image_url
+									author
+									copyright
+								}
+							}
+						}
+					}
+				`,
 				feeds: [
 					{
 						serialize(ctx) {
