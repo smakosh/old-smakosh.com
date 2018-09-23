@@ -2,7 +2,7 @@ const config = require('./data/Config')
 
 module.exports = {
 	siteMetadata: {
-		site_url: 'https://smakosh.com/blog',
+		site_url: 'https://smakosh.com',
 		rssMetadata: {
 			site_url: 'https://smakosh.com/blog',
 			feed_url: `${config.url}${config.siteRss}`,
@@ -18,6 +18,7 @@ module.exports = {
 		'gatsby-plugin-sass',
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-netlify',
+		'gatsby-plugin-catch-links',
 		{
 			resolve: 'gatsby-plugin-google-fonts',
 			options: {
@@ -39,68 +40,61 @@ module.exports = {
 				siteUrl: 'https://smakosh.com',
 			},
 		},
-		'gatsby-plugin-catch-links',
 		{
 			resolve: 'gatsby-plugin-feed',
 			options: {
-				setup(ref) {
-					const ret = ref.query.site.siteMetadata.rssMetadata;
-					ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-					ret.generator = 'Smakosh';
-					return ret;
-				},
 				query: `
-					{
-						site {
-							siteMetadata {
-								rssMetadata {
-									site_url
-									feed_url
-									title
-									description
-									image_url
-									author
-									copyright
-								}
+				{
+					site {
+						siteMetadata {
+							site_url
+							rssMetadata {
+								title
+								author
+								author
+								copyright
+								description
 							}
 						}
 					}
-				`,
+				}
+			  `,
 				feeds: [
 					{
-						serialize(ctx) {
-							const { rssMetadata } = ctx.query.site.siteMetadata;
-							return ctx.query.allMarkdownRemark.edges.map(edge => ({
-								date: edge.node.frontmatter.date,
-								title: edge.node.frontmatter.title,
-								description: edge.node.excerpt,
-								author: rssMetadata.author,
-								custom_elements: [{ 'content:encoded': edge.node.html }]
-							}));
+						serialize: ({ query: { site, allMarkdownRemark } }) => {
+							return allMarkdownRemark.edges.map(edge => {
+								return Object.assign({}, edge.node.frontmatter, {
+									description: edge.node.excerpt,
+									url: site.siteMetadata.site_url + edge.node.frontmatter.path,
+									guid: site.siteMetadata.site_url + edge.node.frontmatter.path,
+									custom_elements: [{ 'content:encoded': edge.node.html }],
+								})
+							})
 						},
 						query: `
-            {
-              allMarkdownRemark(
-                limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
-              ) {
-                edges {
-                  node {
-                    excerpt
-                    html
-                    frontmatter {
-                      title
-                      date
-                    }
-                  }
-                }
-              }
-            }
-          `,
-						output: config.siteRss
-					}
-				]
-			}
+						{
+							allMarkdownRemark(
+								limit: 1000,
+								sort: { order: DESC, fields: [frontmatter___date] }
+							) {
+								edges {
+									node {
+										excerpt
+										html
+										frontmatter {
+											title
+											path
+											date
+										}
+									}
+								}
+							}
+						}
+				  	`,
+						output: config.siteRss,
+					},
+				],
+			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
@@ -146,6 +140,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
 				trackingId: config.googleAnalyticsID,
+				head: true
 			}
 		},
 		{
