@@ -28,8 +28,8 @@ const ContactForm = ({
 		<p>Or fill in the contact form down below</p>
 		<form
 			action="/thanks/"
-			name="newname"
-			method="POST"
+			name="smakosh"
+			method="post"
 			data-netlify="true"
 			data-netlify-recaptcha="true"
 			onSubmit={handleSubmit}
@@ -37,27 +37,27 @@ const ContactForm = ({
 			<noscript>
 				<p>This form won’t work with Javascript disabled</p>
 			</noscript>
-			<p>
+			<Wrapper>
 				<label>
 				Full name:
 					<InputField as="input" type="text" name="name" value={name} error={nameError} onBlur={handleTouch} onChange={handleChange} />
 					{nameError && <Error>{nameError}</Error>}
 				</label>
-			</p>
-			<p>
+			</Wrapper>
+			<Wrapper>
 				<label>
 				Your email:
 					<InputField as="input" type="email" name="email" value={email} error={emailError} onBlur={handleTouch} onChange={handleChange} />
 					{emailError && <Error>{emailError}</Error>}
 				</label>
-			</p>
-			<p>
+			</Wrapper>
+			<Wrapper>
 				<label>
 				Message:
 					<InputField as="textarea" textarea name="message" value={message} error={messageError} onBlur={handleTouch} onChange={handleChange} />
 					{messageError && <Error>{messageError}</Error>}
 				</label>
-			</p>
+			</Wrapper>
 			<Recaptcha sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN" onChange={handleRecaptcha} />
 			<Center>
 				<CustomButton>Send</CustomButton>
@@ -97,23 +97,22 @@ const enhance = compose(
 			handleSubmit: ({ name, email, message, recaptcha }) => e => {
 				e.preventDefault()
 				const form = e.target
-
-				if (!e.target.name.value
-					|| !e.target.email.value || !e.target.message.value || !recaptcha) {
-					alert('Please fill in all the required fields :)') // eslint-disable-line no-undef
+				if (!name || !email || !message || !recaptcha) {
+					alert('Please fill in all the required fields :)')
 				} else {
-					fetch('/', { // eslint-disable-line no-undef
+					fetch('/', {
 						method: 'POST',
 						headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 						body: encode({
 							'form-name': form.getAttribute('name'),
 							name,
 							email,
-							message
+							message,
+							'g-recaptcha-response': recaptcha
 						})
 					})
 						.then(() => navigate(form.getAttribute('action')))
-						.catch(() => alert('Something went wrong, please try again!')) // eslint-disable-line no-undef
+						.catch(() => alert('Something went wrong, please try again!'))
 					e.target.name.value = ''
 					e.target.email.value = ''
 					e.target.message.value = ''
@@ -124,6 +123,10 @@ const enhance = compose(
 		}
 	)
 )
+
+const Wrapper = styled.div`
+	margin-bottom: 2rem;
+`
 
 const InputField = styled.div`
 	width: 100%;

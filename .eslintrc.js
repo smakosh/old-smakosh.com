@@ -46,6 +46,8 @@ module.exports = {
     'parser': 'babel-eslint',
     'globals': {
         'location': 1,
+        'alert': 1,
+        'fetch': 1,
         'graphql': 1,
         '__PATH_PREFIX__': 1
     }
