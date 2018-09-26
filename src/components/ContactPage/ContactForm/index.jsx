@@ -32,6 +32,7 @@ const ContactForm = ({
 			method="post"
 			data-netlify="true"
 			data-netlify-recaptcha="true"
+			data-netlify-honeypot="bot-field"
 			onSubmit={handleSubmit}
 		>
 			<noscript>
@@ -100,15 +101,18 @@ const enhance = compose(
 				if (!name || !email || !message || !recaptcha) {
 					alert('Please fill in all the required fields :)')
 				} else {
+					const payload = {
+						name,
+						email,
+						message,
+						'g-recaptcha-response': recaptcha
+					}
 					fetch('/', {
 						method: 'POST',
 						headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 						body: encode({
 							'form-name': form.getAttribute('name'),
-							name,
-							email,
-							message,
-							'g-recaptcha-response': recaptcha
+							...payload
 						})
 					})
 						.then(() => navigate(form.getAttribute('action')))
