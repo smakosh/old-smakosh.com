@@ -5,12 +5,6 @@ import Recaptcha from 'react-google-recaptcha'
 import { navigate } from 'gatsby'
 import { SmallerContainer, CustomButton } from '../../common'
 
-const encode = data => {
-	return Object.keys(data)
-		.map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-		.join('&')
-}
-
 const ContactForm = ({
 	name,
 	email,
@@ -101,6 +95,11 @@ const enhance = compose(
 				if (!name || !email || !message || !recaptcha) {
 					alert('Please fill in all the required fields :)')
 				} else {
+					const encode = data => {
+						return Object.keys(data)
+							.map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+							.join('&')
+					}
 					const payload = {
 						name,
 						email,
