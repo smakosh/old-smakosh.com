@@ -20,7 +20,7 @@ module.exports = {
 	siteRss: '/rss.xml',
 	social: {
 		facebook: '165244147328608',
-		twitter: 'https://twitter.com/smakosh'
+		twitter: '@smakosh'
 	},
 	address: {
 		city: 'Errachidia',

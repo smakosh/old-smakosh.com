@@ -45,7 +45,11 @@
     "styled-components": "^4.0.0-beta.0"
   },
   "keywords": [
-    "smakosh, personal website, blog, gatsby"
+    "smakosh",
+    "personal",
+    "website",
+    "blog",
+    "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",

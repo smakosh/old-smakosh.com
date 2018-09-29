@@ -99,14 +99,15 @@ const Head = ({ children, type, headline, articleBody, datePublished, dateModifi
 			<meta property="fb:app_id" content={social.facebook} />
 
 			<meta name="twitter:card" content="summary" />
-			<meta name="twitter:creator" content={social.twitter} />
-			<meta name="twitter:site" content="@smakosh" />
+			<meta name="twitter:creator" content={socialLinks.twitter} />
+			<meta name="twitter:site" content={social.twitter} />
 			<meta name="twitter:title" content={type === 'NewsArticle' ? headline : title} />
 			<meta name="twitter:description" content={type === 'NewsArticle' ? headline : description} />
 			<meta name="twitter:image:src" content={cover ? `${url}${cover}` : `${url}${Me}`} />
 			<script type="application/ld+json">{type === 'NewsArticle' ? structuredDataArticle : structuredDataOrganization}</script>
-			<link rel="publisher" href="https://plus.google.com/u/0/b/107741951374775538155/+IsmailSmakoshGhallou" />
-			<title>{ children }</title>
+			<link rel="publisher" href={socialLinks.google} />
+			<title>{children}</title>
+			<html lang="en" />
 		</Helmet>
 	)
 }
