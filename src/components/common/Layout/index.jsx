@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subscribe } from '../../common'
+import Subscribe from '../../common/Subscribe'
 import Header from '../../Includes/Header'
 import Footer from '../../Includes/Footer'
 import './index.scss'
