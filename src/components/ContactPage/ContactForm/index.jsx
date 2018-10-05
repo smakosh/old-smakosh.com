@@ -1,9 +1,9 @@
 import React from 'react'
 import { compose, withStateHandlers } from 'recompose'
-import styled from 'styled-components'
 import Recaptcha from 'react-google-recaptcha'
 import { navigate } from 'gatsby'
 import { SmallerContainer, CustomButton } from '../../common'
+import { Wrapper, InputField, Center, Error } from './styles'
 
 const ContactForm = ({
 	name,
@@ -104,7 +104,7 @@ const enhance = compose(
 						name,
 						email,
 						message,
-						'g-recaptcha-response': recaptcha
+						recaptcha
 					}
 					fetch('/', {
 						method: 'POST',
@@ -126,45 +126,5 @@ const enhance = compose(
 		}
 	)
 )
-
-const Wrapper = styled.div`
-	margin-bottom: 2rem;
-`
-
-const InputField = styled.div`
-	width: 100%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	box-sizing: border-box;
-	transition: all .2s ease;
-	text-align: left;
-	border-width: 1px;
-	border-color: #212121;
-	border-style: solid;
-	border-radius: 4px;
-	padding: .6rem 1rem;
-	-webkit-appearance:none;
-	color: #828282;
-	&:focus  {
-		border-color: #212121;
-		transition: all .2s ease;
-	}
-	${({ textarea }) => textarea && `
-		resize: vertical;
-		min-height: 8rem;
-		margin: 0;
-	`}
-	${({ error }) => error && `
-		border-color: red;
-	`}
-`
-
-const Center = styled.div`
-	text-align: center;
-`
-
-const Error = styled.div`
-	color: red;
-`
 
 export default enhance(ContactForm)

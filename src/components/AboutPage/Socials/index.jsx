@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import SocialIcon from './SocialIcon'
 import twitter from '../../../../static/social/twitter.svg'
 import unsplash from '../../../../static/social/unsplash.svg'
@@ -11,6 +10,7 @@ import github from '../../../../static/creative/github.svg'
 import medium from '../../../../static/creative/medium.svg'
 import youtube from '../../../../static/creative/youtube.svg'
 import codepen from '../../../../static/creative/codepen.svg'
+import { Wrapper, Title, Social } from './styles'
 
 const Socials = () => {
 	const socials = [
@@ -89,25 +89,5 @@ const Socials = () => {
 		</Wrapper>
 	)
 }
-
-const Wrapper = styled.div`
-	padding: 2rem 0;
-`
-
-const Title = styled.h2`
-	margin-bottom: 3rem;
-`
-
-const Social = styled.div`
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: repeat(1, 4fr);
-	grid-gap: 1.2rem;
-	align-items: center;
-	margin-bottom: 1rem;
-	@media screen and (max-width: 960px) {
-		grid-template-columns: repeat(4, 1fr);
-	}
-`
 
 export { Socials }

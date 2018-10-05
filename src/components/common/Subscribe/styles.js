@@ -18,6 +18,10 @@ export const StyledForm = styled.div`
 	@media (max-width: 800px) {
 		width: 100%;
 	}
+	${({ theme }) => theme === 'dark' && `
+		background: #212121;
+		color: #fff;
+	`}
 `
 
 export const Subtitle = styled.p`
@@ -30,6 +34,9 @@ export const Subtitle = styled.p`
 	@media (max-width: 800px) {
 		font-size: .8em;
 	}
+	${({ theme }) => theme === 'dark' && `
+		color: #fff;
+	`}
 `
 
 export const Title = styled.h3`
@@ -43,6 +50,9 @@ export const Title = styled.h3`
 	@media (max-width: 800px) {
 		font-size: 1em;
 	}
+	${({ theme }) => theme === 'dark' && `
+		color: #fff;
+	`}
 `
 
 export const Message = styled.h4`

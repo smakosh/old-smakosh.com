@@ -22,8 +22,9 @@ const SmallerContainer = styled.div`
     ${({ copyrights }) => copyrights && `
         padding: 1rem;
     `}
-    ${({ intro }) => intro && `
-        background: #fff;
+    ${({ theme }) => theme === 'dark' && `
+        background: #212121;
+        color: #fff;
     `}
 `
 
