@@ -104,18 +104,15 @@ const enhance = compose(
 							.map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
 							.join('&')
 					}
-					const payload = {
-						name,
-						email,
-						message,
-						recaptcha
-					}
-					fetch('/', {
+					fetch('/?no-cache=1', {
 						method: 'POST',
 						headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 						body: encode({
 							'form-name': form.getAttribute('name'),
-							...payload
+							name,
+							email,
+							message,
+							'g-recaptcha-response': recaptcha
 						})
 					})
 						.then(() => navigate(form.getAttribute('action')))
