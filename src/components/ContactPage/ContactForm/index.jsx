@@ -1,9 +1,9 @@
 import React from 'react'
 import { compose, withStateHandlers } from 'recompose'
-import styled from 'styled-components'
 import Recaptcha from 'react-google-recaptcha'
 import { navigate } from 'gatsby'
-import { SmallerContainer, CustomButton } from '../../common'
+import { SmallerContainer, CustomButton, ThemeContext } from '../../common'
+import { Wrapper, InputField, Center, Error, Text } from './styles'
 
 const ContactForm = ({
 	name,
@@ -17,48 +17,52 @@ const ContactForm = ({
 	emailError,
 	messageError
 }) => (
-	<SmallerContainer contact tl>
-		<h4>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></h4>
-		<p>Or fill in the contact form down below</p>
-		<form
-			action="/thanks/"
-			name="smakosh"
-			method="post"
-			data-netlify="true"
-			data-netlify-recaptcha="true"
-			data-netlify-honeypot="bot-field"
-			onSubmit={handleSubmit}
-		>
-			<noscript>
-				<p>This form won’t work with Javascript disabled</p>
-			</noscript>
-			<Wrapper>
-				<label>
-				Full name:
-					<InputField as="input" type="text" name="name" value={name} error={nameError} onBlur={handleTouch} onChange={handleChange} />
-					{nameError && <Error>{nameError}</Error>}
-				</label>
-			</Wrapper>
-			<Wrapper>
-				<label>
-				Your email:
-					<InputField as="input" type="email" name="email" value={email} error={emailError} onBlur={handleTouch} onChange={handleChange} />
-					{emailError && <Error>{emailError}</Error>}
-				</label>
-			</Wrapper>
-			<Wrapper>
-				<label>
-				Message:
-					<InputField as="textarea" textarea name="message" value={message} error={messageError} onBlur={handleTouch} onChange={handleChange} />
-					{messageError && <Error>{messageError}</Error>}
-				</label>
-			</Wrapper>
-			<Recaptcha sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN" onChange={handleRecaptcha} />
-			<Center>
-				<CustomButton>Send</CustomButton>
-			</Center>
-		</form>
-	</SmallerContainer>
+	<ThemeContext.Consumer>
+		{({ theme }) => (
+			<SmallerContainer contact tl>
+				<Text theme={theme}>Feel free to email me via <a href="mailto:ismai23l@hotmail.com" target="_top">ismai23l@hotmail.com</a></Text>
+				<Text as="p" theme={theme}>Or fill in the contact form down below</Text>
+				<form
+					action="/thanks/"
+					name="smakosh"
+					method="post"
+					data-netlify="true"
+					data-netlify-recaptcha="true"
+					data-netlify-honeypot="bot-field"
+					onSubmit={handleSubmit}
+				>
+					<noscript>
+						<p>This form won’t work with Javascript disabled</p>
+					</noscript>
+					<Wrapper theme={theme}>
+						<label>
+							Full name:
+							<InputField as="input" type="text" name="name" value={name} error={nameError} onBlur={handleTouch} onChange={handleChange} />
+							{nameError && <Error>{nameError}</Error>}
+						</label>
+					</Wrapper>
+					<Wrapper theme={theme}>
+						<label>
+							Your email:
+							<InputField as="input" type="email" name="email" value={email} error={emailError} onBlur={handleTouch} onChange={handleChange} />
+							{emailError && <Error>{emailError}</Error>}
+						</label>
+					</Wrapper>
+					<Wrapper theme={theme}>
+						<label>
+							Message:
+							<InputField as="textarea" textarea name="message" value={message} error={messageError} onBlur={handleTouch} onChange={handleChange} />
+							{messageError && <Error>{messageError}</Error>}
+						</label>
+					</Wrapper>
+					<Recaptcha sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN" onChange={handleRecaptcha} />
+					<Center>
+						<CustomButton>Send</CustomButton>
+					</Center>
+				</form>
+			</SmallerContainer>
+		)}
+	</ThemeContext.Consumer>
 )
 
 const enhance = compose(
@@ -104,7 +108,7 @@ const enhance = compose(
 						name,
 						email,
 						message,
-						'g-recaptcha-response': recaptcha
+						recaptcha
 					}
 					fetch('/', {
 						method: 'POST',
@@ -126,45 +130,5 @@ const enhance = compose(
 		}
 	)
 )
-
-const Wrapper = styled.div`
-	margin-bottom: 2rem;
-`
-
-const InputField = styled.div`
-	width: 100%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	box-sizing: border-box;
-	transition: all .2s ease;
-	text-align: left;
-	border-width: 1px;
-	border-color: #212121;
-	border-style: solid;
-	border-radius: 4px;
-	padding: .6rem 1rem;
-	-webkit-appearance:none;
-	color: #828282;
-	&:focus  {
-		border-color: #212121;
-		transition: all .2s ease;
-	}
-	${({ textarea }) => textarea && `
-		resize: vertical;
-		min-height: 8rem;
-		margin: 0;
-	`}
-	${({ error }) => error && `
-		border-color: red;
-	`}
-`
-
-const Center = styled.div`
-	text-align: center;
-`
-
-const Error = styled.div`
-	color: red;
-`
 
 export default enhance(ContactForm)

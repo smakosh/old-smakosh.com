@@ -10,11 +10,10 @@ const CardHeader = ({ title }) => (
 const Wrapper = styled.div`
     padding: 1rem;
     h3 {
-        color: #212121;
         font-size: .9em;
         margin: 0;
         font-weight: normal;
-        @media screen and (max-width: 680px) {
+        @media (max-width: 680px) {
             font-size: 1.2em;
         }
     }

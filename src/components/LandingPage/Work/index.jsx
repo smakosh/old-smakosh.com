@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container } from '../../common'
+import { Container, ThemeContext } from '../../common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'
@@ -38,20 +38,24 @@ const Work = () => (
 			}
 		`}
 		render={data => (
-			<Container>
-				<h2>Work</h2>
-				<Behance
-					firstImg={data.UbouxImage.fluid}
-					secondImg={data.CatchitImage.fluid}
-					thirdImg={data.LucaImage.fluid}
-				/>
-				<Dribbble
-					firstImg={data.PlanetsImage.fluid}
-					secondImg={data.PostImage.fluid}
-					thirdImg={data.TodoImage.fluid}
-				/>
-				<Github />
-			</Container>
+			<ThemeContext.Consumer>
+				{({ theme }) => (
+					<Container>
+						<h2 style={{ color: theme === 'dark' ? '#fff' : '#212121' }}>Work</h2>
+						<Behance
+							firstImg={data.UbouxImage.fluid}
+							secondImg={data.CatchitImage.fluid}
+							thirdImg={data.LucaImage.fluid}
+						/>
+						<Dribbble
+							firstImg={data.PlanetsImage.fluid}
+							secondImg={data.PostImage.fluid}
+							thirdImg={data.TodoImage.fluid}
+						/>
+						<Github />
+					</Container>
+				)}
+			</ThemeContext.Consumer>
 		)}
 	/>
 )

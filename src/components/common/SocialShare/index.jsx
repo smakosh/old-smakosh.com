@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {
 	FacebookShareButton,
 	GooglePlusShareButton,
@@ -14,6 +13,7 @@ import {
 	LinkedinIcon,
 	RedditIcon
 } from 'react-share'
+import { Wrapper } from './styles'
 import config from '../../../../data/Config'
 
 const SocialShare = ({ title, path }) => {
@@ -45,18 +45,5 @@ const SocialShare = ({ title, path }) => {
 		</Wrapper>
 	)
 }
-
-const Wrapper = styled.div`
-	display: flex;
-	align-items: center;
-	padding: 1rem 0 2rem 0;
-	.SocialMediaShareButton {
-		margin-right: 1rem;
-		cursor: pointer;
-	}
-	.SocialMediaShareButton:last-child {
-		margin-right: unset;
-	}
-`
 
 export { SocialShare }

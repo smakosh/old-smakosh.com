@@ -1,8 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import { StaticQuery, graphql, navigate } from 'gatsby'
-import Img from 'gatsby-image'
-import { Layout, SmallerContainer, Head } from '../components/common'
+import { StaticQuery, graphql } from 'gatsby'
+import { Layout, SmallerContainer, Head, PageTitle, CardPost } from '../components/common'
 
 
 const Blog = () => (
@@ -39,77 +37,16 @@ const Blog = () => (
 			<Layout>
 				<SmallerContainer>
 					<Head type="Organization" location="/blog">
-					Smakosh | Blog
+						Smakosh | Blog
 					</Head>
-					<Title>Articles</Title>
+					<PageTitle>Articles</PageTitle>
 					{data.allMarkdownRemark.edges.map(post => (
-						<Post key={post.node.id} onClick={() => navigate(post.node.frontmatter.path)}>
-							<ArticleImg>
-								<Img fluid={post.node.frontmatter.thumbnail.childImageSharp.fluid} />
-							</ArticleImg>
-							<ArticleContent>
-								<ArticleTitle>{post.node.frontmatter.title}</ArticleTitle>
-								<P>{post.node.excerpt}</P>
-								<I style={{ fontSize: '.8rem' }}>
-									{post.node.frontmatter.date}
-									<Span>{post.node.timeToRead} min</Span>
-								</I>
-							</ArticleContent>
-						</Post>
+						<CardPost key={post.node.id} {...post} />
 					))}
 				</SmallerContainer>
 			</Layout>
 		)}
 	/>
 )
-
-const Post = styled.div`
-	margin-bottom: 1.5rem;
-	border-radius: .1rem;
-	box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
-	background: #fff;
-	cursor: pointer;
-	transition: .7s;
-	&:hover, &:focus {
-		box-shadow: 0 3px 20px 0 rgba(0, 0, 0, .2);
-		transition: .7s;
-	}
-`
-
-const Title = styled.h1`
-	margin-bottom: 2rem
-`
-
-const ArticleContent = styled.div`
-	padding: 1rem;
-`
-
-const ArticleImg = styled.div`
-	height: 400px;
-	overflow: hidden;
-	@media (max-width: 992px) {
-			height: 300px;
-	}
-	@media (max-width: 680px) {
-			height: 250px;
-	}
-`
-
-const ArticleTitle = styled.h2`
-	color: #212121;
-`
-
-const P = styled.p`
-	color: #616161;
-`
-
-const I = styled.i`
-	color: #212121;
-	font-size: .8em;
-`
-
-const Span = styled.span`
-	margin-left: 10px;
-`
 
 export default Blog

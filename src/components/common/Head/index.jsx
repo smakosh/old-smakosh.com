@@ -107,7 +107,7 @@ const Head = ({ children, type, headline, articleBody, datePublished, dateModifi
 			<script type="application/ld+json">{type === 'NewsArticle' ? structuredDataArticle : structuredDataOrganization}</script>
 			<link rel="publisher" href={socialLinks.google} />
 			<title>{children}</title>
-			<html lang="en" />
+			<html lang="en" dir="ltr" />
 		</Helmet>
 	)
 }

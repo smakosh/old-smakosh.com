@@ -50,6 +50,7 @@ module.exports = {
         'fetch': 1,
         'graphql': 1,
         'document': 1,
+        'localStorage': 1,
         '__PATH_PREFIX__': 1
     }
 };

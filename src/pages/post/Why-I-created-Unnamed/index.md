@@ -5,7 +5,7 @@ thumbnail: './unnamed_blog.jpeg'
 date: 2017-09-20T16:45:01.889Z
 edited:
 next: '/build-your-perceptron'
-title: 'Why I made Unnamed?'
+title: 'Why I created Unnamed'
 ---
 
 ![Unnamed](unnamed_blog.jpeg)
