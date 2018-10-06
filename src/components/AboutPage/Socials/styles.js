@@ -6,6 +6,9 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h2`
 	margin-bottom: 3rem;
+	${({ theme }) => theme === 'dark' && `
+		color: #fff;
+	`}
 `
 
 export const Social = styled.div`

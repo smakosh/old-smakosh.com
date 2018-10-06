@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
 	margin-bottom: 2rem;
+	${({ theme }) => theme === 'dark' && `
+		color: #fff;
+	`}
 `
 
 export const InputField = styled.div`
@@ -38,4 +41,10 @@ export const Center = styled.div`
 
 export const Error = styled.div`
 	color: red;
+`
+
+export const Text = styled.h4`
+	${({ theme }) => theme === 'dark' && `
+		color: #fff;
+	`}
 `

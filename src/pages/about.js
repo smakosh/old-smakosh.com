@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components';
-import { Layout, Container, Head } from '../components/common'
+import { Layout, Container, Head, PageTitle } from '../components/common'
 import { Details, Socials } from '../components/AboutPage'
 
 const About = () => (
@@ -22,7 +22,7 @@ const About = () => (
 					<Head type="Organization" location="/about">
 						Smakosh | About
 					</Head>
-					<h2>About me</h2>
+					<PageTitle>About me</PageTitle>
 					<AboutContainer>
 						<Details />
 						<Portrait>
