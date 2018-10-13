@@ -2,21 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-const CardBody = ({ svg, title, image }) => (
-	<Wrapper svg={svg}>
-		{svg ? (
-			<img src={image} alt={title} />
-		) : (
-			<Img fluid={image} alt={title} />
-		)}
+const CardBody = ({ title, image }) => (
+	<Wrapper>
+		<Img fluid={image} alt={title} />
 	</Wrapper>
 )
 
 const Wrapper = styled.div`
-    overflow: hidden;
-    ${({ svg }) => svg && `
-        padding: 1rem 4rem;
-    `}
+    overflow: visible;
+    
+    .gatsby-image-wrapper {
+        transition: .3s;
+    }
+
     img  {
         position: relative;
         left: 0;
@@ -25,6 +23,7 @@ const Wrapper = styled.div`
         bottom: 0;
         width: 100%;
         display: block;
+        transition: .3s;
     }
 `
 

@@ -1,14 +1,19 @@
 import React from 'react'
-import { Card, More, ThemeContext } from '../../common'
-import { Wrapper, Work, Icon } from './styles'
+import { Card, More, ThemeContext, Repository } from '../../common'
+import { Wrapper, Work, Icon, Title } from './styles'
 
-const Project = ({ title, projects, link, color, icon, svg }) => (
+const Project = ({ title, projects, link, color, icon, github }) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => (
 			<Wrapper>
-				<h3 style={{ color: theme === 'dark' ? '#fff' : '#212121' }}>{title}</h3>
-				<Work>
-					{projects.map(project => <Card key={project.id} {...project} svg={svg} />)}
+				<Title theme={theme}>{title}</Title>
+				<Work github={github}>
+					{!github
+						? projects.map(project => <Card key={project.id} {...project} />)
+						: (projects.map((project, index) => (
+							<Repository key={project.node.id} id={index} {...project} />
+						)))
+					}
 					<More link={link} color={color}>
 						<Icon as={icon} />
 					</More>
