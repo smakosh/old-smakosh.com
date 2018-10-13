@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const SingleSkill = styled.div`
     text-align: center;
+    align-self: center;
 `
 
 export const Grow = styled.img`
