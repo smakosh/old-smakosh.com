@@ -1,4 +1,7 @@
 const config = require('./data/Config')
+require('dotenv').config({
+	path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
 	siteMetadata: {
@@ -20,6 +23,18 @@ module.exports = {
 		'gatsby-plugin-netlify',
 		'gatsby-plugin-catch-links',
 		{
+			resolve: 'gatsby-source-graphql',
+			options: {
+				typeName: 'GitHub',
+				fieldName: 'github',
+				url: 'https://api.github.com/graphql',
+				headers: {
+					Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+				},
+				fetchOptions: {},
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-google-fonts',
 			options: {
 				fonts: [
@@ -31,7 +46,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-mailchimp',
 			options: {
-				endpoint: 'https://smakosh.us17.list-manage.com/subscribe/post?u=1773a09d7c4e877cfe0ee5ee7&amp;id=9691d3de65',
+				endpoint: process.env.MC_ENDPOINT,
 			},
 		},
 		{

@@ -5,6 +5,7 @@ export const SingleSkill = styled.div`
 `
 
 export const Grow = styled.img`
+    width: 200px;
     cursor: pointer;
     transition: all .2s ease-in-out;
     &:hover  {

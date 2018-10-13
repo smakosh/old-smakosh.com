@@ -10,16 +10,16 @@ const Copyrights = () => (
 		{({ theme }) => (
 			<SmallerContainer tc copyrights theme={theme}>
 				<Links>
-            © <Item as={Link} to="/">Smakosh</Item> 2016-{`${(new Date()).getFullYear()} `}
-            Built with
+					© <Item as={Link} to="/">Smakosh</Item> 2016-{`${(new Date()).getFullYear()} `}
+					Built with
 					<a href="https://www.gatsbyjs.org" rel="noopener noreferrer" target="_blank">
 						<Item src={gatsbyIcon} img alt="Gatssby js" />
 					</a>
-			Open sourced on
+					Open sourced on
 					<a href="https://github.com/smakosh/smakosh.com" rel="noopener noreferrer" target="_blank">
-						<Item as={GithubIcon} img width="24" height="24" color="#00" />
+						<Item as={GithubIcon} img width="24" height="24" color={theme === 'dark' ? '#fff' : '#000'} />
 					</a>
-			and deployed on
+					and deployed on
 					<a href="https://www.netlify.com" rel="noopener noreferrer" target="_blank">
 						<Item src={netlifyIcon} img alt="Netlify" />
 					</a>
