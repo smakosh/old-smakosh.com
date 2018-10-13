@@ -8,6 +8,7 @@ export const Grow = styled.img`
     width: 200px;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    margin: 0 auto;
     &:hover  {
         transform: scale(1.1);
         transition: all .2s ease-in-out;
