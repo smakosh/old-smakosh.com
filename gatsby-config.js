@@ -5,7 +5,7 @@ require('dotenv').config({
 
 module.exports = {
 	siteMetadata: {
-		site_url: 'https://smakosh.com',
+		siteUrl: 'https://smakosh.com',
 		rssMetadata: {
 			site_url: 'https://smakosh.com/blog',
 			feed_url: `${config.url}${config.siteRss}`,
@@ -22,6 +22,7 @@ module.exports = {
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-netlify',
 		'gatsby-plugin-catch-links',
+		'gatsby-plugin-sitemap',
 		{
 			resolve: 'gatsby-source-graphql',
 			options: {
@@ -58,12 +59,11 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-feed',
 			options: {
-				query: `
-				{
+				query: `{
 					site {
 						siteMetadata {
-							site_url
 							rssMetadata {
+								site_url
 								title
 								author
 								author
@@ -72,22 +72,20 @@ module.exports = {
 							}
 						}
 					}
-				}
-			  `,
+				}`,
 				feeds: [
 					{
 						serialize: ({ query: { site, allMarkdownRemark } }) => {
 							return allMarkdownRemark.edges.map(edge => {
 								return Object.assign({}, edge.node.frontmatter, {
 									description: edge.node.excerpt,
-									url: site.siteMetadata.site_url + edge.node.frontmatter.path,
-									guid: site.siteMetadata.site_url + edge.node.frontmatter.path,
+									url: site.siteMetadata.rssMetadata.site_url + edge.node.frontmatter.path,
+									guid: site.siteMetadata.rssMetadata.site_url + edge.node.frontmatter.path,
 									custom_elements: [{ 'content:encoded': edge.node.html }],
 								})
 							})
 						},
-						query: `
-						{
+						query: `{
 							allMarkdownRemark(
 								limit: 1000,
 								sort: { order: DESC, fields: [frontmatter___date] }
@@ -104,12 +102,11 @@ module.exports = {
 									}
 								}
 							}
-						}
-				  	`,
-						output: config.siteRss,
-					},
-				],
-			},
+						}`,
+						output: config.siteRss
+					}
+				]
+			}
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
