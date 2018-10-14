@@ -19,10 +19,10 @@ const Behance = ({ firstImg, secondImg, thirdImg }) => {
 		},
 		{
 			id: 2,
-			title: 'Luca-steeb.com',
+			title: 'Luca Steeb',
 			image: thirdImg,
-			link: 'https://luca-steeb.com',
-			description: 'A website I designed and coded for Luca Steeb'
+			link: 'https://www.behance.net/gallery/47742643/Luca-steebcom-redesign',
+			description: 'The second iteration of Luca Steeb\'s website that I designed and coded.'
 		}
 	]
 	return (
