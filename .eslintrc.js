@@ -52,6 +52,8 @@ module.exports = {
         'document': 1,
         'localStorage': 1,
         'window': 1,
+        'navigator': 1,
+        'Notification': 1,
         '__PATH_PREFIX__': 1
     }
 };
