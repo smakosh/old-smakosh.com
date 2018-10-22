@@ -7,7 +7,7 @@ module.exports = {
 	siteMetadata: {
 		siteUrl: 'https://smakosh.com',
 		rssMetadata: {
-			site_url: 'https://smakosh.com/blog',
+			site_url: 'https://smakosh.com',
 			feed_url: `${config.url}${config.siteRss}`,
 			title: 'Smakosh | Blog',
 			description: config.description,

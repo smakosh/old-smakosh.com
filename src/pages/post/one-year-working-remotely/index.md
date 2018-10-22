@@ -25,9 +25,9 @@ When I started my remote job, I was only coding user interfaces with plain html,
 - Free-videodownload (PWA & Native app)
 - [Tomorrow Todolist](https://firebaseapp.smakosh.com) (PWA) | Open source
 
-After I got back from [my trip to Istanbul](https://smakosh.com/istanbul-trip), I received an email that I should contribute in the react app as well or they may take serious actions, if it wasn’t my co-worker [Ismail Mechbal](https://twitter.com/ismailmechbal) who taught me how to act in that situation, my whole career wouldn’t have gone this far. So I took full responsibility and convinced the team that I will start contributing.
+After I got back from [my trip to Istanbul](https://smakosh.com/istanbul-trip), I received an email that I should contribute in the react app as well or they may take serious actions, if it wasn’t my co-worker [Ismail Mechbal](https://www.ismailmechbal.com/?ref=smakosh.com) who taught me how to act in that situation, my whole career wouldn’t have gone this far. So I took full responsibility and convinced the team that I will start contributing.
 
-Really thanks to my two team mates [Saad](https://github.com/saadaouad) and [Abumalick](https://twitter.com/abumalick0) who supported me through out that period of 3 months while contributing to the react app, as sometimes I get tasks related to landing pages built with static sites generators such as Jekyll, I spent some time looking up if there is any SSG based on node js instead of ruby, then I discovered Gatsby js.
+Really thanks to my two team mates [Saad](https://saadaouad.net/?ref=smakosh.com) and [Abumalick](https://twitter.com/abumalick0) who supported me through out that period of 3 months while contributing to the react app, as sometimes I get tasks related to landing pages built with static sites generators such as Jekyll, I spent some time looking up if there is any SSG based on node js instead of ruby, then I discovered Gatsby js.
 
 While I was also learning Gatsby as I find it better than Jekyll & Pelican as I tried them all. I built some static sites with it.
 
