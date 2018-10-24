@@ -2,10 +2,10 @@ import React from 'react'
 import { StyledSubtitle } from './styles'
 import { ThemeContext } from '../ThemeContext'
 
-const Subtitle = ({ children }) => (
+const Subtitle = ({ children, active }) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => (
-			<StyledSubtitle theme={theme}>
+			<StyledSubtitle theme={theme} active={active}>
 				{children}
 			</StyledSubtitle>
 		)}

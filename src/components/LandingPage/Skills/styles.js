@@ -37,3 +37,60 @@ export const Tech = styled.div`
 		`}
 	}
 `
+
+export const Flex = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+
+	h2 {
+		margin: 0;
+		font-size: 20pt;
+	}
+`
+
+export const Label = styled.label`
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin: 0 1rem;
+`
+
+export const Input = styled.input`
+	display: none;
+
+	&:checked + span {
+		background-color: #eee;
+	}
+
+	&:checked + span:before {
+		transform: translateX(30px);
+		background: #000;
+	}
+`
+
+export const Slider = styled.span`
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	transition: .4s;
+	border-radius: 34px;
+
+	&:before {
+		position: absolute;
+		content: "";
+		height: 12px;
+		width: 12px;
+		left: 4px;
+		bottom: 4px;
+		transition: .4s;
+		border-radius: 50%;
+		background-color: #fff;
+	}
+`

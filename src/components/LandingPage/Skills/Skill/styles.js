@@ -18,10 +18,15 @@ export const Grow = styled.img`
     cursor: pointer;
     transition: all .2s ease-in-out;
     margin: 0 auto 1rem auto;
+
     &:hover  {
         transform: scale(1.1);
         transition: all .2s ease-in-out;
     }
+
+    ${({ smaller }) => smaller && `
+        width: 120px;
+    `}
 `
 
 export const Title = styled.h4`
