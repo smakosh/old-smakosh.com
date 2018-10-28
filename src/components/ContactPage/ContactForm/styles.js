@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
 	margin-bottom: 2rem;
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}
@@ -21,15 +22,18 @@ export const InputField = styled.div`
 	padding: .6rem 1rem;
 	-webkit-appearance:none;
 	color: #828282;
+
 	&:focus  {
 		border-color: #212121;
 		transition: all .2s ease;
 	}
+
 	${({ textarea }) => textarea && `
 		resize: vertical;
 		min-height: 8rem;
 		margin: 0;
 	`}
+
 	${({ error }) => error && `
 		border-color: red;
 	`}

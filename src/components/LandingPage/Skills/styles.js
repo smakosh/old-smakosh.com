@@ -6,6 +6,7 @@ export const SkillsWrapper = styled.div`
 	padding: 8rem 1rem 4rem 1rem;
 	clip-path: polygon(0% 14%, 100% 0, 100% 84%, 0 100%);
 	background: #f9f9f9;
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 		background: #2b2a2a;

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
 	margin-top: 6rem;
+
 	${({ theme }) => theme === 'dark' && `
         background: #212121;
     `}
@@ -17,6 +18,7 @@ export const FullContainer = styled.div`
 export const List = styled.ul`
 	list-style: none;
 	align-self: center;
+
 	a {
 		color: #fff;
 	}
@@ -33,6 +35,7 @@ export const StyledLogo = styled.div`
 	width: 4rem;
 	margin-right: 1rem;
 	margin-bottom: 0;
+
 	&:hover  {
 		opacity: 0.7;
 		transition: 0.5s;
@@ -42,6 +45,7 @@ export const StyledLogo = styled.div`
 
 export const Social = styled.a`
 	margin-right: 1rem;
+
 	${({ last }) => last && `
 		margin-right: unset;
 	`}
@@ -50,6 +54,7 @@ export const Social = styled.a`
 export const Grow = styled.div`
 	cursor: pointer;
 	transition: all .2s ease-in-out;
+
 	&:hover  {
 		transform: scale(1.1);
 		transition: all .2s ease-in-out;

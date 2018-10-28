@@ -11,13 +11,16 @@ export const StyledForm = styled.div`
 	position: relative;
 	margin-bottom: -12rem;
 	padding: 2rem;
+
 	@media (max-width: 960px) {
 		padding: 2rem 1rem;
 		width: 80%;
 	}
+
 	@media (max-width: 800px) {
 		width: 100%;
 	}
+
 	${({ theme }) => theme === 'dark' && `
 		background: #212121;
 		color: #fff;
@@ -34,6 +37,7 @@ export const Subtitle = styled.p`
 	@media (max-width: 800px) {
 		font-size: .8em;
 	}
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}
@@ -50,6 +54,7 @@ export const Title = styled.h3`
 	@media (max-width: 800px) {
 		font-size: 1em;
 	}
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}
@@ -58,6 +63,7 @@ export const Title = styled.h3`
 export const Message = styled.h4`
 	margin: 1rem 0;
 	font-weight: normal;
+
 	@media (max-width: 800px) {
         font-size: .9em;
         width: 90%;
@@ -67,6 +73,7 @@ export const Message = styled.h4`
 
 export const Error = styled.div`
     color: red;
+
     ${({ server }) => server && `
         margin-top: 1rem;
     `}
@@ -76,9 +83,11 @@ export const Fields = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 0rem 4rem;
+
 	@media (max-width: 960px) {
 		padding: 0rem 2rem;
 	}
+
 	@media (max-width: 800px) {
 		flex-direction: column;
 	}
@@ -89,9 +98,11 @@ export const Input = styled.input`
 	border: 2px solid #00b6ff;
 	border-radius: 7px;
 	flex: 2;
+
 	${({ error }) => error && `
 		border-color: #e53935;
 	`}
+
 	@media(max-width: 800px) {
 		flex: unset;
 		width: 100%;

@@ -28,10 +28,12 @@ export const MagicalButton = styled.a`
 
 export const IntroWrapper = styled.div`
 	padding: 3rem 1rem;
+
 	p {
 		color: gray;
 		margin-bottom: 2rem;
 	}
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}

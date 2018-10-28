@@ -5,6 +5,7 @@ export const Links = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	@media (max-width: 960px) {
 		flex-direction: column;
 	}
@@ -12,6 +13,7 @@ export const Links = styled.div`
 
 export const Item = styled.img`
 	margin: 0 .2rem;
+
 	${({ img }) => img && `
 		position: relative;
 		top: .15rem;

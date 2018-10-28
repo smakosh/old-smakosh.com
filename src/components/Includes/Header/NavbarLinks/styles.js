@@ -3,21 +3,27 @@ import styled from 'styled-components'
 export const NavLink = styled.div`
     color: #6d6d6d;
     text-decoration: none;
+
+    &.current {
+		color: #212121;
+    }
+
     ${({ device }) => device === 'desktop' && `
         margin-right: 1rem;
+
         &:last-child {
             margin-right: unset;
         }
     `}
+
     ${({ device }) => device === 'mobile' && `
         margin-bottom: 1rem;
+
         &:last-child {
             margin-bottom: unset;
         }
     `}
-	&.current {
-		color: #212121;
-    }
+
     ${({ theme }) => theme === 'dark' && `
         color: #fff;
         &.current {
@@ -31,6 +37,7 @@ export const Links = styled.div`
             display: none;
         }
     `}
+
     ${({ device }) => device === 'mobile' && `
         padding: 3rem;
         display: flex;
@@ -45,6 +52,7 @@ export const StyledButton = styled.button`
     top: .3rem;
     background: none;
     text-align: left;
+
     img {
         margin: 0;
     }

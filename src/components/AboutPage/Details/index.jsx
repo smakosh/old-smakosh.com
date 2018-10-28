@@ -21,22 +21,31 @@ const Details = () => (
 					reading my <Link to="/blog">articles</Link>.
 				</Text>
 				<Text theme={theme}>
-					Currently working remotely at
-					<a style={{ margin: '0 .4rem' }} href="https://obytes.com/?ref=smakosh" target="_blank" rel="noopener noreferrer">Obytes</a>
-					as a Front end engineer.
+					Currently I'm working remotely at {' '}
+					<a href="https://obytes.com/?ref=smakosh" target="_blank" rel="noopener noreferrer">Obytes</a>{' '}
+					as a Front end developer.
 				</Text>
 				<Text theme={theme}>For business inquiries feel free to get in touch with me at:</Text>
 				<DetailsContainer>
 					<P theme={theme}>
-						<Img src={theme === 'dark' ? EnvelopeWhite : Envelope} alt="email" />
+						<Img
+							src={theme === 'dark' ? EnvelopeWhite : Envelope}
+							alt="email"
+						/>
 						ismai23l@hotmail.com
 					</P>
 					<P theme={theme}>
-						<Img src={theme === 'dark' ? PhoneWhite : Phone} alt="phone" />
+						<Img
+							src={theme === 'dark' ? PhoneWhite : Phone}
+							alt="phone"
+						/>
 						+212 663-532761
 					</P>
 					<P theme={theme}>
-						<Img src={theme === 'dark' ? MarkerWhite : Marker} alt="address" />
+						<Img
+							src={theme === 'dark' ? MarkerWhite : Marker}
+							alt="address"
+						/>
 						Nr 23 Lot El Waha, Errachidia, Morocco
 					</P>
 				</DetailsContainer>

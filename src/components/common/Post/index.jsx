@@ -10,26 +10,28 @@ import {
 	ArticleDate
 } from './styles'
 
-const Post = ({ post }) => (
+const Post = ({ html, frontmatter, timeToRead }) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => {
 			const disqusShortName = 'https-smakosh-com'
 			const disqusConfig = {
-				url: `https://smakosh.com${post.frontmatter.path}`,
-				identifier: post.frontmatter.id,
-				title: post.frontmatter.title
+				url: `https://smakosh.com${frontmatter.path}`,
+				identifier: frontmatter.id,
+				title: frontmatter.title
 			}
 			return (
 				<ArticleWrapper theme={theme}>
-					<PageTitle>{post.frontmatter.title}</PageTitle>
+					<PageTitle>{frontmatter.title}</PageTitle>
 					<ArticleDate>
-						<i>{post.frontmatter.date} -</i>
-						<i>{post.timeToRead} min read</i>
+						<i>{frontmatter.date} -</i>
+						<i>{timeToRead} min read</i>
 					</ArticleDate>
-					<Content dangerouslySetInnerHTML={{ __html: post.html }} />
-					<SocialShare {...post.frontmatter} />
+					<Content
+						dangerouslySetInnerHTML={{ __html: html }}
+					/>
+					<SocialShare {...frontmatter} />
 					<Back>
-						<Link to={post.frontmatter.next}>Previous article</Link>
+						<Link to={frontmatter.next}>Previous article</Link>
 					</Back>
 					<Comments>
 						<Disqus.DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />

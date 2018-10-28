@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h2`
 	margin-bottom: 3rem;
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}
@@ -18,6 +19,7 @@ export const Social = styled.div`
 	grid-gap: 1.2rem;
 	align-items: center;
 	margin-bottom: 1rem;
+
 	@media (max-width: 960px) {
 		grid-template-columns: repeat(4, 1fr);
 	}
