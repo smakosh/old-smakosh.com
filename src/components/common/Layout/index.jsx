@@ -28,6 +28,7 @@ const Layout = ({ children }) => (
 const LayoutStyled = styled.div`
 	width: 100%;
 	padding-top: 7rem;
+
 	${({ theme }) => theme === 'dark' && `
 		background: #212121;
 	`}

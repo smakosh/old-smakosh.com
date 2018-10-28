@@ -19,7 +19,7 @@ export default function Template({ data }) {
 				>
 					{post.frontmatter.title}
 				</Head>
-				<Post post={post} />
+				<Post {...post} />
 			</SmallerContainer>
 		</Layout>
 	)

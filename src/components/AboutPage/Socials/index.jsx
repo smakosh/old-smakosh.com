@@ -1,6 +1,8 @@
 import React from 'react'
 import SocialIcon from './SocialIcon'
 import { ThemeContext } from '../../common'
+
+// Dark icons
 import twitter from '../../../../static/social/twitter.svg'
 import unsplash from '../../../../static/social/unsplash.svg'
 import instagram from '../../../../static/social/instagram.svg'
@@ -11,6 +13,8 @@ import github from '../../../../static/creative/github.svg'
 import medium from '../../../../static/creative/medium.svg'
 import youtube from '../../../../static/creative/youtube.svg'
 import codepen from '../../../../static/creative/codepen.svg'
+
+// Light icons
 import twitterWhite from '../../../../static/social/twitter-white.svg'
 import unsplashWhite from '../../../../static/social/unsplash-white.svg'
 import instagramWhite from '../../../../static/social/instagram-white.svg'
@@ -21,6 +25,7 @@ import githubWhite from '../../../../static/creative/github-white.svg'
 import mediumWhite from '../../../../static/creative/medium-white.svg'
 import youtubeWhite from '../../../../static/creative/youtube-white.svg'
 import codepenWhite from '../../../../static/creative/codepen-white.svg'
+
 import { Wrapper, Title, Social } from './styles'
 
 const Socials = () => (

@@ -6,10 +6,12 @@ export const StyledHeader = styled.div`
 	z-index: 1;
 	border-bottom: .01em solid rgb(204, 204, 204);
 	margin-bottom: -3rem;
+
 	${({ isHomePage }) => isHomePage && `
 		position: fixed;
 		margin-bottom: unset;
 	`}
+
 	${({ theme }) => theme === 'dark' && `
 		background: #212121;
 		border-bottom: unset;
@@ -24,6 +26,7 @@ export const Overlay = styled.div`
 	height: 100%;
 	display: none;
 	transition: .4s;
+
 	${({ sidebar }) => sidebar && `
 		display: block;
 		z-index: 4;	

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Title = styled.h4`
     color: #212121;
+
     ${({ theme }) => theme === 'dark' && `
         color: #fff;
     `}

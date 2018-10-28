@@ -17,6 +17,15 @@ const CustomButton = styled.button`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        background: gray;
+    }
+
     ${({ subscribe }) => subscribe && `
         flex: 1;
         border-radius: 6px;
@@ -27,9 +36,6 @@ const CustomButton = styled.button`
             margin: 0 auto;
         }
     `}
-    &:disabled {
-        background: gray;
-    }
 `
 
 export { CustomButton }

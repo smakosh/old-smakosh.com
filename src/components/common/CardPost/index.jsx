@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby'
 import Img from 'gatsby-image'
+import { ThemeContext } from '../ThemeContext'
 import {
 	Post,
 	ArticleContent,
@@ -10,7 +11,6 @@ import {
 	Info,
 	StyledSpan
 } from './styles'
-import { ThemeContext } from '../ThemeContext'
 
 const CardPost = ({ node }) => (
 	<ThemeContext.Consumer>

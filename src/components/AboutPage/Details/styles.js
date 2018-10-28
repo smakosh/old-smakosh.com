@@ -11,6 +11,7 @@ export const DetailsContainer = styled.div`
 export const P = styled.p`
 	display: flex;
 	align-items: center;
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}
@@ -18,6 +19,7 @@ export const P = styled.p`
 
 export const Text = styled.p`
 	color: #212121;
+
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}
