@@ -1,7 +1,7 @@
 import React from 'react'
 import Disqus from 'disqus-react'
 import { Link } from 'gatsby'
-import { SocialShare, PageTitle, ThemeContext } from '../../common'
+import { SocialShare, PageTitle, ThemeContext } from 'Common'
 import {
 	ArticleWrapper,
 	Back,

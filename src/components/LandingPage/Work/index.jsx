@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container, Subtitle } from '../../common'
+import { Container, Subtitle } from 'Common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import Github from './Github'

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { SmallerContainer, ThemeContext } from '../../common'
+import { SmallerContainer, ThemeContext } from 'Common'
 
 export default () => (
 	<ThemeContext.Consumer>

@@ -1,7 +1,7 @@
 import React from 'react'
+import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
-import { Layout, SmallerContainer, Head, PageTitle, CardPost } from '../components/common'
-
+import { Layout, Container, Head, PageTitle, CardPost } from 'Common'
 
 const Blog = () => (
 	<StaticQuery
@@ -13,7 +13,7 @@ const Blog = () => (
 				) {
 					edges {
 						node {
-							excerpt(pruneLength: 250)
+							excerpt(pruneLength: 235)
 							id
 							timeToRead
 							frontmatter {
@@ -35,18 +35,27 @@ const Blog = () => (
 		`}
 		render={data => (
 			<Layout>
-				<SmallerContainer>
+				<Container>
 					<Head type="Organization" location="/blog">
 						Smakosh | Blog
 					</Head>
 					<PageTitle>Articles</PageTitle>
-					{data.allMarkdownRemark.edges.map(post => (
-						<CardPost key={post.node.id} {...post} />
-					))}
-				</SmallerContainer>
+					<Wrapper>
+						{data.allMarkdownRemark.edges.map(post => (
+							<CardPost key={post.node.id} {...post} />
+						))}
+					</Wrapper>
+				</Container>
 			</Layout>
 		)}
 	/>
 )
+
+const Wrapper = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+`
 
 export default Blog

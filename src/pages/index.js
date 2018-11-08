@@ -1,6 +1,6 @@
 import React from 'react'
-import { Intro, Skills, Work } from '../components/LandingPage'
-import { Layout, Head } from '../components/common'
+import { Intro, Skills, Work } from 'Components/LandingPage'
+import { Layout, Head } from 'Common'
 
 const IndexPage = () => (
 	<Layout>

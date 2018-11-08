@@ -1,6 +1,6 @@
 import React from 'react'
-import { Layout, Head } from '../components/common'
-import ThanksContent from '../components/ContactPage/ThanksContent'
+import { Layout, Head } from 'Common'
+import ThanksContent from 'Components/ContactPage/ThanksContent'
 
 const Thanks = () => (
 	<Layout>

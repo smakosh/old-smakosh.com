@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ThemeContext } from '../../ThemeContext'
+import { ThemeContext } from 'Common'
 
 const CardHeader = ({ title }) => (
 	<ThemeContext.Consumer>

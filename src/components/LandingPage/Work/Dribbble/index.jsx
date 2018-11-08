@@ -1,5 +1,5 @@
 import React from 'react'
-import { Project, DribbbleIcon } from '../../../common'
+import { Project, DribbbleIcon } from 'Common'
 
 const Dribbble = ({ firstImg, secondImg, thirdImg }) => {
 	const shots = [

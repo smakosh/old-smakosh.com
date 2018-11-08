@@ -1,6 +1,6 @@
 import React from 'react'
+import { ThemeContext } from 'Common';
 import { HamburgerIcon, Bar } from './styles'
-import { ThemeContext } from '../../../common';
 
 const Hamburger = ({ sidebar, toggle, isHomePage }) => (
 	<ThemeContext.Consumer>

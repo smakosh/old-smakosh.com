@@ -1,9 +1,9 @@
 import React from 'react'
 import { compose, withState, withHandlers, lifecycle } from 'recompose'
-import { ThemeContext } from '../ThemeContext'
+import { ThemeContext } from 'Common'
 
 
-const Provider = ({ children, theme, toggleTheme }) => (
+const Wrapper = ({ children, theme, toggleTheme }) => (
 	<ThemeContext.Provider
 		value={{
 			theme,
@@ -37,4 +37,4 @@ const enhance = compose(
 	})
 )
 
-export default enhance(Provider)
+export const Provider = enhance(Wrapper)

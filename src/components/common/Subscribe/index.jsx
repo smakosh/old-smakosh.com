@@ -3,7 +3,7 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { compose } from 'recompose'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import { Container, CustomButton, ThemeContext } from '../../common'
+import { Container, CustomButton, ThemeContext } from 'Common'
 import {
 	StyledForm,
 	Subtitle,
@@ -14,7 +14,7 @@ import {
 	Input
 } from './styles'
 
-const Subscribe = ({
+const Wrapper = ({
 	errors,
 	isSubmitting,
 	touched,
@@ -91,4 +91,4 @@ const enhance = compose(
 	})
 )
 
-export default enhance(Subscribe)
+export const Subscribe = enhance(Wrapper)

@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Subscribe from '../../common/Subscribe'
-import Header from '../../Includes/Header'
-import Footer from '../../Includes/Footer'
-import Provider from './Provider'
-import { ThemeContext } from '../ThemeContext'
+import { ThemeContext, Provider, Subscribe } from 'Common'
+import Header from 'Theme/Header'
+import Footer from 'Theme/Footer'
 import './index.scss'
 import './main.scss'
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { SmallerContainer, GithubIcon, ThemeContext } from '../../../common'
-import gatsbyIcon from '../../../../../static/footer/gatsby.svg'
-import netlifyIcon from '../../../../../static/footer/netlify.svg'
+import { SmallerContainer, GithubIcon, ThemeContext } from 'Common'
+import gatsbyIcon from 'Static/footer/gatsby.svg'
+import netlifyIcon from 'Static/footer/netlify.svg'
 import { Links, Item } from './styles'
 
 const Copyrights = () => (

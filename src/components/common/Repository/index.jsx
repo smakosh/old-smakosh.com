@@ -1,9 +1,9 @@
 import React from 'react'
-import { ThemeContext } from '../../common'
-import StarIcon from '../../../../static/icons/star.svg'
-import ForkIcon from '../../../../static/icons/fork.svg'
-import StarIconWhite from '../../../../static/icons/star-white.svg'
-import ForkIconWhite from '../../../../static/icons/fork-white.svg'
+import { ThemeContext } from 'Common'
+import StarIcon from 'Static/icons/star.svg'
+import ForkIcon from 'Static/icons/fork.svg'
+import StarIconWhite from 'Static/icons/star-white.svg'
+import ForkIconWhite from 'Static/icons/fork-white.svg'
 import { Wrapper, StyledRepository, Stars, Header, Description } from './styles'
 
 const Repository = ({ id, node: {
