@@ -1,10 +1,10 @@
 import React from 'react'
 import { withPrefix } from 'gatsby'
 import { compose, withStateHandlers, lifecycle } from 'recompose'
+import { ThemeContext } from 'Common'
 import Navbar from './Navbar'
 import Hamburger from './Hamburger'
 import Sidebar from './Sidebar'
-import { ThemeContext } from '../../common'
 import { StyledHeader, Overlay } from './styles'
 
 const Header = ({ sidebar, toggle, isHomePage }) => (

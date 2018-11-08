@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Container, Logo, ThemeContext } from '../../../common'
+import { Container, Logo, ThemeContext } from 'Common'
 import NavbarLinks from '../NavbarLinks'
 import { BrandLogo, Brand } from './styles'
 
@@ -10,9 +10,9 @@ const Navbar = () => (
 			<Container nav>
 				<Brand as={Link} theme={theme} to="/">
 					<BrandLogo as={Logo} color={theme === 'dark' ? '#fff' : '#212121'} strokeWidth="2" />
-			Smakosh
+					Smakosh
 				</Brand>
-				<NavbarLinks device="desktop" />
+				<NavbarLinks desktop />
 			</Container>
 		)}
 	</ThemeContext.Consumer>

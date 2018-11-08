@@ -1,6 +1,6 @@
 import React from 'react'
+import { ThemeContext } from 'Common'
 import { StyledSubtitle } from './styles'
-import { ThemeContext } from '../ThemeContext'
 
 const Subtitle = ({ children, active }) => (
 	<ThemeContext.Consumer>

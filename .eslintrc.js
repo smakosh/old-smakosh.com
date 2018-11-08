@@ -54,6 +54,7 @@ module.exports = {
         'window': 1,
         'navigator': 1,
         'Notification': 1,
+        'clients': 1,
         '__PATH_PREFIX__': 1
     }
 };

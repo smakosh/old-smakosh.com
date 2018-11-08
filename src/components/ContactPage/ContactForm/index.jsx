@@ -2,7 +2,7 @@ import React from 'react'
 import { compose, withStateHandlers } from 'recompose'
 import Recaptcha from 'react-google-recaptcha'
 import { navigate } from 'gatsby'
-import { SmallerContainer, CustomButton, ThemeContext } from '../../common'
+import { SmallerContainer, CustomButton, ThemeContext } from 'Common'
 import { Wrapper, InputField, Center, Error, Text } from './styles'
 
 const ContactForm = ({

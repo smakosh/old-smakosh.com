@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Container, Logo, Twitter, GithubIcon, Instagram, Unsplash, Linkedin, ThemeContext } from '../../common'
+import { Container, Logo, Twitter, GithubIcon, Instagram, Unsplash, Linkedin, ThemeContext } from 'Common'
 import Copyrights from './Copyrights'
 import {
 	FooterContainer,

@@ -1,4 +1,5 @@
 const config = require('./data/Config')
+
 require('dotenv').config({
 	path: `.env.${process.env.NODE_ENV}`,
 })
@@ -160,6 +161,24 @@ module.exports = {
 			options: {
 				color: config.themeColor,
 				showSpinner: false,
+			}
+		},
+		{
+			resolve: 'gatsby-plugin-favicon',
+			options: {
+				logo: './static/favicon/logo-512x512.png',
+				injectHTML: true,
+				icons: {
+					android: true,
+					appleIcon: true,
+					appleStartup: true,
+					coast: false,
+					favicons: true,
+					firefox: true,
+					twitter: false,
+					yandex: false,
+					windows: false
+				}
 			}
 		},
 		{

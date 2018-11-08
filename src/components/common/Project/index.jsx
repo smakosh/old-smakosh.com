@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, More, ThemeContext, Repository } from '../../common'
+import { Card, More, ThemeContext, Repository } from 'Common'
 import { Wrapper, Work, Icon, Title } from './styles'
 
 const Project = ({ title, projects, link, color, icon, github }) => (

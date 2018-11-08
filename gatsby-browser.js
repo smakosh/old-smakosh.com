@@ -4,9 +4,9 @@ export const onServiceWorkerUpdateFound = () => {
 			if (result === 'granted') {
 				navigator.serviceWorker.ready.then(registration => {
 					registration.showNotification('Update', {
-						body: 'New content is available! Reload to see it!',
+						body: 'New content is available!',
 						icon: '/favicon/logo-192x192.png',
-						vibrate: [200, 100, 200, 100, 200, 100, 400],
+						vibrate: [100, 50, 100],
 						tag: 'request'
 					})
 				})
@@ -15,4 +15,7 @@ export const onServiceWorkerUpdateFound = () => {
 	}
 
 	showNotification()
+	setTimeout(() => {
+		window.location.reload()
+	}, 1000)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Me from '../../../../static/me.jpg'
+import Me from 'Static/me.jpg'
 import {
 	url,
 	description,
@@ -12,9 +12,8 @@ import {
 	legalName,
 	foundingDate,
 	logo,
-	author,
-	favicon
-} from '../../../../data/Config'
+	author
+} from 'Data'
 
 const Head = ({ children, type, headline, articleBody, datePublished, dateModified, cover, location = '' }) => {
 	const structuredDataArticle = `{
@@ -86,8 +85,6 @@ const Head = ({ children, type, headline, articleBody, datePublished, dateModifi
 
 	return (
 		<Helmet>
-			<link rel="shortcut icon" href={favicon} />
-
 			<meta name="description" content={type === 'NewsArticle' ? headline : description} />
 			<meta name="image" content={cover ? `${url}${cover}` : `${url}${Me}`} />
 

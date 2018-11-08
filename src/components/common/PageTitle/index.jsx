@@ -1,6 +1,6 @@
 import React from 'react'
+import { ThemeContext } from 'Common'
 import { StyledTitle } from './styles'
-import { ThemeContext } from '../ThemeContext'
 
 const PageTitle = ({ children }) => (
 	<ThemeContext.Consumer>

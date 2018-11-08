@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Layout, Head } from '../components/common'
+import { Layout, Head } from 'Common'
 
 const NotFoundPage = () => (
 	<Layout>

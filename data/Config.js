@@ -3,7 +3,6 @@ module.exports = {
 	logo: 'https://smakosh.com/favicon/logo-48.png',
 	author: 'Ismail Ghallou (Smakosh)',
 	url: 'https://smakosh.com',
-	favicon: 'https://smakosh.com/favicon/logo-48.png',
 	legalName: 'Ismail Ghallou',
 	description: 'I\'m Ismail Ghallou aka Smakosh, a self-taught Graphic, UI/UX Designer and full stack developer, interested in the web, neural networks & tech in general.',
 	socialLinks: {

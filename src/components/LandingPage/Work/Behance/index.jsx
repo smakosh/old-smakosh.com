@@ -1,5 +1,5 @@
 import React from 'react'
-import { BehanceIcon, Project } from '../../../common'
+import { BehanceIcon, Project } from 'Common'
 
 const Behance = ({ firstImg, secondImg, thirdImg }) => {
 	const projects = [

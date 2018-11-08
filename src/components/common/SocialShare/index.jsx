@@ -13,8 +13,8 @@ import {
 	LinkedinIcon,
 	RedditIcon
 } from 'react-share'
+import config from 'Data'
 import { Wrapper } from './styles'
-import config from '../../../../data/Config'
 
 const SocialShare = ({ title, path }) => {
 	const iconSize = 32
