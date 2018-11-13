@@ -14,7 +14,7 @@ export default function Template({ data }) {
 					articleBody={post.html}
 					datePublished={post.frontmatter.date}
 					dateModified={post.frontmatter.edited ? post.frontmatter.edited : post.frontmatter.date}
-					cover={post.frontmatter.thumbnail.childImageSharp.fluid}
+					cover={post.frontmatter.thumbnail.childImageSharp.fluid.originalImg}
 					location={post.frontmatter.path}
 				>
 					{post.frontmatter.title}
@@ -39,8 +39,8 @@ export const postQuery = graphql`
 				id
                 thumbnail {
                     childImageSharp {
-                        fluid(maxWidth: 700) {
-							...GatsbyImageSharpFluid_tracedSVG
+                        fluid(maxWidth: 700 ) {
+							originalImg
 						}
                     }
                 }
