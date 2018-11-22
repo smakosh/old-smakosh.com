@@ -1,6 +1,6 @@
 import React from 'react'
 import { compose } from 'recompose'
-import { Form, Field, withFormik } from 'formik'
+import { Form, FastField, ErrorMessage, withFormik } from 'formik'
 import * as Yup from 'yup'
 import Recaptcha from 'react-google-recaptcha'
 import { navigate } from 'gatsby'
@@ -10,7 +10,7 @@ import { Wrapper, InputField, Center, Error, Text } from './styles'
 const ContactForm = ({
 	errors,
 	touched,
-	handleChange,
+	setFieldValue,
 	isSubmitting
 }) => (
 	<ThemeContext.Consumer>
@@ -32,46 +32,47 @@ const ContactForm = ({
 							Full name:
 							<InputField
 								component="input"
-								as={Field}
+								as={FastField}
 								type="text"
 								error={(touched.name && errors.name) ? 1 : 0}
 								name="name"
 							/>
 						</label>
-						{touched.name && errors.name && <Error>{errors.name}</Error>}
+						<ErrorMessage component={Error} name="name" />
 					</Wrapper>
 					<Wrapper theme={theme}>
 						<label htmlFor="email" aria-label="please insert your email">
 							Your email:
 							<InputField
 								component="input"
-								as={Field}
+								as={FastField}
 								type="email"
 								error={(touched.email && errors.email) ? 1 : 0}
 								name="email"
 							/>
 						</label>
-						{touched.email && errors.email && <Error>{errors.email}</Error>}
+						<ErrorMessage component={Error} name="email" />
 					</Wrapper>
 					<Wrapper theme={theme}>
 						<label htmlFor="message" aria-label="please insert your message">
 							Message:
 							<InputField
 								component="textarea"
-								as={Field}
+								as={FastField}
 								error={(touched.message && errors.message) ? 1 : 0}
 								name="message"
 								textarea="true"
 							/>
 						</label>
-						{touched.message && errors.message && <Error>{errors.message}</Error>}
+						<ErrorMessage component={Error} name="message" />
 					</Wrapper>
-					<Field
+					<FastField
 						component={Recaptcha}
 						sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
-						onChange={handleChange}
+						name="recaptcha"
+						onChange={value => setFieldValue('recaptcha', value)}
 					/>
-					{touched.recaptcha && errors.recaptcha && <Error>{errors.recaptcha}</Error>}
+					<ErrorMessage component={Error} name="recaptcha" />
 					<Center>
 						<CustomButton type="submit" disabled={isSubmitting}>Send</CustomButton>
 					</Center>
