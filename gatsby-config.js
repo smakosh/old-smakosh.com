@@ -37,15 +37,6 @@ module.exports = {
 			},
 		},
 		{
-			resolve: 'gatsby-plugin-google-fonts',
-			options: {
-				fonts: [
-					'Roboto',
-					'Merriweather'
-				]
-			}
-		},
-		{
 			resolve: 'gatsby-plugin-mailchimp',
 			options: {
 				endpoint: process.env.MC_ENDPOINT,

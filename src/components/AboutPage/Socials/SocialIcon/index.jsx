@@ -1,15 +1,16 @@
 import React from 'react'
-import { SocialStyled } from './styles'
+import { Social } from './styles'
 
-const SocialIcon = ({ name, link, icon }) =>  (
-	<div>
+const SocialIcon = ({ name, link, icon, theme }) =>  (
+	<Social theme={theme}>
 		<a href={link} rel="noopener noreferrer" target="_blank">
-			<SocialStyled
+			<img
 				src={icon}
 				alt={name}
 			/>
+			{name}
 		</a>
-	</div>
+	</Social>
 )
 
 export default SocialIcon

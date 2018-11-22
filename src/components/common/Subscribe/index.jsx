@@ -27,8 +27,8 @@ const Wrapper = ({
 			<Container subscribe>
 				<StyledForm theme={theme}>
 					<Form>
-						<Title theme={theme}>Subscribe to Smakosh</Title>
-						<Subtitle theme={theme}>Get the latest posts delivered right to your inbox</Subtitle>
+						<Title theme={theme}>Subscribe to Smakosh.com</Title>
+						<Subtitle theme={theme}>And get the latest articles delivered right to your inbox!</Subtitle>
 						{(touched.email && errors.email) && (
 							<Error>{errors.email}</Error>
 						)}

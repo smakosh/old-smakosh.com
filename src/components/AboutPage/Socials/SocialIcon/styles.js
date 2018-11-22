@@ -1,16 +1,29 @@
 import styled from 'styled-components'
 
-export const SocialStyled = styled.img`
-	cursor: pointer;
-	transition: all .2s ease-in-out;
-	height: 2rem;
+export const Social = styled.div`
+	a {
+		display: flex;
+		align-items: center;
+		color: #212121;
 
-	&:hover  {
-		transform: scale(1.1);
-		transition: all .2s ease-in-out;
+		${({ theme }) => theme === 'dark' && `
+			color: #fff;
+		`}
+
+		@media (max-width: 960px) {
+			justify-content: center;
+		}
 	}
-	
-	@media (max-width: 680px) {
-		height: 1rem;
+
+	img {
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+		margin-bottom: unset;
+		margin-right: .5rem;
+
+		&:hover  {
+			transform: scale(1.1);
+			transition: all .2s ease-in-out;
+		}
 	}
 `

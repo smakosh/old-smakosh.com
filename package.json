@@ -15,7 +15,6 @@
     "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-feed": "^2.0.5",
     "gatsby-plugin-google-analytics": "^2.0.6",
-    "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-mailchimp": "https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#gatsby-v2",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-netlify": "^2.0.0",

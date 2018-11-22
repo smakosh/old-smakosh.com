@@ -9,6 +9,12 @@ export const MagicalButton = styled.a`
 	box-shadow: rgba(0, 196, 255, 0.9) 0px 13px 19px -6px;
 	transition: .5s;
 
+	@media (max-width: 380px) {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
 	&:hover  {
 		box-shadow: 0px 0px 17px 0px rgba(0, 196, 255, 0.36);
 		transition: .5s;
@@ -23,11 +29,15 @@ export const MagicalButton = styled.a`
 		&:hover  {
 			box-shadow: 0px 0px 17px 0px rgba(185, 185, 185, 0.4);
 		}
+
+		@media (max-width: 380px) {
+			margin: 0 auto 1.5rem auto;
+		}
 	}
 `
 
-export const IntroWrapper = styled.div`
-	padding: 3rem 1rem;
+export const Wrapper = styled.div`
+	padding: 4rem 1rem;
 
 	p {
 		color: gray;
@@ -37,4 +47,13 @@ export const IntroWrapper = styled.div`
 	${({ theme }) => theme === 'dark' && `
 		color: #fff;
 	`}
+`
+
+export const Flex = styled.div`
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 380px) {
+		flex-direction: column;
+	}
 `

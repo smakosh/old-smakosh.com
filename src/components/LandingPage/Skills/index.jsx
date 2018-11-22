@@ -10,7 +10,7 @@ import UiUx from 'Static/services/uix.svg'
 import Dev from 'Static/services/dev.svg'
 import SeoIcon from 'Static/services/seo.svg'
 import Skill from './Skill'
-import { SkillsWrapper, SkillsContainer, Tech, Label, Input, Slider, Flex } from './styles'
+import { Wrapper, SkillsContainer, Tech, Label, Input, Slider, Flex } from './styles'
 
 const SkillsAndServices = ({ isToggled, toggle }) => (
 	<ThemeContext.Consumer>
@@ -55,7 +55,7 @@ const SkillsAndServices = ({ isToggled, toggle }) => (
 				}
 			]
 			return (
-				<SkillsWrapper theme={theme}>
+				<Wrapper theme={theme}>
 					<Container>
 						<Flex>
 							<Subtitle active={isToggled}>Skills</Subtitle>
@@ -73,10 +73,10 @@ const SkillsAndServices = ({ isToggled, toggle }) => (
 							)}
 						</SkillsContainer>
 						<Tech theme={theme}>
-							<Link to="/the-tech-tools-I-use">See Tech tools I use.</Link>
+							<Link to="/the-tech-tools-I-use">See the tech tools I use?</Link>
 						</Tech>
 					</Container>
-				</SkillsWrapper>
+				</Wrapper>
 			)
 		}}
 	</ThemeContext.Consumer>

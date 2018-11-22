@@ -34,25 +34,25 @@ const Socials = () => (
 			const socials = [
 				{
 					id: 0,
-					name: 'twitter',
+					name: 'Twitter',
 					icon: theme === 'dark' ? twitterWhite : twitter,
 					link: 'https://twitter.com/smakosh'
 				},
 				{
 					id: 1,
-					name: 'unsplash',
+					name: 'Unsplash',
 					icon: theme === 'dark' ? unsplashWhite : unsplash,
 					link: 'http://unsplash.com/smakosh'
 				},
 				{
 					id: 2,
-					name: 'instagram',
+					name: 'Instagram',
 					icon: theme === 'dark' ? instagramWhite : instagram,
 					link: 'https://www.instagram.com/smakosh19'
 				},
 				{
 					id: 3,
-					name: 'linkedin',
+					name: 'Linkedin',
 					icon: theme === 'dark' ? linkedinWhite : linkedin,
 					link: 'https://www.linkedin.com/in/ismail-ghallou-630149122'
 				}
@@ -60,37 +60,37 @@ const Socials = () => (
 			const creatives = [
 				{
 					id: 0,
-					name: 'dribbble',
+					name: 'Dribbble',
 					icon: theme === 'dark' ? dribbbleWhite : dribbble,
 					link: 'https://dribbble.com/smakosh'
 				},
 				{
 					id: 1,
-					name: 'behance',
+					name: 'Behance',
 					icon: theme === 'dark' ? behanceWhite : behance,
 					link: 'https://www.behance.net/ismail16sm9991'
 				},
 				{
 					id: 2,
-					name: 'github',
+					name: 'Github',
 					icon: theme === 'dark' ? githubWhite : github,
 					link: 'https://github.com/smakosh'
 				},
 				{
 					id: 3,
-					name: 'medium',
+					name: 'Medium',
 					icon: theme === 'dark' ? mediumWhite : medium,
 					link: 'https://medium.com/@ismailghallou'
 				},
 				{
 					id: 4,
-					name: 'youtube',
+					name: 'Youtube',
 					icon: theme === 'dark' ? youtubeWhite : youtube,
 					link: 'https://youtube.com/user/smakoshthegamer'
 				},
 				{
 					id: 5,
-					name: 'codepen',
+					name: 'Codepen',
 					icon: theme === 'dark' ? codepenWhite : codepen,
 					link: 'https://codepen.io/Smakosh'
 				}
@@ -99,10 +99,22 @@ const Socials = () => (
 				<Wrapper>
 					<Title theme={theme}>Or somewhere else on the web</Title>
 					<Social>
-						{ socials.map(social => <SocialIcon key={social.id} {...social} />) }
+						{ socials.map(social => (
+							<SocialIcon
+								theme={theme}
+								key={social.id}
+								{...social}
+							/>
+						)) }
 					</Social>
 					<Social>
-						{ creatives.map(creative => <SocialIcon key={creative.id} {...creative} />) }
+						{ creatives.map(creative => (
+							<SocialIcon
+								theme={theme}
+								key={creative.id}
+								{...creative}
+							/>
+						)) }
 					</Social>
 				</Wrapper>
 			)

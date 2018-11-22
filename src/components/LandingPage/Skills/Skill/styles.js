@@ -15,7 +15,6 @@ export const SingleSkill = styled.div`
 
 export const Grow = styled.img`
     width: 200px;
-    cursor: pointer;
     transition: all .2s ease-in-out;
     margin: 0 auto 1rem auto;
 

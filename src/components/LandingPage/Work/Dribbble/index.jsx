@@ -8,14 +8,14 @@ const Dribbble = ({ firstImg, secondImg, thirdImg }) => {
 			title: 'Planets UI',
 			image: firstImg,
 			link: 'https://dribbble.com/shots/3428200-Daily-UI-10',
-			description: 'An UI that got kind of an award on Uplabs'
+			description: 'A user interface that received an award on Uplabs'
 		},
 		{
 			id: 1,
 			title: 'Post UI',
 			image: secondImg,
 			link: 'https://dribbble.com/shots/3344087-Daily-UI-06',
-			description: 'Part of a daily UI challenge I was having'
+			description: 'Part of a daily UI challenge I was doing'
 		},
 		{
 			id: 2,
