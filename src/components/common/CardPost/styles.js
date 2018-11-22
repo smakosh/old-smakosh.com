@@ -1,25 +1,29 @@
 import styled from 'styled-components'
 
+export const Item = styled.div`
+	max-width: 32%;
+	width: 100%;
+	margin-bottom: 1rem;
+	height: 100%;
+
+	@media (max-width: 960px) {
+        max-width: 48%;
+	}
+
+	@media (max-width: 480px) {
+		max-width: 100%;
+	}
+`
+
 export const Post = styled.div`
-	margin-bottom: 1.5rem;
 	border-radius: .1rem;
 	box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
 	background: #fff;
 	cursor: pointer;
 	transition: .7s;
-	max-width: 32%;
-	width: 100%;
-	flex: 1 auto;
 	height: 100%;
 
-	@media (max-width: 960px) {
-		max-width: 48%;
-		width: 100%;
-	}
-
 	@media (max-width: 680px) {
-		max-width: 100%;
-		width: 100%;
 		display: flex;
 		align-items: center;
 	}
@@ -57,7 +61,8 @@ export const ArticleImg = styled.div`
 	}
 
 	@media (max-width: 680px) {
-		height: 100%;
+		height: 100px;
+		width: auto;
 		flex: 1;
 	}
 `
@@ -80,6 +85,8 @@ export const ArticleTitle = styled.h2`
 
 export const Paragraph = styled.p`
     color: #616161;
+	height: 150px;
+	overflow-y: hidden;
 
 	@media (max-width: 680px) {
 		height: 20px;

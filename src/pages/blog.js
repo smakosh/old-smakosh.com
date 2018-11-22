@@ -13,7 +13,7 @@ const Blog = () => (
 				) {
 					edges {
 						node {
-							excerpt(pruneLength: 235)
+							excerpt(pruneLength: 230)
 							id
 							timeToRead
 							frontmatter {
@@ -40,22 +40,32 @@ const Blog = () => (
 						Smakosh | Blog
 					</Head>
 					<PageTitle>Articles</PageTitle>
-					<Wrapper>
+					<Row>
 						{data.allMarkdownRemark.edges.map(post => (
 							<CardPost key={post.node.id} {...post} />
 						))}
-					</Wrapper>
+					</Row>
 				</Container>
 			</Layout>
 		)}
 	/>
 )
 
-const Wrapper = styled.div`
+const Row = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+
+	&:after {
+		content: "";
+		max-width: 32%;
+		width: 100%;
+
+		@media (max-width: 960px) {
+			content: unset;
+		}
+	}
 `
 
 export default Blog

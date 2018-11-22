@@ -61,21 +61,15 @@ const Wrapper = ({
 
 const enhance = compose(
 	withFormik({
-		mapPropsToValues() {
-			return {
-				email: ''
-			}
-		},
+		mapPropsToValues: () => ({ email: '' }),
 		validationSchema: () => Yup.object().shape({
 			email: Yup.string().email('Please enter a valid email!').required('Email is required!')
 		}),
-		handleSubmit(values, { setErrors, setSubmitting, setValues }) {
-			const {
-				email
-			} = values
-			addToMailchimp(email, {
-				pathname: document.location.pathname
-			}).then(res => {
+		handleSubmit: async ({ email }, { setErrors, setSubmitting, setValues }) => {
+			try {
+				const res = await addToMailchimp(email, {
+					pathname: document.location.pathname
+				})
 				if (res.result === 'success') {
 					setValues({ status: 'success', msg: res.msg, email  })
 					setSubmitting(false)
@@ -83,10 +77,10 @@ const enhance = compose(
 					setValues({ status: 'error', msg: res.msg, email  })
 					setSubmitting(false)
 				}
-			}).catch(err => {
+			} catch (err) {
 				setErrors({ message: err, status: 'error' })
 				setSubmitting(false)
-			})
+			}
 		}
 	})
 )
