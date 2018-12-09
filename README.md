@@ -2,7 +2,7 @@
 
 My personal website
 
-![Support me on Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)
+[![Support me on Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/smakosh)
 
 Built with [Gatsby](https://www.gatsbyjs.org/) and [more](https://github.com/smakosh/smakosh.com/blob/master/package.json#L6)
 
