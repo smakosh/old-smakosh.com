@@ -8,7 +8,7 @@ const Template = ({ data: { post } }) => (
     <SmallerContainer>
       <SEO
         type="NewsArticle"
-        headline={post.frontmatter.title}
+        title={post.frontmatter.title}
         articleBody={post.html}
         datePublished={post.frontmatter.date}
         dateModified={
@@ -18,7 +18,6 @@ const Template = ({ data: { post } }) => (
         }
         cover={post.frontmatter.thumbnail.childImageSharp.fluid.originalImg}
         location={post.frontmatter.path}
-        title={post.frontmatter.title}
       />
       <Post {...post} />
     </SmallerContainer>

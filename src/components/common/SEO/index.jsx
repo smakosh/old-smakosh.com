@@ -2,30 +2,30 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Thumbnail from 'Static/me.jpg'
 import {
-	url,
-	defaultTitle,
-	defaultDescription,
-	social,
-	socialLinks,
-	address,
-	contact,
-	legalName,
-	foundingDate,
-	logo,
-	author,
+  url,
+  defaultTitle,
+  defaultDescription,
+  social,
+  socialLinks,
+  address,
+  contact,
+  legalName,
+  foundingDate,
+  logo,
+  author,
 } from 'Data'
 
 export const SEO = ({
-	title,
-	type,
-	description,
-	articleBody,
-	datePublished,
-	dateModified,
-	cover,
-	location = '',
+  title,
+  type,
+  description,
+  articleBody,
+  datePublished,
+  dateModified,
+  cover,
+  location = '',
 }) => {
-	const structuredDataArticle = `{
+  const structuredDataArticle = `{
 		"@context": "http://schema.org",
 		"@type": "${type}",
 		"mainEntityOfPage": {
@@ -36,10 +36,10 @@ export const SEO = ({
 		"image": {
 			"@type": "imageObject",
 			"url": "${
-	cover
-		? `https://smakosh.com${cover}`
-		: `https://smakosh.com${Thumbnail}`
-}",
+        cover
+          ? `https://smakosh.com${cover}`
+          : `https://smakosh.com${Thumbnail}`
+      }",
 			"height": "600",
 			"width": "800"
 		},
@@ -62,7 +62,7 @@ export const SEO = ({
 		"url": "${url}${location}/?ref=smakosh.com"
 	}`
 
-	const structuredDataOrganization = `{ 
+  const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "${type}",
 		"legalName": "${legalName}",
@@ -96,59 +96,56 @@ export const SEO = ({
 		]
   	}`
 
-	return (
-		<Helmet>
-			<meta
-				name="description"
-				content={type === 'NewsArticle' ? description : defaultDescription}
-			/>
-			<meta
-				name="image"
-				content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
-			/>
+  return (
+    <Helmet>
+      <meta name="description" content={description || defaultDescription} />
+      <meta
+        name="image"
+        content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
+      />
 
-			<meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
-			<meta
-				property="og:type"
-				content={type === 'NewsArticle' ? 'NewsArticle' : 'website'}
-			/>
-			<meta
-				property="og:title"
-				content={type === 'NewsArticle' ? title : defaultTitle}
-			/>
-			<meta
-				property="og:description"
-				content={type === 'NewsArticle' ? description : defaultDescription}
-			/>
-			<meta
-				property="og:image"
-				content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
-			/>
-			<meta property="fb:app_id" content={social.facebook} />
+      <meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
+      <meta
+        property="og:type"
+        content={type === 'NewsArticle' ? 'NewsArticle' : 'website'}
+      />
+      <meta
+        property="og:title"
+        content={title ? `Smakosh | ${title}` : defaultTitle}
+      />
+      <meta
+        property="og:description"
+        content={description || defaultDescription}
+      />
+      <meta
+        property="og:image"
+        content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
+      />
+      <meta property="fb:app_id" content={social.facebook} />
 
-			<meta name="twitter:card" content="summary" />
-			<meta name="twitter:creator" content={socialLinks.twitter} />
-			<meta name="twitter:site" content={social.twitter} />
-			<meta
-				name="twitter:title"
-				content={type === 'NewsArticle' ? title : defaultTitle}
-			/>
-			<meta
-				name="twitter:description"
-				content={type === 'NewsArticle' ? description : defaultDescription}
-			/>
-			<meta
-				name="twitter:image:src"
-				content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
-			/>
-			<script type="application/ld+json">
-				{type === 'NewsArticle'
-					? structuredDataArticle
-					: structuredDataOrganization}
-			</script>
-			<link rel="publisher" href={socialLinks.google} />
-			<title>{title ? `Smakosh | ${title}` : defaultTitle}</title>
-			<html lang="en" dir="ltr" />
-		</Helmet>
-	)
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={socialLinks.twitter} />
+      <meta name="twitter:site" content={social.twitter} />
+      <meta
+        name="twitter:title"
+        content={title ? `Smakosh | ${title}` : defaultTitle}
+      />
+      <meta
+        name="twitter:description"
+        content={description || defaultDescription}
+      />
+      <meta
+        name="twitter:image:src"
+        content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
+      />
+      <script type="application/ld+json">
+        {type === 'NewsArticle'
+          ? structuredDataArticle
+          : structuredDataOrganization}
+      </script>
+      <link rel="publisher" href={socialLinks.google} />
+      <title>{title ? `Smakosh | ${title}` : defaultTitle}</title>
+      <html lang="en" dir="ltr" />
+    </Helmet>
+  )
 }
