@@ -3,9 +3,11 @@ import styled from 'styled-components'
 export const FooterContainer = styled.footer`
 	margin-top: 6rem;
 
-	${({ theme }) => theme === 'dark' && `
-        background: #212121;
-    `}
+	${({ theme }) =>
+		theme === 'dark' &&
+		`
+			background: #212121;
+	`};
 `
 
 export const FullContainer = styled.div`
@@ -24,6 +26,19 @@ export const List = styled.ul`
 	}
 `
 
+export const Wrapper = styled.div`
+	padding: 2rem 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	@media (max-width: 680px) {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+`
+
 export const Brand = styled.div`
 	display: flex;
 	align-items: center;
@@ -36,7 +51,7 @@ export const StyledLogo = styled.div`
 	margin-right: 1rem;
 	margin-bottom: 0;
 
-	&:hover  {
+	&:hover {
 		opacity: 0.7;
 		transition: 0.5s;
 		transform: rotate(360deg);
@@ -46,17 +61,19 @@ export const StyledLogo = styled.div`
 export const Social = styled.a`
 	margin-right: 1rem;
 
-	${({ last }) => last && `
+	${({ last }) =>
+		last &&
+		`
 		margin-right: unset;
-	`}
+	`};
 `
 
 export const Grow = styled.div`
 	cursor: pointer;
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 
-	&:hover  {
+	&:hover {
 		transform: scale(1.1);
-		transition: all .2s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 `

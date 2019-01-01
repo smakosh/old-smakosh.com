@@ -2,7 +2,6 @@ import React from 'react'
 import { compose, withState, withHandlers, lifecycle } from 'recompose'
 import { ThemeContext } from 'Common'
 
-
 const Wrapper = ({ children, theme, toggleTheme }) => (
 	<ThemeContext.Provider
 		value={{

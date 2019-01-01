@@ -1,7 +1,11 @@
 import React from 'react'
 
-const Logo = ({ color, className, strokeWidth }) => (
-	<svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+export const Logo = ({ color, className, strokeWidth }) => (
+	<svg
+		className={className}
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 60 60"
+	>
 		<path
 			fill="none"
 			stroke={color}
@@ -13,5 +17,3 @@ const Logo = ({ color, className, strokeWidth }) => (
 		/>
 	</svg>
 )
-
-export { Logo }

@@ -13,22 +13,24 @@ const CardHeader = ({ title }) => (
 )
 
 const Wrapper = styled.div`
-    padding: 1rem;
+	padding: 1rem;
 
-    h3 {
-        font-size: .9em;
-        margin: 0;
-        font-weight: normal;
-        color: #212121;
+	h3 {
+		font-size: 0.9em;
+		margin: 0;
+		font-weight: normal;
+		color: #212121;
 
-        ${({ theme }) => theme === 'dark' && `
-            color: #fff;
-        `}
+		@media (max-width: 680px) {
+			font-size: 1.2em;
+		}
 
-        @media (max-width: 680px) {
-            font-size: 1.2em;
-        }
-    }
+		${({ theme }) =>
+		theme === 'dark' &&
+			`
+				color: #fff;
+		`};
+	}
 `
 
 export default CardHeader

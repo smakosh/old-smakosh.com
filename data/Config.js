@@ -1,10 +1,11 @@
 module.exports = {
-	title: 'Smakosh',
+	defaultTitle: 'Smakosh',
 	logo: 'https://smakosh.com/favicon/logo-48.png',
 	author: 'Ismail Ghallou (Smakosh)',
 	url: 'https://smakosh.com',
 	legalName: 'Ismail Ghallou',
-	description: 'I\'m Ismail Ghallou aka Smakosh, a self-taught Graphic, UI/UX Designer and full stack developer, interested in the web, neural networks & tech in general.',
+	defaultDescription:
+		"I'm Ismail Ghallou aka Smakosh, a self-taught Graphic, UI/UX Designer and full stack developer, interested in the web, neural networks & tech in general.",
 	socialLinks: {
 		twitter: 'http://www.twitter.com/smakosh',
 		github: 'https://github.com/smakosh',
@@ -32,4 +33,4 @@ module.exports = {
 		phone: '+212-663-53-27-61'
 	},
 	foundingDate: '2016'
-};
+}

@@ -2,15 +2,9 @@ import React from 'react'
 import Disqus from 'disqus-react'
 import { Link } from 'gatsby'
 import { SocialShare, PageTitle, ThemeContext } from 'Common'
-import {
-	ArticleWrapper,
-	Back,
-	Content,
-	Comments,
-	ArticleDate
-} from './styles'
+import { ArticleWrapper, Back, Content, Comments, ArticleDate } from './styles'
 
-const Post = ({ html, frontmatter, timeToRead }) => (
+export const Post = ({ html, frontmatter, timeToRead }) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => {
 			const disqusShortName = 'https-smakosh-com'
@@ -26,20 +20,19 @@ const Post = ({ html, frontmatter, timeToRead }) => (
 						<i>{frontmatter.date} -</i>
 						<i>{timeToRead} min read</i>
 					</ArticleDate>
-					<Content
-						dangerouslySetInnerHTML={{ __html: html }}
-					/>
+					<Content dangerouslySetInnerHTML={{ __html: html }} />
 					<SocialShare {...frontmatter} />
 					<Back>
 						<Link to={frontmatter.next}>Previous article</Link>
 					</Back>
 					<Comments>
-						<Disqus.DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
+						<Disqus.DiscussionEmbed
+							shortname={disqusShortName}
+							config={disqusConfig}
+						/>
 					</Comments>
 				</ArticleWrapper>
 			)
 		}}
 	</ThemeContext.Consumer>
 )
-
-export { Post }

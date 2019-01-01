@@ -14,8 +14,8 @@ module.exports = {
 			description: config.description,
 			image_url: 'https://smakosh.com/static/favicon/logo-512.png',
 			author: config.author,
-			copyright: `${config.title} © ${new Date().getFullYear()}`
-		}
+			copyright: `${config.title} © ${new Date().getFullYear()}`,
+		},
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -24,6 +24,7 @@ module.exports = {
 		'gatsby-plugin-netlify',
 		'gatsby-plugin-catch-links',
 		'gatsby-plugin-sitemap',
+		'gatsby-transformer-yaml',
 		{
 			resolve: 'gatsby-source-graphql',
 			options: {
@@ -71,8 +72,12 @@ module.exports = {
 							return allMarkdownRemark.edges.map(edge => {
 								return Object.assign({}, edge.node.frontmatter, {
 									description: edge.node.excerpt,
-									url: site.siteMetadata.rssMetadata.site_url + edge.node.frontmatter.path,
-									guid: site.siteMetadata.rssMetadata.site_url + edge.node.frontmatter.path,
+									url:
+										site.siteMetadata.rssMetadata.site_url +
+										edge.node.frontmatter.path,
+									guid:
+										site.siteMetadata.rssMetadata.site_url +
+										edge.node.frontmatter.path,
 									custom_elements: [{ 'content:encoded': edge.node.html }],
 								})
 							})
@@ -95,24 +100,24 @@ module.exports = {
 								}
 							}
 						}`,
-						output: config.siteRss
-					}
-				]
-			}
+						output: config.siteRss,
+					},
+				],
+			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/pages`,
-				name: 'pages',
-			}
+				path: `${__dirname}/content`,
+				name: 'posts',
+			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				name: 'img',
-				path: `${__dirname}/src/assets/img/`
-			}
+				name: 'images',
+				path: `${__dirname}/src/assets/`,
+			},
 		},
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
@@ -144,15 +149,15 @@ module.exports = {
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
 				trackingId: config.googleAnalyticsID,
-				head: true
-			}
+				head: true,
+			},
 		},
 		{
 			resolve: 'gatsby-plugin-nprogress',
 			options: {
 				color: config.themeColor,
 				showSpinner: false,
-			}
+			},
 		},
 		{
 			resolve: 'gatsby-plugin-favicon',
@@ -168,9 +173,9 @@ module.exports = {
 					firefox: true,
 					twitter: false,
 					yandex: false,
-					windows: false
-				}
-			}
+					windows: false,
+				},
+			},
 		},
 		{
 			resolve: 'gatsby-plugin-manifest',
@@ -185,16 +190,16 @@ module.exports = {
 					{
 						src: '/favicon/logo-192x192.png',
 						sizes: '192x192',
-						type: 'image/png'
+						type: 'image/png',
 					},
 					{
 						src: '/favicon/logo-512x512.png',
 						sizes: '512x512',
-						type: 'image/png'
-					}
-				]
-			}
+						type: 'image/png',
+					},
+				],
+			},
 		},
-		'gatsby-plugin-offline'
+		'gatsby-plugin-offline',
 	],
 }

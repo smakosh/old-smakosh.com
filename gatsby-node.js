@@ -4,35 +4,38 @@ exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions
 	const postTemplate = path.resolve('src/templates/post.js')
 
-	return graphql(`{
-        allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            limit: 1000
-        ){
-            edges {
-                node {
-                    excerpt(pruneLength: 250)
-                    html
-                    id
-                    timeToRead
-                    frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
-				        edited(formatString: "MMMM DD, YYYY")
-                        path
-                        title
-                        next
-                        id
-                        thumbnail {
-                            childImageSharp {
-                                fluid(maxWidth: 700 ) {
-                                    originalImg
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }}`).then(res => {
+	return graphql(`
+		{
+			allMarkdownRemark(
+				sort: { order: DESC, fields: [frontmatter___date] }
+				limit: 1000
+			) {
+				edges {
+					node {
+						excerpt(pruneLength: 250)
+						html
+						id
+						timeToRead
+						frontmatter {
+							date(formatString: "MMMM DD, YYYY")
+							edited(formatString: "MMMM DD, YYYY")
+							path
+							title
+							next
+							id
+							thumbnail {
+								childImageSharp {
+									fluid(maxWidth: 700) {
+										originalImg
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	`).then(res => {
 		if (res.errors) {
 			return Promise.reject(res.errors)
 		}
@@ -54,7 +57,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 				Common: `${__dirname}/src/components/common`,
 				Static: `${__dirname}/static/`,
 				Theme: `${__dirname}/src/components/theme`,
-				Data: `${__dirname}/data/Config`
+				Data: `${__dirname}/data/config`
 			}
 		}
 	})

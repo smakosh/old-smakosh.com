@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ArticleWrapper = styled.div`
-    color: #212121;
+	color: #212121;
 	padding: 2rem 1rem;
 
 	a {
@@ -16,11 +16,13 @@ export const ArticleWrapper = styled.div`
 	h1 {
 		font-family: 'Merriweather', serif;
 		text-align: center;
-    }
+	}
 
-    ${({ theme }) => theme === 'dark' && `
-        color: #fff;
-    `}
+	${({ theme }) =>
+		theme === 'dark' &&
+		`
+			color: #fff;
+	`};
 `
 
 export const Back = styled.div`
@@ -44,10 +46,10 @@ export const ArticleDate = styled.div`
 	margin-bottom: 1rem;
 
 	i {
-		font-size: .9em;
+		font-size: 0.9em;
 
 		&:first-child {
-			margin-right: .2rem;
+			margin-right: 0.2rem;
 		}
 	}
 `

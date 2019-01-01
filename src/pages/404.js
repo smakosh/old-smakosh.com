@@ -1,12 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Layout, Head } from 'Common'
+import { Layout, SEO, SmallerContainer } from 'Common'
 
 const NotFoundPage = () => (
 	<Layout>
-		<Head type="Organization">Smakosh | 404</Head>
-		<Center>
+		<SEO
+			location="/404"
+			type="Organization"
+			title="404"
+			description="404 page not found"
+		/>
+		<Center as={SmallerContainer}>
 			<h1>404 PAGE NOT FOUND</h1>
 			<Link to="/">Go Back Home</Link>
 		</Center>
@@ -14,8 +19,6 @@ const NotFoundPage = () => (
 )
 
 const Center = styled.div`
-	max-width: 960px;
-	margin: 0 auto;
 	padding: 4rem 0;
 	text-align: center;
 `

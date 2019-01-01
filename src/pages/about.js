@@ -1,36 +1,32 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components';
-import { Layout, Container, Head, PageTitle } from 'Common'
-import { Details, Socials } from 'Components/AboutPage'
+import styled from 'styled-components'
+import { Layout, Container, SEO, PageTitle } from 'Common'
+import { Details, Socials } from 'Components/about'
 
 const About = () => (
 	<StaticQuery
 		query={graphql`
 			query AboutImageQuery {
-				AboutImage: imageSharp(fluid: {originalName: { regex: "/me.jpg/" }}) {
-					fluid(maxWidth: 630 ) {
-						...GatsbyImageSharpFluid_tracedSVG
-					}
+				AboutImage: imageSharp(fluid: { originalName: { regex: "/me.jpg/" } }) {
+					...imageFields
 				}
 			}
-	`}
+		`}
 		render={data => (
 			<Layout>
 				<Container>
-					<Head type="Organization" location="/about">
-						Smakosh | About
-					</Head>
+					<SEO title="About" type="Organization" location="/about" />
 					<PageTitle>About me</PageTitle>
-					<AboutContainer>
+					<Flex>
 						<Details />
 						<Portrait>
 							<a href={data.AboutImage.fluid.src}>
 								<Img fluid={data.AboutImage.fluid} alt="just me chilling" />
 							</a>
 						</Portrait>
-					</AboutContainer>
+					</Flex>
 					<Socials />
 				</Container>
 			</Layout>
@@ -38,12 +34,13 @@ const About = () => (
 	/>
 )
 
-const AboutContainer = styled.div`
+const Flex = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+
 	@media (max-width: 960px) {
-			flex-direction: column;
+		flex-direction: column;
 	}
 `
 
@@ -51,7 +48,7 @@ const Portrait = styled.div`
 	position: relative;
 	flex: 1;
 	width: 100%;
-	padding-left: .5rem;
+	padding-left: 0.5rem;
 `
 
 export default About
