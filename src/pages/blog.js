@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
-import { Layout, Container, Head, PageTitle, CardPost } from 'Common'
+import { Layout, Container, SEO, PageTitle, CardPost } from 'Common'
 
 const Blog = () => (
 	<StaticQuery
@@ -22,9 +22,7 @@ const Blog = () => (
 								path
 								thumbnail {
 									childImageSharp {
-										fluid(maxWidth: 700) {
-								        	...GatsbyImageSharpFluid_tracedSVG
-										}
+										...imageFields
 									}
 								}
 							}
@@ -36,9 +34,7 @@ const Blog = () => (
 		render={data => (
 			<Layout>
 				<Container>
-					<Head type="Organization" location="/blog">
-						Smakosh | Blog
-					</Head>
+					<SEO title="Blog" type="Organization" location="/blog" />
 					<PageTitle>Articles</PageTitle>
 					<Row>
 						{data.allMarkdownRemark.edges.map(post => (
@@ -56,10 +52,12 @@ const Row = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+
 	&:after {
-		content: "";
+		content: '';
 		max-width: 32%;
 		width: 100%;
+
 		@media (max-width: 960px) {
 			content: unset;
 		}

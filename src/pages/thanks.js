@@ -1,10 +1,10 @@
 import React from 'react'
-import { Layout, Head } from 'Common'
-import ThanksContent from 'Components/ContactPage/ThanksContent'
+import { Layout, SEO } from 'Common'
+import ThanksContent from 'Components/contact/ThanksContent'
 
 const Thanks = () => (
 	<Layout>
-		<Head type="Organization" location="/thanks">Smakosh | Thanks!</Head>
+		<SEO title="Thanks!" type="Organization" location="/thanks" />
 		<ThanksContent />
 	</Layout>
 )

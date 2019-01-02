@@ -2,7 +2,7 @@ import React from 'react'
 import { ThemeContext } from 'Common'
 import { StyledSubtitle } from './styles'
 
-const Subtitle = ({ children, active }) => (
+export const Subtitle = ({ children, active }) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => (
 			<StyledSubtitle theme={theme} active={active}>
@@ -11,5 +11,3 @@ const Subtitle = ({ children, active }) => (
 		)}
 	</ThemeContext.Consumer>
 )
-
-export { Subtitle }

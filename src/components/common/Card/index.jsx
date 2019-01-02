@@ -5,7 +5,7 @@ import CardBody from './components/CardBody'
 import CardFooter from './components/CardFooter'
 import { Wrapper, StyledCard } from './styles'
 
-const Card = ({ id, link, title, image, description }) => (
+export const Card = ({ id, link, title, image, description }) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => (
 			<Wrapper id={id} as="a" href={link}>
@@ -18,5 +18,3 @@ const Card = ({ id, link, title, image, description }) => (
 		)}
 	</ThemeContext.Consumer>
 )
-
-export { Card }

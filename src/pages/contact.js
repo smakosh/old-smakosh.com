@@ -1,10 +1,10 @@
 import React from 'react'
-import { Layout, Head } from 'Common'
-import ContactForm from 'Components/ContactPage/ContactForm'
+import { Layout, SEO } from 'Common'
+import ContactForm from 'Components/contact/ContactForm'
 
 const Contact = () => (
 	<Layout>
-		<Head type="Organization" location="/contact">Smakosh | Contact</Head>
+		<SEO title="Contact" type="Organization" location="/contact" />
 		<ContactForm />
 	</Layout>
 )

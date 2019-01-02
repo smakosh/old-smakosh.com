@@ -1,8 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Container, Logo, Twitter, GithubIcon, Instagram, Unsplash, Linkedin, ThemeContext } from 'Common'
+import {
+	Container,
+	Logo,
+	Twitter,
+	GithubIcon,
+	Instagram,
+	Unsplash,
+	Linkedin,
+	ThemeContext
+} from 'Common'
 import Copyrights from './Copyrights'
 import {
+	Wrapper,
 	FooterContainer,
 	FullContainer,
 	List,
@@ -12,7 +22,7 @@ import {
 	Grow
 } from './styles'
 
-const Footer = () => {
+export const Footer = () => {
 	const social = [
 		{
 			id: 0,
@@ -55,34 +65,44 @@ const Footer = () => {
 			{({ theme }) => (
 				<FooterContainer theme={theme}>
 					<FullContainer>
-						<Container footer>
+						<Wrapper as={Container}>
 							<List>
 								<li>
 									<Brand as={Link} to="/">
-										<StyledLogo
-											as={Logo}
-											color="#fff"
-											strokeWidth="2"
-										/> Smakosh
+										<StyledLogo as={Logo} color="#fff" strokeWidth="2" />{' '}
+										Smakosh
 									</Brand>
 								</li>
 							</List>
 							<List>
-								<li><Link to="/about">About</Link></li>
-								<li><Link to="/contact">Contact</Link></li>
-								<li><Link to="/blog">Blog</Link></li>
+								<li>
+									<Link to="/about">About</Link>
+								</li>
+								<li>
+									<Link to="/contact">Contact</Link>
+								</li>
+								<li>
+									<Link to="/blog">Blog</Link>
+								</li>
 							</List>
 							<List>
 								<li>Follow me on</li>
 								<li>
 									{social.map(({ id, name, link, icon, last }) => (
-										<Social key={id} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`} href={link} last={last}>
+										<Social
+											key={id}
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label={`follow me on ${name}`}
+											href={link}
+											last={last}
+										>
 											<Grow as={icon} width="24" height="24" />
 										</Social>
 									))}
 								</li>
 							</List>
-						</Container>
+						</Wrapper>
 					</FullContainer>
 					<Copyrights />
 				</FooterContainer>
@@ -90,5 +110,3 @@ const Footer = () => {
 		</ThemeContext.Consumer>
 	)
 }
-
-export default Footer

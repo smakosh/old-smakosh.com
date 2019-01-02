@@ -13,18 +13,20 @@ const CardFooter = ({ description }) => (
 )
 
 const Wrapper = styled.div`
-    padding: 16px 24px;
+	padding: 16px 24px;
 
-    p {
-        font-size: 16px;
-        line-height: 1.46429em;
-        margin-bottom: 1rem;
-        color: #212121;
+	p {
+		font-size: 16px;
+		line-height: 1.46429em;
+		margin-bottom: 1rem;
+		color: #212121;
 
-        ${({ theme }) => theme === 'dark' && `
-            color: #fff;
-        `}
-    }
+		${({ theme }) =>
+		theme === 'dark' &&
+			`
+				color: #fff;
+		`};
+	}
 `
 
 export default CardFooter

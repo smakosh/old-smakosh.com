@@ -6,15 +6,16 @@ import StarIconWhite from 'Static/icons/star-white.svg'
 import ForkIconWhite from 'Static/icons/fork-white.svg'
 import { Wrapper, StyledRepository, Stars, Header, Description } from './styles'
 
-const Repository = ({ id, node: {
-	name,
-	url,
-	description,
-	stargazers: {
-		totalCount
-	},
-	forkCount
-} }) => (
+export const Repository = ({
+	id,
+	node: {
+		name,
+		url,
+		description,
+		stargazers: { totalCount },
+		forkCount
+	}
+}) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => (
 			<Wrapper id={id} as="a" href={url}>
@@ -26,9 +27,15 @@ const Repository = ({ id, node: {
 						<p>{description}</p>
 					</Description>
 					<Stars theme={theme}>
-						<img src={theme === 'dark' ? StarIconWhite : StarIcon} alt="stars" />
+						<img
+							src={theme === 'dark' ? StarIconWhite : StarIcon}
+							alt="stars"
+						/>
 						{totalCount}
-						<img src={theme === 'dark' ? ForkIconWhite : ForkIcon} alt="forks" />
+						<img
+							src={theme === 'dark' ? ForkIconWhite : ForkIcon}
+							alt="forks"
+						/>
 						{forkCount}
 					</Stars>
 				</StyledRepository>
@@ -36,5 +43,3 @@ const Repository = ({ id, node: {
 		)}
 	</ThemeContext.Consumer>
 )
-
-export { Repository }

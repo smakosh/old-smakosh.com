@@ -1,14 +1,16 @@
 import React from 'react'
-import { Intro, Skills, Work } from 'Components/LandingPage'
-import { Layout, Head } from 'Common'
+import { Intro, Skills, Work, Services, Github } from 'Components/landing'
+import { Layout, SEO } from 'Common'
 
 const IndexPage = () => (
-	<Layout>
-		<Head type="Organization">Smakosh | Hello world!</Head>
-		<Intro />
-		<Skills />
-		<Work />
-	</Layout>
+  <Layout>
+    <SEO title="Hello world!" type="Organization" />
+    <Intro />
+    <Skills />
+    <Work />
+    <Services />
+    <Github />
+  </Layout>
 )
 
 export default IndexPage

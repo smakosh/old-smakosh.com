@@ -1,0 +1,12 @@
+- title: Planets UI
+  image: '../src/assets/images/planets.jpg'
+  link: https://dribbble.com/shots/3428200-Daily-UI-10
+  description: A user interface that received an award on Uplabs
+- title: Post UI
+  image: '../src/assets/images/post.jpg'
+  link: https://dribbble.com/shots/3344087-Daily-UI-06
+  description: Part of a daily UI challenge I was doing
+- title: Futuristic Todo
+  image: '../src/assets/images/todo.jpg'
+  link: https://dribbble.com/shots/3829349-Daily-UI-22
+  description: Testing cssGrid for the first time so I designed this

@@ -1,0 +1,12 @@
+- title: Uboux Logo
+  image: '../src/assets/images/uboux.jpg'
+  link: https://www.behance.net/gallery/43074239/UBOUX-Logo-identity
+  description: A logo I designed for a jewelry store
+- title: LogoFolio 2016
+  image: '../src/assets/images/logofolio.jpg'
+  link: https://www.behance.net/gallery/42266223/LogoFolio-2016
+  description: Bunch of Logos I designed for some great clients
+- title: Portfolio-Dev
+  image: '../src/assets/images/portfolio.jpg'
+  link: https://www.behance.net/gallery/74172961/Free-Gatsby-portfolio-for-developers
+  description: An open source portfolio for developers

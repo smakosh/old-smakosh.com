@@ -7,7 +7,7 @@ import Hamburger from './Hamburger'
 import Sidebar from './Sidebar'
 import { StyledHeader, Overlay } from './styles'
 
-const Header = ({ sidebar, toggle, isHomePage }) => (
+const HeaderWrapper = ({ sidebar, toggle, isHomePage }) => (
 	<ThemeContext.Consumer>
 		{({ theme }) => (
 			<StyledHeader isHomePage={isHomePage} theme={theme}>
@@ -21,13 +21,10 @@ const Header = ({ sidebar, toggle, isHomePage }) => (
 )
 
 const enhance = compose(
-	withStateHandlers(
-		() => ({ sidebar: false, isHomePage: false }),
-		{
-			toggle: ({ sidebar }) => () => ({ sidebar: !sidebar }),
-			setHomePage: ({ isHomePage }) => () => ({ isHomePage: !isHomePage })
-		}
-	),
+	withStateHandlers(() => ({ sidebar: false, isHomePage: false }), {
+		toggle: ({ sidebar }) => () => ({ sidebar: !sidebar }),
+		setHomePage: ({ isHomePage }) => () => ({ isHomePage: !isHomePage })
+	}),
 	lifecycle({
 		componentDidMount() {
 			if (location.pathname === withPrefix('/')) this.props.setHomePage()
@@ -35,4 +32,4 @@ const enhance = compose(
 	})
 )
 
-export default enhance(Header)
+export const Header = enhance(HeaderWrapper)
