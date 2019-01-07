@@ -15,13 +15,12 @@ const Details = () => (
 			<Wrapper as={Container}>
 				<Text theme={theme}>
 					I’m Ismail Ghallou, also known as Smakosh, I’m a self-taught Graphic,
-					UI/UX Designer and full stack developer. I'm really interested in
-					Technology. Science including mathematics, physics, Ai, Blockchain &
-					computer science belong to my interests as well, you can know more
-					about me by reading my <Link to="/blog">articles</Link>.
+					UI/UX Designer and full stack JavaScript developer. I'm really
+					interested in Technology & solving technical problems. You can know
+					more about me by reading my <Link to="/blog">articles</Link>.
 				</Text>
 				<Text theme={theme}>
-					Currently I'm working remotely at{' '}
+					Currently I'm working remotely for{' '}
 					<a
 						href="https://obytes.com/?ref=smakosh"
 						target="_blank"
@@ -29,7 +28,7 @@ const Details = () => (
 					>
 						Obytes
 					</a>{' '}
-					as a Front end developer.
+					as a Front-end developer.
 				</Text>
 				<Text theme={theme}>
 					For business inquiries feel free to get in touch with me at:
