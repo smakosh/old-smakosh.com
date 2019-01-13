@@ -59,7 +59,6 @@ module.exports = {
 								site_url
 								title
 								author
-								author
 								copyright
 								description
 							}

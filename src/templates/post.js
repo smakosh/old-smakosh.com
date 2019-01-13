@@ -38,7 +38,9 @@ export const postQuery = graphql`
 				id
 				thumbnail {
 					childImageSharp {
-						...imageFields
+						fluid(maxWidth: 700) {
+							originalImg
+						}
 					}
 				}
 			}
