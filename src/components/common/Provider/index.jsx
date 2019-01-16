@@ -1,39 +1,30 @@
-import React from 'react'
-import { compose, withState, withHandlers, lifecycle } from 'recompose'
+import React, { useState, useEffect } from 'react'
 import { ThemeContext } from 'Common'
 
-const Wrapper = ({ children, theme, toggleTheme }) => (
-	<ThemeContext.Provider
-		value={{
-			theme,
-			toggleTheme: () => toggleTheme()
-		}}
-	>
-		{children}
-	</ThemeContext.Provider>
-)
-
-const enhance = compose(
-	withState('theme', 'handleTheme', 'light'),
-	withHandlers({
-		toggleTheme: ({ theme, handleTheme }) => () => {
-			if (theme === 'dark') {
-				handleTheme('light')
-				localStorage.setItem('theme', 'light')
-			} else {
-				handleTheme('dark')
-				localStorage.setItem('theme', 'dark')
-			}
+export const Provider = ({ children }) => {
+	const [theme, setTheme] = useState('light')
+	const toggleTheme = () => {
+		if (theme === 'light') {
+			setTheme('dark')
+		} else {
+			setTheme('light')
 		}
-	}),
-	lifecycle({
-		componentDidMount() {
-			const localTheme = localStorage.getItem('theme')
-			if (localTheme) {
-				this.props.handleTheme(localTheme)
-			}
-		}
-	})
-)
+	}
 
-export const Provider = enhance(Wrapper)
+	useEffect(() => {
+		const localTheme = localStorage.getItem('theme')
+		if (localTheme) {
+			setTheme(localTheme)
+		}
+	}, {})
+	return (
+		<ThemeContext.Provider
+			value={{
+				theme,
+				toggleTheme,
+			}}
+		>
+			{children}
+		</ThemeContext.Provider>
+	)
+}

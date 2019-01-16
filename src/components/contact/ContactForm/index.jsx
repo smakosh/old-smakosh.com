@@ -1,5 +1,4 @@
 import React from 'react'
-import { compose } from 'recompose'
 import { Form, FastField, ErrorMessage, withFormik } from 'formik'
 import * as Yup from 'yup'
 import Recaptcha from 'react-google-recaptcha'
@@ -44,6 +43,7 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => (
 								component="input"
 								as={FastField}
 								type="text"
+								id="name"
 								error={touched.name && errors.name ? 1 : 0}
 								name="name"
 							/>
@@ -57,6 +57,7 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => (
 								component="input"
 								as={FastField}
 								type="email"
+								id="email"
 								error={touched.email && errors.email ? 1 : 0}
 								name="email"
 							/>
@@ -69,6 +70,7 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => (
 							<InputField
 								component="textarea"
 								as={FastField}
+								id="message"
 								error={touched.message && errors.message ? 1 : 0}
 								name="message"
 								textarea="true"
@@ -94,56 +96,51 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => (
 	</ThemeContext.Consumer>
 )
 
-const enhance = compose(
-	withFormik({
-		mapPropsToValues: () => ({
-			name: '',
-			email: '',
-			message: '',
-			recaptcha: '',
+export default withFormik({
+	mapPropsToValues: () => ({
+		name: '',
+		email: '',
+		message: '',
+		recaptcha: '',
+	}),
+	validationSchema: () =>
+		Yup.object().shape({
+			name: Yup.string().required('Name is required'),
+			email: Yup.string()
+				.email('Please enter a valid email!')
+				.required('Email is required!'),
+			message: Yup.string().required('Message is required'),
+			recaptcha: Yup.string().required('Robots are not welcome yet!'),
 		}),
-		validationSchema: () =>
-			Yup.object().shape({
-				name: Yup.string().required('Name is required'),
-				email: Yup.string()
-					.email('Please enter a valid email!')
-					.required('Email is required!'),
-				message: Yup.string().required('Message is required'),
-				recaptcha: Yup.string().required('Robots are not welcome yet!'),
-			}),
-		handleSubmit: async (
-			{ name, email, message, recaptcha },
-			{ setSubmitting, resetForm }
-		) => {
-			try {
-				const encode = data => {
-					return Object.keys(data)
-						.map(
-							key =>
-								`${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-						)
-						.join('&')
-				}
-				await fetch('/?no-cache=1', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-					body: encode({
-						'form-name': 'smakosh',
-						name,
-						email,
-						message,
-						'g-recaptcha-response': recaptcha,
-					}),
-				})
-				setSubmitting(false)
-				resetForm()
-				navigate('/thanks/')
-			} catch (err) {
-				setSubmitting(false)
-				alert('Something went wrong, please try again!') // eslint-disable-line
+	handleSubmit: async (
+		{ name, email, message, recaptcha },
+		{ setSubmitting, resetForm }
+	) => {
+		try {
+			const encode = data => {
+				return Object.keys(data)
+					.map(
+						key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+					)
+					.join('&')
 			}
-		},
-	})
-)
-
-export default enhance(ContactForm)
+			await fetch('/?no-cache=1', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: encode({
+					'form-name': 'smakosh',
+					name,
+					email,
+					message,
+					'g-recaptcha-response': recaptcha,
+				}),
+			})
+			setSubmitting(false)
+			resetForm()
+			navigate('/thanks/')
+		} catch (err) {
+			setSubmitting(false)
+			alert('Something went wrong, please try again!') // eslint-disable-line
+		}
+	},
+})(ContactForm)
