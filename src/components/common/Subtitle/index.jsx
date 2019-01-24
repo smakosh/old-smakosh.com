@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext } from 'Common'
 import { StyledSubtitle } from './styles'
 
-export const Subtitle = ({ children, active }) => (
-	<ThemeContext.Consumer>
-		{({ theme }) => (
-			<StyledSubtitle theme={theme} active={active}>
-				{children}
-			</StyledSubtitle>
-		)}
-	</ThemeContext.Consumer>
-)
+export const Subtitle = ({ children, active }) => {
+	const { theme } = useContext(ThemeContext)
+	return (
+		<StyledSubtitle theme={theme} active={active}>
+			{children}
+		</StyledSubtitle>
+	)
+}

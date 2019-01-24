@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext } from 'Common'
 import { StyledTitle } from './styles'
 
-export const PageTitle = ({ children }) => (
-	<ThemeContext.Consumer>
-		{({ theme }) => <StyledTitle theme={theme}>{children}</StyledTitle>}
-	</ThemeContext.Consumer>
-)
+export const PageTitle = ({ children }) => {
+	const { theme } = useContext(ThemeContext)
+	return <StyledTitle theme={theme}>{children}</StyledTitle>
+}

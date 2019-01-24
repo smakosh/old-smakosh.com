@@ -4,7 +4,7 @@ export const Unsplash = ({
 	width = '16',
 	height = '16',
 	color = '#fff',
-	className = ''
+	className = '',
 }) => (
 	<svg
 		className={className}

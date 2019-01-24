@@ -4,7 +4,7 @@ export const GithubIcon = ({
 	width = '18',
 	height = '18',
 	color = '#fff',
-	className = ''
+	className = '',
 }) => (
 	<svg
 		className={className}

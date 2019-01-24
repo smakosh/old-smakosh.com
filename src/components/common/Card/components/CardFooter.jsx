@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from 'Common'
 
-const CardFooter = ({ description }) => (
-	<ThemeContext.Consumer>
-		{({ theme }) => (
-			<Wrapper theme={theme}>
-				<p>{description}</p>
-			</Wrapper>
-		)}
-	</ThemeContext.Consumer>
-)
+const CardFooter = ({ description }) => {
+	const { theme } = useContext(ThemeContext)
+	return (
+		<Wrapper theme={theme}>
+			<p>{description}</p>
+		</Wrapper>
+	)
+}
 
 const Wrapper = styled.div`
 	padding: 16px 24px;

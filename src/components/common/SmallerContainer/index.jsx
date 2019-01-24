@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const SmallerContainer = styled.div`
+export const SmallerContainer = styled.div`
 	max-width: 850px;
 	margin: 0 auto;
 
@@ -8,5 +8,3 @@ const SmallerContainer = styled.div`
 		width: 95%;
 	}
 `
-
-export { SmallerContainer }

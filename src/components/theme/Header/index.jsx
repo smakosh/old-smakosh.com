@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { withPrefix } from 'gatsby'
 import { ThemeContext } from 'Common'
 import Navbar from './Navbar'
@@ -9,6 +9,7 @@ import { Wrapper, Overlay } from './styles'
 export const Header = () => {
 	const [isHomePage, setHomePage] = useState(false)
 	const [sidebar, setSidebar] = useState(false)
+	const { theme } = useContext(ThemeContext)
 
 	useEffect(() => {
 		if (location.pathname === withPrefix('/')) setHomePage(!isHomePage)
@@ -17,19 +18,11 @@ export const Header = () => {
 	const toggle = () => setSidebar(!sidebar)
 
 	return (
-		<ThemeContext.Consumer>
-			{({ theme }) => (
-				<Wrapper isHomePage={isHomePage} theme={theme}>
-					<Overlay sidebar={sidebar} onClick={toggle} />
-					<Navbar />
-					<Hamburger
-						isHomePage={isHomePage}
-						sidebar={sidebar}
-						toggle={toggle}
-					/>
-					<Sidebar sidebar={sidebar} toggle={toggle} />
-				</Wrapper>
-			)}
-		</ThemeContext.Consumer>
+		<Wrapper isHomePage={isHomePage} theme={theme}>
+			<Overlay sidebar={sidebar} onClick={toggle} />
+			<Navbar />
+			<Hamburger isHomePage={isHomePage} sidebar={sidebar} toggle={toggle} />
+			<Sidebar sidebar={sidebar} toggle={toggle} />
+		</Wrapper>
 	)
 }

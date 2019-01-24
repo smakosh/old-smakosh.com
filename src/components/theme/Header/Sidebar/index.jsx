@@ -1,16 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext } from 'Common'
 import NavbarLinks from '../NavbarLinks'
 import { SidebarContainer } from './styles'
 
-const Sidebar = ({ sidebar, toggle }) => (
-	<ThemeContext.Consumer>
-		{({ theme }) => (
-			<SidebarContainer active={sidebar} onClick={toggle} theme={theme}>
-				<NavbarLinks />
-			</SidebarContainer>
-		)}
-	</ThemeContext.Consumer>
-)
-
-export default Sidebar
+export default ({ sidebar, toggle }) => {
+	const { theme } = useContext(ThemeContext)
+	return (
+		<SidebarContainer active={sidebar} onClick={toggle} theme={theme}>
+			<NavbarLinks />
+		</SidebarContainer>
+	)
+}

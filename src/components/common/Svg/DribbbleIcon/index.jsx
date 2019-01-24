@@ -4,7 +4,7 @@ export const DribbbleIcon = ({
 	width = '16',
 	height = '18',
 	color = '#fff',
-	className = ''
+	className = '',
 }) => (
 	<svg
 		className={className}

@@ -4,7 +4,7 @@ export const Instagram = ({
 	width = '12',
 	height = '14',
 	color = '#fff',
-	className = ''
+	className = '',
 }) => (
 	<svg
 		className={className}

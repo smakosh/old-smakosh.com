@@ -4,7 +4,7 @@ export const BehanceIcon = ({
 	width = '18',
 	height = '14',
 	color = '#fff',
-	className = ''
+	className = '',
 }) => (
 	<svg
 		className={className}

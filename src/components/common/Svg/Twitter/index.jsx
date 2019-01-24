@@ -4,7 +4,7 @@ export const Twitter = ({
 	width = '13',
 	height = '14',
 	color = '#fff',
-	className = ''
+	className = '',
 }) => (
 	<svg
 		className={className}

@@ -6,18 +6,18 @@ import Dribbble from './Dribbble'
 import SideProjects from './SideProjects'
 
 export const imageFields = graphql`
-  fragment imageFields on ImageSharp {
-    fluid(maxWidth: 630) {
-      ...GatsbyImageSharpFluid_tracedSVG
-    }
-  }
+	fragment imageFields on ImageSharp {
+		fluid(maxWidth: 630) {
+			...GatsbyImageSharpFluid_tracedSVG
+		}
+	}
 `
 
 export const Work = () => (
-  <Container>
-    <Subtitle>Work</Subtitle>
-    <SideProjects />
-    <Behance />
-    <Dribbble />
-  </Container>
+	<Container>
+		<Subtitle>Work</Subtitle>
+		<SideProjects />
+		<Behance />
+		<Dribbble />
+	</Container>
 )

@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from 'Common'
 
-const CardHeader = ({ title }) => (
-	<ThemeContext.Consumer>
-		{({ theme }) => (
-			<Wrapper theme={theme}>
-				<h3>{title}</h3>
-			</Wrapper>
-		)}
-	</ThemeContext.Consumer>
-)
+const CardHeader = ({ title }) => {
+	const { theme } = useContext(ThemeContext)
+	return (
+		<Wrapper theme={theme}>
+			<h3>{title}</h3>
+		</Wrapper>
+	)
+}
 
 const Wrapper = styled.div`
 	padding: 1rem;
