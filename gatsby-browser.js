@@ -1,1 +1,1 @@
-export const onServiceWorkerUpdateFound = () => window.location.reload()
+export const onServiceWorkerUpdateFound = () => window.location.reload(true)
