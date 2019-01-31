@@ -2,6 +2,8 @@
 
 My personal website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5f007a0-0a92-4fbb-8218-d99087068d14/deploy-status)](https://app.netlify.com/sites/smakoshnew/deploys)
+
 [![Support me on Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/smakosh)
 
 Built with [Gatsby](https://www.gatsbyjs.org/) and [more](https://github.com/smakosh/smakosh.com/blob/master/package.json#L6)
