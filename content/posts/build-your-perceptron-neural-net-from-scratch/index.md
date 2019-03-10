@@ -6,6 +6,7 @@ date: 2017-08-12T16:45:01.889Z
 edited:
 next: '/first-time-first-prize'
 title: 'Build your perceptron neural net from scratch'
+popular: false
 ---
 
 > > “ In the late ’50s, a Cornell scientist named Frank Rosenblatt had proposed the world’s first neural network machine. It was called the Perceptron”
@@ -62,25 +63,25 @@ So now let’s automate it using our own perceptron built from scratch, the acti
 
 Now let’s understand how back propagation & gradient descent work, and to do so we will need:
 
-  * The cost function or also known as squared error function
+- The cost function or also known as squared error function
 
 ![cost function](cost_function.jpeg)
 
-  * The derivative of the sigmoid function
+- The derivative of the sigmoid function
 
 ![sigmoid derivative](sigmoid_derivative.jpeg)
 
-  * The derivative of the cost function
+- The derivative of the cost function
 
 ![cost function derivative](d_cost_function.jpeg)
 
-  * The slope of the cost function is: the derivative of the cost function multiplied by the derivative of sigmoid.
+- The slope of the cost function is: the derivative of the cost function multiplied by the derivative of sigmoid.
 
-  * Learning rate: we will go with 0.2
+- Learning rate: we will go with 0.2
 
-  * For the derivatives of the weights, it’s the inputs’ values, — because the derivative of a constant multiplied by a non constant is the constant — & for the derivative of the Bias it’s 1.
+- For the derivatives of the weights, it’s the inputs’ values, — because the derivative of a constant multiplied by a non constant is the constant — & for the derivative of the Bias it’s 1.
 
-  * Then we’ll be able to get the new weights & bias values like shown bellow:
+- Then we’ll be able to get the new weights & bias values like shown bellow:
 
 ![gernating new weights & bias](new_values.jpeg)
 

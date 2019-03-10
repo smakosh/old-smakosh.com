@@ -6,27 +6,28 @@ date: 2017-03-10T16:45:01.889Z
 edited:
 next: '/unnamed'
 title: 'How I learned Design & Dev in a year & half'
+popular: false
 ---
 
 I started Learning Design 1st:
 
-* I learned Adobe Illustrator & Photoshop --Then Adobe XD later on-- easily since I was playing with Adobe After effects when I was a little boy.
-* I started practicing by Designing stuff for myself like, logos / User interfaces / business cards / social media banners / illustrations & editing pictures…
-* Some of my friends suggested to me to create a Behance portfolio & start publishing my works there, I did so & once I made a twitter account I started sharing my works there as well, I started getting clients from all over the world.
+- I learned Adobe Illustrator & Photoshop --Then Adobe XD later on-- easily since I was playing with Adobe After effects when I was a little boy.
+- I started practicing by Designing stuff for myself like, logos / User interfaces / business cards / social media banners / illustrations & editing pictures…
+- Some of my friends suggested to me to create a Behance portfolio & start publishing my works there, I did so & once I made a twitter account I started sharing my works there as well, I started getting clients from all over the world.
 
 Then I started learning web development, of course I started with front end development:
 
-* I learned the basics of html/css/js & Made an unresponsive one page website, then a responsive website with my own grid system which based on floats & widths.
-* Then I learned some js Libraries like Jquery and then in 2017 I learned angular 4 but switched to the React eco-system.
-* I learned some Front end frameworks as well like Bootstrap, Materialize, Bulma, Lostgrid and I later made my own little css framework called [Unnamed](https://unnamed.smakosh.com).
-* I learned Sass, Pug (named Jade in the past) & ES6 as well.
-* I launched several versions of my personal website using different tech stacks & different looks.
+- I learned the basics of html/css/js & Made an unresponsive one page website, then a responsive website with my own grid system which based on floats & widths.
+- Then I learned some js Libraries like Jquery and then in 2017 I learned angular 4 but switched to the React eco-system.
+- I learned some Front end frameworks as well like Bootstrap, Materialize, Bulma, Lostgrid and I later made my own little css framework called [Unnamed](https://unnamed.smakosh.com).
+- I learned Sass, Pug (named Jade in the past) & ES6 as well.
+- I launched several versions of my personal website using different tech stacks & different looks.
 
 ![One of the designs](look1.jpeg)
 
 I started getting some clients but unfortunately asking for a CMS templates from scratch which is really hard to do as one single developer, anyway I took the challenge and Designed the UI, coded it & then converted it to a wordpress template, sadly I used plugins all over to let the client be able to edit stuff easily which made the website really slow, http://singaporeview.com he then paid me more to remove my copyrights but still you can find my name on the style page :D http://singaporeview.com/wp-content/themes/kgs/style.css
 
-![wordpress sucks](wp.jpeg "When one of your clients removes ur name on the copyrights on the footer & forgets to remove it on the style page 😂😂😂")
+![wordpress sucks](wp.jpeg 'When one of your clients removes ur name on the copyrights on the footer & forgets to remove it on the style page 😂😂😂')
 
 I also made other Wordpress website using premium templates.
 
@@ -42,7 +43,7 @@ So I started learning it by practicing once I understood the core language (vari
 
 ![smartshop](smartshop.jpeg)
 
-While learning back-end dev, I made some works too like this [responsive website](https://luca-steeb.com) for my friend Luca Steeb  & it was my first time using Git, Github & Ubuntu since the website's back end uses Nodejs & I learned some stuff about npm & CLI commands :D
+While learning back-end dev, I made some works too like this [responsive website](https://luca-steeb.com) for my friend Luca Steeb & it was my first time using Git, Github & Ubuntu since the website's back end uses Nodejs & I learned some stuff about npm & CLI commands :D
 
 ![luca-steeb.com](lucasteeb.jpg)
 

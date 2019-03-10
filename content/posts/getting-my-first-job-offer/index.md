@@ -6,6 +6,7 @@ date: 2017-06-07T16:45:01.889Z
 edited:
 next: '/hps-hackathon'
 title: 'Getting my first job offer without a degree at a startup'
+popular: false
 ---
 
 It all started on facebook, I was reading Tech crunch news until a notification popped up, my friend [Med Bouasria](https://medium.com/@medbouasria) tagged me on a job announcement on a facebook post of [Hidden Founders](http://hiddenfounders.com/), they were looking for a front end developer, I wasn’t really sure If a self-taught undergraduate person like me will get a job, so I left a reply on the comment section saying that “they will ask me for a degree”, but surprisingly Hidden Founders themselves replied to my comment clarifying that they don’t really care about degrees, so obviously I applied. After some days, I got a reply asking me for an interview and because I wasn’t living in the same city I asked if there is any possibility for a skype interview, and yes they nicely accepted.

@@ -6,6 +6,7 @@ date: 2017-04-10T16:45:01.889Z
 edited:
 next: '/never-work-for-free'
 title: 'HPS Hackathon'
+popular: false
 ---
 
 After winning the second prize at the Lydec Hackathon organized by Screendy.
@@ -26,10 +27,10 @@ We waited for others at the train station, we then got transferred to the Palmer
 
 I helped more than 2 teams on the Design part & on explaining to them how to use the Screendy Platform & I explained to my friends’ team that it’s all about the pitch & to clarify the idea to the jury is the most important part, 48 hours ended and it was time to pitch in public, the decision was made that night but privately and everyone was sent to the Wazo Hotel to have some rest until the day after on the morning when the Powercard users meeting has started is when the winners were announced & got their prizes :
 
-- First prize : 10 000$ won by Pic & Pay (the bixby feature on the samsung s8)
-- Second prize : 5000$ won by Fill me Up (the team I helped, providing gas stations with best prices on the map)
-- Third prize : 3000$ won by Mybills (pay your bills instantly with one click)
-- Fourth prize : 1000$ won by EPS (my friends’ team, the Iris recognizer to confirm payment)
+- First prize : 10 000\$ won by Pic & Pay (the bixby feature on the samsung s8)
+- Second prize : 5000\$ won by Fill me Up (the team I helped, providing gas stations with best prices on the map)
+- Third prize : 3000\$ won by Mybills (pay your bills instantly with one click)
+- Fourth prize : 1000\$ won by EPS (my friends’ team, the Iris recognizer to confirm payment)
 
 ![A logo I designed for that team](fillme.jpeg)
 

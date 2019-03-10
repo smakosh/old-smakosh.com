@@ -6,33 +6,34 @@ date: 2018-2-27T16:45:01.889Z
 edited: 2018-7-8T19:14:01.889Z
 next: '/istanbul-trip'
 title: 'The tech tools I use'
+popular: false
 ---
 
-![Tools](tech.jpg "Taken from my Instagram")
+![Tools](tech.jpg 'Taken from my Instagram')
 
 TL;DR I use JavaScript for everything :D
 
 So I thought about sharing the tools I personally use personally or at work, so let’s start with Design tools:
 
-* Adobe Illustrator for logos, icons, illustrations.
-* Adobe XD, Invision Studio or Sketch for designing user interfaces & wireframes.
-* Adobe Photoshop for editing pictures & memes :D
-* Adobe After effects for editing videos (I recommend Adobe Premiere Pro for editing videos & AE to add effects).
-* Dribble for inspiration and I share my work there as well as on Behance
+- Adobe Illustrator for logos, icons, illustrations.
+- Adobe XD, Invision Studio or Sketch for designing user interfaces & wireframes.
+- Adobe Photoshop for editing pictures & memes :D
+- Adobe After effects for editing videos (I recommend Adobe Premiere Pro for editing videos & AE to add effects).
+- Dribble for inspiration and I share my work there as well as on Behance
 
 Let’s now get into the tools I use while coding:
 
 I share my code & look for inspirations on:
 
-* GitHub
-* Codepen
-* CodeSandbox
+- GitHub
+- Codepen
+- CodeSandbox
 
 If I’m simply coding an interface that I’ll might integrate into an app (web or native) I use plain html/css & vanilla js.
 
 But if I'm working on a landing page, docs or blog, I use:
 
-* Jekyll or Gatsby (I recommend Gatsby) and I deploy on Netlify.
+- Jekyll or Gatsby (I recommend Gatsby) and I deploy on Netlify.
 
 For Css I’m cool to use what ever tech available out there that makes my task done quickly & well, I have personally used Bootstrap 3 & 4, Bulma, Lostgrid, Materliaze, Tachyons & made my own little framework called Unnamed that has over 180 stars on Github, but I seriously prefer coding with vanilla CSS because I enjoy styling my elements from scratch since the components are fully reusable with React.
 

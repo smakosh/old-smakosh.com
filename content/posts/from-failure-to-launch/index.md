@@ -6,9 +6,10 @@ date: 2018-08-06T12:38:01.889Z
 edited: 2018-08-14T1:26:01.889Z
 next: '/we-are-truly-living-in-a-simulation'
 title: 'From failure to launch - Hajj Hackathon'
+popular: false
 ---
 
-![Cleanify](launch.jpg "Follow me on Instagram to see more : https://www.instagram.com/smakosh19")
+![Cleanify](launch.jpg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')
 
 While travelling to Rabat in order to visit the Moroccan office of [Obytes](https://obytes.com) (the company I work for), I got invited to participate in Hajj hackathon which was looking for people who would like to solve some main problems related to [Hajj](https://en.wikipedia.org/wiki/Hajj), especially these nine topics:
 
