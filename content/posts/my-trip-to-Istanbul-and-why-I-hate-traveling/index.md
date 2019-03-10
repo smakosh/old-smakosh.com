@@ -6,19 +6,20 @@ date: 2017-12-25T16:45:01.889Z
 edited:
 next: '/how-I-learned-design-and-dev'
 title: 'My trip to Istanbul & why I hate traveling'
+popular: true
 ---
 
-![the sky](flight.jpeg "Follow me on Instagram to see more : https://www.instagram.com/smakosh19")
+![the sky](flight.jpeg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')
 
 I wanted to visit Istanbul 3 years ago and even told my friends about it, but 2 years after that moment, I didn’t really want to travel anywhere anymore because in my opinion, the Internet (even if it’s not decentralized) saves us money & time and so we don’t really need to travel anymore, I buy all my stuff online on Ebay, I work remotely at Obytes as a front end engineer, I learn at Udemy or YouTube, I read articles on Medium, Dev & Codementor, I watch movies/series on Netflix & I attend any event or conference via YouTube or Facebook live….
 
 Which is why I think we don’t really need to travel anymore but that doesn’t make me wanna stay in Morocco due to many reasons and the most important one is the lack of funding & a bad educational system. But I wanted to really experience travelling to see if it’s really worth it. So as a nerd obviously I have to get prepared using tech, so here are the stuff I used to get ready, walk around…:
 
-* Google trips: https://get.google.com/trips/.
-* Booked my Hotel room on Booking.
-* Downloaded Uber & Istanbul offline map.
-* Booked my flight via: Google flights.
-* Packed up my laptop/Phone/GoPro/headset/earphones/cables etc…
+- Google trips: https://get.google.com/trips/.
+- Booked my Hotel room on Booking.
+- Downloaded Uber & Istanbul offline map.
+- Booked my flight via: Google flights.
+- Packed up my laptop/Phone/GoPro/headset/earphones/cables etc…
 
 First time taking a flight, I coded at the airport for the first time, the flight was nice during take off but sucks during landing! once arrived at Istanbul, I exchanged a little amount of money and booked an Uber directly to the Hotel. After checking out social media & the room, I got to sleep. As I’ve already marked the places I wanted to visit there on Google trips, I got up the next day and went outside (and yeah I went alone and got an idea to make this shirt), tl;dr I walked around Taksim square, boat tour, ate Chawarma & got back to my hotel. Here are some pictures I took.
 

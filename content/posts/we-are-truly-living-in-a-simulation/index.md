@@ -6,9 +6,10 @@ date: 2018-6-29T12:06:01.889Z
 edited:
 next: '/the-tech-tools-I-use'
 title: 'We are truly living in a simulation'
+popular: false
 ---
 
-![Watching the sunrise is the best thing I ever done in life](sahara.jpg "Follow me on Instagram to see more : https://www.instagram.com/smakosh19")
+![Watching the sunrise is the best thing I ever done in life](sahara.jpg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')
 
 Not that kind of simulation you’ve seen on the matrix movie but a different one, keep on reading to understand more.
 

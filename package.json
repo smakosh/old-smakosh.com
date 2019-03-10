@@ -27,7 +27,7 @@
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-remark-autolink-headers": "^2.0.5",
     "gatsby-remark-copy-linked-files": "^2.0.5",
-    "gatsby-remark-images": "^2.0.1",
+    "gatsby-remark-images": "^3.0.6",
     "gatsby-remark-prismjs": "^3.0.0",
     "gatsby-remark-responsive-iframe": "^2.0.5",
     "gatsby-remark-smartypants": "^2.0.5",

@@ -6,16 +6,17 @@ date: 2018-09-18T10:38:01.889Z
 edited:
 next: '/from-failure-to-launch-hajj-hackathon'
 title: 'One year working remotely'
+popular: true
 ---
 
-![Working remotely](working-remotely.jpg "Follow me on Instagram to see more : https://www.instagram.com/smakosh19")
+![Working remotely](working-remotely.jpg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')
 
 Remember the last time I shared with you [my story when I declined the job offer as a front end developer](https://smakosh.com/getting-my-first-job-offer) then [won the first prize at a hackathon](https://smakosh.com/first-time-first-prize) which was hilarious because I got the same amount of money they offered me in 36 hours instead of 30 days & 8 hours a day of work?
 
 Well after the event, I headed back home and the next morning I woke up to an email from a great CEO who offered me a job as a front end engineer at [Obytes](https://obytes.com/?ref=smakosh.com) which I accepted due to many aspects: (keep in mind these are pre-experience aspects)
 
 - I wanted to experience remote work.
-- Some amazing products they built like Paribus that got $2.2M investments (which got recently acquired by Capital one).
+- Some amazing products they built like Paribus that got \$2.2M investments (which got recently acquired by Capital one).
 - Working with cutting edge tech tools.
 - Experiencing decentralized team work.
 

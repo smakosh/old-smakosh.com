@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { Layout, SmallerContainer, SEO, Post } from 'Common'
 import './highlight.scss'
 
-const Template = ({ data: { post } }) => (
+export default ({ data: { post } }) => (
 	<Layout>
 		<SmallerContainer>
 			<SEO
@@ -47,5 +47,3 @@ export const postQuery = graphql`
 		}
 	}
 `
-
-export default Template

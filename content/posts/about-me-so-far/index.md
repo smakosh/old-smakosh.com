@@ -6,6 +6,7 @@ date: 2016-12-02T16:45:01.889Z
 edited: 2019-1-01T11:29:01.889Z
 next: '/istanbul-trip'
 title: 'About me so far...'
+popular: false
 ---
 
 I’m Ismail Ghallou also known as Smakosh, a nickname which was given to me since I was 8 years old by one of my friends’ father, many told me that I was a good student when I was at primary school & that was achieved by playing a lot of offline video games that really made me think to figure out the way out like Prince of Persia, Assassin's Creed & the Tomb Raider trilogies etc...

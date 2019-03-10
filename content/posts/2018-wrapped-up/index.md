@@ -6,6 +6,7 @@ date: 2019-01-13T10:38:01.889Z
 edited:
 next: '/one-year-working-remotely'
 title: '2018 year review'
+popular: true
 ---
 
 ![2018 year review](2018.jpg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')

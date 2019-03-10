@@ -6,6 +6,7 @@ date: 2017-07-08T16:45:01.889Z
 edited:
 next: '/getting-my-first-job-offer'
 title: 'First time getting first prize at a hackathon'
+popular: false
 ---
 
 As I always do, to arrive at time I stay awake the whole night, so I spent that night coding & designing like most of my days.
@@ -19,7 +20,7 @@ Anyway as every other hackathon, the CEO of Lematin introduced & declared the st
 
 Since it was an E-commerce platform I had to use my own github repo — https://github.com/smakosh/Smartshop — of a starter kit E-commerce app built with php/mysql — yeah it lacks many things but it does the work as a prototype — anyway I started designing the logo, illustrations, changing sass color variables & adding more pages since we needed more features because it wasn’t only an online shop, I didn’t sleep since I was focused on finishing that prototype, after 36 hours non stop of work, the jury then came in and projects’ holders started pitching their ideas with a demo of the prototype.
 
-![Pitch time](jury.jpeg "the guy with the glasses and suit looks just like Iron Man")
+![Pitch time](jury.jpeg 'the guy with the glasses and suit looks just like Iron Man')
 
 To be honest I didn’t believe that we were going to win as I told my friend that we wouldn’t win this when the Jury was about to announce the winners of the first prize, but yeah I was wrong, we actually won & got invited to assist to a conference where we’ll receive our prizes.
 
