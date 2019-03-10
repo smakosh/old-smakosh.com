@@ -5,25 +5,86 @@ thumbnail: './pixel.jpeg'
 date: 2019-02-16T10:35:01.889Z
 edited:
 next: '/2018-year-review'
-title: 'Pixel 2 review and why Nexus 6p is a bad choice to pick'
+title: 'Pixel 2 review and why Nexus 6p is a bad choice'
 ---
 
 ![Pixel 2 shot](pixel.jpeg)
 
-I've been using the Nexus 6p for 2 years until recently, I had to upgrade to the Google Pixel 2 for various reasons which are really frustrating to a level that I highly don't recommend buying the Nexus 6p.
+I've been using the Nexus 6p for 2 years until recently as I had to upgrade to the Google Pixel 2 for various reasons which are really frustrating to a level that I highly don't recommend buying the Nexus 6p.
 
 I'll walk you through the pros & cons of the Nexus 6p real quick before I move on to the Pixel 2.
 
-Nexus 6p has a really good camera with the Google camera app built in that shots some great pictures combined with HDR, your photos will look amazing (see [examples](https://unsplash.com/@smakosh)) but that uses a huge power of your battery & your phone will end up shutting down in a short period of time & that's the most frustrating thing about the Nexus 6p which is its battery issue, at first it was holding for a long day but eventually it ended up holding for only 3 hours using the phone and only 2 hours or less if mobile data is turned on, the worst thing is when it shuts down at 20% which gets really annoying overtime. As for its display, it's a 2k LED screen but is no match to an Amoled screen. The phone is also big & heavy with a huge bezels on all sides, it's a 2 hands phone & using one hand might eventually hurt your hand. as for the software, it's rocking an Android Oreo 8.1 & will never receive current Android Pie update nor upcoming ones, the unlimited photo storage deal has also ended.
+> Camera
+
+Nexus 6p has a really good camera with the Google camera app built in that shots some great pictures combined with HDR, your photos will look amazing (see [examples](https://unsplash.com/@smakosh)) but that uses a huge power of your battery power & your phone will end up shutting down in a short period of time.
 
 ![Nexus 6p](nexus6p.jpg)
 
-Let's get into the Google Pixel 2 now which most of my Instagram community has voted more for its review.
+> Build quality
 
-> Keep in mind, I'm reviewing the Pixel 2 and not the Pixel 2 XL.
+The build quality is good but keep in mind that it's a big phone that you will need two hands to use otherwise your hand will eventually get tired of using it and it hardly fits on your pockets 😅.
+
+> Battery
+
+One of the main reasons I don't recommend buying this phone, it has battery issues which you will notice after few months of using the phone, the most frustrating thing is when it shuts down at 20% which gets really annoying over time.
+
+> Performance
+
+Since it's rocking the stack android, you can delete the default apps if you don't use them and the user experience is nice & never gets slow while using it, the phone gets really hot though when you're watching a long video or playing some games that require huge computational work.
+
+> Display
+
+The display is a 2k LED screen with huge bezels on all sides with large ones on top & bottom.
+
+Enough with Nexus 6p for now and let's jump into the Google Pixel 2 now which most of my [Instagram](https://www.instagram.com/smakosh19/) community has voted more for its review.
+
+> Keep in mind that I’m reviewing the Pixel 2 and not the Pixel 2 XL.
 
 ![Pixel 2](pixel2box.jpg)
 
-I've been using it for a couple of weeks so far, It does take amazing pictures, the portrait mode is epic and provides both the normal picture and the one with the blurring effect, it has the night sight mode that helps to take good looking photos without the need to activate the flash, its Amoled screen is nice but fragile, you might want to get a protective screen if you care about not having any scraches on the screen - I already messed up and scratched mine -.
+I've been using it for a couple of months so far and I'm really satisfied with my decision of getting it!
 
-It's rocking the Android Pie and will receive upcoming updates, as well as you get unlimited photo storage with the original quality, the phone holds for a day but less if you're using it the entire time, I'm satisfied so far regarding the battery life.
+> Camera
+
+It does take amazing pictures, the portrait mode is epic and provides both the normal picture and the one with the blurring effect, it has the night sight mode that helps take good looking photos without the need to activate the flash.
+
+> Portrait mode
+
+![Portrait mode](portrait.jpg)
+
+> Night sight
+
+![Night sight mode](sight.jpg)
+
+> Build quality
+
+It's a small one hand phone, light & fits right in my pocket, has rounded edges on the back unlike Nexus 6p.
+
+> I had to apply the Dbrand dragon skin to avoid getting my fingerprints all over it.
+
+![DBrand dragon skin](dragon.jpeg)
+
+> Battery
+
+Has a 2700mAh battery that works really well and holds for a day of use while:
+
+- taking pictures
+- listening to music with bluetooth enabled
+- Data usage enabled
+- Instagram, Twitter, Telegram etc...
+
+> Performance
+
+Doesn't get hot at all even after using it for a long period of time, supports and works fine with the Google Daydream VR headset.
+
+![Google Daydream VR headset](vr.jpg)
+
+> Display
+
+It's an AMOLED display with a full hd screen resolution.
+
+> Bonus
+
+Pixel 2 is water resistant, doesn't have an audio jack, has unlimited photo storage and will get upcoming Android updates.
+
+> Forgot to mention that both phones have a fingerprint sensor on the rear.
