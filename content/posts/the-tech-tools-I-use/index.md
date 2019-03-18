@@ -11,17 +11,17 @@ popular: false
 
 ![Tools](tech.jpg 'Taken from my Instagram')
 
-TL;DR I use JavaScript for everything :D
-
 So I thought about sharing the tools I personally use personally or at work, so let’s start with Design tools:
 
 - Adobe Illustrator for logos, icons, illustrations.
 - Adobe XD, Invision Studio or Sketch for designing user interfaces & wireframes.
 - Adobe Photoshop for editing pictures & memes :D
 - Adobe After effects for editing videos (I recommend Adobe Premiere Pro for editing videos & AE to add effects).
-- Dribble for inspiration and I share my work there as well as on Behance
+- Dribbble for inspiration and I share my work there as well as on Behance
 
 Let’s now get into the tools I use while coding:
+
+The code editor I'm currently using is VSCode.
 
 I share my code & look for inspirations on:
 
@@ -41,12 +41,12 @@ If I’m making a web app, for the front-end I use the `create-react-app` boiler
 
 I use Git bash as my terminal when I’m on windows, iTerm2 with "oh my zsh" themes when I’m on macOS & VScode as my code editor (material theme).
 
-For the backend, I was using php/mysql which I didn’t personally like, so I switched to node js meaning that I currently use Express Js/Mongoose and Mongodb as database to make Restful APIs which I deploy on Heroku if it was a mvp and on a Digital Ocean droplet when it's a fully working product. I made my personal [boilerplate](https://github.com/smakosh/rest-api-boilerplate-v2) to speed up the process.
+For the backend, I was using php/mysql which I didn’t personally like, so I switched to node js meaning that I currently use Express Js/Mongoose and Mongodb as a NoSQL database to make Restful APIs which I deploy on Heroku if it was a mvp and on a Digital Ocean droplet when it's a fully working product. I made my personal [boilerplate](https://github.com/smakosh/rest-api-boilerplate-v2) to speed up that process.
 
 I Forgot to mention that I sometimes use Firebase when I’m too lazy to work on the backend.
 
 For native apps, I use React native to build mobile apps (Ios & Android). I also have a personal [boilerplate](https://github.com/smakosh/RN-personal-boilerplate) that I use to speed up the process.
 
-For growth hacking, I focus more on building useful products that users really need in their lives then I simply share it on Product Hunt, Hacker news, Reddit and on social media.
+For growth, I focus more on building useful products that users really need in their lives then I simply share it on Product Hunt, Hacker news, Reddit and on social media.
 
-I use Windows 10, MacOs Mojave, my MSI GP62 laptop, my macBook Pro 2017 touchbar work laptop, Nexus 6p with a Dbrand wood skin. Full setup can be found [here](https://docs.google.com/document/d/1falYEEHhJxq4HIXwOPoc4lk0AYsfHY4U6ZCcY4Srs8g/edit?usp=sharing).
+I use Windows 10 when I'm on my MSI GP62 laptop and MacOs Mojave on my macBook Pro 2017 touchbar work laptop, Pixel 2 with a Dbrand dragon skin. Full setup can be found [here](https://docs.google.com/document/d/1falYEEHhJxq4HIXwOPoc4lk0AYsfHY4U6ZCcY4Srs8g/edit?usp=sharing).
