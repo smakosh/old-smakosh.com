@@ -11,13 +11,17 @@ popular: false
 
 ![Tools](tech.jpg 'Taken from my Instagram')
 
-So I thought about sharing the tools I personally use personally or at work, so let’s start with Design tools:
+So I thought about sharing the tools I use personally or at work, so let’s start with,
+
+### Design tools:
 
 - Adobe Illustrator for logos, icons, illustrations.
 - Adobe XD, Invision Studio or Sketch for designing user interfaces & wireframes.
 - Adobe Photoshop for editing pictures & memes :D
 - Adobe After effects for editing videos (I recommend Adobe Premiere Pro for editing videos & AE to add effects).
 - Dribbble for inspiration and I share my work there as well as on Behance
+
+### Code
 
 Let’s now get into the tools I use while coding:
 
@@ -29,24 +33,30 @@ I share my code & look for inspirations on:
 - Codepen
 - CodeSandbox
 
-If I’m simply coding an interface that I’ll might integrate into an app (web or native) I use plain html/css & vanilla js.
+If I’m simply coding an interface that I might integrate into an app (web or native) I use plain html/css & vanilla js.
 
 But if I'm working on a landing page, docs or blog, I use:
 
-- Jekyll or Gatsby (I recommend Gatsby) and I deploy on Netlify.
+- Jekyll or Gatsby (I recommend Gatsby) and I deploy it on Netlify.
 
-For Css I’m cool to use what ever tech available out there that makes my task done quickly & well, I have personally used Bootstrap 3 & 4, Bulma, Lostgrid, Materliaze, Tachyons & made my own little framework called Unnamed that has over 180 stars on Github, but I seriously prefer coding with vanilla CSS because I enjoy styling my elements from scratch since the components are fully reusable with React.
+For Css I’m cool to use what ever tech available out there that makes my task done quickly & well, I have personally used Bootstrap 3 & 4, Bulma, Lostgrid, Materliaze, Tachyons & made my own little framework called Unnamed that has over 190 stars on GitHub, but I prefer coding with vanilla CSS or CSS in JS using styled-components, because I enjoy styling my elements from scratch since the components are fully reusable with React.
 
-If I’m making a web app, for the front-end I use the `create-react-app` boilerplate as it’s the official one from the team that made React Js but I always have to add react-router, Redux, Recompose & many other modules I use the most. So I made my own [boilerplate](https://github.com/smakosh/personal-react-app-boilerplate).
+If I’m making a web app, for the front-end I use the `create-react-app` boilerplate as it’s the official one from the team that made React Js but I always have to add react-router-dom or @reach/router, Redux (well not on the upcoming projects), Recompose (not needed anymore) & many other modules I use the most. So I made my own [boilerplate](https://github.com/smakosh/personal-react-app-boilerplate) to handle that.
 
-I use Git bash as my terminal when I’m on windows, iTerm2 with "oh my zsh" themes when I’m on macOS & VScode as my code editor (material theme).
+I use Git bash as my terminal when I’m on windows, iTerm2 with "oh my zsh" themes when I’m on macOS.
 
 For the backend, I was using php/mysql which I didn’t personally like, so I switched to node js meaning that I currently use Express Js/Mongoose and Mongodb as a NoSQL database to make Restful APIs which I deploy on Heroku if it was a mvp and on a Digital Ocean droplet when it's a fully working product. I made my personal [boilerplate](https://github.com/smakosh/rest-api-boilerplate-v2) to speed up that process.
 
-I Forgot to mention that I sometimes use Firebase when I’m too lazy to work on the backend.
+I sometimes use Firebase services when I’m too lazy to work on the backend.
 
 For native apps, I use React native to build mobile apps (Ios & Android). I also have a personal [boilerplate](https://github.com/smakosh/RN-personal-boilerplate) that I use to speed up the process.
 
+### Growth
+
 For growth, I focus more on building useful products that users really need in their lives then I simply share it on Product Hunt, Hacker news, Reddit and on social media.
 
-I use Windows 10 when I'm on my MSI GP62 laptop and MacOs Mojave on my macBook Pro 2017 touchbar work laptop, Pixel 2 with a Dbrand dragon skin. Full setup can be found [here](https://docs.google.com/document/d/1falYEEHhJxq4HIXwOPoc4lk0AYsfHY4U6ZCcY4Srs8g/edit?usp=sharing).
+### Setup
+
+I use Windows 10 when I'm on my MSI GP62 laptop and MacOs Mojave on my macBook Pro 2017 touchbar work laptop, Pixel 2 with a Dbrand dragon skin.
+
+Full setup can be found [here](https://docs.google.com/document/d/1falYEEHhJxq4HIXwOPoc4lk0AYsfHY4U6ZCcY4Srs8g/edit?usp=sharing).
