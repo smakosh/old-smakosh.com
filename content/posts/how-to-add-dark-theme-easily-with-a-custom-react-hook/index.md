@@ -3,7 +3,7 @@ id: 15
 path: '/how-to-add-dark-mode-easily-with-a-custom-react-hook'
 thumbnail: './custom-hook.png'
 date: 2019-03-22T5:35:01.889Z
-edited:
+edited: 2019-03-25T1:59:01.889Z
 next: '/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice'
 title: 'How To add dark mode easily with a custom React hook'
 popular: false
@@ -32,7 +32,7 @@ export default () => {
     if (localTheme) {
       setTheme(localTheme)
     }
-  }, {})
+  }, [])
 }
 ```
 
@@ -57,7 +57,7 @@ export default () => {
     if (localTheme) {
       setTheme(localTheme)
     }
-  }, {})
+  }, [])
 }
 ```
 
@@ -82,7 +82,7 @@ export default () => {
     if (localTheme) {
       setTheme(localTheme)
     }
-  }, {})
+  }, [])
 
   return {
     theme,
