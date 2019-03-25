@@ -98,7 +98,7 @@ import React from 'react'
 import useDarkMode from './useDarkMode'
 
 export default () => {
-  const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useDarkMode()
   return (
     <div
       style={{
