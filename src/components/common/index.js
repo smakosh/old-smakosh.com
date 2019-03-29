@@ -1,4 +1,5 @@
 export * from './ThemeContext'
+export * from './Provider'
 export * from './Layout'
 export * from './Container'
 export * from './SmallerContainer'
