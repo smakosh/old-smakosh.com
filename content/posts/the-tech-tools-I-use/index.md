@@ -9,7 +9,7 @@ title: 'The tech tools I use'
 popular: false
 ---
 
-![Tools](tech.jpg 'Taken from my Instagram')
+![Tools](tech.jpg)
 
 So I thought about sharing the tools I use personally or at work, so let’s start with,
 
