@@ -16,14 +16,16 @@ import {
 export const CardPost = ({ node, landing }) => {
   const { theme } = useContext(ThemeContext)
   return (
-    <Item>
+    <Item landing={landing}>
       <Post onClick={() => navigate(node.frontmatter.path)} theme={theme}>
         <ArticleImg landing={landing}>
           <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
         </ArticleImg>
         <ArticleContent>
           <ArticleTitle theme={theme}>{node.frontmatter.title}</ArticleTitle>
-          <Paragraph theme={theme}>{node.excerpt}</Paragraph>
+          <Paragraph landing={landing} theme={theme}>
+            {node.excerpt}
+          </Paragraph>
           <Info theme={theme}>
             {node.frontmatter.date}
             <StyledSpan>{node.timeToRead} min</StyledSpan>

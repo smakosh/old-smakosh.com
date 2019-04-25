@@ -61,6 +61,14 @@ During the weekends, I used to visit some touristic spots and maybe you'd love t
 
 I personally prefer natural & traditional spots but I made sure to cover modern ones as well for the sake of my family, friends and followers on social media who might prefer to visit them in the future.
 
+## Weather
+
+KL feels pretty hot than the actual degree you might see online or on weather channels, It's more hot than my home city where it's sometimes up to 40°C. Air conditioners are everywhere which makes the city pretty noisy, if you're that type who likes peaceful & calm places, KL is the wrong place to go to.
+
+## Internet
+
+Internet is fine but not sure if you will be able to live stream smoothly or upload content in a short period of time, but you can use 4G which I end up doing as well, you can get a local SIM card right at the airport, then top up online or from any nearby store.
+
 ### Modern spots
 
 - Petronas Towers (Make sure to check online if they are not in maintenance mode)
@@ -72,4 +80,4 @@ I personally prefer natural & traditional spots but I made sure to cover modern 
 - Batu caves (Free)
 - Thean hou temple (Free)
 
-And that summarizes everything I wanted to share with you, I didn't mention food and many other things to make the article as short as possible and I'm sure there are other online articles and videos that digg deeper in food and the other things you might want to know about.
+And that summarizes everything I wanted to share with you, I didn't mention food and many other things to make the article as short as possible and I'm sure there are other online articles and videos that dig deeper in food and the other things you might want to know about.
