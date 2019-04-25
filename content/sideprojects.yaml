@@ -1,12 +1,12 @@
 - title: Catch it 1.0
   image: '../src/assets/images/catchit.jpg'
   link: https://play.google.com/store/apps/details?id=com.smakosh.atchit
-  description: Collect points while trying to put the ball into the right basket to unlock levels!
+  description: Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!
 - title: Ai Hashtags
   image: '../src/assets/images/aihashtags.jpg'
-  link: https://play.google.com/store/apps/details?id=com.aihashtags
-  description: Get precise hashtags extracted from your photos using Ai
+  link: https://ai-hashtags.com
+  description: Generate hashtags using Artificial intelligence
 - title: Beaf
   image: '../src/assets/images/beaf.jpg'
   link: https://beafapp.com
-  description: The community platform for making decisions!
+  description: The community platform for making the right decisions!

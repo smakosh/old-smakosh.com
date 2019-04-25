@@ -3,7 +3,7 @@ id: 17
 path: '/solving-hashtags-problems'
 thumbnail: './hashtag.jpg'
 date: 2019-04-14T01:00:01.889Z
-edited: 2019-04-14T01:00:01.889Z
+edited: 2019-04-23T01:00:01.889Z
 next: '/guide-to-any-airport-in-morocco'
 title: 'Solving hashtags problems'
 popular: false
@@ -17,7 +17,7 @@ hashtags themselves have no issues so far but the way few users use them, whethe
 
 The same goes when you're trying to read someone's post's description but it's full of hashtags they overused, that's why it's better to have some line breaks or put them as the first comment.
 
-the overusing of hashtags issue has been solved by few platforms, by warning the user and eventually banning them, unlike the issue of using unrelated hashtags, it hasn't been solved yet, that's why I built [Ai Hashtags](https://play.google.com/store/apps/details?id=com.aihashtags) in order to solve it!
+the overusing of hashtags issue has been solved by few platforms, by warning the user and eventually banning them, unlike the issue of using unrelated hashtags, it hasn't been solved yet, that's why I built [Ai Hashtags](https://ai-hashtags.com/?ref=smakosh.com) in order to solve it!
 
 Ai Hashtags generates hashtags using Artificial intelligence, and here's how it works:
 
@@ -28,7 +28,7 @@ Ai Hashtags generates hashtags using Artificial intelligence, and here's how it 
    ![Upload](copy.jpg)
 4. Paste them into your post
 
-The app has English, Spanish, simplified Chinese & Arabic languages, currently it is available on the [Play Store](https://play.google.com/store/apps/details?id=com.aihashtags) only but the iOS app has been built and I can't afford to pay \$99 yearly as Apple requests their developers to pay in order to submit their apps to the App Store, if you'd like to help me submit my first submission to the App Store, feel free to donate via [PayPal](https://www.paypal.me/ismailghallou/105) or [Patreon](https://www.patreon.com/smakosh).
+The app has English, Spanish, simplified Chinese & Arabic languages, currently it is available on the [Play Store](https://play.google.com/store/apps/details?id=com.aihashtags) only, but the iOS app has been built and Apple is currently processing my purchase of the developer account.
 
 This was a fun project to work on and the reason I built it goes way back when I & my team [won the second prize of the online JAMStack FreeCodeCamp Hackathon](https://medium.freecodecamp.org/winners-from-the-2018-freecodecamp-jamstack-hackathon-at-github-2a39bd1db878), we used [ClarifAi](https://clarifai.com) API to automatically generate hashtags from the pictures of the products you're trying to sell, so that you could easily share it on Social media and gather actual users who are interested in that specific product. ClarifAi let me use their community API Key that offers generously the first 5k requests for free, then I'll have to use the essential plan that costs \$1.20 / 1k operations which is reasonable in my opinion.
 
@@ -56,6 +56,6 @@ This was a fun project to work on and the reason I built it goes way back when I
   - Prettier & Eslint for linting & formatter
   - VSCode as code editor
 
-Feel free to download Ai Hashtags and leave your feedback on the app or down in the comments: [Download Ai Hashtags](https://play.google.com/store/apps/details?id=com.aihashtags)
+Feel free to download Ai Hashtags and leave your feedback on the app or down in the comments: [Download Ai Hashtags](https://ai-hashtags.com/?ref=smakosh.com)
 
 > Photo by [Jon Tyson](https://unsplash.com/@jontyson) on Unsplash
