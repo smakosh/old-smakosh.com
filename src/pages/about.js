@@ -1,38 +1,43 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { Layout, Container, SEO, PageTitle } from 'Common'
 import { Details, Socials } from 'Components/about'
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query AboutImageQuery {
-        AboutImage: imageSharp(fluid: { originalName: { regex: "/me.jpg/" } }) {
-          ...imageFields
-        }
+export default () => {
+  const { AboutImage } = useStaticQuery(graphql`
+    query AboutImageQuery {
+      AboutImage: imageSharp(fluid: { originalName: { regex: "/me.jpg/" } }) {
+        ...imageFields
       }
-    `}
-    render={data => (
-      <Layout>
-        <Container>
-          <SEO title="About" type="Organization" location="/about" />
-          <PageTitle>About me</PageTitle>
-          <Flex>
-            <Details />
-            <Portrait>
-              <a href={data.AboutImage.fluid.src}>
-                <Img fluid={data.AboutImage.fluid} alt="just me chilling" />
-              </a>
-            </Portrait>
-          </Flex>
-          <Socials />
-        </Container>
-      </Layout>
-    )}
-  />
-)
+    }
+  `)
+  return (
+    <Layout>
+      <Container>
+        <SEO title="About" type="Organization" location="/about" />
+        <PageTitle>About me</PageTitle>
+        <Flex>
+          <Details />
+          <Portrait>
+            <a href={AboutImage.fluid.src}>
+              <Img fluid={AboutImage.fluid} alt="just me chilling" />
+            </a>
+            <a
+              href="https://www.instagram.com/smakosh19/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See more on Instagram
+            </a>
+          </Portrait>
+        </Flex>
+        <Socials />
+      </Container>
+    </Layout>
+  )
+}
 
 const Flex = styled.div`
   display: flex;
@@ -45,8 +50,10 @@ const Flex = styled.div`
 `
 
 const Portrait = styled.div`
-  position: relative;
-  flex: 1;
   width: 100%;
-  padding-left: 0.5rem;
+  max-width: 48%;
+
+  @media (max-width: 960px) {
+    max-width: 100%;
+  }
 `

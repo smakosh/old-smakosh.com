@@ -1,14 +1,20 @@
 import styled from 'styled-components'
 
 export const Item = styled.div`
-  max-width: 32%;
+  max-width: 100%;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   height: 100%;
 
-  @media (max-width: 960px) {
-    max-width: 48%;
-  }
+  ${({ landing }) =>
+    landing &&
+    `
+      max-width: 32%;
+
+      @media (max-width: 960px) {
+        max-width: 48%;
+      }
+  `}
 
   @media (max-width: 480px) {
     max-width: 100%;
@@ -103,8 +109,20 @@ export const ArticleTitle = styled.h2`
 
 export const Paragraph = styled.p`
   color: #616161;
-  height: 150px;
   overflow-y: hidden;
+
+  ${({ landing }) =>
+    landing
+      ? `
+    height: 130px;
+    `
+      : `
+    height: 90px;
+
+    @media (max-width: 960px) {
+      height: 100px;
+    }
+  `}
 
   @media (max-width: 680px) {
     height: 20px;
