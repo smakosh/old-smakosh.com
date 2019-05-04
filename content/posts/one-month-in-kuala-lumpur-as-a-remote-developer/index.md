@@ -23,7 +23,7 @@ So as a remote developer, I’d like to share my experience of spending a month 
 
 > There will be an upcoming article about Penang Island as well, make sure to subscribe to the news letter in order to get my latest articles delivered right to your inbox!
 
-## Planing
+## Planning
 
 Before you start packing your stuff & booking your flight, you must plan everything way earlier in order to avoid touristic seasons, so don't rush things out and don't forget to check the weather as well, in my case I had planned to get here since January, I targeted the season in between April & June as after June, everyone is in holidays and the area becomes so touristic and the cost of living raises way higher than during the normal seasons.
 
