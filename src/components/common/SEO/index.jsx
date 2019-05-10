@@ -34,16 +34,9 @@ export const SEO = ({
 			"@id": "https://google.com/article"
 		},
 		"headline": "${description}",
-		"image": {
-			"@type": "imageObject",
-			"url": "${
-        cover
-          ? `https://smakosh.com${cover}`
-          : `https://smakosh.com${Thumbnail}`
-      }",
-			"height": "600",
-			"width": "800"
-		},
+		"image": "${
+      cover ? `https://smakosh.com${cover}` : `https://smakosh.com${Thumbnail}`
+    }",
 		"datePublished": "${datePublished}",
 		"dateModified": "${dateModified}",
 		"author": {
@@ -63,7 +56,7 @@ export const SEO = ({
 		"url": "${url}${location}/?ref=smakosh.com"
 	}`
 
-  const structuredDataOrganization = `{ 
+  const structuredDataOrganization = `{
 		"@context": "http://schema.org",
 		"@type": "${type}",
 		"legalName": "${legalName}",

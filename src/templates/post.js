@@ -9,7 +9,7 @@ export default ({ data: { post } }) => (
       <SEO
         type="NewsArticle"
         title={post.frontmatter.title}
-        articleBody={post.html}
+        articleBody={post.description}
         datePublished={post.frontmatter.normalDate}
         dateModified={
           post.frontmatter.edited
@@ -30,7 +30,7 @@ export const postQuery = graphql`
   query($path: String!) {
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
-      description: excerpt(pruneLength: 150)
+      description: excerpt(pruneLength: 105)
       timeToRead
       frontmatter {
         normalDate: date
