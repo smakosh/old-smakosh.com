@@ -6,7 +6,7 @@ date: 2018-09-18T10:38:01.889Z
 edited:
 next: '/from-failure-to-launch-hajj-hackathon'
 title: 'One year working remotely'
-popular: true
+popular: false
 ---
 
 ![Working remotely](working-remotely.jpg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')

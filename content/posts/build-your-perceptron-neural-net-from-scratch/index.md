@@ -6,7 +6,7 @@ date: 2017-08-12T16:45:01.889Z
 edited:
 next: '/first-time-first-prize'
 title: 'Build your perceptron neural net from scratch'
-popular: false
+popular: true
 ---
 
 > > “ In the late ’50s, a Cornell scientist named Frank Rosenblatt had proposed the world’s first neural network machine. It was called the Perceptron”

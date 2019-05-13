@@ -6,7 +6,7 @@ date: 2019-03-22T5:35:01.889Z
 edited: 2019-03-25T1:59:01.889Z
 next: '/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice'
 title: 'How To add dark mode easily with a custom React hook'
-popular: false
+popular: true
 ---
 
 In this quick article, I will be implementing dark mode to a quick React app with a custom React hook,
