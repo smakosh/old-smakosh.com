@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from 'Common'
+import { ThemeContext } from 'components/common'
 import { StyledSubtitle } from './styles'
 
 export const Subtitle = ({ children, active }) => {

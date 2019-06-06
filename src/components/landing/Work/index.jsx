@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Container, Subtitle } from 'Common'
+import { Container, Subtitle } from 'components/common'
 import Behance from './Behance'
 import Dribbble from './Dribbble'
 import SideProjects from './SideProjects'

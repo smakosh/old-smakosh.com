@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Layout, Container, SEO, PageTitle, CardPost, Row } from 'Common'
+import { Layout, Container, SEO, PageTitle, CardPost, Row } from 'components/common'
 
 export default () => {
   const {
@@ -13,7 +13,7 @@ export default () => {
       ) {
         edges {
           node {
-            excerpt(pruneLength: 230)
+            description: excerpt(pruneLength: 260)
             id
             timeToRead
             frontmatter {
@@ -37,10 +37,27 @@ export default () => {
       <Container>
         <SEO title="Blog" type="Organization" location="/blog" />
         <Row>
-          <PageTitle>Articles</PageTitle>
-          {edges.map(post => (
-            <CardPost key={post.node.id} {...post} />
-          ))}
+          <PageTitle>Recent articles</PageTitle>
+          {edges.map(
+            ({
+              node: {
+                id,
+                description,
+                timeToRead,
+                frontmatter: { title, date, path, thumbnail },
+              },
+            }) => (
+              <CardPost
+                key={id}
+                description={description}
+                timeToRead={timeToRead}
+                title={title}
+                date={date}
+                path={path}
+                thumbnail={thumbnail}
+              />
+            )
+          )}
         </Row>
       </Container>
     </Layout>

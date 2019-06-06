@@ -1,5 +1,5 @@
 import React from 'react'
-import { BehanceIcon, Project } from 'Common'
+import { BehanceIcon, Project } from 'components/common'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default () => {

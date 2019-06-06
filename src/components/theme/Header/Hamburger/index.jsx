@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from 'Common'
+import { ThemeContext } from 'components/common'
 import { HamburgerIcon, Bar } from './styles'
 
 export default ({ sidebar, toggle, isHomePage }) => {

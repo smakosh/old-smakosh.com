@@ -1,5 +1,5 @@
 import React from 'react'
-import { Project, DribbbleIcon } from 'Common'
+import { Project, DribbbleIcon } from 'components/common'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default () => {

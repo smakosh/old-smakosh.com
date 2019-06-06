@@ -2,8 +2,8 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { Layout, Container, SEO, PageTitle } from 'Common'
-import { Details, Socials } from 'Components/about'
+import { Layout, Container, SEO, PageTitle } from 'components/common'
+import { Details, Socials } from 'components/about'
 
 export default () => {
   const { AboutImage } = useStaticQuery(graphql`

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
-import { SmallerContainer, ThemeContext } from 'Common'
+import { SmallerContainer, ThemeContext } from 'components/common'
 import { Wrapper } from './styles'
 
 export default () => {

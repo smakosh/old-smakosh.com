@@ -1,6 +1,9 @@
 {
   "extends": "react-app",
+  "plugins": ["react-hooks"],
   "rules": {
-    "no-restricted-globals": "off"
+    "no-restricted-globals": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }

@@ -18,7 +18,7 @@ export const Title = styled.h2`
 	`}
 `
 
-export const Social = styled.div`
+export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 4fr);

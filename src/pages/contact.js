@@ -1,6 +1,6 @@
 import React from 'react'
-import { Layout, SEO } from 'Common'
-import ContactForm from 'Components/contact/ContactForm'
+import { Layout, SEO } from 'components/common'
+import ContactForm from 'components/contact/ContactForm'
 
 export default () => (
   <Layout>

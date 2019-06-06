@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import { Container, CustomButton, ThemeContext } from 'Common'
+import { Container, CustomButton, ThemeContext } from 'components/common'
 import {
 	FormWrapper,
 	StyledForm,
