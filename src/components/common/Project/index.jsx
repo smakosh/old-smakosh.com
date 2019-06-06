@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Card, More, ThemeContext, Repository } from 'Common'
+import { Card, More, ThemeContext, Repository } from 'components/common'
 import { Wrapper, Work, Icon, Title } from './styles'
 
 export const Project = ({

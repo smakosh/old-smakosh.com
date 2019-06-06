@@ -3,7 +3,7 @@ import { Form, FastField, ErrorMessage, withFormik } from 'formik'
 import * as Yup from 'yup'
 import Recaptcha from 'react-google-recaptcha'
 import { navigate } from 'gatsby'
-import { SmallerContainer, CustomButton, ThemeContext } from 'Common'
+import { SmallerContainer, CustomButton, ThemeContext } from 'components/common'
 import {
 	ContactWrapper,
 	Wrapper,

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Layout, SEO, SmallerContainer } from 'Common'
+import { Layout, SEO, SmallerContainer } from 'components/common'
 
 export default () => (
   <Layout>

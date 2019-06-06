@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from 'Common'
+import { ThemeContext } from 'components/common'
 import { StyledTitle } from './styles'
 
 export const PageTitle = ({ children }) => {

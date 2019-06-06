@@ -28,7 +28,7 @@ export default () => {
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('theme')
+    const localTheme = localStorage.getItem('components/theme')
     if (localTheme) {
       setTheme(localTheme)
     }
@@ -53,7 +53,7 @@ export default () => {
   }
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('theme')
+    const localTheme = localStorage.getItem('components/theme')
     if (localTheme) {
       setTheme(localTheme)
     }
@@ -78,7 +78,7 @@ export default () => {
   }
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('theme')
+    const localTheme = localStorage.getItem('components/theme')
     if (localTheme) {
       setTheme(localTheme)
     }

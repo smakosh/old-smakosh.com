@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Layout, SmallerContainer, SEO, Post } from 'Common'
+import { Layout, SmallerContainer, SEO, Post } from 'components/common'
 import './highlight.scss'
 
 export default ({ data: { post } }) => (

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from 'Common'
+import { ThemeContext } from 'components/common'
 import CardHeader from './components/CardHeader'
 import CardBody from './components/CardBody'
 import CardFooter from './components/CardFooter'

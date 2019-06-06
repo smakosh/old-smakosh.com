@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ThemeContext, Provider, Subscribe } from 'Common'
-import { Header, Footer } from 'Theme'
+import { ThemeContext, Provider, Subscribe } from 'components/common'
+import { Header, Footer } from 'components/theme'
 import './layout.scss'
 import './main.scss'
 

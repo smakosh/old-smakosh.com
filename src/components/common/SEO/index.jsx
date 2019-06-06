@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Thumbnail from 'Static/me.jpg'
+import Thumbnail from 'assets/me.jpg'
 import {
   url,
   defaultTitle,
@@ -13,7 +13,7 @@ import {
   foundingDate,
   logo,
   author,
-} from 'Data'
+} from 'data/config'
 
 export const SEO = ({
   title,

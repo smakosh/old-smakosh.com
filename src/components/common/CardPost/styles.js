@@ -25,7 +25,6 @@ export const Post = styled.div`
   border-radius: 0.2rem;
   box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
   background: #fff;
-  cursor: pointer;
   transition: 0.7s;
   height: 100%;
   overflow: hidden;
@@ -41,11 +40,28 @@ export const Post = styled.div`
     transition: 0.7s;
   }
 
+  ${({ path }) =>
+    path &&
+    `
+    cursor: pointer;
+  `}
+
   ${({ theme }) =>
     theme === 'dark' &&
     `
 			background: #2b2a2a;
 	`};
+
+  ${({ talk }) =>
+    talk &&
+    `
+    box-shadow: none;
+    background: unset;
+
+    &:hover {
+      box-shadow: none;
+    }
+  `}
 `
 
 export const ArticleContent = styled.div`
@@ -68,6 +84,12 @@ export const ArticleImg = styled.div`
 		height: 200px;
 	`}
 
+  ${({ talk }) =>
+    talk &&
+    `
+		border-radius: 8px;
+	`}
+
   .gatsby-image-wrapper {
     height: 100%;
   }
@@ -86,6 +108,12 @@ export const ArticleImg = styled.div`
     height: 100px;
     width: auto;
     flex: 1;
+
+    ${({ talk }) =>
+      talk &&
+      `
+      height: 170px;
+    `}
   }
 `
 
@@ -117,7 +145,7 @@ export const Paragraph = styled.p`
     height: 130px;
     `
       : `
-    height: 90px;
+    height: 100px;
 
     @media (max-width: 960px) {
       height: 100px;
@@ -155,4 +183,20 @@ export const Info = styled.i`
 
 export const StyledSpan = styled.span`
   margin-left: 10px;
+`
+
+export const TalkDetails = styled.div`
+  padding: 0 0 0.5rem 0;
+`
+
+export const Slides = styled.div`
+  padding: 0.2rem 0;
+`
+
+export const Demos = styled.div`
+  padding: 0.2rem 0;
+
+  a:first-child {
+    margin-right: 1rem;
+  }
 `

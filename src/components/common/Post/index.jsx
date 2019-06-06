@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Disqus from 'disqus-react'
 import { Link } from 'gatsby'
-import { SocialShare, PageTitle, ThemeContext } from 'Common'
+import { SocialShare, PageTitle, ThemeContext } from 'components/common'
 import { ArticleWrapper, Back, Content, Comments, ArticleDate } from './styles'
 
 export const Post = ({ html, frontmatter, timeToRead }) => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Project, GithubIcon, Container, Subtitle } from 'Common'
+import { Project, GithubIcon, Container, Subtitle } from 'components/common'
 
 export const Github = () => {
   const { github } = useStaticQuery(

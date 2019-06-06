@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import { Container, CardPost, Row, Subtitle, CustomButton } from 'Common'
+import { Container, CardPost, Row, Subtitle, CustomButton } from 'components/common'
 import { Wrapper, Center } from './styles.js'
 
 export const Popular = () => {
@@ -15,7 +15,7 @@ export const Popular = () => {
       ) {
         edges {
           node {
-            excerpt(pruneLength: 230)
+            description: excerpt(pruneLength: 230)
             id
             timeToRead
             frontmatter {
@@ -38,9 +38,27 @@ export const Popular = () => {
     <Wrapper as={Container}>
       <Subtitle>Popular articles</Subtitle>
       <Row landing>
-        {edges.map(post => (
-          <CardPost landing key={post.node.id} {...post} />
-        ))}
+        {edges.map(
+          ({
+            node: {
+              id,
+              description,
+              timeToRead,
+              frontmatter: { title, date, path, thumbnail },
+            },
+          }) => (
+            <CardPost
+              landing
+              key={id}
+              description={description}
+              timeToRead={timeToRead}
+              title={title}
+              date={date}
+              path={path}
+              thumbnail={thumbnail}
+            />
+          )
+        )}
       </Row>
       <Center>
         <CustomButton>

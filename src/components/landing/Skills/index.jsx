@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { Container, ThemeContext } from 'Common'
+import { Container, ThemeContext } from 'components/common'
 import Skill from './Skill'
 import { Wrapper, Tech, Flex } from './styles'
 

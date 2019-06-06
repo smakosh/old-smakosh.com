@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
-import { Container, Logo, ThemeContext } from 'Common'
+import { Container, Logo, ThemeContext } from 'components/common'
 import NavbarLinks from '../NavbarLinks'
 import { Wrapper, BrandLogo, Brand } from './styles'
 

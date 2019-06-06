@@ -6,8 +6,9 @@ import {
   Services,
   Github,
   Popular,
-} from 'Components/landing'
-import { Layout, SEO } from 'Common'
+  RecentTalks,
+} from 'components/landing'
+import { Layout, SEO } from 'components/common'
 
 export default () => (
   <Layout>
@@ -18,5 +19,6 @@ export default () => (
     <Services />
     <Github />
     <Popular />
+    <RecentTalks />
   </Layout>
 )
