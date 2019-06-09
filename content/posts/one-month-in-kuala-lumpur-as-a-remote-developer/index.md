@@ -35,7 +35,7 @@ I made a mistake booking my flight late, I should have booked a couple of months
 
 The second thing you will look up to is housing, feel free to use what ever you think is better for you, in my case I used [AirBnb](https://www.airbnb.com/c/ismailg745?currency=USD) to book the first month in Shah Alam which is far from KL's center as I wanted to focus on my work & personal side projects a lot more.
 
-Because I rented away from KL's center, the rent cost me approximately ~ \$ 330 for the entire apartment.
+Because I rented away from KL's center, the rent cost me approximately ~ $ 330 for the entire apartment.
 
 You can have a look at the place by visiting [this link](https://www.airbnb.com/rooms/16269315?guests=1&adults=1)
 
