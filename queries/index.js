@@ -1,12 +1,11 @@
 module.exports = `
 {
-  posts: allMarkdownRemark(
-    sort: { order: DESC, fields: [frontmatter___date] }
-  ) {
+  posts: allMarkdownRemark {
     edges {
       node {
         frontmatter {
           path
+          type
         }
       }
     }

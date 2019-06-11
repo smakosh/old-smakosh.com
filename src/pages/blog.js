@@ -1,6 +1,13 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Layout, Container, SEO, PageTitle, CardPost, Row } from 'components/common'
+import {
+  Layout,
+  Container,
+  SEO,
+  PageTitle,
+  CardPost,
+  Row,
+} from 'components/common'
 
 export default () => {
   const {
@@ -8,6 +15,7 @@ export default () => {
   } = useStaticQuery(graphql`
     query {
       posts: allMarkdownRemark(
+        filter: { frontmatter: { type: { ne: "legal" } } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 20
       ) {
