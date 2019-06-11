@@ -4,17 +4,25 @@ const Queries = require('./queries')
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   try {
     const postTemplate = path.resolve('src/templates/post.js')
+    const legalTemplate = path.resolve('src/templates/legal.js')
 
-    const res = await graphql(Queries)
-    res.data.posts.edges.forEach(({ node: { frontmatter: { path } } }) => {
-      createPage({
-        path: path,
-        component: postTemplate,
-      })
+    const { data, errors } = await graphql(Queries)
+    data.posts.edges.forEach(({ node: { frontmatter: { path, type } } }) => {
+      if (type === 'legal') {
+        createPage({
+          path: path,
+          component: legalTemplate,
+        })
+      } else {
+        createPage({
+          path: path,
+          component: postTemplate,
+        })
+      }
     })
 
-    if (res.errors) {
-      throw new Error(res.errors)
+    if (errors) {
+      throw new Error(errors)
     }
   } catch (err) {
     console.log(err)
