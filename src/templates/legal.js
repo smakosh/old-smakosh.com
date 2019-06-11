@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Layout, SmallerContainer, SEO } from 'components/common'
-// import './highlight.scss'
+import Privacy from 'components/legal/Privacy'
 
 export default ({ data: { legal } }) => (
   <Layout>
@@ -11,14 +11,16 @@ export default ({ data: { legal } }) => (
         type="Organization"
         location={legal.frontmatter.path}
       />
-      <div dangerouslySetInnerHTML={{ __html: legal.html }} />
+      <Privacy content={legal.html} />
     </SmallerContainer>
   </Layout>
 )
 
 export const legalQuery = graphql`
   query($path: String!) {
-    legal: markdownRemark(frontmatter: { path: { eq: $path } }) {
+    legal: markdownRemark(
+      frontmatter: { path: { eq: $path }, type: { eq: "legal" } }
+    ) {
       html
       frontmatter {
         path
