@@ -3,7 +3,7 @@ id: 15
 path: '/how-to-add-dark-mode-easily-with-a-custom-react-hook'
 thumbnail: './custom-hook.png'
 date: 2019-03-22T5:35:01.889Z
-edited: 2019-03-25T1:59:01.889Z
+edited: 2019-06-13T1:59:01.889Z
 next: '/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice'
 title: 'How To add dark mode easily with a custom React hook'
 popular: true
@@ -28,7 +28,7 @@ export default () => {
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('components/theme')
+    const localTheme = window.localStorage.getItem('components/theme')
     if (localTheme) {
       setTheme(localTheme)
     }
@@ -36,7 +36,7 @@ export default () => {
 }
 ```
 
-Let's setup a function now that toggles in between themes
+Let's setup a function now that toggles in between themes and stores the selected theme in localStorage
 
 ```jsx
 import { useEffect, useState } from 'react'
@@ -45,10 +45,12 @@ export default () => {
   const [theme, setTheme] = useState('light')
 
   const toggleTheme = () => {
-    if (theme === 'dark') {
-      setTheme('light')
-    } else {
+    if (theme === 'light') {
+      window.localStorage.setItem('theme', 'dark')
       setTheme('dark')
+    } else {
+      window.localStorage.setItem('theme', 'light')
+      setTheme('light')
     }
   }
 
@@ -70,24 +72,26 @@ export default () => {
   const [theme, setTheme] = useState('light')
 
   const toggleTheme = () => {
-    if (theme === 'dark') {
-      setTheme('light')
-    } else {
+    if (theme === 'light') {
+      window.localStorage.setItem('theme', 'dark')
       setTheme('dark')
+    } else {
+      window.localStorage.setItem('theme', 'light')
+      setTheme('light')
     }
   }
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('components/theme')
+    const localTheme = window.localStorage.getItem('components/theme')
     if (localTheme) {
       setTheme(localTheme)
     }
   }, [])
 
-  return {
+  return [
     theme,
     toggleTheme,
-  }
+  ]
 }
 ```
 
@@ -98,7 +102,7 @@ import React from 'react'
 import useDarkMode from './useDarkMode'
 
 export default () => {
-  const { theme, toggleTheme } = useDarkMode()
+  const [ theme, toggleTheme ] = useDarkMode()
   return (
     <div
       style={{
