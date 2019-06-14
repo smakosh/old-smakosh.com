@@ -21,7 +21,7 @@ Search engine optimization (SEO) is the process of increasing the quality and qu
 
 ## The SPA issues with SEO myth
 
-All React apps built using CRA (create-react-app) or Gatsby to serve dynamic content are single page apps, meaning that there is one index.html file that renders the content of your app, which means that all your meta tags within your components won't be crawled for indexing on search engines, others like me used to be! As of May 2019, [Google announced](https://webmasters.googleblog.com/2019/05/the-new-evergreen-googlebot.html) that its crawler can now crawl JavaScript just like the Twitter/Facebook/Slack/Telegram crawlers, so when ever a non technical person mentions this SPA SEO myth, make sure to enlighten them.
+All React apps built using CRA (create-react-app) or Gatsby to serve dynamic content are single page apps, meaning that there is one index.html file that renders the content of your app, which means that all your meta tags within your components won't be crawled for indexing on search engines, or it used to be! As of May 2019, [Google announced](https://webmasters.googleblog.com/2019/05/the-new-evergreen-googlebot.html) that its crawler can now crawl JavaScript just like the Twitter/Facebook/Slack/Telegram crawlers, so when ever a non technical person mentions this SPA SEO myth, make sure to enlighten them.
 
 ## What we used to do before crawlers turned out to be able to crawl JavaScript
 
