@@ -6,6 +6,12 @@ date: 2017-03-10T16:45:01.889Z
 edited:
 next: '/unnamed'
 title: 'How I learned Design & Dev in a year & half'
+tags:
+  - tech
+  - dev
+  - career
+  - bio
+  - tools
 popular: false
 ---
 

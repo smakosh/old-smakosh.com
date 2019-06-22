@@ -6,6 +6,10 @@ date: 2019-04-23T08:00:01.889Z
 edited: 2019-05-2T08:00:01.889Z
 next: '/solving-hashtags-problems'
 title: 'One month in Kuala Lumpur as a remote developer'
+tags:
+  - tech
+  - dev
+  - travel
 popular: false
 ---
 

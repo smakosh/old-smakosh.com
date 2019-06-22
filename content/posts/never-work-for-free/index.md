@@ -6,6 +6,10 @@ date: 2017-03-02T16:45:01.889Z
 edited: 2019-04-02T02:00:01.889Z
 next: '/about-me-so-far'
 title: 'Never work for free'
+tags:
+  - tech
+  - dev
+  - career
 popular: false
 ---
 

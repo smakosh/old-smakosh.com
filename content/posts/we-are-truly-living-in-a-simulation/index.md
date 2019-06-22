@@ -6,6 +6,8 @@ date: 2018-6-29T12:06:01.889Z
 edited:
 next: '/the-tech-tools-I-use'
 title: 'We are truly living in a simulation'
+tags:
+  - thinking
 popular: false
 ---
 

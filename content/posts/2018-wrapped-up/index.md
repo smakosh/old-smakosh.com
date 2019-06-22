@@ -6,6 +6,10 @@ date: 2019-01-13T10:38:01.889Z
 edited:
 next: '/one-year-working-remotely'
 title: '2018 year review'
+tags:
+  - bio
+  - career
+  - dev
 popular: false
 ---
 

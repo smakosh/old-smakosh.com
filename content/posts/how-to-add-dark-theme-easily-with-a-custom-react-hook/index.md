@@ -6,6 +6,9 @@ date: 2019-03-22T5:35:01.889Z
 edited: 2019-06-13T1:59:01.889Z
 next: '/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice'
 title: 'How To add dark mode easily with a custom React hook'
+tags:
+  - react
+  - dev
 popular: true
 ---
 

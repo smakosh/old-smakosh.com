@@ -6,6 +6,10 @@ date: 2018-2-27T16:45:01.889Z
 edited: 2018-7-8T19:14:01.889Z
 next: '/istanbul-trip'
 title: 'The tech tools I use'
+tags:
+  - tech
+  - dev
+  - tools
 popular: false
 ---
 

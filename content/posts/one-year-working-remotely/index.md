@@ -6,6 +6,11 @@ date: 2018-09-18T10:38:01.889Z
 edited:
 next: '/from-failure-to-launch-hajj-hackathon'
 title: 'One year working remotely'
+tags:
+  - tech
+  - dev
+  - career
+  - bio
 popular: false
 ---
 

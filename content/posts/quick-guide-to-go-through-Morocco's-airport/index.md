@@ -6,6 +6,9 @@ date: 2019-04-08T04:00:01.889Z
 edited: 2019-04-08T04:00:01.889Z
 next: '/how-to-add-dark-mode-easily-with-a-custom-react-hook'
 title: 'Quick tips to be prepared to go through any airport in Morocco'
+tags:
+  - tips
+  - travel
 popular: false
 ---
 
