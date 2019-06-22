@@ -28,6 +28,7 @@ export default () => {
               title
               date(formatString: "MMM DD, YYYY")
               path
+              tags
               thumbnail {
                 childImageSharp {
                   ...imageFields
@@ -52,7 +53,7 @@ export default () => {
                 id,
                 description,
                 timeToRead,
-                frontmatter: { title, date, path, thumbnail },
+                frontmatter: { title, date, path, thumbnail, tags },
               },
             }) => (
               <CardPost
@@ -63,6 +64,7 @@ export default () => {
                 date={date}
                 path={path}
                 thumbnail={thumbnail}
+                tags={tags}
               />
             )
           )}

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { navigate } from 'gatsby'
 import Img from 'gatsby-image'
-import { ThemeContext } from 'components/common'
+import { ThemeContext, Tag } from 'components/common'
 import {
   Item,
   Post,
@@ -14,6 +14,7 @@ import {
   TalkDetails,
   Slides,
   Demos,
+  Tags,
 } from './styles'
 
 export const CardPost = ({
@@ -26,27 +27,54 @@ export const CardPost = ({
   landing,
   demos,
   slides,
+  tags,
 }) => {
   const { theme } = useContext(ThemeContext)
   return (
     <Item landing={landing}>
-      <Post
-        onClick={() => {
-          if (!path) return null
-          navigate(path)
-        }}
-        path={path}
-        theme={theme}
-        talk={slides}
-      >
-        <ArticleImg landing={landing} talk={slides}>
+      <Post theme={theme} talk={slides}>
+        <ArticleImg
+          onClick={() => {
+            if (!path) return null
+            navigate(path)
+          }}
+          landing={landing}
+          talk={slides}
+          path={path}
+        >
           <Img fluid={thumbnail.childImageSharp.fluid} />
         </ArticleImg>
         <ArticleContent>
-          <ArticleTitle theme={theme}>{title}</ArticleTitle>
-          <Paragraph landing={landing} theme={theme}>
+          <ArticleTitle
+            onClick={() => {
+              if (!path) return null
+              navigate(path)
+            }}
+            theme={theme}
+            path={path}
+          >
+            {title}
+          </ArticleTitle>
+          <Paragraph
+            onClick={() => {
+              if (!path) return null
+              navigate(path)
+            }}
+            landing={landing}
+            theme={theme}
+            path={path}
+          >
             {description}
           </Paragraph>
+          {tags && (
+            <Tags>
+              {tags.map((item, i) => (
+                <Tag theme={theme} to={`/${item}/`} key={i}>
+                  {item}
+                </Tag>
+              ))}
+            </Tags>
+          )}
           {slides && (
             <TalkDetails>
               <Slides>
@@ -70,7 +98,14 @@ export const CardPost = ({
               )}
             </TalkDetails>
           )}
-          <Info theme={theme}>
+          <Info
+            theme={theme}
+            onClick={() => {
+              if (!path) return null
+              navigate(path)
+            }}
+            path={path}
+          >
             {date}
             {timeToRead && <StyledSpan>{timeToRead} min</StyledSpan>}
           </Info>

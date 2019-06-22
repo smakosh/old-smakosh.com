@@ -40,6 +40,7 @@ export const postQuery = graphql`
         title
         next
         id
+        tags
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 700) {

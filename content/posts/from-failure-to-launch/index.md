@@ -6,6 +6,11 @@ date: 2018-08-06T12:38:01.889Z
 edited: 2018-08-14T1:26:01.889Z
 next: '/we-are-truly-living-in-a-simulation'
 title: 'From failure to launch - Hajj Hackathon'
+tags:
+  - tech
+  - dev
+  - hackathon
+  - travel
 popular: false
 ---
 

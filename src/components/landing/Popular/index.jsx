@@ -30,6 +30,7 @@ export const Popular = () => {
               title
               date(formatString: "MMM DD, YYYY")
               path
+              tags
               thumbnail {
                 childImageSharp {
                   ...imageFields
@@ -52,7 +53,7 @@ export const Popular = () => {
               id,
               description,
               timeToRead,
-              frontmatter: { title, date, path, thumbnail },
+              frontmatter: { title, date, path, thumbnail, tags },
             },
           }) => (
             <CardPost
@@ -64,6 +65,7 @@ export const Popular = () => {
               date={date}
               path={path}
               thumbnail={thumbnail}
+              tags={tags}
             />
           )
         )}

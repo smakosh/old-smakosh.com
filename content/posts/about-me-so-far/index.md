@@ -6,6 +6,11 @@ date: 2016-12-02T16:45:01.889Z
 edited: 2019-1-01T11:29:01.889Z
 next: '/istanbul-trip'
 title: 'About me so far...'
+tags:
+  - bio
+  - career
+  - thinking
+  - tools
 popular: false
 ---
 

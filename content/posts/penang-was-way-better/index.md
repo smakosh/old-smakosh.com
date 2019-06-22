@@ -6,6 +6,10 @@ date: 2019-06-06T08:00:01.889Z
 edited: 2019-06-06T08:00:01.889Z
 next: '/one-month-in-kuala-lumpur-as-a-remote-developer'
 title: 'Penang was way better'
+tags:
+  - tech
+  - dev
+  - travel
 popular: false
 ---
 

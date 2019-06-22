@@ -6,6 +6,9 @@ date: 2019-02-16T10:35:01.889Z
 edited:
 next: '/2018-year-review'
 title: 'Pixel 2 review and why Nexus 6p is a bad choice'
+tags:
+  - tech
+  - review
 popular: false
 ---
 

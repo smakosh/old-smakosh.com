@@ -40,12 +40,6 @@ export const Post = styled.div`
     transition: 0.7s;
   }
 
-  ${({ path }) =>
-    path &&
-    `
-    cursor: pointer;
-  `}
-
   ${({ theme }) =>
     theme === 'dark' &&
     `
@@ -78,6 +72,13 @@ export const ArticleImg = styled.div`
   height: 300px;
   overflow: hidden;
 
+
+  ${({ path }) =>
+    path &&
+    `
+    cursor: pointer;
+  `}
+
   ${({ landing }) =>
     landing &&
     `
@@ -105,7 +106,7 @@ export const ArticleImg = styled.div`
   }
 
   @media (max-width: 680px) {
-    height: 100px;
+    height: 150px;
     width: auto;
     flex: 1;
 
@@ -123,6 +124,12 @@ export const ArticleTitle = styled.h2`
   overflow: hidden;
   text-overflow: ellipsis;
 
+  ${({ path }) =>
+    path &&
+    `
+    cursor: pointer;
+  `}
+
   @media (max-width: 680px) {
     margin-bottom: 0.1rem;
     font-size: 12pt;
@@ -139,10 +146,16 @@ export const Paragraph = styled.p`
   color: #616161;
   overflow-y: hidden;
 
+  ${({ path }) =>
+    path &&
+    `
+    cursor: pointer;
+  `}
+
   ${({ landing }) =>
     landing
       ? `
-    height: 130px;
+    height: 150px;
     `
       : `
     height: 100px;
@@ -169,6 +182,12 @@ export const Paragraph = styled.p`
 export const Info = styled.i`
   color: #212121;
   font-size: 0.8em;
+
+  ${({ path }) =>
+    path &&
+    `
+    cursor: pointer;
+  `}
 
   @media (max-width: 680px) {
     font-size: 0.6em;
@@ -198,5 +217,37 @@ export const Demos = styled.div`
 
   a:first-child {
     margin-right: 1rem;
+  }
+`
+
+export const Tags = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  height: 80px;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: 960px) {
+    height: 38px;
+  }
+
+  a {
+    margin: 0 1rem 1rem 0;
+    color: #fff;
+
+    @media (max-width: 960px) {
+      padding: 0.05rem 0.5rem;
+      margin: 0 0.4rem 0.4rem 0;
+      font-size: 8pt;
+    }
+
+    &:last-child {
+      margin: 0 0 1rem 0;
+
+      @media (max-width: 960px) {
+        margin: 0 0 0.4rem 0;
+      }
+    }
   }
 `

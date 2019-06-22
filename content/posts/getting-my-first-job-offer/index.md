@@ -6,6 +6,10 @@ date: 2017-06-07T16:45:01.889Z
 edited:
 next: '/hps-hackathon'
 title: 'Getting my first job offer without a degree at a startup'
+tags:
+  - tech
+  - dev
+  - career
 popular: false
 ---
 

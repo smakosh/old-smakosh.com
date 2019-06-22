@@ -6,6 +6,11 @@ date: 2019-06-13T07:00:01.889Z
 edited: 2019-06-13T07:00:01.889Z
 next: '/penang-was-way-better'
 title: 'Handling SEO in React apps'
+tags:
+  - react
+  - gatsby
+  - dev
+  - tips
 popular: false
 ---
 

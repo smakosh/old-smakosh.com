@@ -10,5 +10,12 @@ module.exports = `
       }
     }
   }
+  tags: allTagsYaml {
+    edges {
+      node {
+        title
+      }
+    }
+  }
 }
 `
