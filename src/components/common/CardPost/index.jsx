@@ -69,7 +69,7 @@ export const CardPost = ({
           {tags && (
             <Tags>
               {tags.map((item, i) => (
-                <Tag theme={theme} to={`/${item}/`} key={i}>
+                <Tag tag={item} link={`/${item}/`} key={i}>
                   {item}
                 </Tag>
               ))}

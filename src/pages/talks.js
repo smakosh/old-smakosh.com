@@ -12,7 +12,7 @@ import {
 export default () => {
   const { talks } = useStaticQuery(graphql`
     query {
-      talks: allTalksYaml(sort: { order: DESC, fields: [date] }, limit: 20) {
+      talks: allTalksYaml(sort: { order: DESC, fields: [date] }, limit: 200) {
         edges {
           node {
             id

@@ -27,7 +27,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     // Create tags pages
     data.tags.edges.forEach(({ node: { title } }) => {
       createPage({
-        path: `/${title}`,
+        path: `/${title}/`,
         component: tagTemplate,
         context: {
           slug: title,
