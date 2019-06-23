@@ -49,7 +49,7 @@ export const postQuery = graphql`
     posts: allMarkdownRemark(
       filter: { frontmatter: { type: { ne: "legal" }, tags: { in: [$slug] } } }
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 20
+      limit: 200
     ) {
       edges {
         node {

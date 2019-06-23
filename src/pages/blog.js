@@ -17,7 +17,7 @@ export default () => {
       posts: allMarkdownRemark(
         filter: { frontmatter: { type: { ne: "legal" } } }
         sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 20
+        limit: 200
       ) {
         edges {
           node {
