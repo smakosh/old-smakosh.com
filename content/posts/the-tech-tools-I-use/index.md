@@ -17,9 +17,9 @@ popular: false
 
 So I thought about sharing the tools I use personally or at work, so let’s start with,
 
-### Design tools:
+### Design tools
 
-- Adobe Illustrator for logos, icons, illustrations
+- [Adobe Illustrator](https://amzn.to/2Ygdmek) for logos, icons, illustrations
 - Adobe XD, Invision Studio or Sketch for designing user interfaces & wireframes
 - Adobe Photoshop for editing pictures & memes :D
 - Adobe After effects for editing videos (I recommend Adobe Premiere Pro for editing videos & AE to add effects).
@@ -37,15 +37,15 @@ I share my code & look for inspirations on:
 - Codepen
 - CodeSandbox
 
-If I’m simply coding an interface that I might integrate into an app (web or native) I use plain html/css & vanilla js.
+If I’m simply coding an interface that I might integrate into a web app I use plain html/css & vanilla js.
 
 But if I'm working on a landing page, docs, blog or even sometimes a large web app I use:
 
-- Gatsby (I recommend Gatsby) and I deploy it on Netlify (I was & still use Jekyll sometimes for blogs but rarely)
+- Gatsby (highly recommended over Next js or CRA) and I deploy it on Netlify (I was & still use Jekyll sometimes for blogs but rarely)
 
-For Css I’m cool to use what ever tech available out there that makes my task done quickly & well, I have personally used Bootstrap 3 & 4, Bulma, Lostgrid, Materliaze, Tachyons & made my own little framework called [Unnamed](https://unnamed.smakosh.com/) that has over 190 stars on GitHub, but I prefer coding with vanilla CSS or CSS in JS using styled-components, because I enjoy styling my elements from scratch since the components are fully reusable with React.
+For Css I’m cool to use what ever tech available out there that makes my task done quickly & well, I have personally used Bootstrap 3 & 4, Bulma, Lostgrid, Materliaze, Tachyons & made my own little framework called [Unnamed](https://unnamed.smakosh.com/) that has over 200 stars on GitHub, but I prefer coding with vanilla CSS or CSS in JS using styled-components or CSS modules, because I enjoy styling my elements from scratch since the components are fully reusable with React.
 
-If I’m making a web app, for the front-end I use the `create-react-app` boilerplate as it’s the official one from the team that made React Js but I always have to add react-router-dom or @reach/router, Redux (well not on the upcoming projects), Recompose (not needed anymore) & many other modules I use the most. So I made my own [boilerplate](https://github.com/smakosh/personal-react-app-boilerplate) to handle that.
+If I’m making a web app, for the front-end I use the `create-react-app` boilerplate as it’s the official one from the team that made React Js but I always have to add react-router-dom or @reach/router, Redux (well not on the upcoming projects), Recompose (not needed anymore) & many other modules I use the most. So I made my own [boilerplate](https://github.com/smakosh/personal-react-app-boilerplate) to handle that. But recently I use one of my Gatsby starters depending on the type of the API I'm willing to request data from.
 
 I use Git bash as my terminal when I’m on windows, iTerm2 with "oh my zsh" themes when I’m on macOS.
 
@@ -57,19 +57,19 @@ For native apps, I use React native to build mobile apps (Ios & Android). I also
 
 ### Growth
 
-For growth, I focus more on building useful products that users really need in their lives then I simply share it on Product Hunt, Hacker news, Reddit and on social media.
+For growth, I focus more on building useful products that users really need in their lives then I simply share it on this blog, Product Hunt, Hacker news, Reddit and on social media.
 
 ### Setup
 
 #### Laptops
 
-- MacBook Pro 2017 touchbar (belongs to the company I work for)
+- [MacBook Pro 2017 touchbar](https://amzn.to/2RD3RmZ) (belongs to the company I work for)
   - Display: 13" retina screen
   - CPU: 3.1 GHz Intel Core i5
   - GPU: Intel Iris Plus Graphics 650 1536 MB
   - Ram: 8GB LP DRR3
   - SSD: 250GB
-- MSI GP62 Gaming laptop (Which I haven't used since early 2018)
+- [MSI GP62 Gaming laptop](https://amzn.to/2RzCKtf) (Which I haven't used since early 2018)
   - MSI GP62 Leopard Pro
   - CPU: i5 4210
   - GPU: GeForce GTX 950M
@@ -78,15 +78,15 @@ For growth, I focus more on building useful products that users really need in t
 
 #### Gaming PC
 
-I don't use it anymore but here are its specs:
+I don't use it anymore but here are the specs:
 
-- CPU: i5 3570 @ 3.4 Ghz
-- GFX: Asus Nvidia Geforce GTX 660
+- CPU: [Intel i5 3570 @ 3.4 Ghz](https://amzn.to/2X9xKBj)
+- GFX: [Asus Nvidia Geforce GTX 660](https://amzn.to/2X5qG8W)
 - RAM: 8GB Revenge DDR3
 - Motherboard: Asus H61M
 - SSD: None
 - HDD: 1 Seagate Barracuda - 500gb + 1Tb HDD
-- PSU: CORSAIR 550w
+- PSU: [CORSAIR 550w](https://amzn.to/2WZno25)
 - Case: NOX
 - OS: Windows 10
 
@@ -94,17 +94,17 @@ I don't use it anymore but here are its specs:
 
 > Which also I don't use anymore
 
-- Display: BenQ GL2250
-- Mouse: Razer DeathAdder Chroma 2016
-- Mouse pad: Razer large mouse pad
-- Keyboard: Razer Chroma X Elite
-- Headset: Razer Kraken Pro
+- Display: [BenQ GL2250](https://amzn.to/2X7NoNV)
+- Mouse: [Razer DeathAdder Chroma 2016](https://amzn.to/2RBqJn9)
+- Mouse pad: [Razer large mouse pad](https://amzn.to/2YiclCE)
+- Keyboard: [Razer Chroma X Elite](https://amzn.to/2YnEckI)
+- Headset: [Razer Kraken Pro](https://amzn.to/2LiN1c4)
 - Microphone: None
 
 #### Phones
 
 - For Android, I'm using the Google Pixel 2 with a Dbrand dragon skin
-  - Android Q
+  - Android Q (10 Beta)
 - For iOS, I'm using the Iphone 7
   - iOS 12.1.4
 
@@ -112,7 +112,7 @@ Previously, I was carying only a Nexus 6p which I had to stop using due to these
 
 #### Cameras
 
-At the moment, I'm only carying with me a GoPro hero 3 white edition
+At the moment, I'm only carrying with me a [GoPro hero 7 black edition limited edition](https://amzn.to/2X5rw5A)
 
 #### Ai assistant
 
@@ -120,7 +120,7 @@ Currently, I'm using a Google home mini
 
 #### VR
 
-Google VR 1st gen headset
+[Google VR 1st gen headset](https://amzn.to/2XbPLiv)
 
 #### Earphones
 
