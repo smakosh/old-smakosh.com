@@ -4,7 +4,7 @@ import {
   Skills,
   Work,
   Services,
-  // Github,
+  Github,
   Popular,
   RecentTalks,
 } from 'components/landing'
@@ -17,7 +17,7 @@ export default () => (
     <Skills />
     <Work />
     <Services />
-    {/* <Github /> */}
+    <Github />
     <Popular />
     <RecentTalks />
   </Layout>
