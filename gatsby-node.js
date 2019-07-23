@@ -3,9 +3,9 @@ const Queries = require('./queries')
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   try {
-    const postTemplate = path.resolve('src/templates/post.js')
-    const legalTemplate = path.resolve('src/templates/legal.js')
-    const tagTemplate = path.resolve('src/templates/tag.js')
+    const postTemplate = path.resolve('./src/templates/post.js')
+    const legalTemplate = path.resolve('./src/templates/legal.js')
+    const tagTemplate = path.resolve('./src/templates/tag.js')
 
     const { data, errors } = await graphql(Queries)
 
