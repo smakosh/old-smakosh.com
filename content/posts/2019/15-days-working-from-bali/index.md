@@ -37,8 +37,6 @@ As you might know, Bali has 3 most known areas, Denpasar, Ubud & Canggu, almost 
 
 ![Sunset](sunset.jpg)
 
-![Where I was staying](stay.jpg)
-
 ## Transportation
 
 If you don't have a suitcase, don't bother riding a taxi or booking a grab car when you get out from the airport, the cheapest way is to book a grab bike or GoJack bike to get you out of Denpasar, in my case, I was carrying my suitcase with me, so I had no other choice than booking a taxi as it was too late and couldn't wait for the Grab driver to get to the airport.
