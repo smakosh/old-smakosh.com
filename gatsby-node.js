@@ -1,5 +1,6 @@
 const path = require('path')
 const Queries = require('./queries')
+const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   try {
@@ -9,19 +10,28 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
     const { data, errors } = await graphql(Queries)
 
-    // Create posts & legal pages
-    data.posts.edges.forEach(({ node: { frontmatter: { path, type } } }) => {
-      if (type === 'legal') {
-        createPage({
-          path: path,
-          component: legalTemplate,
-        })
-      } else {
-        createPage({
-          path: path,
-          component: postTemplate,
-        })
-      }
+    createPaginatedPages({
+      edges: data.posts.edges,
+      createPage,
+      pageTemplate: 'src/templates/blog.js',
+      pageLength: 5,
+      pathPrefix: 'blog',
+    })
+
+    // Create posts pages
+    data.posts.edges.forEach(({ node: { frontmatter: { path } } }) => {
+      createPage({
+        path: path,
+        component: postTemplate,
+      })
+    })
+
+    // Create legal pages
+    data.legal.edges.forEach(({ node: { frontmatter: { path } } }) => {
+      createPage({
+        path: path,
+        component: legalTemplate,
+      })
     })
 
     // Create tags pages

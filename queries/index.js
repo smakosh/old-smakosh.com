@@ -1,11 +1,50 @@
 module.exports = `
 {
-  posts: allMarkdownRemark {
+  legal: allMarkdownRemark(
+    filter: { frontmatter: { type: { eq: "legal" } } }
+  ) {
     edges {
       node {
+        id
         frontmatter {
           path
-          type
+        }
+      }
+    }
+  }
+  posts: allMarkdownRemark(
+    filter: { frontmatter: { type: { ne: "legal" } } }
+    sort: { order: DESC, fields: [frontmatter___date] }
+    limit: 200
+  ) {
+    edges {
+      node {
+        description: excerpt(pruneLength: 260)
+        id
+        timeToRead
+        frontmatter {
+          title
+          date(formatString: "MMM DD, YYYY")
+          path
+          tags
+          thumbnail {
+            childImageSharp {
+              fluid {
+                aspectRatio
+                base64
+                originalImg
+                originalName
+                presentationHeight
+                presentationWidth
+                sizes
+                src
+                srcSet
+                srcSetWebp
+                srcWebp
+                tracedSVG
+              }
+            }
+          }
         }
       }
     }
