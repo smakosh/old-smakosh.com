@@ -1,5 +1,4 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import {
   Layout,
   Container,
@@ -7,39 +6,13 @@ import {
   PageTitle,
   CardPost,
   Row,
+  Pagination,
 } from 'components/common'
 
-export default () => {
-  const {
-    posts: { edges },
-  } = useStaticQuery(graphql`
-    query {
-      posts: allMarkdownRemark(
-        filter: { frontmatter: { type: { ne: "legal" } } }
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 200
-      ) {
-        edges {
-          node {
-            description: excerpt(pruneLength: 260)
-            id
-            timeToRead
-            frontmatter {
-              title
-              date(formatString: "MMM DD, YYYY")
-              path
-              tags
-              thumbnail {
-                childImageSharp {
-                  ...imageFields
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+export default ({ pageContext }) => {
+  const { group, index, pageCount, pathPrefix } = pageContext
+  const previousUrl = index - 1 === 1 ? '/' : (index - 1).toString()
+  const nextUrl = (index + 1).toString()
 
   return (
     <Layout>
@@ -47,7 +20,14 @@ export default () => {
         <SEO title="Blog" type="Organization" location="/blog" />
         <Row>
           <PageTitle>Recent articles</PageTitle>
-          {edges.map(
+          <Pagination
+            pathPrefix={pathPrefix}
+            index={index}
+            pageCount={pageCount}
+            previousUrl={previousUrl}
+            nextUrl={nextUrl}
+          />
+          {group.map(
             ({
               node: {
                 id,
@@ -68,6 +48,13 @@ export default () => {
               />
             )
           )}
+          <Pagination
+            pathPrefix={pathPrefix}
+            index={index}
+            pageCount={pageCount}
+            previousUrl={previousUrl}
+            nextUrl={nextUrl}
+          />
         </Row>
       </Container>
     </Layout>
