@@ -1,38 +1,80 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { range } from 'helpers'
+import { Link } from 'gatsby'
+import { Wrapper, Spacer, Digit } from './styles'
 
-const NavLink = ({ text, url }) => {
-  if (!test) {
-    return <Link to={url}>{text}</Link>
-  } else {
-    return <span>{text}</span>
+export const Pagination = ({
+  pathPrefix,
+  index,
+  pageCount,
+  previousUrl,
+  nextUrl,
+}) => {
+  const getFullPath = n => {
+    if (pathPrefix === '/') {
+      return n === 1 ? pathPrefix : `${pathPrefix}/${n}`
+    } else {
+      return n === 1 ? pathPrefix : `${pathPrefix}/${n}`
+    }
   }
-}
 
-export default ({ pageContext }) => {
-  const { group, index, first, last, pageCount } = pageContext
-  const previousUrl = index - 1 == 1 ? '/' : (index - 1).toString()
-  const nextUrl = (index + 1).toString()
+  const getPageLinks = () => {
+    const maxPages = 3
+    const previousPage = index === 1 ? index : index - 1
+    const pagesRange = range(previousPage, pageCount + 1 - previousPage)
+    const truncatedRange = pagesRange.slice(0, maxPages)
+
+    if (pagesRange[0] > 2) {
+      truncatedRange.unshift(null)
+    }
+
+    if (pagesRange[0] > 1) {
+      truncatedRange.unshift(1)
+    }
+
+    if (pagesRange[0] + 1 === pageCount && pagesRange[0] - 1 > 0) {
+      truncatedRange.splice(
+        pagesRange.length - 1 - maxPages,
+        0,
+        pagesRange[0] - 1
+      )
+    }
+
+    if (pagesRange[0] + maxPages < pageCount) {
+      truncatedRange.push(null)
+    }
+
+    if (pagesRange[0] + maxPages - 1 < pageCount) {
+      truncatedRange.push(pageCount)
+    }
+
+    return [...new Set(truncatedRange)].map((page, i) =>
+      page === null ? (
+        <Spacer key={i} aria-hidden={true}>
+          <span>....</span>
+        </Spacer>
+      ) : (
+        <Digit
+          current={index === page}
+          key={`PaginatorPage_${page}`}
+          to={getFullPath(page)}
+          as={Link}
+        >
+          {page}
+        </Digit>
+      )
+    )
+  }
 
   return (
-    <div>
-      <h4>{pageCount} Pages</h4>
-
-      {group.map(({ node }) => (
-        <div key={node.id} className="blogListing">
-          <div className="date">{node.frontmatter.date}</div>
-          <Link className="blogUrl" to={node.fields.slug}>
-            {node.frontmatter.title}
-          </Link>
-          <div>{node.excerpt}</div>
-        </div>
-      ))}
-      <div className="previousLink">
-        <NavLink test={first} url={previousUrl} text="Go to Previous Page" />
-      </div>
-      <div className="nextLink">
-        <NavLink test={last} url={nextUrl} text="Go to Next Page" />
-      </div>
-    </div>
+    <Wrapper>
+      {index > 1 && (
+        <Link style={{ marginRight: 10 }} to={`/blog/${previousUrl}`}>
+          Prev
+        </Link>
+      )}
+      {getPageLinks()}
+      {index < pageCount && <Link to={`/blog/${nextUrl}`}>Next</Link>}
+    </Wrapper>
   )
 }

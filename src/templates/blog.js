@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import {
   Layout,
   Container,
@@ -7,22 +6,13 @@ import {
   PageTitle,
   CardPost,
   Row,
+  Pagination,
 } from 'components/common'
 
-const NavLink = ({ test, text, url }) => {
-  if (!test) {
-    return <Link to={url}>{text}</Link>
-  } else {
-    return <span>{text}</span>
-  }
-}
-
 export default ({ pageContext }) => {
-  const { group, index, first, last, pageCount } = pageContext
-  const previousUrl = index - 1 == 1 ? '/' : (index - 1).toString()
+  const { group, index, pageCount, pathPrefix } = pageContext
+  const previousUrl = index - 1 === 1 ? '/' : (index - 1).toString()
   const nextUrl = (index + 1).toString()
-
-  console.log(group)
 
   return (
     <Layout>
@@ -30,6 +20,13 @@ export default ({ pageContext }) => {
         <SEO title="Blog" type="Organization" location="/blog" />
         <Row>
           <PageTitle>Recent articles</PageTitle>
+          <Pagination
+            pathPrefix={pathPrefix}
+            index={index}
+            pageCount={pageCount}
+            previousUrl={previousUrl}
+            nextUrl={nextUrl}
+          />
           {group.map(
             ({
               node: {
@@ -51,20 +48,13 @@ export default ({ pageContext }) => {
               />
             )
           )}
-          <div className="previousLink">
-            <NavLink
-              test={first}
-              url={`/blog/${previousUrl}`}
-              text="Go to Previous Page"
-            />
-          </div>
-          <div className="nextLink">
-            <NavLink
-              test={last}
-              url={`/blog/${nextUrl}`}
-              text="Go to Next Page"
-            />
-          </div>
+          <Pagination
+            pathPrefix={pathPrefix}
+            index={index}
+            pageCount={pageCount}
+            previousUrl={previousUrl}
+            nextUrl={nextUrl}
+          />
         </Row>
       </Container>
     </Layout>
