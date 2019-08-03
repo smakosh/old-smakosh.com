@@ -11,7 +11,7 @@ tags:
   - gatsby
   - dev
   - tips
-popular: false
+popular: true
 ---
 
 ![when yoy Search Smakosh on Google](seo.png)

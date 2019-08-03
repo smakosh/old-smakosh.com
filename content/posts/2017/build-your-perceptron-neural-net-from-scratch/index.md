@@ -10,7 +10,7 @@ tags:
   - ai
   - tech
   - thinking
-popular: true
+popular: false
 ---
 
 > > “ In the late ’50s, a Cornell scientist named Frank Rosenblatt had proposed the world’s first neural network machine. It was called the Perceptron”

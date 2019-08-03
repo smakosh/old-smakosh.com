@@ -3,7 +3,7 @@ id: 9
 path: '/the-tech-tools-I-use'
 thumbnail: './tech.jpg'
 date: 2018-2-27T16:45:01.889Z
-edited: 2018-7-8T19:14:01.889Z
+edited: 2019-8-3T19:11:01.889Z
 next: '/istanbul-trip'
 title: 'The tech tools I use'
 tags:
@@ -43,7 +43,7 @@ But if I'm working on a landing page, docs, blog or even sometimes a large web a
 
 - Gatsby (highly recommended over Next js or CRA) and I deploy it on Netlify (I was & still use Jekyll sometimes for blogs but rarely)
 
-For Css I’m cool to use what ever tech available out there that makes my task done quickly & well, I have personally used Bootstrap 3 & 4, Bulma, Lostgrid, Materliaze, Tachyons & made my own little framework called [Unnamed](https://unnamed.smakosh.com/) that has over 200 stars on GitHub, but I prefer coding with vanilla CSS or CSS in JS using styled-components or CSS modules, because I enjoy styling my elements from scratch since the components are fully reusable with React.
+For CSS, I’m cool to use what ever tech available out there that makes my task done quickly & well, I have personally used Bootstrap 3 & 4, Bulma, Lostgrid, Materliaze, Tachyons & made my own little framework called [Unnamed](https://unnamed.smakosh.com/) that has over 200 stars on GitHub, but I prefer coding with vanilla CSS or CSS in JS using styled-components or CSS modules, because I enjoy styling my elements from scratch since the components are fully reusable with React.
 
 If I’m making a web app, for the front-end I use the `create-react-app` boilerplate as it’s the official one from the team that made React Js but I always have to add react-router-dom or @reach/router, Redux (well not on the upcoming projects), Recompose (not needed anymore) & many other modules I use the most. So I made my own [boilerplate](https://github.com/smakosh/personal-react-app-boilerplate) to handle that. But recently I use one of my Gatsby starters depending on the type of the API I'm willing to request data from.
 
@@ -94,7 +94,7 @@ I don't use it anymore but here are the specs:
 
 > Which also I don't use anymore
 
-- Display: [BenQ GL2250](https://amzn.to/2X7NoNV)
+- Display: [BenQ GL2250](https://amzn.to/2X7NoNV) & [Samsung Curved monitor](https://amzn.to/2yAtegQ) (Belongs to the company I work for)
 - Mouse: [Razer DeathAdder Chroma 2016](https://amzn.to/2RBqJn9)
 - Mouse pad: [Razer large mouse pad](https://amzn.to/2YiclCE)
 - Keyboard: [Razer Chroma X Elite](https://amzn.to/2YnEckI)
@@ -108,7 +108,7 @@ I don't use it anymore but here are the specs:
 - For iOS, I'm using the Iphone 7
   - iOS 12.1.4
 
-Previously, I was carying only a Nexus 6p which I had to stop using due to these [reasons](/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice)
+Previously, I was carrying only a Nexus 6p which I had to stop using due to these [reasons](/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice)
 
 #### Cameras
 
@@ -124,6 +124,6 @@ Currently, I'm using a Google home mini
 
 #### Earphones
 
-I'm using the Apple Airpods & a wired earphones when the battery runs out
+I'm using the Apple Airpods & some Huawei wired earphones when the battery runs out
 
 Full setup with pictures can be found [here](https://docs.google.com/document/d/1falYEEHhJxq4HIXwOPoc4lk0AYsfHY4U6ZCcY4Srs8g/edit?usp=sharing).
