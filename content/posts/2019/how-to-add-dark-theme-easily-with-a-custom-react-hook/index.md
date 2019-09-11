@@ -9,6 +9,12 @@ title: 'How To add dark mode easily with a custom React hook'
 tags:
   - react
   - dev
+keywords:
+  - dark mode
+  - react
+  - react js
+  - JavaScript
+  - react hooks
 popular: true
 ---
 
@@ -91,10 +97,7 @@ export default () => {
     }
   }, [])
 
-  return [
-    theme,
-    toggleTheme,
-  ]
+  return [theme, toggleTheme]
 }
 ```
 
@@ -105,7 +108,7 @@ import React from 'react'
 import useDarkMode from './useDarkMode'
 
 export default () => {
-  const [ theme, toggleTheme ] = useDarkMode()
+  const [theme, toggleTheme] = useDarkMode()
   return (
     <div
       style={{

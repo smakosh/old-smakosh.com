@@ -10,6 +10,20 @@ tags:
   - tech
   - dev
   - travel
+keywords:
+  - travel
+  - Penang
+  - Malaysia
+  - developer
+  - remote work
+  - remote developer
+  - digital nomad
+  - nomad
+  - flight
+  - Airbnb
+  - tourism
+  - beaches
+  - co-working spaces
 popular: false
 ---
 

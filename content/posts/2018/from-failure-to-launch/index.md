@@ -11,6 +11,15 @@ tags:
   - dev
   - hackathon
   - travel
+keywords:
+  - hackathon
+  - competition
+  - dev
+  - coding
+  - React
+  - JavaScript
+  - Node js
+  - MongoDB
 popular: false
 ---
 

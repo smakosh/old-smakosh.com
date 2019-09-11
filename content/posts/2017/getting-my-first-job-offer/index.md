@@ -10,6 +10,18 @@ tags:
   - tech
   - dev
   - career
+keywords:
+  - job offer
+  - job
+  - offer
+  - code
+  - dev
+  - front end developer
+  - decline
+  - opportunity
+  - interview
+  - Vue
+  - CSS
 popular: false
 ---
 

@@ -8,6 +8,11 @@ next: '/the-tech-tools-I-use'
 title: 'We are truly living in a simulation'
 tags:
   - thinking
+keywords:
+  - simulation
+  - thought
+  - influence
+  - digital influence
 popular: false
 ---
 
@@ -21,4 +26,4 @@ Just go to your instagram feed to check what your friends are sharing, then comp
 
 Don’t get depressed knowing that you are a variable on this huge network of influence but be optimistic because a variable does change & can adapt to each environment it’s in, don’t live your whole life as a constant that never changes through time.
 
-Now that you know about this simulation you’re part of, use it in your favor as a self aware being to take more control of your influencers, know with who you’re spending more time with, are they people with goals in mind, or are they some failures just playing around not caring about themselves neither others, keep doing daily or weekly reports of your decisions & actions to adapt, evolve & to finally change to a better person than you were yesterday.
+Now that you know about this simulation you’re part of, use it in your favor as a self aware being to take more control of your influence, know with who you’re spending more time with, are they people with goals in mind, or are they some failures just playing around not caring about themselves neither others, keep doing daily or weekly reports of your decisions & actions to adapt, evolve & to finally change to a better person than you were yesterday.

@@ -10,6 +10,19 @@ tags:
   - tech
   - dev
   - travel
+keywords:
+  - travel
+  - Kuala Lumpur
+  - Malaysia
+  - developer
+  - remote work
+  - remote developer
+  - digital nomad
+  - nomad
+  - flight
+  - Airbnb
+  - tourism
+  - co-working spaces
 popular: false
 ---
 
@@ -39,7 +52,7 @@ I made a mistake booking my flight late, I should have booked a couple of months
 
 The second thing you will look up to is housing, feel free to use what ever you think is better for you, in my case I used [AirBnb](https://www.airbnb.com/c/ismailg745?currency=USD) to book the first month in Shah Alam which is far from KL's center as I wanted to focus on my work & personal side projects a lot more.
 
-Because I rented away from KL's center, the rent cost me approximately ~ $ 330 for the entire apartment.
+Because I rented away from KL's center, the rent cost me approximately ~ \$ 330 for the entire apartment.
 
 You can have a look at the place by visiting [this link](https://www.airbnb.com/rooms/16269315?guests=1&adults=1)
 
@@ -78,7 +91,7 @@ Internet is fine but not sure if you will be able to live stream or upload smoot
 ### Modern spots
 
 - Petronas Towers (Make sure to check online if they are not in maintenance mode)
-- Menara KL Tower (costs about $ 24 to get to the top level and get into Skybox)
+- Menara KL Tower (costs about \$ 24 to get to the top level and get into Skybox)
 - Upside down house (just before you get to Menara KL Tower, forgot how much it costs)
 
 ### Natural & Traditional spots

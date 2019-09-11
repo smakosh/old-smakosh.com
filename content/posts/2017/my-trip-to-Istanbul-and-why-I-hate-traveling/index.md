@@ -10,6 +10,13 @@ tags:
   - travel
   - bio
   - thinking
+keywords:
+  - travel
+  - conference
+  - dream
+  - Istanbul
+  - Turkey
+  - flight
 popular: true
 ---
 

@@ -12,6 +12,20 @@ tags:
   - career
   - bio
   - tools
+keywords:
+  - learning
+  - learn
+  - design
+  - code
+  - Adobe
+  - dev
+  - code
+  - learn to code
+  - learn to design
+  - UI design
+  - Graphic design
+  - front end development
+  - back end development
 popular: false
 ---
 

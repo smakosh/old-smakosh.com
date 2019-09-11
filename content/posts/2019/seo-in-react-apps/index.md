@@ -11,6 +11,15 @@ tags:
   - gatsby
   - dev
   - tips
+keywords:
+  - SEO
+  - React
+  - CRA
+  - react-helmet
+  - SPA
+  - single page app
+  - JavaScript
+  - dev
 popular: true
 ---
 
@@ -75,9 +84,9 @@ I had to separate the snippets for a11y concerns
 
 ```js
 // This is Structured data that is recommended to have according to Google
-  // You can read more about it on Google's own documentation about structured data
-  // The first string is for the Article schema and the second one for the organization schema
-  const structuredDataArticle = `{
+// You can read more about it on Google's own documentation about structured data
+// The first string is for the Article schema and the second one for the organization schema
+const structuredDataArticle = `{
 		"@context": "http://schema.org",
 		"@type": "${type}",
 		"mainEntityOfPage": {
@@ -109,7 +118,7 @@ I had to separate the snippets for a11y concerns
 ```
 
 ```js
-  const structuredDataOrganization = `{
+const structuredDataOrganization = `{
 		"@context": "http://schema.org",
 		"@type": "${type}",
 		"legalName": "${legalName}",

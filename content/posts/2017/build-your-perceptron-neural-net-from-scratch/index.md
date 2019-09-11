@@ -10,6 +10,20 @@ tags:
   - ai
   - tech
   - thinking
+keywords:
+  - perceptron
+  - Ai
+  - Artificial intelligence
+  - mathematics
+  - algebra
+  - derivatives
+  - Frank Rosenblatt
+  - neural network
+  - machine learning
+  - deep learning
+  - code
+  - coding
+  - python
 popular: false
 ---
 

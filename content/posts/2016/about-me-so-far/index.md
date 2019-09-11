@@ -11,12 +11,19 @@ tags:
   - career
   - thinking
   - tools
+keywords:
+  - bio
+  - biography
+  - story
+  - smakosh
+  - Ismail Ghallou
+  - history
 popular: false
 ---
 
 ## The story of my nickname "Smakosh"
 
-I’m Ismail Ghallou also known as Smakosh, a nickname which was given to me since I was 8 years old by one of my friends’ dad. Many teachers told their colleagues, my parents and sometimes me personally,  that I was a good student during primary school & that was achieved by playing a lot of offline video games that really taught me to think how to figure out the way out like Prince of Persia, Assassin's Creed & the Tomb Raider trilogies etc...
+I’m Ismail Ghallou also known as Smakosh, a nickname which was given to me since I was 8 years old by one of my friends’ dad. Many teachers told their colleagues, my parents and sometimes me personally, that I was a good student during primary school & that was achieved by playing a lot of offline video games that really taught me to think how to figure out the way out like Prince of Persia, Assassin's Creed & the Tomb Raider trilogies etc...
 
 ## Primary school
 

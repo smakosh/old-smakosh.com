@@ -11,6 +11,18 @@ tags:
   - dev
   - tools
   - react
+keywords:
+  - hashtags
+  - instagram
+  - Ai Hashtags
+  - Ai
+  - Artificial Intelligence
+  - Generate hashtags
+  - react-native
+  - Clarifai
+  - Clarif Ai
+  - image recognition
+  - CNN
 popular: false
 ---
 
@@ -31,7 +43,7 @@ the overusing of hashtags issue has been solved by few platforms, by warning the
 Ai Hashtags generates hashtags using Artificial intelligence, and here's how it works:
 
 1. Upload your picture or paste the link of your Instagram post
-  > you can share your post directly from Instagram and works with any other platform.
+   > you can share your post directly from Instagram and works with any other platform.
 2. Hit Generate hashtags button
 3. Select specific hashtags to copy or copy them all
 4. Paste them into your post
@@ -40,7 +52,7 @@ You can create a new group for your hashtags to reuse them in the future, each g
 
 The app supports English, Spanish, simplified Chinese & Arabic languages (We will add more languages soon), it is available on the [Play Store](https://play.google.com/store/apps/details?id=com.aihashtags) and [App Store](https://itunes.apple.com/us/app/ai-hashtags/id1460674572?mt=8).
 
-The Android app is free but comes with user friendly ads while the iOS app is ad free but costs $0.99.
+The Android app is free but comes with user friendly ads while the iOS app is ad free but costs \$0.99.
 
 This was a fun project to work on and the reason I built it goes way back when I & my team [won the second prize of the online JAMStack FreeCodeCamp Hackathon](https://medium.freecodecamp.org/winners-from-the-2018-freecodecamp-jamstack-hackathon-at-github-2a39bd1db878), we used [ClarifAi](https://clarifai.com) API to automatically generate hashtags from the pictures of the products you're trying to sell, so that you could easily share it on Social media and gather actual users who are interested in that specific product. ClarifAi let me use their community API Key that offers generously the first 5k requests for free, then I'll have to use the essential plan that costs \$1.20 / 1k operations which is a reasonable price in my opinion.
 
