@@ -14,7 +14,6 @@ import {
   logo,
   author,
 } from 'data/config'
-import { useStaticQuery, graphql } from 'gatsby'
 
 export const SEO = ({
   title,
@@ -26,7 +25,6 @@ export const SEO = ({
   cover,
   location = '',
   readTime,
-  keywords,
 }) => {
   const structuredDataArticle = `{
 		"@context": "http://schema.org",
@@ -92,20 +90,8 @@ export const SEO = ({
 		]
     }`
 
-  const { words } = useStaticQuery(graphql`
-    {
-      words: keywordsYaml {
-        keywords
-      }
-    }
-  `)
-
   return (
     <Helmet>
-      <meta
-        name="keywords"
-        content={keywords ? keywords.join(',') : words.keywords.join(',')}
-      />
       <meta name="description" content={description || defaultDescription} />
       <meta
         name="image"

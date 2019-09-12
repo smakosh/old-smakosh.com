@@ -9,17 +9,6 @@ title: 'Pixel 2 review and why Nexus 6p is a bad choice'
 tags:
   - tech
   - review
-keywords:
-  - tech
-  - Nexus 6p
-  - Pixel 2
-  - review
-  - tech review
-  - phone review
-  - camera
-  - battery life
-  - display
-  - performance
 popular: false
 ---
 

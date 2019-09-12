@@ -10,14 +10,6 @@ tags:
   - tech
   - dev
   - career
-keywords:
-  - experience
-  - never
-  - dev
-  - code
-  - PHP
-  - MySQL
-  - Behance
 popular: false
 ---
 

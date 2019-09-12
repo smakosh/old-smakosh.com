@@ -9,12 +9,6 @@ title: 'How To add dark mode easily with a custom React hook'
 tags:
   - react
   - dev
-keywords:
-  - dark mode
-  - react
-  - react js
-  - JavaScript
-  - react hooks
 popular: true
 ---
 

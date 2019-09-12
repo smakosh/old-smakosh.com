@@ -10,16 +10,6 @@ tags:
   - travel
   - dev
   - tech
-keywords:
-  - bali indonesia
-  - bali
-  - flight
-  - travel
-  - remote work
-  - indonesia
-  - co working space
-  - nusa penida
-  - dev
 popular: false
 ---
 

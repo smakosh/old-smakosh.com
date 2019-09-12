@@ -8,11 +8,6 @@ next: '/the-tech-tools-I-use'
 title: 'We are truly living in a simulation'
 tags:
   - thinking
-keywords:
-  - simulation
-  - thought
-  - influence
-  - digital influence
 popular: false
 ---
 

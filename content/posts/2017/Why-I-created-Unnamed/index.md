@@ -10,13 +10,6 @@ tags:
   - css
   - dev
   - tools
-keywords:
-  - unnamed
-  - CSS
-  - Unnamed CSS
-  - CSS framework
-  - framework
-  - styling
 popular: false
 ---
 

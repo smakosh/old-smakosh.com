@@ -27,7 +27,6 @@ module.exports = `
           date(formatString: "MMM DD, YYYY")
           path
           tags
-          keywords
           thumbnail {
             childImageSharp {
               fluid {

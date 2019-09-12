@@ -10,17 +10,6 @@ tags:
   - tech
   - dev
   - hackathon
-keywords:
-  - hackathon
-  - competition
-  - code
-  - dev
-  - winning
-  - winners
-  - first
-  - prize
-  - PHP
-  - MySQL
 popular: false
 ---
 

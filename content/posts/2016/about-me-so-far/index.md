@@ -11,13 +11,6 @@ tags:
   - career
   - thinking
   - tools
-keywords:
-  - bio
-  - biography
-  - story
-  - smakosh
-  - Ismail Ghallou
-  - history
 popular: false
 ---
 

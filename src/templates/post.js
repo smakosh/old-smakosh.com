@@ -20,7 +20,6 @@ export default ({ data: { post } }) => (
         location={post.frontmatter.path}
         description={post.description}
         readTime={post.timeToRead}
-        keywords={post.frontmatter.keywords}
       />
       <Post {...post} />
     </SmallerContainer>
@@ -42,7 +41,6 @@ export const postQuery = graphql`
         next
         id
         tags
-        keywords
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 700) {

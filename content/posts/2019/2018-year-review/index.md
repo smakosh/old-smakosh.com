@@ -10,14 +10,6 @@ tags:
   - bio
   - career
   - dev
-keywords:
-  - year review
-  - '2018'
-  - developer
-  - CSS
-  - JavaScript
-  - life
-  - design
 popular: false
 ---
 

@@ -11,20 +11,6 @@ tags:
   - dev
   - career
   - bio
-keywords:
-  - remote work
-  - experience
-  - dev
-  - code
-  - coding
-  - front-end developer
-  - front end developer
-  - JavaScript
-  - React
-  - CSS
-  - Gatsby
-  - Jekyll
-  - team work
 popular: false
 ---
 

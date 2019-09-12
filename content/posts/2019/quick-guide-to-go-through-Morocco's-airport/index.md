@@ -9,14 +9,6 @@ title: 'Quick tips to be prepared to go through any airport in Morocco'
 tags:
   - tips
   - travel
-keywords:
-  - guide
-  - airport
-  - morocco
-  - casablanca
-  - casablanca airport
-  - flight
-  - flight casablanca
 popular: false
 ---
 

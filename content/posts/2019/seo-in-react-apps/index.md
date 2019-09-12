@@ -11,15 +11,6 @@ tags:
   - gatsby
   - dev
   - tips
-keywords:
-  - SEO
-  - React
-  - CRA
-  - react-helmet
-  - SPA
-  - single page app
-  - JavaScript
-  - dev
 popular: true
 ---
 

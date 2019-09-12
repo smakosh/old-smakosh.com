@@ -10,19 +10,6 @@ tags:
   - tech
   - dev
   - travel
-keywords:
-  - travel
-  - Kuala Lumpur
-  - Malaysia
-  - developer
-  - remote work
-  - remote developer
-  - digital nomad
-  - nomad
-  - flight
-  - Airbnb
-  - tourism
-  - co-working spaces
 popular: false
 ---
 

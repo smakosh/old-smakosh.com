@@ -100,6 +100,7 @@ module.exports = {
 							}
 						}`,
             output: config.siteRss,
+            title: 'Smakosh | Blog',
           },
         ],
       },

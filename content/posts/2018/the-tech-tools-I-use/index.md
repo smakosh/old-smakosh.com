@@ -10,22 +10,6 @@ tags:
   - tech
   - dev
   - tools
-keywords:
-  - tools
-  - dev
-  - code
-  - React
-  - CSS
-  - Gatsby
-  - React Native
-  - GitHub
-  - Codepen
-  - CodeSandbox
-  - growth
-  - laptop
-  - phone
-  - gaming
-  - camera
 popular: false
 ---
 

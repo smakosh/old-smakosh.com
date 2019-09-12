@@ -10,14 +10,6 @@ tags:
   - tech
   - dev
   - hackathon
-keywords:
-  - hackathon
-  - competition
-  - experience
-  - event
-  - code
-  - dev
-  - marrakech
 popular: false
 ---
 
