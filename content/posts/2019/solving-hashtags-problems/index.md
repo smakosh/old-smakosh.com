@@ -14,10 +14,6 @@ tags:
 popular: false
 ---
 
-![Hashtags]('./hashtag.jpg')
-
-> Photo by [Jon Tyson](https://unsplash.com/@jontyson) on Unsplash
-
 Hashtag ~hashtags is the plural noun~ is any phrase or word that has a '#' sign at the beginning, it is mostly used on social media platforms to target a specific topic and to gather users interested in that same topic.
 
 As we're targeting "hashtags" as a topic, you could use the "#hashtags" hashtag as the topic of this article.
@@ -48,24 +44,26 @@ This was a fun project to work on and the reason I built it goes way back when I
 
 - I used Adobe Illustrator to design the mobile icon
 - Adobe XD to design the wireframes & user interfaces
-- Kanban framework to implement agile software development methodology
-- Trello to manage my tasks and I went with a daily then weekly sprint
-- Developed with react Native:
+- Kanban lean method to better handle project management using Trello
+- Developed with React Native: (0.60.5)
   - Navigation: react-navigation (since the app is not that large otherwise I would have used react-native-navigation)
   - Styling: styled-components
   - Deployment: Fastlane
   - Env variables: react-native-config
-  - State management: redux
-  - HOCs: Recompose
+  - State management: ~~redux~~ useReducer and useContext!
+  - HOCs: ~~Recompose~~ no more HOCs
   - HTTP Requests: axios
   - Forms: formik
+  - Form validation: yup
   - Ads: react-native-admob
   - Toast: react-native-simple-toast
   - Upload: react-native-photo-upload
   - Swiper: react-native-swiper
-  - Middleware: redux-thunk
-  - Form validation: yup
+  - Middleware: ~~redux-thunk~~ not anymore
   - Prettier & Eslint for linting & formatting my code
   - VSCode as code editor
+  - Image recognition: clarifai
+  - i18n: react-intl
+  - Analytics: react-native-mixpanel
 
 Feel free to download Ai Hashtags and leave your feedback on the app or down in the comments: [Download Ai Hashtags](https://ai-hashtags.com/?ref=smakosh.com)
