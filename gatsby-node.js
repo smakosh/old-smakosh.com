@@ -14,7 +14,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       edges: data.posts.edges,
       createPage,
       pageTemplate: 'src/templates/blog.js',
-      pageLength: 5,
+      pageLength: 8,
       pathPrefix: 'blog',
     })
 
