@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { color, lineHeight } from 'styled-system'
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -21,20 +22,10 @@ export const DetailsContainer = styled.div`
 export const P = styled.p`
   display: flex;
   align-items: center;
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-		color: #fff;
-	`};
+  ${color}
 `
 
 export const Text = styled.p`
-  color: #212121;
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-		color: #fff;
-	`};
+  ${color}
+  ${lineHeight}
 `

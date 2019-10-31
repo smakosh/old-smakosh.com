@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import { navigate } from 'gatsby'
 import Img from 'gatsby-image'
-import { ThemeContext, Tag } from 'components/common'
+import { Tag } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import {
   Item,
   Post,

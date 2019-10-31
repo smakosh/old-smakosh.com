@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import NavbarLinks from '../NavbarLinks'
 import { SidebarContainer } from './styles'
 

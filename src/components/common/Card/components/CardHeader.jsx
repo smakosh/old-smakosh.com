@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { ThemeContext } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 
 const CardHeader = ({ title }) => {
   const { theme } = useContext(ThemeContext)

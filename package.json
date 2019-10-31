@@ -22,7 +22,6 @@
     "gatsby-plugin-nprogress": "^2.0.5",
     "gatsby-plugin-offline": "^3.0.6",
     "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-sharp": "2.2.12",
     "gatsby-plugin-sitemap": "^2.0.1",
     "gatsby-plugin-styled-components": "^3.0.0",
@@ -39,6 +38,7 @@
     "gatsby-transformer-yaml": "^2.1.6",
     "node-sass": "^4.9.3",
     "prismjs": "^1.15.0",
+    "raf": "^3.4.1",
     "react": "^16.10.0",
     "react-async-script": "^0.9.1",
     "react-dom": "^16.10.0",
@@ -46,6 +46,7 @@
     "react-helmet": "^5.2.0",
     "react-share": "^2.2.0",
     "styled-components": "^4.0.0",
+    "styled-system": "^5.1.2",
     "yup": "^0.26.6"
   },
   "keywords": [

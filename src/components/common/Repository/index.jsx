@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import StarIcon from 'assets/icons/star.svg'
 import ForkIcon from 'assets/icons/fork.svg'
 import StarIconWhite from 'assets/icons/star-white.svg'
