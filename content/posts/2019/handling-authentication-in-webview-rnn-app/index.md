@@ -187,5 +187,4 @@ export default () => {
 Next, let's prepare both the `SignIn` and `Register` screens:
 
 ```jsx
-
 ```
