@@ -1,12 +1,12 @@
 - title: Design System
-  icon: '/services/branding.svg'
-  description: Colors, fonts, typography, components... all in one place, documented and easy to access.
+  icon: "/services/branding.svg"
+  description: Colors, components, typography etc... all in one place, documented and easy to access as a npm module.
 - title: UI/UX Design
-  icon: '/services/uix.svg'
+  icon: "/services/uix.svg"
   description: Good looking user interfaces with a good user experience for an affordable price.
 - title: Full Stack Development
-  icon: '/services/dev.svg'
-  description: Get your mvp up & running in less than a week built with the MERN stack, ask your early users for feedback before moving into the next steps.
+  icon: "/services/dev.svg"
+  description: Get your mvp up & running in less than a week built with the MERN or JAM stack, ask your early users for feedback before scaling it.
 - title: SEO & growth
-  icon: '/services/seo.svg'
+  icon: "/services/seo.svg"
   description: Your ranking on search engines will improve and growth hacking strategies will be tested and reported to keep you ahead of your competitors.

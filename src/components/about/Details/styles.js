@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { color, lineHeight } from 'styled-system'
+import { color, lineHeight, layout } from 'styled-system'
 
 export const Wrapper = styled.div`
-  width: 100%;
-  max-width: 48%;
+  ${layout}
 
   @media (max-width: 960px) {
     max-width: 100%;

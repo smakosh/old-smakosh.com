@@ -19,9 +19,13 @@ export default () => {
   return (
     <Container>
       <PageTitle>About me</PageTitle>
-      <Flex>
+      <Flex
+        display="flex"
+        justifyContent="space-between"
+        alignItems="flex-start"
+      >
         <Details />
-        <Portrait>
+        <Portrait width="100%" maxWidth="48%">
           <a href={AboutImage.fluid.src}>
             <Img fluid={AboutImage.fluid} alt="just me chilling" />
           </a>

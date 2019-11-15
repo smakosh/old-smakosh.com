@@ -1,9 +1,9 @@
 import styled from 'styled-components'
+import { flexbox, layout } from 'styled-system'
 
 export const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  ${layout}
+  ${flexbox}
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -11,8 +11,7 @@ export const Flex = styled.div`
 `
 
 export const Portrait = styled.div`
-  width: 100%;
-  max-width: 48%;
+  ${layout}
 
   @media (max-width: 960px) {
     max-width: 100%;
