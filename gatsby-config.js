@@ -19,7 +19,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify',
     'gatsby-plugin-catch-links',
@@ -46,7 +45,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://smakosh.com',
+        siteUrl: config.url,
       },
     },
     {
@@ -180,8 +179,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Smakosh',
-        short_name: 'Smakosh',
+        name: config.defaultTitle,
+        short_name: config.defaultTitle,
         start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,

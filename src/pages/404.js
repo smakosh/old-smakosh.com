@@ -1,7 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { Layout, SEO, SmallerContainer } from 'components/common'
+import { Layout, SEO } from 'components/common'
+import NotFound from 'components/404/NotFound'
 
 export default () => (
   <Layout>
@@ -11,14 +10,6 @@ export default () => (
       title="404"
       description="404 page not found"
     />
-    <Center as={SmallerContainer}>
-      <h1>404 PAGE NOT FOUND</h1>
-      <Link to="/">Go Back Home</Link>
-    </Center>
+    <NotFound />
   </Layout>
 )
-
-const Center = styled.div`
-  padding: 4rem 0;
-  text-align: center;
-`

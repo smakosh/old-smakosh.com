@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Container, ThemeContext } from 'components/common'
+import { Container } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import Service from './Service'
 import { Wrapper, Grid } from './styles'
 

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
-import { SmallerContainer, GithubIcon, ThemeContext } from 'components/common'
+import { SmallerContainer, GithubIcon } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import gatsbyIcon from 'assets/footer/gatsby.svg'
 import netlifyIcon from 'assets/footer/netlify.svg'
 import { Wrapper, Links, Item } from './styles'

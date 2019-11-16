@@ -38,7 +38,7 @@ export const RecentTalks = () => {
 
   return (
     <Wrapper as={Container}>
-      <Subtitle>Recent talks</Subtitle>
+      <Subtitle>Recent tech talks</Subtitle>
       <Row landing>
         {edges.map(
           ({

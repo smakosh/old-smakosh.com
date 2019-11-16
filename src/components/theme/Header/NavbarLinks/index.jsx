@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
-import { ThemeContext } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import night from 'assets/icons/night.svg'
 import day from 'assets/icons/day.svg'
 import { Links, StyledButton } from './styles'

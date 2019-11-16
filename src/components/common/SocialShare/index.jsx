@@ -9,7 +9,6 @@ import {
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
-  GooglePlusIcon,
   LinkedinIcon,
   RedditIcon,
 } from 'react-share'
@@ -24,9 +23,6 @@ export const SocialShare = ({ title, path, iconSize = 32 }) => (
     <TwitterShareButton url={`${config.url}${path}`} title={title}>
       <TwitterIcon round size={iconSize} />
     </TwitterShareButton>
-    <GooglePlusShareButton url={`${config.url}${path}`}>
-      <GooglePlusIcon round size={iconSize} />
-    </GooglePlusShareButton>
     <FacebookShareButton url={`${config.url}${path}`} quote={title}>
       <FacebookIcon round size={iconSize} />
     </FacebookShareButton>

@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import Disqus from 'disqus-react'
 import { Link } from 'gatsby'
-import { SocialShare, PageTitle, ThemeContext, Tag } from 'components/common'
+import { SocialShare, PageTitle, Tag } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import {
   ArticleWrapper,
   Back,

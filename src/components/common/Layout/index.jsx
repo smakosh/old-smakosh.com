@@ -1,34 +1,24 @@
-import React from 'react'
-import styled from 'styled-components'
-import { ThemeContext, Provider, Subscribe } from 'components/common'
+import React, { useContext } from 'react'
+import { ThemeProvider } from 'styled-components'
+import { Subscribe } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import { Header, Footer } from 'components/theme'
-import './layout.scss'
-import './main.scss'
+import { Wrapper } from './styles'
+import globalTheme from './globalTheme'
+import './fonts.css'
+import './layout.css'
 
-export const Layout = ({ children }) => (
-	<Provider>
-		<ThemeContext.Consumer>
-			{({ theme }) => (
-				<>
-					<Header />
-					<LayoutStyled theme={theme}>
-						{children}
-						<Subscribe />
-					</LayoutStyled>
-					<Footer />
-				</>
-			)}
-		</ThemeContext.Consumer>
-	</Provider>
-)
+export const Layout = ({ children }) => {
+  const { theme } = useContext(ThemeContext)
 
-const LayoutStyled = styled.div`
-	width: 100%;
-	padding-top: 7rem;
-
-	${({ theme }) =>
-		theme === 'dark' &&
-		`
-		background: #212121;
-	`};
-`
+  return (
+    <ThemeProvider theme={globalTheme}>
+      <Header />
+      <Wrapper theme={theme}>
+        {children}
+        <Subscribe />
+      </Wrapper>
+      <Footer />
+    </ThemeProvider>
+  )
+}

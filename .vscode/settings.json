@@ -1,5 +1,4 @@
 {
   "editor.formatOnSave": true,
-  "javascript.format.enable": false,
-  "prettier.eslintIntegration": true
+  "javascript.format.enable": false
 }

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import Navbar from './Navbar'
 import Hamburger from './Hamburger'
 import Sidebar from './Sidebar'

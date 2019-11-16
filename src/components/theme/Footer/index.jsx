@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
-import { Container, Logo, ThemeContext } from 'components/common'
+import { Container, Logo } from 'components/common'
+import { ThemeContext } from 'providers/ThemeProvider'
 import Copyrights from './Copyrights'
 import Social from './Social'
 import {
