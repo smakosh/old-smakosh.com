@@ -31,9 +31,11 @@ export default () => {
       <Text lineHeight={1.6} color={theme === 'dark' ? 'white' : 'dark'}>
         {bio} <Link to="/blog">articles</Link>.
       </Text>
-      <Text lineHeight={1.6} color={theme === 'dark' ? 'white' : 'dark'}>
-        {currentPositon}
-      </Text>
+      <Text
+        lineHeight={1.6}
+        color={theme === 'dark' ? 'white' : 'dark'}
+        dangerouslySetInnerHTML={{ __html: currentPositon }}
+      />
       <Text lineHeight={1.6} color={theme === 'dark' ? 'white' : 'dark'}>
         For business inquiries feel free to get in touch with me at:
       </Text>
