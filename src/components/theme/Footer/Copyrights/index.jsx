@@ -3,8 +3,7 @@ import { Link } from 'gatsby'
 import { SmallerContainer, GithubIcon } from 'components/common'
 import { ThemeContext } from 'providers/ThemeProvider'
 import gatsbyIcon from 'assets/footer/gatsby.svg'
-import zeitIcon from 'assets/footer/zeit-black.svg'
-import zeitWhiteIcon from 'assets/footer/zeit-white.svg'
+import netlifyIcon from 'assets/footer/netlify.svg'
 import { Wrapper, Links, Item } from './styles'
 
 export default () => {
@@ -41,16 +40,11 @@ export default () => {
         </a>
         and deployed on
         <a
-          href="https://www.zeit.co/?ref=smakosh.com"
+          href="https://www.netlify.com/?ref=smakosh.com"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <Item
-            src={theme === 'light' ? zeitIcon : zeitWhiteIcon}
-            img
-            css="width:24px;"
-            alt="Zeit"
-          />
+          <Item src={netlifyIcon} img alt="Netlify" />
         </a>
       </Links>
     </Wrapper>
