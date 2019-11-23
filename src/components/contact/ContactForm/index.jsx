@@ -31,31 +31,34 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
       <Formik
         initialValues={{
           name: '',
-          _replyto: '',
+          email: '',
           message: '',
           recaptcha: '',
         }}
         validationSchema={Yup.object().shape({
           name: Yup.string().required('Name is required'),
-          _replyto: Yup.string()
+          email: Yup.string()
             .email('Please enter a valid email!')
             .required('Email is required!'),
           message: Yup.string().required('Message is required'),
           recaptcha: Yup.string().required('Robots are not welcome yet!'),
         })}
         onSubmit={async (
-          { name, _replyto, message },
+          { name, email, message },
           { setSubmitting, resetForm }
         ) => {
           try {
             await axios({
               method: 'POST',
-              url: `${process.env.GATSBY_FORMSPREE_ENDPOINT}`,
-              data: {
-                name,
-                email: _replyto,
-                message,
+              url: `${process.env.GATSBY_FORMIK_ENDPOINT}`,
+              headers: {
+                'Content-Type': 'application/json',
               },
+              data: JSON.stringify({
+                name,
+                email,
+                message,
+              }),
             })
             setSubmitting(false)
             resetForm()
@@ -67,13 +70,7 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
         }}
       >
         {({ touched, errors, setFieldValue, isSubmitting }) => (
-          <Form
-            method="post"
-            name="smakosh"
-            data-netlify="true"
-            data-netlify-recaptcha="true"
-            data-netlify-honeypot="bot-field"
-          >
+          <Form>
             <noscript>
               <p>This form won’t work with Javascript disabled</p>
             </noscript>
@@ -100,11 +97,11 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
                   as={FastField}
                   type="email"
                   id="email"
-                  error={touched._replyto && errors._replyto ? 1 : 0}
-                  name="_replyto"
+                  error={touched.email && errors.email ? 1 : 0}
+                  name="email"
                 />
               </label>
-              <ErrorMessage component={Error} name="_replyto" />
+              <ErrorMessage component={Error} name="email" />
             </Wrapper>
             <Wrapper theme={theme}>
               <label htmlFor="message" aria-label="please insert your message">
