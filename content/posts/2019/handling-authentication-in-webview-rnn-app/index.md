@@ -16,9 +16,9 @@ draft: false
 
 TL;DR:
 
-React Native App: https://github.com/smakosh/article-auth-app
-React web app: https://github.com/smakosh/article-auth-web
-REST API: https://github.com/smakosh/article-auth-api
+- React Native App: https://github.com/smakosh/article-auth-app
+- React web app: https://github.com/smakosh/article-auth-web
+- REST API: https://github.com/smakosh/article-auth-api
 
 ## Theory
 
@@ -680,6 +680,6 @@ That's basically the guide through to implement authentication within a native a
 
 If you managed to make it until the end, make sure to subscribe to the news letter down below in order to get the latest articles delivered right to your inbox!
 
-React Native App: https://github.com/smakosh/article-auth-app
-React web app: https://github.com/smakosh/article-auth-web
-REST API: https://github.com/smakosh/article-auth-api
+- React Native App: https://github.com/smakosh/article-auth-app
+- React web app: https://github.com/smakosh/article-auth-web
+- REST API: https://github.com/smakosh/article-auth-api
