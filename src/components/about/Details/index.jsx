@@ -13,7 +13,7 @@ import { Wrapper, Img, P, DetailsContainer, Text } from './styles'
 export default () => {
   const { theme } = useContext(ThemeContext)
   const {
-    about: { bio, currentPositon, email, phone, addresses },
+    about: { bio, currentPosition, email, phone, addresses },
   } = useStaticQuery(graphql`
     query {
       about: aboutYaml {
@@ -31,10 +31,11 @@ export default () => {
       <Text lineHeight={1.6} color={theme === 'dark' ? 'white' : 'dark'}>
         {bio} <Link to="/blog">articles</Link>.
       </Text>
+      {console.log(currentPosition)}
       <Text
         lineHeight={1.6}
         color={theme === 'dark' ? 'white' : 'dark'}
-        dangerouslySetInnerHTML={{ __html: currentPositon }}
+        dangerouslySetInnerHTML={{ __html: currentPosition }}
       />
       <Text lineHeight={1.6} color={theme === 'dark' ? 'white' : 'dark'}>
         For business inquiries feel free to get in touch with me at:
