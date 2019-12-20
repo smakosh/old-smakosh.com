@@ -1,7 +1,7 @@
 {
   "env": {
-    "GITHUB_TOKEN": "GITHUB_TOKEN_NOW",
-    "MC_ENDPOINT": "MC_ENDPOINT_NOW",
-    "GATSBY_FORMIK_ENDPOINT": "GATSBY_FORMIK_ENDPOINT_NOW"
+    "GITHUB_TOKEN": "@github_token_now",
+    "MC_ENDPOINT": "@mc_endpoint_now",
+    "GATSBY_FORMIK_ENDPOINT": "@gatsby_formik_endpoint_now"
   }
 }
