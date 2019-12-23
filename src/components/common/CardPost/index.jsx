@@ -29,6 +29,7 @@ export const CardPost = ({
   demos,
   slides,
   tags,
+  watch,
 }) => {
   const { theme } = useContext(ThemeContext)
   return (
@@ -83,6 +84,13 @@ export const CardPost = ({
                   Slides
                 </a>
               </Slides>
+              {watch && (
+                <Slides>
+                  <a href={watch} target="_blank" rel="noopener noreferrer">
+                    Watch talk
+                  </a>
+                </Slides>
+              )}
               {demos && (
                 <Demos>
                   {demos.map(({ link }, i) => (

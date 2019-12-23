@@ -25,6 +25,7 @@ export default () => {
                 ...imageFields
               }
             }
+            watch
             demos {
               link
             }
@@ -41,7 +42,16 @@ export default () => {
           <PageTitle>Recent talks</PageTitle>
           {talks.edges.map(
             ({
-              node: { id, description, title, slides, date, thumbnail, demos },
+              node: {
+                id,
+                description,
+                title,
+                slides,
+                date,
+                thumbnail,
+                demos,
+                watch,
+              },
             }) => (
               <CardPost
                 key={id}
@@ -51,6 +61,7 @@ export default () => {
                 thumbnail={thumbnail}
                 slides={slides}
                 demos={demos}
+                watch={watch}
               />
             )
           )}
