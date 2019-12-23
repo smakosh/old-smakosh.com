@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "GITHUB_TOKEN": "@github_token",
+      "MC_ENDPOINT": "@mc_endpoint",
+      "GATSBY_FORMIK_ENDPOINT": "@gatsby_formik_endpoint"
+    }
+  }
+}

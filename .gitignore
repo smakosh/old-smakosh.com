@@ -12,5 +12,3 @@ yarn-error.log
 .env.production
 
 yarn.lock
-
-now.json

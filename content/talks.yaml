@@ -2,21 +2,29 @@
   summary: During this talk, I covered a brief history about Ai, defined ML/DL & explained the difference between the two, started by recognizing an unknown type of flower from basic data we collected and how intuition managed to draw a line between the two types of flowers from our dataset, then I moved on to automate what we manually did and ended up making a Perceptron from scratch.
   slides: https://docs.google.com/presentation/d/1YTl4g36z22bJJmzfHtNd9QEibeotgNmieikO6G7gK3U/edit?usp=sharing
   date: 2018-04-03T10:38:01.889Z
-  thumbnail: './assets/talks/perceptron-talk.jpg'
+  thumbnail: "./assets/talks/perceptron-talk.jpg"
   demos:
     - link: https://github.com/smakosh/Perceptron-neural-net-from-scratch
 - title: Introducing Gatsby, the best SSG for React developers.
   summary: In this talk, I introduced Gatsby to developers, which is one of the three choices you'd consider when building a React app, it offers pre-rendering, has a huge community who have shipped many Gatsby plugins that help make the process easy, I discussed about what's so awesome about it, how it renders content & built a blog with markdown files in 5 minutes live coding with the attendees.
   slides: https://introducing-gatsby.netlify.com/#0
   date: 2019-02-14T10:38:01.889Z
-  thumbnail: './assets/talks/first-gatsby-talk.jpg'
+  thumbnail: "./assets/talks/first-gatsby-talk.jpg"
   demos:
     - link: https://github.com/smakosh/devc-blog
 - title: Building static & dynamic apps with Gatsby
   summary: In this talk, I covered the same points I mentioned in my previous Gatsby talk as most of the attendees haven't any idea what Gatsby was, then I jumped into the dynamic Not Todo app I built during that morning which is connected to a REST API built quickly with express & mongoDB, I went through how to setup the routes using reach-router & how to use the "createPages" Gatsby API to create that page (since it's a SPA, there is only one page generated).
   slides: https://building-apps-with-gatsby.netlify.com/
   date: 2019-05-14T10:38:01.889Z
-  thumbnail: './assets/talks/second-gatsby-talk.jpg'
+  thumbnail: "./assets/talks/second-gatsby-talk.jpg"
   demos:
     - link: https://github.com/smakosh/devc-blog
     - link: https://github.com/smakosh/gatsby-app-starter-rest-api
+- title: Introducing Gatsby, — The modern web framework for building blazing fast websites and apps.
+  summary: In this talk, I re-introduced Gatsby as a modern web framework for building blazing fast websites and apps, answered the "what? why and how?" questions with a demo at the end of a static website consuming data from a single YAML file and deployed to ZEIT now in less than 10s.
+  slides: https://zeit-gatsby-talk.smakosh.com/
+  date: 2019-12-17T10:38:01.889Z
+  thumbnail: "./assets/talks/zeit-gatsby-talk.jpeg"
+  watch: https://youtu.be/nXRmOrN7m9o?t=1465
+  demos:
+    - link: https://github.com/smakosh/saham-events-demo
