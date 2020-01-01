@@ -76,7 +76,7 @@ I've been learning React Native on my spare time during the first year while wor
 
 As I was living in my parents basement, it was like getting funded by a Startup to learn and acquire new skills, I didn't care about the financial side at all but focused on learning and acquiring knowledge.
 
-> [It was honestly like a seed investment with unlimited runaway](https://twitter.com/smakosh/status/1211686250782040064)
+> [It was honestly like a seed investment with unlimited runway](https://twitter.com/smakosh/status/1211686250782040064)
 
 ## When to exit?
 
