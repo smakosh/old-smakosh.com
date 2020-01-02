@@ -16,7 +16,7 @@ draft: false
 
 ![2019 year in review](2019.jpg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')
 
-I managed to achieve in 2019 much more of [what I've done in 2018](/2018-year-review), here's an overview of what have learned, created & some random facts.
+I managed to achieve in 2019 much more of [what I've done in 2018](/2018-year-review), here's an overview of what I have learned, created & some random facts.
 
 ## Learning
 
