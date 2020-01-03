@@ -104,7 +104,6 @@ I managed to achieve in 2019 much more of [what I've done in 2018](/2018-year-re
 - Moved from my parents' basement to a new place, got a new monitor, desk (adjustable height), chair & macBook pro.
 - Got many offers which I declined in a respectful way but recommended my friends who I trust could do a great job.
 - First time invited to speak at a Moroccan podcast about the JAM stack
-- Started working part time for Elliot as a JavaScript developer
 - Made 2515 contributions on GitHub
 
 ## Data about this blog during 2019
