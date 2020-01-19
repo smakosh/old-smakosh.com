@@ -1,0 +1,16 @@
+- name: Guillermo Rauch
+  avatar: "./assets/testimonials/rauch.jpg"
+  title: CEO @ <a href="https://zeit.co/?ref=smakosh.com">ZEIT</a>
+  review: One of the best JAMstack engineers I know
+- name: salahbkd
+  avatar: "./assets/testimonials/salahbkd.jpeg"
+  title: Software engineering student
+  review: I've got the chance to attend HacktoberFest last year where i saw Smakosh talking in a Q/A session, learned a lot!
+- name: El Houcine Aouassar
+  avatar: "./assets/testimonials/awixor.png"
+  title: Front-end Web Developer
+  review: "Smakosh is actually a wonderful person, I've known him for a while now. He's a very humble person, he helps me like all the time! I got the chance to meet him and attend his talk in the ZEIT Community Meetup held in Casablanca, talking about Gatsby! Ismail is a very talented person he is the kind of person that if he is going to do something he will do it well!"
+- name: Sri Gokul Krishnan
+  avatar: "./assets/testimonials/gokul.jpg"
+  title: CEO @ <a href="www.startupverge.com">Startup Verge</a>
+  review: "Smakosh i don't have words to express my gratitude. He is the best. His advices were great. I do follow that , to improve my skills. Thanks mate."

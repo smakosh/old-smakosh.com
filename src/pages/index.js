@@ -7,6 +7,7 @@ import {
   Github,
   Popular,
   RecentTalks,
+  Testimonials,
 } from 'components/landing'
 import { Layout, SEO } from 'components/common'
 
@@ -19,6 +20,7 @@ export default () => (
     <Services />
     <Github />
     <Popular />
+    <Testimonials />
     <RecentTalks />
   </Layout>
 )
