@@ -1,24 +1,32 @@
 - name: Guillermo Rauch
-  avatar: "./assets/testimonials/rauch.jpg"
+  avatar: './assets/testimonials/rauch.jpg'
   title: CEO @ <a href="https://zeit.co/?ref=smakosh.com">ZEIT</a>
   review: One of the best JAMstack engineers I know
 - name: John Jacob
-  avatar: "./assets/testimonials/jacob.jpg"
+  avatar: './assets/testimonials/jacob.jpg'
   title: Founder @ <a href="https://withbetter.com/?ref=smakosh.com">Better</a>, Head of Engineering at <a href="http://www.getmainstreet.com/?ref=smakosh.com">Main Street</a>
   review: Ismail is one of the most talented hardest working software engineers I've ever worked with. I've worked with him on several projects including JavaScript and React Native projects. Every time he's proven to be incredibly smart, hardworking and trustworthy. He writes beautiful, thoughtful code and isn't afraid to jump head first into technologies. He's even gone so far as to write his own CSS front end framework and hosted several conference talks
 - name: salahbkd
-  avatar: "./assets/testimonials/salahbkd.jpeg"
+  avatar: './assets/testimonials/salahbkd.jpeg'
   title: Software engineering student
   review: I've got the chance to attend HacktoberFest last year where i saw Smakosh talking in a Q/A session, learned a lot!
 - name: El Houcine Aouassar
-  avatar: "./assets/testimonials/awixor.png"
+  avatar: './assets/testimonials/awixor.png'
   title: Front-end Web Developer
   review: "Smakosh is actually a wonderful person, I've known him for a while now. He's a very humble person, he helps me like all the time! I got the chance to meet him and attend his talk in the ZEIT Community Meetup held in Casablanca, talking about Gatsby! Ismail is a very talented person he is the kind of person that if he is going to do something he will do it well!"
 - name: Sri Gokul Krishnan
-  avatar: "./assets/testimonials/gokul.jpg"
+  avatar: './assets/testimonials/gokul.jpg'
   title: CEO @ <a href="www.startupverge.com/?ref=smakosh.com">Startupverge</a>
   review: "Smakosh i don't have words to express my gratitude. He is the best. His advices were great. I do follow that , to improve my skills. Thanks mate."
 - name: Wael Bni
-  avatar: "./assets/testimonials/bni.png"
+  avatar: './assets/testimonials/bni.png'
   title: Free lancer front-end developer @ <a href="https://mr-wii.com/?ref=smakosh.com">Mr Wii</a>
   review: Smakosh is a very humble and talented person, a close and childhood friend, we shared a lot :D, his advices are usually on point when it comes to improving your skills and straight to the point, that's a really great thing if you think about it, and they really helped me out. Keep up the good work and all the best and success
+- name: Aymane Max
+  avatar: './assets/testimonials/aymane-max.png'
+  title: Backend developer @ <a href="https://obytes.com/?ref=smakosh.com">Obytes</a>
+  review: As a friend and an ex co-worker, Smakosh is actually an inspiring person, very talented and humble
+- name: Sébastien Lorber
+  avatar: './assets/testimonials/lorber.jpeg'
+  title: <a href="https://sebastienlorber.com/?ref=smakosh.com">Freelance React expert</a>
+  review: I never worked with Smakosh but he caught my attention as a good React and Gatsby developer, blogger, contributor. Just looking at his website's sourcecode makes me feel confident he is someone I'd like to work with. His way of acting publicly makes me feel he's smart and has a long term vision that can only succeed.
