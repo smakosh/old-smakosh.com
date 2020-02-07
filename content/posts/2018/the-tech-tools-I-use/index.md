@@ -93,6 +93,12 @@ This can be part of the JAM stack
 
 For native apps, I use React native to build mobile apps (Ios & Android). I also have a personal [boilerplate](https://github.com/smakosh/RN-personal-boilerplate) that I use to speed up the process.
 
+### Deployment
+
+- ZEIT now using their GitHub intergration or the now CLI
+- Digital Ocean manually
+- App Store / Play Store using Fastlane
+
 ## Growth
 
 For growth, I focus more on building useful products that users really need in their lives then I simply share it on this blog, Product Hunt, Hacker news, Reddit and on social media.
