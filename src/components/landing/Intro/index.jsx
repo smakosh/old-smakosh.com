@@ -12,8 +12,8 @@ export const Intro = () => {
       <p>
         Also known as Smakosh, a self-taught Full Stack JavaScript Developer,
         Graphic and UI/UX Designer.
-        <br /> I help founders add value to society through technology, I love
-        open source and micro startups.
+        <br /> I help founders add value to society by crafting software using
+        JavaScript tools, I love open source and building side projects.
       </p>
       <Flex>
         <MagicalButton
