@@ -31,7 +31,6 @@ export default () => {
       <Text lineHeight={1.6} color={theme === 'dark' ? 'white' : 'dark'}>
         {bio} <Link to="/blog">articles</Link>.
       </Text>
-      {console.log(currentPosition)}
       <Text
         lineHeight={1.6}
         color={theme === 'dark' ? 'white' : 'dark'}

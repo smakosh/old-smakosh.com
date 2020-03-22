@@ -39,7 +39,7 @@ export const RecentTalks = () => {
   return (
     <Wrapper as={Container}>
       <Subtitle>Recent tech talks</Subtitle>
-      <Row landing>
+      <Row alignItems="flex-start" landing>
         {edges.map(
           ({
             node: { id, title, description, thumbnail, date, slides, demos },

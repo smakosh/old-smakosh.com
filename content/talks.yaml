@@ -28,3 +28,22 @@
   watch: https://youtu.be/nXRmOrN7m9o?t=1465
   demos:
     - link: https://github.com/smakosh/saham-events-demo
+- title: The evolution of grid systems on the web
+  summary: talked about CSS Grid systems, the reason we need them, life before/after CSS and the clearfix hack, flexBox and CSS Grid
+  slides: https://2020.css-grids-talk.talks.smakosh.com/
+  date: 2020-02-27T10:38:01.889Z
+  thumbnail: "./assets/talks/grid-systems-talk.jpeg"
+- title: Build a blog with Contentful and Gatsby
+  summary: talked about headless CMS, why it's better than traditional CMS, micro introduction to Gatsby, what's the JAMStack...
+  slides: https://2020.headless-cms.talks.smakosh.com/
+  date: 2020-02-29T10:38:01.889Z
+  thumbnail: "./assets/talks/rabatjs-talk.jpeg"
+  demos:
+    - link: https://github.com/smakosh/test-i18n-contentful
+- title: Gatsby js talk and workshop
+  summary: In this talk, I re-introduced Gatsby as a modern web framework for building blazing fast websites and apps, answered the "what? why and how?" questions with a demo at the end, built a blog and deployed to ZEIT now.
+  slides: https://docs.google.com/presentation/d/10UJ2G8CbcZK6EUHKA-MHsNxJwDgLPYH6C06sceeVPAw/edit?usp=sharing
+  date: 2020-03-08T10:38:01.889Z
+  thumbnail: "./assets/talks/wtm-talk.jpeg"
+  demos:
+    - link: https://github.com/smakosh/wtm-blog
