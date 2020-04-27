@@ -2,7 +2,7 @@
 
 My personal website
 
-[![Support me on Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/smakosh)
+[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.co?utm_source=smakosh)
 
 Built with [Gatsby](https://www.gatsbyjs.org/) and [more](https://github.com/smakosh/smakosh.com/blob/master/package.json#L6)
 

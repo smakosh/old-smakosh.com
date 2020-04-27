@@ -41,7 +41,7 @@ export default () => {
         </a>
         and deployed on
         <a
-          href="https://www.zeit.co/?ref=smakosh.com"
+          href="https://www.vercel.co/?utm_source=smakosh"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -49,7 +49,7 @@ export default () => {
             src={theme === 'light' ? zeitIcon : zeitWhiteIcon}
             img
             css="width:24px;"
-            alt="Zeit"
+            alt="Vercel"
           />
         </a>
       </Links>
