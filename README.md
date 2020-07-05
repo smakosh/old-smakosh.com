@@ -2,7 +2,7 @@
 
 My personal website
 
-[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.co?utm_source=smakosh)
+[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.com?utm_source=smakosh)
 
 Built with [Gatsby](https://www.gatsbyjs.org/) and [more](https://github.com/smakosh/smakosh.com/blob/master/package.json#L6)
 

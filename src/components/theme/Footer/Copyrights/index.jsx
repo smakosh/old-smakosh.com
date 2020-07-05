@@ -41,7 +41,7 @@ export default () => {
         </a>
         and deployed on
         <a
-          href="https://www.vercel.co/?utm_source=smakosh"
+          href="https://www.vercel.com/?utm_source=smakosh"
           rel="noopener noreferrer"
           target="_blank"
         >
