@@ -7,6 +7,14 @@ export const Wrapper = styled.div`
   .slick-prev:before {
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
   }
+
+  .slick-next {
+    right: -17px;
+  }
+
+  .slick-prev {
+    left: -13px;
+  }
 `
 
 export const Item = styled.div`

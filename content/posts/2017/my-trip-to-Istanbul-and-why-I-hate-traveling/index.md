@@ -10,7 +10,7 @@ tags:
   - travel
   - bio
   - thinking
-popular: true
+popular: false
 ---
 
 ![the sky](flight.jpeg 'Follow me on Instagram to see more : https://www.instagram.com/smakosh19')
