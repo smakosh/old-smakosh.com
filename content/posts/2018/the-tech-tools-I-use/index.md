@@ -1,9 +1,9 @@
 ---
 id: 9
 path: '/the-tech-tools-I-use'
-thumbnail: './tech.jpg'
+thumbnail: './tech.jpeg'
 date: 2018-2-27T16:45:01.889Z
-edited: 2020-02-7T13:11:01.889Z
+edited: 2020-07-12T13:11:01.889Z
 next: '/istanbul-trip'
 title: 'The tech tools I use'
 tags:
@@ -13,7 +13,7 @@ tags:
 popular: false
 ---
 
-![Tools](tech.jpg)
+![Tools](tech.jpeg)
 
 A list of tools I use wether for:
 
@@ -95,8 +95,8 @@ For native apps, I use React native to build mobile apps (Ios & Android). I also
 
 ### Deployment
 
-- ZEIT now using their GitHub intergration or the now CLI
-- Digital Ocean manually
+- Vercel using their GitHub intergration or the Vercel CLI
+- Digital Ocean in a manual way
 - App Store / Play Store using Fastlane
 
 ## Growth
@@ -116,31 +116,24 @@ For growth, I focus more on building useful products that users really need in t
   - Ram: 16 GB 2667 MHz DDR4
   - SSD: 1 Tb
 
-> Belongs to the company I work for
-
-- [MacBook Pro 2017 touchbar](https://amzn.to/2YBeJpa)
-  - Display: 15" retina screen
-  - CPU: 2.8 GHz Quad-Core Intel Core i7
-  - GPU: Radeon Pro 555 2 GB / Intel HD Graphics 630 1536 MB
-  - Ram: 8 GB LP DRR3
-  - SSD: 250 GB (swapped for 512GB)
-
 ### Equipment
 
 - Monitor: [Samsung Curved monitor](https://amzn.to/2s8OjyC)
-- Keyboard: [Apple Keyboard](https://amzn.to/2P1xf6H) (belongs to the company I work for)
+- Keyboard: Keychron K2 keyboard RGB brown keys
 - Main Headset: [Bose Noise Cancelling Headphones 700 + Charging Case](https://amzn.to/2ODY7cC)
 - Secondary headset: [Razer Kraken Pro](https://amzn.to/2LiN1c4)
 - Earphones: [Apple Airpods](https://amzn.to/2PtHmR3)
 - Microphone: [Razer Seiren X](https://amzn.to/38jk1dj)
 - Desk: Skarsta Ikea desk (adjustable height)
+- Mouse: Apple Magic trackpad 2 gray
+- Mousepad: Logitech G840 XL GAMING MOUSEPAD
 
 ### Phones
 
 - For Android, I'm using the Google Pixel 2 with a Dbrand dragon skin
-  - Android 10
+  - Android 11
 - For iOS, I'm using the Iphone 7
-  - iOS 13.2
+  - iOS 14
 
 Previously, I was carrying only a Nexus 6p which I had to stop using due to these [reasons](/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice)
 
@@ -156,4 +149,4 @@ Currently, I'm using a Google home mini
 
 [Google VR 1st gen headset](https://amzn.to/2XbPLiv)
 
-Full setup with pictures can be found [here](https://docs.google.com/document/d/1falYEEHhJxq4HIXwOPoc4lk0AYsfHY4U6ZCcY4Srs8g/edit?usp=sharing).
+Full setup with pictures can be found [here](https://docs.google.com/document/d/1falYEEHhJxq4HIXwOPoc4lk0AYsfHY4U6ZCcY4Srs8g/edit?usp=sharing)

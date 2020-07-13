@@ -4,7 +4,8 @@ export const Item = styled.div`
   max-width: 100%;
   width: 100%;
   margin-bottom: 2rem;
-  height: 100%;
+  display: flex;
+  align-self: stretch;
 
   ${({ landing }) =>
     landing &&
@@ -120,9 +121,6 @@ export const ArticleImg = styled.div`
 
 export const ArticleTitle = styled.h2`
   color: #212121;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   ${({ path }) =>
     path &&

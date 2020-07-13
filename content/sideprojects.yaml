@@ -1,12 +1,12 @@
-- title: Catch it 1.0
-  image: "../src/assets/images/side-projects/catchit.jpg"
-  link: https://play.google.com/store/apps/details?id=com.smakosh.atchit
-  description: Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!
+- title: Ontwik [Alpha]
+  image: "../src/assets/images/side-projects/ontwik.png"
+  link: https://ontwik-dev.com/founders
+  description: Hire the best remote African developers
 - title: Ai Hashtags
   image: "../src/assets/images/side-projects/aihashtags.jpg"
   link: https://ai-hashtags.com
   description: Generate hashtags using Artificial intelligence
-- title: Beaf
-  image: "../src/assets/images/side-projects/beaf.jpg"
-  link: https://github.com/smakosh/beafapp
-  description: The community platform for making the right decisions!
+- title: Catch it 1.0
+  image: "../src/assets/images/side-projects/catchit.jpg"
+  link: https://play.google.com/store/apps/details?id=com.smakosh.atchit
+  description: Collect stars & avoid obstacles while trying to put the ball into the right basket to unlock new levels!
