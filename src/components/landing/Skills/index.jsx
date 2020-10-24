@@ -32,7 +32,7 @@ export const Skills = () => {
           ))}
         </Flex>
         <Tech theme={theme}>
-          <Link to="/the-tech-tools-I-use">See the tech tools I use?</Link>
+          <Link to="/the-tech-tools-I-use">See the tech tools I use</Link>
         </Tech>
       </Container>
     </Wrapper>

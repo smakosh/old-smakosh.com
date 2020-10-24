@@ -7,7 +7,7 @@ export const Github = () => {
     graphql`
       query {
         github {
-          repositoryOwner(login: "smakosh") {
+          viewer {
             repositories(
               first: 7
               orderBy: { field: STARGAZERS, direction: DESC }
@@ -37,7 +37,7 @@ export const Github = () => {
       <Project
         icon={GithubIcon}
         type="Github"
-        projects={github.repositoryOwner.repositories.edges}
+        projects={github.viewer.repositories.edges}
         link="https://github.com/smakosh"
         color="#000"
         github

@@ -47,3 +47,10 @@
   thumbnail: "./assets/talks/wtm-talk.jpeg"
   demos:
     - link: https://github.com/smakosh/wtm-blog
+- title: WTH is static site regeneration
+  summary: Quick explanation of Icremental Static Regeneration using Next js
+  slides: http://2020.wth-isg.talks.smakosh.com/
+  date: 2020-10-22T10:38:01.889Z
+  thumbnail: "./assets/talks/blablaconf.jpeg"
+  demos:
+    - link: https://github.com/smakosh/blablaconf-talk-2020

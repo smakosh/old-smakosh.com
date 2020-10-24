@@ -1,7 +1,7 @@
 ---
 id: 9
 path: '/the-tech-tools-I-use'
-thumbnail: './tech.jpeg'
+thumbnail: './tech.jpg'
 date: 2018-2-27T16:45:01.889Z
 edited: 2020-07-12T13:11:01.889Z
 next: '/istanbul-trip'
@@ -13,7 +13,7 @@ tags:
 popular: false
 ---
 
-![Tools](tech.jpeg)
+![Tools](tech.jpg)
 
 A list of tools I use wether for:
 
@@ -84,6 +84,8 @@ This can be part of the JAM stack
 - FaunaDB
 - Firebase auth
 - Auth0
+- Algolia
+- Stripe
 - ...
 
 ### Mobile stack
@@ -127,6 +129,7 @@ For growth, I focus more on building useful products that users really need in t
 - Desk: Skarsta Ikea desk (adjustable height)
 - Mouse: Apple Magic trackpad 2 gray
 - Mousepad: Logitech G840 XL GAMING MOUSEPAD
+- Chair: JÄRVFJÄLLET
 
 ### Phones
 
