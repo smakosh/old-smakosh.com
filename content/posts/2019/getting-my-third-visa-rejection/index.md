@@ -3,7 +3,7 @@ id: 22
 path: '/visa-rejections-stories'
 thumbnail: './visa.jpg'
 date: 2019-10-22T02:50:01.889Z
-edited: 2019-10-22T02:50:01.889Z
+edited: 2020-10-22T02:50:01.889Z
 next: '/15-days-working-from-bali'
 title: 'Getting my third visa rejection'
 tags:
@@ -64,3 +64,9 @@ On the next day, my fever hasn't gone any better but I had to go out to pick up 
 They neglected my words and wanted me to appeal which by the way requires at least 8 days and an additional fee to pay, I reached out to the organizers and the CEO tried to get in touch with them by email as they don't have any phone number unfortunately, the organizers apologized for such embarrassment as such borders still exist in the 21st century.
 
 Even though all of this has occurred and made me sad, I'll keep going and moving forward, when there's a will, there's always a way.
+
+## 2020 update
+
+I managed to get a B1 USA visa that expires after 10 years, meaning it will expire in 2030.
+
+Also turns out you don't really need to migrate to a well developed country to leverage your knowledge and business.
