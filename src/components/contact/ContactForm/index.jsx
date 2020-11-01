@@ -21,8 +21,8 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
     <ContactWrapper as={SmallerContainer}>
       <Text theme={theme}>
         Feel free to email me via{' '}
-        <a href="mailto:ismai23l@hotmail.com" target="_top">
-          ismai23l@hotmail.com
+        <a href="mailto:hello@smakosh.com" target="_top">
+          hello@smakosh.com
         </a>
       </Text>
       <Text as="p" theme={theme}>
