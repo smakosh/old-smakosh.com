@@ -48,7 +48,7 @@
   demos:
     - link: https://github.com/smakosh/wtm-blog
 - title: WTH is static site regeneration
-  summary: Quick explanation of Icremental Static Regeneration using Next js
+  summary: Quick explanation of Icremental Static Regeneration using Next js, I explained the difference between SSG vs SSR vs CSR vs ISR, gave an introduction about Next js, I went through Next's 3 API functions one by one and showed a demo of Ontwik.dev and how are we using ISR for listing approved developers and their profiles.
   slides: http://2020.wth-isg.talks.smakosh.com/
   date: 2020-10-22T10:38:01.889Z
   thumbnail: "./assets/talks/blablaconf.jpeg"
