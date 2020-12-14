@@ -17,7 +17,7 @@ export const Post = ({ html, frontmatter, timeToRead }) => {
   const disqusShortName = 'https-smakosh-com'
   const disqusConfig = {
     url: `https://smakosh.com${frontmatter.path}`,
-    identifier: frontmatter.id,
+    identifier: frontmatter.id.toString(),
     title: frontmatter.title,
   }
   return (
