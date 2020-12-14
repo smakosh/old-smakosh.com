@@ -14,7 +14,7 @@ export const Pagination = ({
     if (pathPrefix === '/') {
       return n === 1 ? pathPrefix : `${pathPrefix}/${n}`
     } else {
-      return n === 1 ? pathPrefix : `${pathPrefix}/${n}`
+      return n === 1 ? pathPrefix : `/${n}`
     }
   }
 
