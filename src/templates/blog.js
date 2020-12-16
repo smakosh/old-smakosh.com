@@ -10,7 +10,7 @@ import {
 } from 'components/common'
 
 export default ({ pageContext }) => {
-  const { group, index, pageCount, pathPrefix } = pageContext
+  const { group, index, pageCount } = pageContext
   const previousUrl = index - 1 === 1 ? '/' : (index - 1).toString()
   const nextUrl = (index + 1).toString()
 
@@ -21,7 +21,7 @@ export default ({ pageContext }) => {
         <Row>
           <PageTitle>Recent articles</PageTitle>
           <Pagination
-            pathPrefix={pathPrefix}
+            pathPrefix="/blog"
             index={index}
             pageCount={pageCount}
             previousUrl={previousUrl}
@@ -49,7 +49,7 @@ export default ({ pageContext }) => {
             )
           )}
           <Pagination
-            pathPrefix={pathPrefix}
+            pathPrefix="/blog"
             index={index}
             pageCount={pageCount}
             previousUrl={previousUrl}
