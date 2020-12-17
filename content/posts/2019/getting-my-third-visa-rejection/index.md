@@ -30,7 +30,7 @@ I used to sleep 4 hours a day in order to:
 
 I used to sleep during classes when I get really tired, or skip them to over study what I was interested into at some cafe or library, I was using the school's computer which wasn't that great but it did the job, until I pitched to my dad the idea of investing in me by purchasing me a solid laptop and in return, I promised myself to give it back once I graduate. In order to achieve that, I used to participate in Hackathons - competitions that award the 3 most good ideas with a working prototype -, I've won 2 or 3 out of 4 Hackathons I took part in.
 
-At the end of the year (2017), I [declined a job offer]('/getting-my-first-job-offer'), [won first prize at a hackathon]('/first-time-first-prize') and one of my teachers informed me of my graduation, later that day, I got an email from Obytes CEO, offering me a job as a remote front-end developer which I ended up accepting and I wrote about it [here]('/one-year-working-remotely'), this all happened during August, 2017.
+At the end of the year (2017), I [declined a job offer](/getting-my-first-job-offer), [won first prize at a hackathon](/first-time-first-prize) and one of my teachers informed me of my graduation, later that day, I got an email from Obytes CEO, offering me a job as a remote front-end developer which I ended up accepting and I wrote about it [here](/one-year-working-remotely), this all happened during August, 2017.
 
 > Yup, I did give back the laptop.
 
@@ -51,7 +51,7 @@ During this period, there was a Hackathon in Finland, organized by [Junction](ht
 
 Anyhow, I decided to switch my contract with Obytes from an independent contractor to CDI which basically means that the company will offer a health insurance and retirement plan and that I'll be considered officially as a worker, but the salary was really low and one of the board members who was Moroccan was an ageist and was discriminating me all the time for being so young and having such skill sets, when ever I used to ask for a pay raise, he'll make fun of me or offer only a 10% raise. I was training a new employee who was getting paid more than me due to his age according to that board member.
 
-During 2019, I decided to try out [the nomadic lifestyle and traveled to Southeast Asia for 2.5 months]('/15-days-working-from-bali') while working, I wrote about my experience on my recent articles, it was an amazing experience which I highly recommend to try out before going all in into this lifestyle, as it turns out to be really exhausting and unhealthy for me.
+During 2019, I decided to try out [the nomadic lifestyle and traveled to Southeast Asia for 2.5 months](/15-days-working-from-bali) while working, I wrote about my experience on my recent articles, it was an amazing experience which I highly recommend to try out before going all in into this lifestyle, as it turns out to be really exhausting and unhealthy for me.
 
 Once I got back from my trip, few months have passed and I decided to resign my current position and join Maltem Africa once again as I had a discussion with the CEO, we managed to forget the past to start a fresh new beginning and I apologized for my rush of quitting, he also apologized and explained to me why he couldn't fire the guy right at that moment.
 
