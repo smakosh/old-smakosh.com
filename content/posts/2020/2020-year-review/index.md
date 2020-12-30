@@ -88,10 +88,18 @@ Here's a summary of things I learned, created, earned and shared.
 - Updated my Gatsby starters and theme
 - Made a [CRA boilerplate](https://github.com/smakosh/CRA-boilerplate)
 
+## Earning
+
+- Bought an apartment where I'm living right now
+- Bought my own Macbook Pro 2019 16"
+- A Guiness world record
+- A new work setup
+
 ## Sharing
 
 - Gave 5 talks
 - Have been a guest in 3 podcasts episodes
+- Joined/Created/Moderate few good Discord servers where I seek and share help
 
 ## Data about this blog during 2020
 
