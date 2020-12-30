@@ -94,6 +94,7 @@ Here's a summary of things I learned, created, earned and shared.
 - Bought my own Macbook Pro 2019 16"
 - A Guiness world record
 - A new work setup
+- Finally fast internet, I started livestreaming, go follow me on [Twitch](https://twitch.tv/smakoshdev)
 
 ## Sharing
 
