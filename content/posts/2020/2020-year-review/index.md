@@ -64,6 +64,10 @@ Here's a summary of things I learned, created, earned and shared.
 - Stripe API
 - I tried Prisma v2
 - I tried Tailwindcss
+- Sequelize
+- Postgres
+- FaunaDB
+- Docusaurus
 
 ### Life
 
@@ -71,7 +75,7 @@ Here's a summary of things I learned, created, earned and shared.
 - Selling an idea
 - Living independently
 - Taxes
-- Majority still cares about status
+- the majority of people still cares about status
 
 ### Design
 
@@ -104,23 +108,24 @@ Here's a summary of things I learned, created, earned and shared.
 
 ## Data about this blog during 2020
 
-- 61 306 page views 👀
-- 19 544 users 📈
-- 19 329 new users 📈
+- 63,036 page views 👀
+- 20,268 users 📈
+- 20,032 new users 📈
 
-- 3598 are based in 🇲🇦
-- 3183 🇺🇲
-- 1831 🇮🇳
-- 1178 🇪🇪
+- 3,833 are based in 🇲🇦
+- 3,203 🇺🇲
+- 1,836 🇮🇳
+- 1,378 🇨🇳
+- 1,178 🇪🇪
 
-- 13 833 use Chrome
-- 1925 use Safari
+- 14,131 use Chrome
+- 1,974 use Safari
 
-- 6225 use Windows
-- 4626 use Macintosh
-- 2168 use Linux
+- 6,310 use Windows
+- 4,683 use Macintosh
+- 2,180 use Linux
 
-- 4199 use Android
-- 1896 use iOS
+- 4,610 use Android
+- 2,022 use iOS
 
 > Will keep editing this article until January ends I usually do.
