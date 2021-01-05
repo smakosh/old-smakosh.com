@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Ismail Ghallou <ismai23l@hotmail.com>",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.10.0",
     "disqus-react": "^1.0.5",
     "dotenv": "^8.2.0",
