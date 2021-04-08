@@ -59,7 +59,7 @@
   summary: An online workshop on which I shared my knowledge about the different approaches to implement authentication, the pros and cons of each with a demo at the end implementing session http only cookie authentication using the hype beast.
   slides: https://2021.custom-auth.talks.smakosh.com
   date: 2021-03-31T10:38:01.889Z
-  thumbnail: "./assets/talks/blablaconf.jpeg"
+  thumbnail: "./assets/talks/open-source-days-talks.jpeg"
   watch: https://www.facebook.com/Opensdays/videos/158209136082880/?story_fbid=158209136082880&id=1381978402047509
   demos:
     - link: https://github.com/smakosh/auth-ts-boilerplate
