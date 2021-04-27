@@ -47,7 +47,7 @@ I started getting into native apps when I first tried React native, I really enj
 
 Forgot to share that I was learning Angular 5 back then when the company was using it on the front end but they switched to React later on.
 
-I learned linting & formatting my code using Eslint & Prettier, I didn’t liked using tachyons at the beginning but afterwards, I really liked it.
+I learned linting & formatting my code using Eslint & Prettier, I didn’t like using tachyons at the beginning but afterwards, I really liked it.
 
 Here are facts that really encouraged me to decline other job offers
 
