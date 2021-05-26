@@ -223,11 +223,11 @@ export const Tags = styled.div`
   align-items: center;
   flex-wrap: wrap;
   overflow-y: hidden;
-  height: 80px;
+  min-height: 80px;
   margin-bottom: 0.5rem;
 
   @media (max-width: 960px) {
-    height: 38px;
+    min-height: 38px;
   }
 
   a {
