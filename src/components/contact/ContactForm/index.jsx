@@ -15,7 +15,7 @@ import {
   Text,
 } from './styles'
 
-const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
+const ContactForm = () => {
   const { theme } = useContext(ThemeContext)
   return (
     <ContactWrapper as={SmallerContainer}>
@@ -52,7 +52,7 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
               method: 'POST',
               url:
                 process.env.NODE_ENV !== 'development'
-                  ? `${url}/api/contact`
+                  ? `https://smakosh.com/api/contact`
                   : 'http://localhost:3000/api/contact',
               headers: {
                 'Content-Type': 'application/json',
