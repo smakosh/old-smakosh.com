@@ -20,7 +20,6 @@ export default () => {
         bio
         currentPosition
         email
-        phone
         addresses
       }
     }
@@ -43,10 +42,6 @@ export default () => {
         <P color={theme === 'dark' ? 'white' : 'dark'}>
           <Img src={theme === 'dark' ? EnvelopeWhite : Envelope} alt="email" />
           {email}
-        </P>
-        <P color={theme === 'dark' ? 'white' : 'dark'}>
-          <Img src={theme === 'dark' ? PhoneWhite : Phone} alt="phone" />
-          {phone}
         </P>
         {addresses.map((item, i) => (
           <Fragment key={i}>
