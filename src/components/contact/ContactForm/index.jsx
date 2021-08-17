@@ -50,7 +50,10 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
           try {
             await axios({
               method: 'POST',
-              url: `${process.env.GATSBY_FORMIK_ENDPOINT}`,
+              url:
+                process.env.NODE_ENV !== 'development'
+                  ? `${url}/api/contact`
+                  : 'http://localhost:3000/api/contact',
               headers: {
                 'Content-Type': 'application/json',
               },
@@ -121,9 +124,9 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
               component={Recaptcha}
               sitekey="6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
               name="recaptcha"
-              onChange={value => {
+              onChange={(value) => {
                 if (!value) {
-                  value = "";
+                  value = ''
                 }
                 setFieldValue('recaptcha', value)
               }}
