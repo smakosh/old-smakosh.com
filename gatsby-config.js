@@ -66,7 +66,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   url:
@@ -155,24 +155,6 @@ module.exports = {
       options: {
         color: config.themeColor,
         showSpinner: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: './src/assets/favicon/logo-512x512.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
       },
     },
     {
