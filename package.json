@@ -28,7 +28,6 @@
     "dotenv": "^8.2.0",
     "formik": "^2.0.4",
     "gatsby": "^4.2.0",
-    "gatsby-image": "^3.11.0",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-canonical-urls": "^4.2.0",
     "gatsby-plugin-catch-links": "^4.2.0",

@@ -29,7 +29,7 @@ module.exports = `
           tags
           thumbnail {
             childImageSharp {
-              gatsbyImageData(layout: FIXED)
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
             }
           }
         }
