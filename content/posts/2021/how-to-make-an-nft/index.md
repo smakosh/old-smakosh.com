@@ -14,6 +14,8 @@ popular: false
 draft: false
 ---
 
+> You can collect this article as an NFT [Here](https://mirror.xyz/smakosh.eth/eLXmQJ0Rb1Ahd1Pi3TpnSOzpVytCJB1kxcO2WXnF4uI)
+
 As there is a new trend these days and as I’ve been working on this area recently, I thought of writing this article to explain what an NFT is and how can you make one.
 
 NFT stands for Non fungible token which basically means that this kind of token is unique and cannot be split unlike a fungible token. You can think of this as an Art piece like the Monalisa that is unique and loses its value once it gets split. While money for example can be split and exchanged as it’s not something unique.
