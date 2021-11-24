@@ -17,7 +17,8 @@ const PostTemplate = ({ data: { post } }) => (
             : post.frontmatter.date
         }
         cover={
-          post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.originalImg
+          post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images
+            .fallback.src
         }
         location={post.frontmatter.path}
         description={post.description}
@@ -47,11 +48,7 @@ export const postQuery = graphql`
         tags
         thumbnail {
           childImageSharp {
-            gatsbyImageData(
-              width: 700
-              placeholder: BLURRED
-              layout: CONSTRAINED
-            )
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

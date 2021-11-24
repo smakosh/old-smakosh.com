@@ -128,6 +128,6 @@ const transaction = await contract.createToken(metadataUrl);
 await transaction.wait();
 ```
 
-Now that your NFT has be minted, you can list it for sale on different marketplaces like OpenSea or Foundation or directly trade via your wallet but it’s not recommended.
+Now that your NFT has be minted, you can list it for sale on different marketplaces like OpenSea or Foundation or directly trade via your wallet which is not recommended.
 
-That’s all.
+That’s all. Comment down below if you have any questions!

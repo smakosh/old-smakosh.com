@@ -26,7 +26,7 @@ const About = () => {
       >
         <Details />
         <Portrait width="100%" maxWidth="48%">
-          <a href={AboutImage.fluid.src}>
+          <a href={AboutImage.gatsbyImageData.images.fallback.src}>
             <GatsbyImage
               image={AboutImage.gatsbyImageData}
               alt="just me chilling"
