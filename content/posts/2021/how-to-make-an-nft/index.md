@@ -1,5 +1,5 @@
 ---
-id: 26
+id: 27
 path: '/how-to-make-an-nft'
 thumbnail: './nft.jpg'
 date: 2021-11-23T15:10:01.889Z
