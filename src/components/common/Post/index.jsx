@@ -20,6 +20,7 @@ export const Post = ({ html, frontmatter, timeToRead }) => {
     identifier: frontmatter.id.toString(),
     title: frontmatter.title,
   }
+
   return (
     <ArticleWrapper theme={theme}>
       <PageTitle>{frontmatter.title}</PageTitle>

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { navigate } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { Tag } from 'components/common'
 import { ThemeContext } from 'providers/ThemeProvider'
 import {
@@ -44,7 +44,7 @@ export const CardPost = ({
           talk={slides}
           path={path}
         >
-          <Img fluid={thumbnail.childImageSharp.fluid} />
+          <GatsbyImage image={thumbnail.childImageSharp.gatsbyImageData} />
         </ArticleImg>
         <ArticleContent>
           <ArticleTitle

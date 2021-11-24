@@ -3,27 +3,24 @@ import { Project, DribbbleIcon } from 'components/common'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default () => {
-  const { shots } = useStaticQuery(graphql`
-    query {
-      shots: allDribbbleYaml {
-        edges {
-          node {
-            id
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 630) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
-            link
-            description
+  const { shots } = useStaticQuery(graphql`{
+  shots: allDribbbleYaml {
+    edges {
+      node {
+        id
+        title
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 630, placeholder: TRACED_SVG, layout: CONSTRAINED)
           }
         }
+        link
+        description
       }
     }
-  `)
+  }
+}
+`)
   return (
     <Project
       icon={DribbbleIcon}

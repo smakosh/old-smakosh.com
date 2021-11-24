@@ -3,27 +3,24 @@ import { BehanceIcon, Project } from 'components/common'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default () => {
-  const { projects } = useStaticQuery(graphql`
-    query {
-      projects: allBehanceYaml {
-        edges {
-          node {
-            id
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 630) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
-            link
-            description
+  const { projects } = useStaticQuery(graphql`{
+  projects: allBehanceYaml {
+    edges {
+      node {
+        id
+        title
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 630, placeholder: TRACED_SVG, layout: CONSTRAINED)
           }
         }
+        link
+        description
       }
     }
-  `)
+  }
+}
+`)
   return (
     <Project
       icon={BehanceIcon}
