@@ -131,3 +131,11 @@ await transaction.wait();
 Now that your NFT has be minted, you can list it for sale on different marketplaces like OpenSea or Foundation or directly trade via your wallet which is not recommended.
 
 That’s all. Comment down below if you have any questions!
+
+Forgot to plug an open source minting platform I'm currently working on called [Mintify](https://github.com/smakosh/nft-mint-app)
+
+### Credits
+
+Thanks a lot to [Nader Dabit](https://www.youtube.com/c/naderdabit)'s videos and articles that helped me a lot to quickly grasp and understand this and of course dozen of other online content from amazing creators.
+
+Also thanks for Greg for minting an NFT for me to join [Developer DAO](https://www.developerdao.com/) where I'm more active these days.
