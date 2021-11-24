@@ -7,9 +7,7 @@ import SideProjects from './SideProjects'
 
 export const imageFields = graphql`
   fragment imageFields on ImageSharp {
-    fluid(maxWidth: 960) {
-      ...GatsbyImageSharpFluid_tracedSVG
-    }
+    gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
   }
 `
 

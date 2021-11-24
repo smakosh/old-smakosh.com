@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { Layout, SmallerContainer, SEO, Post } from 'components/common'
 import './highlight.css'
 
-export default ({ data: { post } }) => (
+const PostTemplate = ({ data: { post } }) => (
   <Layout>
     <SmallerContainer>
       <SEO
@@ -16,7 +16,10 @@ export default ({ data: { post } }) => (
             ? post.frontmatter.edited
             : post.frontmatter.date
         }
-        cover={post.frontmatter.thumbnail.childImageSharp.fluid.originalImg}
+        cover={
+          post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images
+            .fallback.src
+        }
         location={post.frontmatter.path}
         description={post.description}
         readTime={post.timeToRead}
@@ -26,8 +29,10 @@ export default ({ data: { post } }) => (
   </Layout>
 )
 
+export default PostTemplate
+
 export const postQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       description: excerpt(pruneLength: 105)
@@ -43,9 +48,7 @@ export const postQuery = graphql`
         tags
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              originalImg
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

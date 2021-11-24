@@ -47,7 +47,7 @@ export const Testimonials = () => {
             title
             avatar {
               childImageSharp {
-                ...imageFields
+                gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
               }
             }
           }

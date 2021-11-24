@@ -29,20 +29,7 @@ module.exports = `
           tags
           thumbnail {
             childImageSharp {
-              fluid {
-                aspectRatio
-                base64
-                originalImg
-                originalName
-                presentationHeight
-                presentationWidth
-                sizes
-                src
-                srcSet
-                srcSetWebp
-                srcWebp
-                tracedSVG
-              }
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
             }
           }
         }

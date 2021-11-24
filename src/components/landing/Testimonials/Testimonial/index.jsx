@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { Review, Human, Details } from './styles'
 import { ThemeContext } from 'providers/ThemeProvider'
 
-export default ({ name, review, title, avatar: { childImageSharp } }) => {
+const Testimonail = ({ name, review, title, avatar: { childImageSharp } }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
@@ -12,14 +12,14 @@ export default ({ name, review, title, avatar: { childImageSharp } }) => {
         <p>"{review}"</p>
       </Review>
       <Human theme={theme}>
-        <Img
+        <GatsbyImage
+          image={childImageSharp.gatsbyImageData}
           style={{
             padding: '1.5rem',
             borderRadius: '50%',
             border:
               theme === 'dark' ? '3px solid #d8d8d8' : '3px solid #383838',
           }}
-          fluid={childImageSharp.fluid}
           alt={name}
         />
         <Details theme={theme}>
@@ -30,3 +30,5 @@ export default ({ name, review, title, avatar: { childImageSharp } }) => {
     </div>
   )
 }
+
+export default Testimonail

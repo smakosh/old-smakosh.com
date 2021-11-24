@@ -66,7 +66,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   url:
@@ -117,6 +117,7 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
+    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -158,24 +159,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: './src/assets/favicon/logo-512x512.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.defaultTitle,
@@ -184,18 +167,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icons: [
-          {
-            src: '/favicon/logo-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/favicon/logo-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
+        icon: './static/favicon/logo-512x512.png',
       },
     },
     'gatsby-plugin-offline',

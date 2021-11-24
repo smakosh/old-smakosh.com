@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 export default () => {
   const { sideProjects } = useStaticQuery(graphql`
-    query {
+    {
       sideProjects: allSideprojectsYaml {
         edges {
           node {
@@ -12,9 +12,7 @@ export default () => {
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 630) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
               }
             }
             link

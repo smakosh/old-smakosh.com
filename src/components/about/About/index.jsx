@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Container, PageTitle } from 'components/common'
 import Details from 'components/about/Details'
@@ -7,7 +7,7 @@ import Socials from 'components/about/Socials'
 import { socialLinks } from 'data/config'
 import { Flex, Portrait } from './styles'
 
-export default () => {
+const About = () => {
   const { AboutImage } = useStaticQuery(graphql`
     query AboutImageQuery {
       AboutImage: imageSharp(fluid: { originalName: { regex: "/me.jpg/" } }) {
@@ -26,8 +26,11 @@ export default () => {
       >
         <Details />
         <Portrait width="100%" maxWidth="48%">
-          <a href={AboutImage.fluid.src}>
-            <Img fluid={AboutImage.fluid} alt="just me chilling" />
+          <a href={AboutImage.gatsbyImageData.images.fallback.src}>
+            <GatsbyImage
+              image={AboutImage.gatsbyImageData}
+              alt="just me chilling"
+            />
           </a>
           <a
             href={socialLinks.instagram}
@@ -42,3 +45,5 @@ export default () => {
     </Container>
   )
 }
+
+export default About
