@@ -49,7 +49,8 @@ contract NFTFactory is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     address contractAddress;
-
+    
+    // Note that you don't have to do this, only if you want to pass the name and symbol of the ERC-721 token when you'd like to deploy
     constructor(string memory name, string memory symbol)
         ERC721(name, symbol)
     {}
@@ -66,7 +67,28 @@ contract NFTFactory is ERC721URIStorage {
 }
 ```
 
-Once your contract is ready, you have to compile and deploy it, there are tools that help with that like Hardhat which I do recommend.
+Once your contract is ready, you have to compile and deploy it, there are tools that help with that like [Hardhat](https://hardhat.org/) which I do recommend.
+
+You can compile your contract running `npx hardhat compile`, you can deploy it using Hardhat or build the frontend and deploy from there like I did on my Minting app:
+
+```ts
+import { ethers } from 'ethers';
+
+// We're importing the contract's artifacts here
+import NFTFactory from '../../../artifacts/contracts/NFTFactory.sol/NFTFactory.json';
+
+// Get the user signature
+const provider = new ethers.providers.Web3Provider(window.ethereum);
+const signer = provider.getSigner();
+
+// Prepare contract facotry
+const factory = new ethers.ContractFactory(NFTFactory.abi, NFTFactory.bytecode, user.data.signature || signer);
+
+// Deploy the smart contract (ERC 721)
+const deployedContract = await factory.deploy('Much wow', 'WOW');
+
+await deployedContract.deployed();
+```
 
 Once the contract is deployed, you can take its address, use the mint function to create a non fungible token.
 
@@ -74,7 +96,7 @@ You may be wondering where the digital asset and the metadata object will be hos
 
 Off-chain, meaning on a centralized database or service like AWS S3, while on-chain means directly on the blockchain using decentralized file system services like IPFS or other alternatives, keep in mind files on IPFS are not permanent and might be deleted if not needed later on automatically.
 
-In this article, I will go with the on-chain approach and use Infura (a premium service) to host the files using IPFS but never loose them. You get up to 5Gb for free.
+In this article, I will go with the on-chain approach and use [Infura](https://infura.io/) (a premium service) to host the files using IPFS but never loose them. You get up to 5Gb for free.
 
 ```ts
 import { create as ipfsHttpClient } from 'ipfs-http-client';
@@ -87,7 +109,7 @@ const client = ipfsHttpClient({
   port: 5001,
   protocol: 'https',
   headers: {
-    authorization: res.data.auth,
+    authorization: auth,
   },
 });
 
