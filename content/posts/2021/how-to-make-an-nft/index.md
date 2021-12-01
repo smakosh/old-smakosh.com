@@ -26,7 +26,7 @@ NFT stands for Non fungible token which basically means that this kind of token 
 
 This trend started earlier in 2017 when a project known as Crypto kitties launched, which lets you connect your Crypto wallet and create an NFT in the form of a cute kitten which has some associated attributes like what the kitten is wearing, color etc...
 
-And correct if I'm wrong, but I think the folks behind that project are the ones who pioneered the ERC-721 smart contract which lets you mint NFTs, as it acts like an API or a link between the owner of the NFT and the NFT itself.
+And correct me if I'm wrong, but I think the folks behind that project are the ones who pioneered the ERC-721 smart contract which lets you mint NFTs, as it acts like an API or a link between the owner of the NFT and the NFT itself.
 
 So with this out of the way, let us explore how to make one, what do you need to do that and how?
 
