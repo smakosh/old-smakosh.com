@@ -137,7 +137,7 @@ For growth, I focus more on building useful products that users really need in t
   - Ram: 16 GB 2667 MHz DDR4
   - SSD: 1 Tb
 
-### Equipment
+### Equipments
 
 - Monitor: [Samsung Curved monitor](https://amzn.to/3moe30J)
 - Keyboard: [Keychron K2 keyboard RGB brown keys](https://amzn.to/3ngeUBJ)
@@ -145,7 +145,8 @@ For growth, I focus more on building useful products that users really need in t
 - Earphones: [Apple Airpods](https://amzn.to/2WbyNxV)
 - Microphone: [Razer Seiren X](https://amzn.to/38jk1dj)
 - Desk: Skarsta Ikea desk (adjustable height)
-- Mouse: Apple Magic trackpad 2 gray
+- Mouse: [Logitech MX Master 3](https://www.logitech.com/en-us/products/mice/mx-master-3.html)
+- Trackpad: Apple Magic trackpad 2 gray
 - Mousepad: [Logitech G840 XL GAMING MOUSEPAD](https://amzn.to/349KdGQ)
 - Chair: [JÄRVFJÄLLET](https://amzn.to/3a8dRjx)
 - Webcam: [Razer Kiyo](https://amzn.to/3nf0otS)
@@ -154,8 +155,8 @@ For growth, I focus more on building useful products that users really need in t
 
 - For Android, I'm using the Google Pixel 2 with a Dbrand dragon skin
   - Android 11
-- For iOS, I'm using the Iphone 7
-  - iOS 14
+- For iOS, I'm using the iPhone 13 Pro which has become my main phone
+  - iOS 15.2
 
 Previously, I was carrying only a Nexus 6p which I had to stop using due to these [reasons](/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice)
 
