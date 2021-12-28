@@ -146,6 +146,7 @@ For growth, I focus more on building useful products that users really need in t
 - Microphone: [Razer Seiren X](https://amzn.to/38jk1dj)
 - Desk: Skarsta Ikea desk (adjustable height)
 - Mouse: [Logitech MX Master 3](https://www.logitech.com/en-us/products/mice/mx-master-3.html)
+- Trackpad: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 - Mousepad: [Logitech G840 XL GAMING MOUSEPAD](https://amzn.to/349KdGQ)
 - Chair: [JÄRVFJÄLLET](https://amzn.to/3a8dRjx)
 - Webcam: [Razer Kiyo](https://amzn.to/3nf0otS)
