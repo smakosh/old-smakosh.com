@@ -146,7 +146,7 @@ For growth, I focus more on building useful products that users really need in t
 - Microphone: [Razer Seiren X](https://amzn.to/38jk1dj)
 - Desk: Skarsta Ikea desk (adjustable height)
 - Mouse: [Logitech MX Master 3](https://www.logitech.com/en-us/products/mice/mx-master-3.html)
-- Trackpad: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+- Trackpad: Apple Magic trackpad 2 gray
 - Mousepad: [Logitech G840 XL GAMING MOUSEPAD](https://amzn.to/349KdGQ)
 - Chair: [JÄRVFJÄLLET](https://amzn.to/3a8dRjx)
 - Webcam: [Razer Kiyo](https://amzn.to/3nf0otS)
@@ -155,7 +155,7 @@ For growth, I focus more on building useful products that users really need in t
 
 - For Android, I'm using the Google Pixel 2 with a Dbrand dragon skin
   - Android 11
-- For iOS, I'm using the iPhone 13 Pro
+- For iOS, I'm using the iPhone 13 Pro which has become my main phone
   - iOS 15.2
 
 Previously, I was carrying only a Nexus 6p which I had to stop using due to these [reasons](/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice)
