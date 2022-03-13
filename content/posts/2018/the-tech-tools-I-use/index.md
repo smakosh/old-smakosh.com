@@ -3,7 +3,7 @@ id: 9
 path: '/the-tech-tools-I-use'
 thumbnail: './tech.jpg'
 date: 2018-2-27T16:45:01.889Z
-edited: 2020-12-13T13:11:01.889Z
+edited: 2022-03-13T13:11:01.889Z
 next: '/istanbul-trip'
 title: 'The tech tools I use'
 tags:
@@ -39,6 +39,8 @@ I share my code & look for inspiration on:
 - Codepen
 - CodeSandbox
 
+[Up to date Tech Stack](https://smakosh.notion.site/Tech-Stack-2022-1cd4d3c244b44d38b666e3b47e090a6d)
+
 If I’m simply coding an interface that I might integrate into a web app I use plain HTML/CSS & vanilla JavaScript.
 
 But if I'm working on a landing page, documentation website, blog or even a large web app I use:
@@ -46,7 +48,7 @@ But if I'm working on a landing page, documentation website, blog or even a larg
 ### Primary stack
 
 - The JAM stack:
-  - Gatsby or Next
+  - Next js Gatsby or Next
   - Serverless functions written in JavaScript/TypeScript (when required)
   - Headless CMS (when required)
   - Markdown, Yaml, Json etc... (when required)
@@ -156,7 +158,7 @@ For growth, I focus more on building useful products that users really need in t
 - For Android, I'm using the Google Pixel 2 with a Dbrand dragon skin
   - Android 11
 - For iOS, I'm using the iPhone 13 Pro which has become my main phone
-  - iOS 15.2
+  - iOS 15.4
 
 Previously, I was carrying only a Nexus 6p which I had to stop using due to these [reasons](/pixel-2-review-and-why-Nexus-6p-is-a-bad-choice)
 
