@@ -3,7 +3,7 @@ id: 22
 path: '/visa-rejections-stories'
 thumbnail: './visa.jpg'
 date: 2019-10-22T02:50:01.889Z
-edited: 2020-10-22T02:50:01.889Z
+edited: 2022-03-29T08:52:01.889Z
 next: '/15-days-working-from-bali'
 title: 'Getting my third visa rejection'
 tags:
@@ -69,4 +69,8 @@ Even though all of this has occurred and made me sad, I'll keep going and moving
 
 I managed to get a B1 USA visa that expires after 10 years, meaning it will expire in 2030.
 
-Also turns out you don't really need to migrate to a well developed country to leverage your knowledge and business.
+> Turns out you don't really need to migrate to a well developed country to leverage your knowledge and business as long as you have Internet access.
+
+## 2022 update
+
+Immigrated to Germany to start a new journey, will share more details in upcoming articles.
