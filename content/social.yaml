@@ -8,11 +8,6 @@
   darkIcon: './assets/social/dark/unsplash.svg'
   lightIcon: './assets/social/light/unsplash.svg'
   link: http://unsplash.com/smakosh
-- name: Instagram
-  creative: false
-  darkIcon: './assets/social/dark/instagram.svg'
-  lightIcon: './assets/social/light/instagram.svg'
-  link: https://www.instagram.com/smakosh19
 - name: Linkedin
   creative: false
   darkIcon: './assets/social/dark/linkedin.svg'
